@@ -147,7 +147,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 13
-        y: 64
+        y: 74
         width: 166
         height: 19
       alignment: 0
@@ -168,10 +168,10 @@ TextureImporter:
       name: Action_panel_1
       rect:
         serializedVersion: 2
-        x: 12
-        y: 32
-        width: 168
-        height: 20
+        x: 13
+        y: 54
+        width: 166
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +190,10 @@ TextureImporter:
       name: Action_panel_2
       rect:
         serializedVersion: 2
-        x: 129
-        y: 17
-        width: 14
-        height: 14
+        x: 12
+        y: 32
+        width: 168
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +212,10 @@ TextureImporter:
       name: Action_panel_3
       rect:
         serializedVersion: 2
-        x: 145
-        y: 17
-        width: 14
-        height: 14
+        x: 13
+        y: 0
+        width: 22
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: Action_panel_4
       rect:
         serializedVersion: 2
-        x: 161
-        y: 17
-        width: 14
-        height: 14
+        x: 61
+        y: 0
+        width: 22
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,7 +256,7 @@ TextureImporter:
       name: Action_panel_5
       rect:
         serializedVersion: 2
-        x: 177
+        x: 129
         y: 17
         width: 14
         height: 14
@@ -278,10 +278,10 @@ TextureImporter:
       name: Action_panel_6
       rect:
         serializedVersion: 2
-        x: 12
-        y: 0
-        width: 24
-        height: 20
+        x: 145
+        y: 17
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,10 +300,10 @@ TextureImporter:
       name: Action_panel_7
       rect:
         serializedVersion: 2
-        x: 61
-        y: 0
-        width: 22
-        height: 19
+        x: 161
+        y: 17
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,10 +322,10 @@ TextureImporter:
       name: Action_panel_8
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
+        x: 177
+        y: 17
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: Action_panel_9
       rect:
         serializedVersion: 2
-        x: 161
-        y: 1
-        width: 14
-        height: 14
+        x: 96
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,10 +366,10 @@ TextureImporter:
       name: Action_panel_10
       rect:
         serializedVersion: 2
-        x: 177
-        y: 1
-        width: 14
-        height: 14
+        x: 163
+        y: 2
+        width: 9
+        height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,6 +380,28 @@ TextureImporter:
       bones: []
       spriteID: 6fe4204ce3edc4940800000000000000
       internalID: 5281840824156573430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_panel_11
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 2
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33511fb5d41c6a4fbb1fd8a3f6a5c37
+      internalID: 1003203374
       vertices: []
       indices: 
       edges: []
@@ -396,11 +418,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Action_panel_0: 2678117307762808000
       Action_panel_1: -2967464138562639994
       Action_panel_10: 5281840824156573430
+      Action_panel_11: 1003203374
       Action_panel_2: 7490909027001448214
       Action_panel_3: 8818557686247508717
       Action_panel_4: 8190202942815179626
