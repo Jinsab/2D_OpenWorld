@@ -13,11 +13,7 @@ MonoBehaviour:
   m_Name: DT_Tree0
   m_EditorClassIdentifier: Assembly-CSharp::DropTable
   drops:
-  - item: {fileID: 0}
-    minAmount: 0
-    maxAmount: 0
-    dropChance: 0
-  - item: {fileID: 0}
-    minAmount: 0
-    maxAmount: 0
-    dropChance: 0
+  - item: {fileID: 11400000, guid: 0ff94bace2c004d4d99b15983d3879dd, type: 2}
+    minAmount: 2
+    maxAmount: 3
+    dropChance: 1

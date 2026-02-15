@@ -30,7 +30,7 @@ using UnityEngine;
  *  1. 
  */
 
-[CreateAssetMenu(menuName = "Item/Tool")]
+[CreateAssetMenu(menuName = "Item/Equipment/Tool")]
 public class ToolItem : EquipmentItem
 {
     public int power = 1;

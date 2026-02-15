@@ -28,7 +28,8 @@ using UnityEngine;
  *      │  │
  *      │  ├─ Equipment (장비 아이템)
  *      │  │  ├─ ToolItem (도구형 아이템)
- *      │  │  └─ 추가 예정
+ *      │  │  ├─ Weapon (무기)
+ *      │  │  └─ Armor (방어구)
  *      │  │
  *      │  ├─ Placeable (설치 아이템)
  *      │  └─ Quest (퀘스트 아이템)
