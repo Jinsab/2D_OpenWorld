@@ -73,7 +73,7 @@ public class ItemDrop : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
@@ -83,11 +83,11 @@ public class ItemDrop : MonoBehaviour
         else if (collision.gameObject.CompareTag("Player"))
         {
             // 플레이어와 충돌 시 아이템 수집 처리
-            OnTriggerEnter(collision.collider);
+            OnTriggerEnter2D(collision.collider);
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player") || isPulling)
             return;

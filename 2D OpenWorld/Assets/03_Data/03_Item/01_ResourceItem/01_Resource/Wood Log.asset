@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: "\uBAA9\uC7AC"
   itemId: 2
   itemDesc: "\uBAA9\uC7AC\uC785\uB2C8\uB2E4."
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: f3692a0348cf58747acacc07e89069b9, type: 3}
   itemType: 0
   maxStack: 999
   isDroppable: 1

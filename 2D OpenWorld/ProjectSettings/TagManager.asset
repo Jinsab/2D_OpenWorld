@@ -6,6 +6,7 @@ TagManager:
   tags:
   - World
   - Harvest
+  - DropItem
   layers:
   - Default
   - TransparentFX

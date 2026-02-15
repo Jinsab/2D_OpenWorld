@@ -20,21 +20,47 @@ using UnityEngine;
 public class ToolController : MonoBehaviour
 {
     public float range = 1.5f;
+    public float testTime = 1f;
+    public float currentTime = 0f;
+
+    // Test
+    public ToolItem testTool;
+
+    private void Update()
+    {
+        currentTime += Time.deltaTime;
+
+        if (currentTime > testTime)
+        {
+            currentTime = 0f;
+            UseTool(testTool);
+        }
+    }
 
     public void UseTool(ToolItem tool)
     {
-        Collider2D hit = Physics2D.OverlapCircle(
+        //Collider2D hit = Physics2D.OverlapCircle(
+        //    transform.position,
+        //    range
+        //);
+        
+        Collider2D[] hit = Physics2D.OverlapCircleAll(
             transform.position,
             range
         );
 
         if (hit == null) return;
 
-        IDamageable damageable = hit.GetComponent<IDamageable>();
+        IDamageable[] damageable = new IDamageable[hit.Length];
 
-        if (damageable != null)
+        for (int i = 0; i < hit.Length; i++)
         {
-            damageable.TakeDamage(tool.power, gameObject);
+            damageable[i] = hit[i].GetComponent<IDamageable>();
+            
+            if (damageable[i] != null)
+            {
+                damageable[i].TakeDamage(tool.power, gameObject);
+            }
         }
     }
 }
