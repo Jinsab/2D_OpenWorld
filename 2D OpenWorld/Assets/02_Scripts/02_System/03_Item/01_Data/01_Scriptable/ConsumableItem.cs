@@ -30,11 +30,28 @@ using UnityEngine;
  *  1. 
  */
 
-[CreateAssetMenu(menuName = "Item/Consumable")]
+[CreateAssetMenu(menuName = "Item/Consumable Item")]
 public class ConsumableItem : Item
 {
+    [Header("# Consume Effect")]
+    public int restoreHP;
+    public int restoreStamina;
+
     public override void Use(GameObject user)
     {
+        //PlayerStats stats = user.GetComponent<PlayerStats>();
 
+        //if (stats == null)
+        //    return;
+
+        //if (restoreHP > 0)
+        //    stats.RestoreHP(restoreHP);
+
+        //if (restoreStamina > 0)
+        //    stats.RestoreStamina(restoreStamina);
+
+        // 사용했으므로 소비
+        Inventory inventory = user.GetComponent<Inventory>();
+        inventory.RemoveItem(itemId, 1);
     }
 }

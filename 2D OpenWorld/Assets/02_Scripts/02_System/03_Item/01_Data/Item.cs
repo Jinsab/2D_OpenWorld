@@ -6,7 +6,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.13 오후 20:46
- *  마지막 수정 일자 : 26.02.14 오후 21:25
+ *  마지막 수정 일자 : 26.02.15 오후 15:41
  *  
  *  [스크립트 목적 및 내용]
  *  1. 아이템 스크립트
@@ -17,8 +17,21 @@ using UnityEngine;
  *      ├─ ItemData (기본 정보)
  *      ├─ ItemDatabase (데이터베이스)
  *      ├─ (Type)Item (아이템 타입)
+ *      │  ├─ ResourceItem (원자재)
+ *      │  │  ├─ Resource (원자재)
+ *      │  │  └─ Material (가공 재료)
+ *      │  │
  *      │  ├─ ConsumableItem (소비 아이템)
- *      │  └─ ToolItem (도구 아이템)
+ *      │  │  ├─ Food (음식)
+ *      │  │  ├─ Potion (물약)
+ *      │  │  └─ ETC (기타)
+ *      │  │
+ *      │  ├─ Equipment (장비 아이템)
+ *      │  │  ├─ ToolItem (도구형 아이템)
+ *      │  │  └─ 추가 예정
+ *      │  │
+ *      │  ├─ Placeable (설치 아이템)
+ *      │  └─ Quest (퀘스트 아이템)
  *      │
  *      ├─ ItemDropSpawner
  *      ├─ ItemDrop

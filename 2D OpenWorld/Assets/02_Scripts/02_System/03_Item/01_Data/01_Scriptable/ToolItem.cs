@@ -31,7 +31,7 @@ using UnityEngine;
  */
 
 [CreateAssetMenu(menuName = "Item/Tool")]
-public class ToolItem : Item
+public class ToolItem : EquipmentItem
 {
     public int power = 1;
 
