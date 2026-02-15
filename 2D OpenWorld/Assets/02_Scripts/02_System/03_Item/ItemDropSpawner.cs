@@ -42,13 +42,9 @@ public class ItemDropSpawner : MonoBehaviour
 
     public void Spawn(Item item, int amount, Vector3 position)
     {
-        GameObject obj = Instantiate(
-            itemDropPrefab,
-            position,
-            Quaternion.identity
-        );
-
+        GameObject obj = Instantiate(itemDropPrefab, position, Quaternion.identity);
         ItemDrop drop = obj.GetComponent<ItemDrop>();
         drop.Initialize(item, amount);
+        // obj.gameObject.SetActive(true);
     }
 }

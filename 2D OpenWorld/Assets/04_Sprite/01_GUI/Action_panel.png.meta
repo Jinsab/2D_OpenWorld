@@ -147,12 +147,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 13
-        y: 74
+        y: 139
         width: 166
         height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 0, z: 2, w: 3}
       customData: 
       outline: []
       physicsShape: []
@@ -169,9 +169,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 13
-        y: 54
+        y: 118
         width: 166
-        height: 18
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,7 +191,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 12
-        y: 32
+        y: 96
         width: 168
         height: 20
       alignment: 0
@@ -213,9 +213,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 13
-        y: 0
-        width: 22
-        height: 19
+        y: 76
+        width: 166
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,9 +234,9 @@ TextureImporter:
       name: Action_panel_4
       rect:
         serializedVersion: 2
-        x: 61
-        y: 0
-        width: 22
+        x: 13
+        y: 55
+        width: 166
         height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -256,10 +256,10 @@ TextureImporter:
       name: Action_panel_5
       rect:
         serializedVersion: 2
-        x: 129
-        y: 17
-        width: 14
-        height: 14
+        x: 13
+        y: 32
+        width: 166
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: Action_panel_6
       rect:
         serializedVersion: 2
-        x: 145
-        y: 17
-        width: 14
-        height: 14
+        x: 13
+        y: 0
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,13 +300,13 @@ TextureImporter:
       name: Action_panel_7
       rect:
         serializedVersion: 2
-        x: 161
-        y: 17
-        width: 14
-        height: 14
+        x: 45
+        y: 0
+        width: 22
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 0, z: 2, w: 2}
       customData: 
       outline: []
       physicsShape: []
@@ -322,10 +322,10 @@ TextureImporter:
       name: Action_panel_8
       rect:
         serializedVersion: 2
-        x: 177
-        y: 17
-        width: 14
-        height: 14
+        x: 73
+        y: 0
+        width: 16
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: Action_panel_9
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
+        x: 129
+        y: 17
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,10 +366,10 @@ TextureImporter:
       name: Action_panel_10
       rect:
         serializedVersion: 2
-        x: 163
-        y: 2
-        width: 9
-        height: 12
+        x: 145
+        y: 17
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -388,6 +388,160 @@ TextureImporter:
       name: Action_panel_11
       rect:
         serializedVersion: 2
+        x: 161
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33511fb5d41c6a4fbb1fd8a3f6a5c37
+      internalID: 1003203374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_panel_12
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea9d1f3a3c4b744dbc56ec5c925c2f7
+      internalID: 729861759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_panel_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ea310d4410fcc4db8423ea82e907e7
+      internalID: -1332180839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_panel_14
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d331ce89cef8804b9f5b5879c0400d9
+      internalID: -1737874546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_panel_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c05e57c51f243b41bbc910c6826d509
+      internalID: 1100395662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_panel_16
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e303486810412e4f8877430f0fee2a7
+      internalID: -2126714888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_panel_17
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 2
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71e3658b1bc97044b080a31069a1f10
+      internalID: 1575853619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Action_panel_18
+      rect:
+        serializedVersion: 2
         x: 179
         y: 2
         width: 9
@@ -400,8 +554,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f33511fb5d41c6a4fbb1fd8a3f6a5c37
-      internalID: 1003203374
+      spriteID: 7c768a10ca10c864b9f654c7cae39c53
+      internalID: -867284932
       vertices: []
       indices: 
       edges: []
@@ -426,6 +580,13 @@ TextureImporter:
       Action_panel_1: -2967464138562639994
       Action_panel_10: 5281840824156573430
       Action_panel_11: 1003203374
+      Action_panel_12: 729861759
+      Action_panel_13: -1332180839
+      Action_panel_14: -1737874546
+      Action_panel_15: 1100395662
+      Action_panel_16: -2126714888
+      Action_panel_17: 1575853619
+      Action_panel_18: -867284932
       Action_panel_2: 7490909027001448214
       Action_panel_3: 8818557686247508717
       Action_panel_4: 8190202942815179626

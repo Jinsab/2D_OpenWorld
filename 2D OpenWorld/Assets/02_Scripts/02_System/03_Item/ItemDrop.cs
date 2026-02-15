@@ -9,8 +9,12 @@ using UnityEngine;
  *  마지막 수정 일자 : 26.02.14 오후 21:26
  *  
  *  [스크립트 목적 및 내용]
- *  1. 아이템 시스템 - 아이템 드랍
- *    1-1. 인벤토리 아이템 추가
+ *  1. 아이템 시스템 - 아이템 드롭
+ *    1-1. 채집 이후 아이템 드롭
+ *    1-2. 드롭 아이템 스프라이트 및 그림자 처리
+ *    1-3. 일정 범위 진입 시 아이템 획득 로직 적용
+ *    1-4. 로직을 거쳐 인벤토리 아이템 추가
+ *    1-5. 아이템 추가 이후 아이템 삭제
  *    
  *  2. 큰 그림
  *    - Item (ScriptableObject)
@@ -40,28 +44,42 @@ public class ItemDrop : MonoBehaviour
     public float pickupDistance = 0.5f;
     public float acceleration = 3f; // 끌려오는 속도의 가속도
 
-    private new Rigidbody2D rigidbody;
+    private SpriteRenderer itemSprite;
+    private SpriteRenderer shadowSprite;
     private Collider2D coli;
     private Transform target; // 플레이어
     private bool isPulling = false; // 아이템이 끌려오는 중인지 여부
 
     private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
         coli = GetComponent<Collider2D>();
+    }
+
+    private void OnEnable()
+    {
+        itemSprite = GetComponent<SpriteRenderer>();
+        shadowSprite = transform.GetChild(0).GetComponent<SpriteRenderer>();
+
+        if (item != null)
+        {
+            itemSprite.sprite = item.Icon;
+            shadowSprite.sprite = item.Icon;
+        }
+        else
+        {
+            Debug.Log("아이템 정보가 비어있습니다!");
+        }
     }
 
     private void FixedUpdate()
     {
-        if (!isPulling || target == null)
+        if (!isPulling || target == null || item == null)
             return;
 
-        rigidbody.MovePosition(
-            Vector3.MoveTowards(
-                rigidbody.position,
+        transform.position = Vector3.MoveTowards(
+                transform.position,
                 target.position,
-                pullSpeed * Time.fixedDeltaTime)
-        );
+                pullSpeed * Time.fixedDeltaTime);
 
         // 부드럽게 만들기 위해 가속도 주기
         pullSpeed += acceleration * Time.fixedDeltaTime;
@@ -75,12 +93,7 @@ public class ItemDrop : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            rigidbody.simulated = true;
-            coli.enabled = false;
-        }
-        else if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             // 플레이어와 충돌 시 아이템 수집 처리
             OnTriggerEnter2D(collision.collider);
@@ -104,10 +117,13 @@ public class ItemDrop : MonoBehaviour
             coli.enabled = false;
         }
     }
+
     public void Initialize(Item itemData, int amt)
     {
         item = itemData;
         amount = amt;
+
+        gameObject.SetActive(true);
     }
 
     private void CompletePickup()
