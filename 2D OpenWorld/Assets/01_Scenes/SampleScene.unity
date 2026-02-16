@@ -206,8 +206,8 @@ GameObject:
   - component: {fileID: 26538031}
   - component: {fileID: 26538030}
   - component: {fileID: 26538033}
-  - component: {fileID: 26538029}
   - component: {fileID: 26538032}
+  - component: {fileID: 26538034}
   m_Layer: 6
   m_Name: Tree_0
   m_TagString: Harvest
@@ -231,19 +231,6 @@ Transform:
   - {fileID: 1417411145}
   m_Father: {fileID: 1071150956}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &26538029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 26538027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 567916b1bfca4734fb84027ffcf3d3ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SortingOrderController
-  precision: 100
 --- !u!61 &26538030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -408,6 +395,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.9375, y: 4.625}
   m_EdgeRadius: 0
+--- !u!114 &26538034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26538027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d466a3328d5167f4f8ca08c305254ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SortingOrderControler
 --- !u!1 &43977653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,9 +1331,9 @@ GameObject:
   - component: {fileID: 169852792}
   - component: {fileID: 169852791}
   - component: {fileID: 169852790}
-  - component: {fileID: 169852789}
   - component: {fileID: 169852788}
   - component: {fileID: 169852787}
+  - component: {fileID: 169852793}
   m_Layer: 6
   m_Name: Tree_0 (2)
   m_TagString: Harvest
@@ -1385,19 +1384,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TreeFadeController
   fadeAlpha: 0.5
---- !u!114 &169852789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169852785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 567916b1bfca4734fb84027ffcf3d3ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SortingOrderController
-  precision: 100
 --- !u!61 &169852790
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1549,6 +1535,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!114 &169852793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169852785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d466a3328d5167f4f8ca08c305254ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SortingOrderControler
 --- !u!1 &171533751
 GameObject:
   m_ObjectHideFlags: 0
@@ -11397,8 +11395,8 @@ GameObject:
   - component: {fileID: 862737544}
   - component: {fileID: 862737548}
   - component: {fileID: 862737550}
-  - component: {fileID: 862737546}
   - component: {fileID: 862737549}
+  - component: {fileID: 862737551}
   m_Layer: 6
   m_Name: Rock_0
   m_TagString: Harvest
@@ -11481,19 +11479,6 @@ Transform:
   - {fileID: 1438104242}
   m_Father: {fileID: 1071150956}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &862737546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 862737543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 567916b1bfca4734fb84027ffcf3d3ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SortingOrderController
-  precision: 100
 --- !u!61 &862737548
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11599,6 +11584,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.875, y: 3.625}
   m_EdgeRadius: 0
+--- !u!114 &862737551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862737543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d466a3328d5167f4f8ca08c305254ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SortingOrderControler
 --- !u!1 &891860139
 GameObject:
   m_ObjectHideFlags: 0
@@ -11618,7 +11615,7 @@ GameObject:
   - component: {fileID: 891860147}
   - component: {fileID: 891860146}
   - component: {fileID: 891860145}
-  - component: {fileID: 891860151}
+  - component: {fileID: 891860154}
   - component: {fileID: 891860152}
   - component: {fileID: 891860153}
   m_Layer: 3
@@ -11727,7 +11724,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -11855,6 +11852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e1bafd020048444190f84a0dd3bb553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  currentSpeed: 0
 --- !u!114 &891860149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11874,7 +11872,6 @@ MonoBehaviour:
   <PlayerMovement>k__BackingField: {fileID: 891860148}
   <PlayerLook>k__BackingField: {fileID: 891860147}
   <stateMachine>k__BackingField: {fileID: 891860146}
-  sortingController: {fileID: 0}
   <AnimationData>k__BackingField: {fileID: 891860145}
 --- !u!114 &891860150
 MonoBehaviour:
@@ -11906,19 +11903,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &891860151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891860139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 567916b1bfca4734fb84027ffcf3d3ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SortingOrderController
-  precision: 100
 --- !u!114 &891860152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11949,6 +11933,18 @@ MonoBehaviour:
   testTime: 1
   currentTime: 0
   testTool: {fileID: 11400000, guid: d33509645d54ccf49a243a3d0a1559de, type: 2}
+--- !u!114 &891860154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891860139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d466a3328d5167f4f8ca08c305254ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SortingOrderControler
 --- !u!1 &898469432
 GameObject:
   m_ObjectHideFlags: 0
@@ -17211,9 +17207,9 @@ GameObject:
   - component: {fileID: 1515959287}
   - component: {fileID: 1515959286}
   - component: {fileID: 1515959285}
-  - component: {fileID: 1515959284}
   - component: {fileID: 1515959283}
   - component: {fileID: 1515959282}
+  - component: {fileID: 1515959288}
   m_Layer: 6
   m_Name: Tree_0 (1)
   m_TagString: Harvest
@@ -17264,19 +17260,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TreeFadeController
   fadeAlpha: 0.5
---- !u!114 &1515959284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515959280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 567916b1bfca4734fb84027ffcf3d3ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SortingOrderController
-  precision: 100
 --- !u!61 &1515959285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17428,6 +17411,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!114 &1515959288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515959280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d466a3328d5167f4f8ca08c305254ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SortingOrderControler
 --- !u!1 &1520417990
 GameObject:
   m_ObjectHideFlags: 0
@@ -20027,9 +20022,9 @@ GameObject:
   - component: {fileID: 1631498711}
   - component: {fileID: 1631498713}
   - component: {fileID: 1631498716}
-  - component: {fileID: 1631498714}
   - component: {fileID: 1631498715}
   - component: {fileID: 1631498717}
+  - component: {fileID: 1631498718}
   m_Layer: 6
   m_Name: Tree_0
   m_TagString: Harvest
@@ -20158,19 +20153,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.2, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &1631498714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631498710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 567916b1bfca4734fb84027ffcf3d3ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SortingOrderController
-  precision: 100
 --- !u!114 &1631498715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20244,6 +20226,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ResourceNode
   maxHP: 5
   dropTable: {fileID: 11400000, guid: 0d2475479215af6418af3128dabc7088, type: 2}
+--- !u!114 &1631498718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631498710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d466a3328d5167f4f8ca08c305254ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SortingOrderControler
 --- !u!1 &1654002976
 GameObject:
   m_ObjectHideFlags: 0
@@ -24288,8 +24282,8 @@ GameObject:
   - component: {fileID: 2092319543}
   - component: {fileID: 2092319547}
   - component: {fileID: 2092319545}
-  - component: {fileID: 2092319544}
   - component: {fileID: 2092319546}
+  - component: {fileID: 2092319548}
   m_Layer: 6
   m_Name: Tree_1
   m_TagString: Harvest
@@ -24372,19 +24366,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!114 &2092319544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092319541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 567916b1bfca4734fb84027ffcf3d3ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SortingOrderController
-  precision: 100
 --- !u!61 &2092319545
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24490,6 +24471,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.3125, y: 3.375}
   m_EdgeRadius: 0
+--- !u!114 &2092319548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092319541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d466a3328d5167f4f8ca08c305254ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SortingOrderControler
 --- !u!1 &2106902753
 GameObject:
   m_ObjectHideFlags: 0

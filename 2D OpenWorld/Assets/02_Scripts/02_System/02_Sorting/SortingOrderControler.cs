@@ -17,32 +17,18 @@ using UnityEngine;
  */
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class SortingOrderController : MonoBehaviour
+public class SortingOrderControler : MonoBehaviour
 {
-    public int precision = 100;
-
     private SpriteRenderer sr;
-    private int lastOrder;
 
-    void Awake()
+    private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        UpdateSorting();
     }
 
-    public void UpdateSorting()
+    void Start()
     {
-        int newOrder = -(int)(transform.position.y * precision);
-
-        if (newOrder != lastOrder)
-        {
-            sr.sortingOrder = newOrder;
-            lastOrder = newOrder;
-        }
-    }
-
-    public int SortingOrder()
-    {
-        return lastOrder;
+        sr.sortingOrder = SortingOrderUtility.UpdateSortingY(transform);
+        transform.position = new Vector3(transform.position.x, transform.position.y, SortingOrderUtility.UpdateSortingZ(transform));
     }
 }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Playables;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 /*  
  *  [프로젝트 제목]
@@ -44,19 +45,27 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 MoveInput { get; private set; }
     public float MovementSpeed { get; private set; }
     public bool IsRunning { get; private set; }
+    public float currentSpeed;
 
     // Player
     private PlayerController Player;
+    private SpriteRenderer playerRenderer;
     private SpriteRenderer shadowRenderer;
 
     // Player Input System
     private InputAction moveAction;
     private InputAction runAction;
 
+    // Sorting Data
+    private int sortingY;
+    private float sortingZ;
+    private Vector3 lastPos;
+
     public void Initialize()
     {
         Player = GetComponent<PlayerController>();
         MovementSpeed = Player.Data.GroundedData.BaseSpeed;
+        playerRenderer = GetComponent<SpriteRenderer>();
         shadowRenderer = Player.transform.GetChild(0).GetComponent<SpriteRenderer>();
 
         moveAction = Player.Input.actions["Move"];
@@ -85,29 +94,33 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 move = new Vector3(MoveInput.x, MoveInput.y).normalized;
-
-        float speed = Player.stateMachine.CurrentState ==
-            PlayerState.Run ? MovementSpeed * Player.Data.GroundedData.RunSpeedModifier :
-                              MovementSpeed * Player.Data.GroundedData.WalkSpeedModifier;
-
         if (Player.stateMachine.CurrentState == PlayerState.Idle)
         {
-            speed = 0f;
+            currentSpeed = 0f;
+        }
+        else
+        {
+            currentSpeed = Player.stateMachine.CurrentState ==
+            PlayerState.Run ? MovementSpeed * Player.Data.GroundedData.RunSpeedModifier :
+                              MovementSpeed * Player.Data.GroundedData.WalkSpeedModifier;
         }
 
-        Player.Rigidbody.MovePosition(Player.Rigidbody.position + move * speed * Time.fixedDeltaTime);
+        Vector2 move = new Vector3(MoveInput.x, MoveInput.y).normalized;
+        move = Player.Rigidbody.position + move * currentSpeed * Time.fixedDeltaTime;
+
+        sortingZ = SortingOrderUtility.UpdateSortingZ(transform) + 1f;
+        Player.Rigidbody.MovePosition(new Vector3(move.x, move.y, sortingZ));
     }
 
     private void LateUpdate()
     {
         if (MoveInput != Vector2.zero)
         {
-            Player.sortingController.UpdateSorting();
+            sortingY = SortingOrderUtility.UpdateSortingY(transform);
 
-            // 그림자는 항상 플레이어 뒤에 있어야 하기 때문에 1을 빼는 것이
-            // 의도한 효과를 일으킬 수 있음
-            shadowRenderer.sortingOrder = Player.sortingController.SortingOrder() - 1;
+            // 그림자는 항상 플레이어 뒤에 있어야 하기 때문에 1을 빼야 함
+            playerRenderer.sortingOrder = sortingY;
+            shadowRenderer.sortingOrder = sortingY - 1;
         }
     }
 }

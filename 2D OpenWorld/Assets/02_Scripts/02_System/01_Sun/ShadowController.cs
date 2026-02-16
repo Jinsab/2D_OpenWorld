@@ -6,12 +6,13 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.13 오후 14:37
- *  마지막 수정 일자 : 26.02.13 오후 14:09
+ *  마지막 수정 일자 : 26.02.17 오전 01:17
  *  
  *  [스크립트 목적 및 내용]
- *  1. 태양 시스템 - 낮과 밤
- *    1-1. 전체 밝기 제어는 Global Light 2D로 진행됨
- *    1-2. 따라서, 시간 흐름에 따라 밝기를 제어하여 낮과 밤을 구분
+ *  1. 태양 시스템 - 그림자 효과
+ *    1-1. 부모의 스프라이트를 복제하고, 검은색 지정 및 알파 값을 낮춰 그림자를 생성함
+ *    1-2. 태양의 위치에 따라 그림자의 크기 및 회전이 결정됨
+ *    1-3. 스프라이트가 변경 시 그림자의 스프라이트도 동일하게 변경됨 
  *    
  *  [스크립트 작성 도움 출처]
  *  1. 
@@ -31,6 +32,7 @@ public class ShadowController : MonoBehaviour
 
     private SpriteRenderer shadowRenderer;
     private SpriteRenderer parentRenderer;
+    private Sprite lastSprite;
     
     void Awake()
     {
@@ -42,14 +44,15 @@ public class ShadowController : MonoBehaviour
 
     void LateUpdate()
     {
+        UpdateSprite();
         UpdateShadow();
-        // UpdateSorting();
     }
 
     void InitializeShadow()
     {
         // 부모 스프라이트 복사
         shadowRenderer.sprite = parentRenderer.sprite;
+        lastSprite = parentRenderer.sprite;
         shadowRenderer.color = new Color(0, 0, 0, 0.5f);
 
         transform.localPosition = new Vector3(0, 1 * shadowOffsetY, 0.0001f);
@@ -61,11 +64,28 @@ public class ShadowController : MonoBehaviour
         }
 
         // 같은 SortingLayer 사용 권장
+        // 또한, sortingOrder와 함께 Z축을 사용해야 함
         shadowRenderer.sortingLayerID = parentRenderer.sortingLayerID;
         shadowRenderer.sortingOrder = Mathf.RoundToInt(shadowRenderer.bounds.size.y * maxLength * precision) - 1;
     }
 
-    void UpdateShadow()
+    private void UpdateSprite()
+    {
+        if (parentRenderer == null || shadowRenderer == null)
+            return;
+
+        if (parentRenderer.sprite != lastSprite)
+        {
+            lastSprite = parentRenderer.sprite; // 갱신
+            shadowRenderer.sprite = lastSprite;
+
+            // Flip 상태도 변경 시점에만 체크 (필요시)
+            shadowRenderer.flipX = parentRenderer.flipX;
+            shadowRenderer.flipY = parentRenderer.flipY;
+        }
+    }
+
+    private void UpdateShadow()
     {
         Vector2 sunDir = SunSystem.Instance.sunDirection;
         float sunHeight = SunSystem.Instance.GetSunHeight();
@@ -89,20 +109,5 @@ public class ShadowController : MonoBehaviour
         // 밤에는 그림자 약하게
         float alpha = Mathf.Lerp(0.6f, 0.3f, sunHeight);
         shadowRenderer.color = new Color(0, 0, 0, alpha);
-    }
-
-    void UpdateSorting()
-    {
-        // 그림자 스프라이트 그려지는 우선순위
-
-        // 
-        if (shadowEnd.position.y > 0)
-        {
-            shadowRenderer.sortingOrder = parentRenderer.sortingOrder;
-        }
-        else
-        {
-            shadowRenderer.sortingOrder = Mathf.RoundToInt(-shadowEnd.position.y * precision) - 1;
-        }
     }
 }
