@@ -37,7 +37,7 @@ public class InventorySlot
 
     public InventorySlot(Item item, int amount)
     {
-        this.itemId = item.itemId;
+        itemId = item.itemId;
         this.item = item;
         this.amount = amount;
     }

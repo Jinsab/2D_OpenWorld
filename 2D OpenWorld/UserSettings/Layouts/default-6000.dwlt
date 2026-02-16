@@ -617,25 +617,27 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 92704
-    - m_Data: 92706
-    - m_Data: 92708
-    - m_Data: 92710
-    - m_Data: 92712
-    - m_Data: 92714
-    - m_Data: 92716
-    - m_Data: 92718
-    - m_Data: 92720
-    - m_Data: 92722
-    - m_Data: 92724
-    - m_Data: 92726
-    - m_Data: 92728
-    - m_Data: 92730
-    - m_Data: 92732
-    - m_Data: 92734
-    - m_Data: 92736
-    - m_Data: 92738
+    - m_Data: 92860
+    - m_Data: 92862
+    - m_Data: 92864
     - m_Data: 92866
+    - m_Data: 92868
+    - m_Data: 92870
+    - m_Data: 92872
+    - m_Data: 92874
+    - m_Data: 92876
+    - m_Data: 92878
+    - m_Data: 92880
+    - m_Data: 92882
+    - m_Data: 92884
+    - m_Data: 92886
+    - m_Data: 92888
+    - m_Data: 92890
+    - m_Data: 92892
+    - m_Data: 92894
+    - m_Data: 92896
+    - m_Data: 129658
+    - m_Data: 129660
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -669,25 +671,27 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 92704
-    - m_Data: 92706
-    - m_Data: 92708
-    - m_Data: 92710
-    - m_Data: 92712
-    - m_Data: 92714
-    - m_Data: 92716
-    - m_Data: 92718
-    - m_Data: 92720
-    - m_Data: 92722
-    - m_Data: 92724
-    - m_Data: 92726
-    - m_Data: 92728
-    - m_Data: 92730
-    - m_Data: 92732
-    - m_Data: 92734
-    - m_Data: 92736
-    - m_Data: 92738
+    - m_Data: 92860
+    - m_Data: 92862
+    - m_Data: 92864
     - m_Data: 92866
+    - m_Data: 92868
+    - m_Data: 92870
+    - m_Data: 92872
+    - m_Data: 92874
+    - m_Data: 92876
+    - m_Data: 92878
+    - m_Data: 92880
+    - m_Data: 92882
+    - m_Data: 92884
+    - m_Data: 92886
+    - m_Data: 92888
+    - m_Data: 92890
+    - m_Data: 92892
+    - m_Data: 92894
+    - m_Data: 92896
+    - m_Data: 129658
+    - m_Data: 129660
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -840,7 +844,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: []
+      m_SelectedIDs:
+      - m_Data: 91770
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs: []
@@ -1508,7 +1513,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 376.42596, y: 413.50906, z: -0.6828927}
+    m_Value: {x: -1.4479929, y: 1.5061243, z: 0.09326723}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1560,7 +1565,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 10
     speed: 2
-    m_Value: 124.8582
+    m_Value: 10.673279
   m_Ortho:
     m_Target: 1
     speed: 2

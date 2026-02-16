@@ -6,7 +6,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.14 오후 18:20
- *  마지막 수정 일자 : 26.02.14 오후 21:26
+ *  마지막 수정 일자 : 26.02.16 오전 02:04
  *  
  *  [스크립트 목적 및 내용]
  *  1. 아이템 시스템 - 아이템 스폰 중앙 관리
@@ -32,7 +32,6 @@ using UnityEngine;
 public class ItemDropSpawner : MonoBehaviour
 {
     public static ItemDropSpawner Instance;
-
     public GameObject itemDropPrefab;
 
     void Awake()
@@ -45,6 +44,5 @@ public class ItemDropSpawner : MonoBehaviour
         GameObject obj = Instantiate(itemDropPrefab, position, Quaternion.identity);
         ItemDrop drop = obj.GetComponent<ItemDrop>();
         drop.Initialize(item, amount);
-        // obj.gameObject.SetActive(true);
     }
 }

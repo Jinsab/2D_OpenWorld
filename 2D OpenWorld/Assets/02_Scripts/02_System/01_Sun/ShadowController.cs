@@ -20,10 +20,14 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class ShadowController : MonoBehaviour
 {
-    [Header("Length Settings")]
+    [Header("# Length Settings")]
     public float minLength = 0.4f;   // 정오
     public float maxLength = 1.8f;   // 해뜰 때/질 때
     public float shadowOffsetY;
+    public int precision = 100;
+
+    [Header("# Shadow")]
+    public Transform shadowEnd;
 
     private SpriteRenderer shadowRenderer;
     private SpriteRenderer parentRenderer;
@@ -39,6 +43,7 @@ public class ShadowController : MonoBehaviour
     void LateUpdate()
     {
         UpdateShadow();
+        UpdateSorting();
     }
 
     void InitializeShadow()
@@ -47,12 +52,16 @@ public class ShadowController : MonoBehaviour
         shadowRenderer.sprite = parentRenderer.sprite;
         shadowRenderer.color = new Color(0, 0, 0, 0.5f);
 
-        transform.localPosition = Vector3.up * shadowOffsetY;
+        transform.localPosition = new Vector3(0, 1 * shadowOffsetY, 0.1f);
         transform.localScale = Vector3.one;
+
+        if (shadowEnd != null)
+        {
+            shadowEnd.transform.localPosition = new Vector3(0, shadowRenderer.bounds.size.y * maxLength, 0);
+        }
 
         // 같은 SortingLayer 사용 권장
         shadowRenderer.sortingLayerID = parentRenderer.sortingLayerID;
-        shadowRenderer.sortingOrder = parentRenderer.sortingOrder - 1;
     }
 
     void UpdateShadow()
@@ -68,101 +77,31 @@ public class ShadowController : MonoBehaviour
             shadowDir.x
         ) * Mathf.Rad2Deg;
 
-        transform.localRotation =
-            Quaternion.Euler(0, 0, angle);
+        transform.localRotation = Quaternion.Euler(0, 0, angle);
 
         // 길이 계산
-        float lengthFactor =
-            Mathf.Lerp(maxLength, minLength, sunHeight);
+        float lengthFactor = Mathf.Lerp(maxLength, minLength, sunHeight);
 
         // Pivot이 Bottom이므로 Y만 늘리면 위쪽으로 늘어남
-        transform.localScale =
-            new Vector3(1f, lengthFactor, 1f);
+        transform.localScale = new Vector3(1f, lengthFactor, 1f);
 
         // 밤에는 그림자 약하게
-        float alpha = Mathf.Lerp(0.6f, 0.1f, sunHeight);
-
+        float alpha = Mathf.Lerp(0.3f, 0.1f, sunHeight);
         shadowRenderer.color = new Color(0, 0, 0, alpha);
     }
+
+    void UpdateSorting()
+    {
+        // 그림자 스프라이트 그려지는 우선순위
+
+        // 
+        if (shadowEnd.position.y > 0)
+        {
+            shadowRenderer.sortingOrder = parentRenderer.sortingOrder;
+        }
+        else
+        {
+            shadowRenderer.sortingOrder = Mathf.RoundToInt(-shadowEnd.position.y * precision) - 1;
+        }
+    }
 }
-
-//
-//public class ShadowController : MonoBehaviour
-//{
-//    [Header("Shadow Settings")]
-//    public float shadowLengthMultiplier = 1.5f;
-//    public float minLengthFactor = 0.3f;
-//    public float maxLengthFactor = 1.8f;
-
-//    private SpriteRenderer shadowRenderer;
-//    private SpriteRenderer parentRenderer;
-//    private Transform parentTransform;
-
-//    private float spriteHeight;
-
-//    void Awake()
-//    {
-//        shadowRenderer = GetComponent<SpriteRenderer>();
-//        parentTransform = transform.parent;
-//        parentRenderer = parentTransform.GetComponent<SpriteRenderer>();
-
-//        InitializeShadow();
-//    }
-
-//    void InitializeShadow()
-//    {
-//        // 부모 스프라이트 복사
-//        shadowRenderer.sprite = parentRenderer.sprite;
-
-//        // 실제 스프라이트 월드 높이
-//        spriteHeight = parentRenderer.bounds.size.y;
-
-//        shadowRenderer.color = new Color(0, 0, 0, 0.5f);
-
-//        // 같은 SortingLayer 사용 권장
-//        shadowRenderer.sortingLayerID = parentRenderer.sortingLayerID;
-//        shadowRenderer.sortingOrder = parentRenderer.sortingOrder - 1;
-
-//        transform.localPosition = Vector3.zero;
-//    }
-
-//    void LateUpdate()
-//    {
-//        UpdateShadow();
-//    }
-
-//    void UpdateShadow()
-//    {
-//        Vector2 sunDir = SunSystem.Instance.sunDirection;
-//        float sunHeight = SunSystem.Instance.GetSunHeight();
-
-//        // 그림자는 태양 반대 방향
-//        Vector2 shadowDir = -sunDir;
-
-//        float angle = Mathf.Atan2(shadowDir.y, shadowDir.x) * Mathf.Rad2Deg;
-//        transform.rotation = Quaternion.Euler(0, 0, angle);
-
-//        // 핵심: 스프라이트 높이 기반 길이 계산
-//        float heightFactor = Mathf.Lerp(
-//            maxLengthFactor,
-//            minLengthFactor,
-//            sunHeight
-//        );
-
-//        float shadowLength = spriteHeight * shadowLengthMultiplier * heightFactor;
-
-//        transform.localScale = new Vector3(
-//            1f,
-//            shadowLength / spriteHeight,
-//            1f
-//        );
-
-//        // 위치 오프셋도 스프라이트 높이 기준
-//        transform.localPosition =
-//            (Vector3)(shadowDir * spriteHeight * 0.5f);
-
-//        // 밤에는 그림자 옅게
-//        float alpha = Mathf.Lerp(0.6f, 0.15f, sunHeight);
-//        shadowRenderer.color = new Color(0, 0, 0, alpha);
-//    }
-//}
