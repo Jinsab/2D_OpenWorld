@@ -1963,7 +1963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SunSystem
   timeOfDay: 0
-  dayDuration: 30
+  dayDuration: 300
   sunAngle: 0
   sunDirection: {x: 0, y: 0}
 --- !u!4 &214046799
