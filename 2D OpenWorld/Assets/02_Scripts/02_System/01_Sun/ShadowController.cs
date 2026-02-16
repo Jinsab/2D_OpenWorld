@@ -86,7 +86,7 @@ public class ShadowController : MonoBehaviour
         transform.localScale = new Vector3(1f, lengthFactor, 1f);
 
         // 밤에는 그림자 약하게
-        float alpha = Mathf.Lerp(0.3f, 0.1f, sunHeight);
+        float alpha = Mathf.Lerp(0.6f, 0.3f, sunHeight);
         shadowRenderer.color = new Color(0, 0, 0, alpha);
     }
 
