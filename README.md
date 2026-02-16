@@ -1,7 +1,8 @@
 # 2D OpenWorld SurvivalCraft
 ## 2D 오픈월드 생존제작 게임 :
 
-<img src="https://www.notion.so/3067b58542f880e2bd64d684600cacbb?source=copy_link#3087b58542f880789863fd8366752edf" width="50%" height="auto">
+![대체 텍스트](./Images/Shadow%20System.png)
+![대체 텍스트](./Images/Inventory%20UI.png)
 
 ### 01. 게임 개요
  - 장르
