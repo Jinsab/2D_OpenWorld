@@ -43,7 +43,7 @@ public class ShadowController : MonoBehaviour
     void LateUpdate()
     {
         UpdateShadow();
-        UpdateSorting();
+        // UpdateSorting();
     }
 
     void InitializeShadow()
@@ -52,7 +52,7 @@ public class ShadowController : MonoBehaviour
         shadowRenderer.sprite = parentRenderer.sprite;
         shadowRenderer.color = new Color(0, 0, 0, 0.5f);
 
-        transform.localPosition = new Vector3(0, 1 * shadowOffsetY, 0.1f);
+        transform.localPosition = new Vector3(0, 1 * shadowOffsetY, 0.0001f);
         transform.localScale = Vector3.one;
 
         if (shadowEnd != null)
@@ -62,6 +62,7 @@ public class ShadowController : MonoBehaviour
 
         // 같은 SortingLayer 사용 권장
         shadowRenderer.sortingLayerID = parentRenderer.sortingLayerID;
+        shadowRenderer.sortingOrder = Mathf.RoundToInt(shadowRenderer.bounds.size.y * maxLength * precision) - 1;
     }
 
     void UpdateShadow()
