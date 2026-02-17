@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
+using System;
 
 /*  
  *  [프로젝트 제목]
@@ -9,7 +10,7 @@ using TMPro;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.17 오후 16:05
- *  마지막 수정 일자 : 26.02.17 오후 16:05
+ *  마지막 수정 일자 : 26.02.17 오후 20:46
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 UI 관리
@@ -26,27 +27,48 @@ using TMPro;
  *  1. 
  */
 
+[Serializable]
 public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
 {
+    [Header("# Slot Info")]
+    public Image panelImage;
     public Image icon;
     public TMP_Text amountText;
+    public TMP_Text toggleText;
+
+    [Header("# Slot Data")]
+    public bool isToggle = false;
+    public Sprite togglePanel;
+    public Sprite slotPanel;
+    [SerializeField] private InventorySlot slotData;
 
     private InventoryUI inventoryUI;
     private int index;
-    private InventorySlot slotData;
 
     public void Initialize(InventoryUI ui, int idx)
     {
         inventoryUI = ui;
         index = idx;
+
+        if (isToggle)
+        {
+            panelImage.sprite = togglePanel;
+            toggleText.gameObject.SetActive(true);
+        }
+        else
+        {
+            panelImage.sprite = slotPanel;
+        }
     }
 
     public void Set(InventorySlot slot)
     {
         slotData = slot;
-        icon.sprite = slot.item.Icon;
+        icon.sprite = ItemDatabase.Instance.GetItem(slot.itemId).Icon;
         icon.enabled = true;
         amountText.text = slot.amount > 1 ? slot.amount.ToString() : "";
+
+        Debug.Log($"아이템 아이디: {slotData.itemId}, 아이템 개수: {slotData.amount}");
     }
 
     public void Clear()
