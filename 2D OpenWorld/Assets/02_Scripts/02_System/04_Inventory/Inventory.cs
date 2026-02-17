@@ -178,5 +178,38 @@ public class Inventory : MonoBehaviour
 
         return total;
     }
+
+    public void SortByID()
+    {
+        // ID 순 정렬
+        slots.Sort((a, b) => a.itemId.CompareTo(b.itemId));
+
+        // 같은 아이템 자동 병합
+        Dictionary<int, int> merged = new Dictionary<int, int>();
+
+        foreach (var slot in slots)
+        {
+            if (!merged.ContainsKey(slot.itemId))
+                merged[slot.itemId] = 0;
+
+            merged[slot.itemId] += slot.amount;
+        }
+
+        slots.Clear();
+
+        foreach (var pair in merged)
+        {
+            Item item = ItemDatabase.Instance.GetItem(pair.Key);
+
+            int total = pair.Value;
+
+            while (total > 0)
+            {
+                int add = Mathf.Min(item.maxStack, total);
+                slots.Add(new InventorySlot(item, add));
+                total -= add;
+            }
+        }
+    }
     #endregion
 }

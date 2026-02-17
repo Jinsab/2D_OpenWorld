@@ -1,3 +1,5 @@
 ﻿<Solution>
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="JeffGrawAssets.FlexibleUI.Editor.csproj" />
+  <Project Path="JeffGrawAssets.FlexibleUI.Runtime.csproj" />
 </Solution>

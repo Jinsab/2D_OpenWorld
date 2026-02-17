@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections.Generic;
+using TMPro;
 
 /*  
  *  [프로젝트 제목]
@@ -6,7 +8,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.15 오후 21:06
- *  마지막 수정 일자 : 26.02.15 오후 21:06
+ *  마지막 수정 일자 : 26.02.17 오후 16:03
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 UI 관리
@@ -25,15 +27,68 @@ using UnityEngine;
 
 public class InventoryUI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [Header("# Inventory Data")]
+    public Inventory inventory;    // 인벤토리 데이터
+    public TMP_Text inventoryName; // 인벤토리 이름
+    public int lineCount = 10;     // 1줄 당
+    public bool isPlayer = false;  // 플레이어
+
+    [Header("# Slot Prefab")]
+    public GameObject slotPrefab;
+    public GameObject dropZone;
+
+    [Header("# Slot Parent")]
+    public Transform slotParent;
+
+    private List<InventorySlotUI> slotUIs = new List<InventorySlotUI>();
+
+    private void Awake()
     {
-        
+        // 플레이어 인벤토리라면 쓰레기통 기능을 활성화함
+        if (isPlayer)
+            dropZone.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
+        CreateSlots();
+        Refresh();
+    }
+
+    // 슬롯 1개의 크기는 100x100임
+    // 왼쪽/오른쪽에 Border 수치는 각 20임 (총 40)
+    // 인벤토리 1줄의 위쪽 Border는 10임
+    // 인벤토리 바닥의 경우 하단 Broder 수치를 20 주어야 함
+    void CreateSlots()
+    {
+        // 한 줄이 n인 인벤토리가 있다면, 최대 슬롯 / n칸 만큼의 줄 수가 필요함
+        int line = Mathf.CeilToInt((float)inventory.maxSlots / lineCount);
         
+        for (int i = 0; i < inventory.maxSlots; i++)
+        {
+            GameObject obj = Instantiate(slotPrefab, slotParent);
+            InventorySlotUI slotUI = obj.GetComponent<InventorySlotUI>();
+            slotUI.Initialize(this, i);
+            slotUIs.Add(slotUI);
+        }
+    }
+
+    public void Refresh()
+    {
+        for (int i = 0; i < slotUIs.Count; i++)
+        {
+            if (i < inventory.slots.Count)
+                slotUIs[i].Set(inventory.slots[i]);
+            else
+                slotUIs[i].Clear();
+        }
+    }
+
+    public void DropToTrash()
+    {
+        if (!DragController.Instance.IsDragging())
+            return;
+
+        DragController.Instance.Clear();
     }
 }
