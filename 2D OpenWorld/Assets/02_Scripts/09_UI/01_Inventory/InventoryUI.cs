@@ -55,15 +55,17 @@ public class InventoryUI : MonoBehaviour
         Refresh();
     }
 
-    // 슬롯 1개의 크기는 100x100임
-    // 왼쪽/오른쪽에 Border 수치는 각 20임 (총 40)
-    // 인벤토리 1줄의 위쪽 Border는 10임
-    // 인벤토리 바닥의 경우 하단 Broder 수치를 20 주어야 함
     void CreateSlots()
     {
         // 한 줄이 n인 인벤토리가 있다면, 최대 슬롯 / n칸 만큼의 줄 수가 필요함
         int line = Mathf.CeilToInt((float)inventory.maxSlots / lineCount);
-        
+
+        // Width(가로)와 Height(세로) 계산하기
+        // 1. 슬롯 1개의 크기는 100x100임
+        // 2. 왼쪽/오른쪽/하단에 Border 수치는 각 20임
+        // 3. 상단 Border 및 각 슬롯의 Spacing은 10임
+        // 4. Width의 값은 (1줄의 슬롯 개수 * 100) + ((1줄의 슬롯 개수 - 1) * 10 + 40이 됨
+        // 5. Height의 값은 (최대 슬롯 / 1줄의 n칸) * 110 + 20이 됨
         for (int i = 0; i < inventory.maxSlots; i++)
         {
             GameObject obj = Instantiate(slotPrefab, slotParent);
