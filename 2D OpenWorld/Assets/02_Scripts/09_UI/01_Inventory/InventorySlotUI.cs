@@ -10,7 +10,7 @@ using System;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.17 오후 16:05
- *  마지막 수정 일자 : 26.02.17 오후 20:46
+ *  마지막 수정 일자 : 26.02.17 오후 22:13
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 UI 관리
@@ -21,7 +21,10 @@ using System;
  *      ├─ Inventory (인벤토리 데이터 로직)
  *      └─ Inventory UI (전체 UI 관리)
  *         ├─ InventorySlotUI (슬롯 단위 UI)
- *         └─ DragController (마우스 드래그 전담)
+ *         ├─ DragController (마우스 드래그 전담)
+ *         ├─ DragIconUI (아이템 드래그 시 아이콘 표시)
+ *         ├─ TooltipUI (아이템 설명 표시)
+ *         └─ SlotUIInteraction (마우스 호버 시 툴팁 표시 및 하이라이트 효과)
  *      
  *  [스크립트 작성 도움 출처]
  *  1. 
@@ -83,6 +86,12 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
         if (slotData == null)
             return;
 
+        if (IsShift())
+        {
+            QuickMove();
+            return;
+        }
+
         // 왼쪽 클릭
         if (eventData.button == PointerEventData.InputButton.Left)
         {
@@ -139,5 +148,24 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
             if (DragController.Instance.draggedAmount <= 0)
                 DragController.Instance.Clear();
         }
+    }
+
+    bool IsShift()
+    {
+        return Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
+    }
+
+    private void QuickMove()
+    {
+        // 추후 구현할 내용
+
+        // Inventory target = InventoryManager.Instance.GetOtherInventory(inventoryUI.inventory);
+        //Inventory target = new Inventory();
+
+        //if (target == null)
+        //    return;
+
+        //int moved = target.AddItem(slotData.item, slotData.amount);
+        //inventoryUI.inventory.RemoveItem(slotData.itemId, moved);
     }
 }

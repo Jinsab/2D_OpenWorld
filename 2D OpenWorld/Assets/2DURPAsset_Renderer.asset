@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9199607723934816118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 872075d247354644389befca4a299b7a, type: 3}
+  m_Name: FlexibleBlurFeature
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleBlurFeature
+  m_Active: 1
+  platformData: 
+  blurTypesHandled: 3
+  renderPassEvent: 600
+  destinationFilterMode: 1
+  uiBlurLayersSeeLower: 1
+  blurredImagesSeeUIBlurs: 1
+  blurredImageLayersSeeLower: 1
+  useComputeShaders: 0
+  overlayCompatibilityFix: 0
+  resultFormat: 48
+  blurFormat: 48
+  layerResolutionRatio: 1
+  maxLayerResolution: 1080
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24,8 +50,9 @@ MonoBehaviour:
     probeSamplingDebugMesh: {fileID: 0}
     probeSamplingDebugTexture: {fileID: 0}
     probeVolumeBlendStatesCS: {fileID: 0}
-  m_RendererFeatures: []
-  m_RendererFeatureMap: 
+  m_RendererFeatures:
+  - {fileID: -9199607723934816118}
+  m_RendererFeatureMap: 8ae8ec45846d5480
   m_UseNativeRenderPass: 0
   m_LayerMask:
     serializedVersion: 2

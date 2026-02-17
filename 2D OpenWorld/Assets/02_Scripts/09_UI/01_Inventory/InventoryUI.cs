@@ -9,7 +9,7 @@ using UnityEngine.UI;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.15 오후 21:06
- *  마지막 수정 일자 : 26.02.17 오후 20:46
+ *  마지막 수정 일자 : 26.02.17 오후 22:13
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 UI 관리
@@ -20,7 +20,10 @@ using UnityEngine.UI;
  *      ├─ Inventory (인벤토리 데이터 로직)
  *      └─ Inventory UI (전체 UI 관리)
  *         ├─ InventorySlotUI (슬롯 단위 UI)
- *         └─ DragController (마우스 드래그 전담)
+ *         ├─ DragController (마우스 드래그 전담)
+ *         ├─ DragIconUI (아이템 드래그 시 아이콘 표시)
+ *         ├─ TooltipUI (아이템 설명 표시)
+ *         └─ SlotUIInteraction (마우스 호버 시 툴팁 표시 및 하이라이트 효과)
  *      
  *  [스크립트 작성 도움 출처]
  *  1. 
