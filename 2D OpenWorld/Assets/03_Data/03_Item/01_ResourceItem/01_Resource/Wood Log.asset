@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c0babff1ed68394c9fbf977ebdf911c, type: 3}
   m_Name: Wood Log
   m_EditorClassIdentifier: Assembly-CSharp::ResourceItem
-  itemName: "\uBAA9\uC7AC"
+  itemName: "\uD1B5\uB098\uBB34"
   itemId: 2
-  itemDesc: "\uBAA9\uC7AC\uC785\uB2C8\uB2E4."
+  itemDesc: "\uAC00\uACF5\uB418\uC9C0 \uC54A\uC740 \uD1B5\uB098\uBB34\uC785\uB2C8\uB2E4."
   Icon: {fileID: 21300000, guid: f3692a0348cf58747acacc07e89069b9, type: 3}
   itemType: 0
   maxStack: 999
