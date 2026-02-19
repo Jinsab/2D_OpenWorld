@@ -6,7 +6,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.13 오후 14:37
- *  마지막 수정 일자 : 26.02.17 오전 01:17
+ *  마지막 수정 일자 : 26.02.19 오후 22:08
  *  
  *  [스크립트 목적 및 내용]
  *  1. 태양 시스템 - 그림자 효과
@@ -29,15 +29,22 @@ public class ShadowController : MonoBehaviour
 
     [Header("# Shadow")]
     public Transform shadowEnd;
-
-    private SpriteRenderer shadowRenderer;
-    private SpriteRenderer parentRenderer;
-    private Sprite lastSprite;
+    public bool autoSet = true;
+    [SerializeField] private SpriteRenderer shadowRenderer;
+    public SpriteRenderer parentRenderer;
+    public Sprite lastSprite;
     
     void Awake()
     {
-        shadowRenderer = GetComponent<SpriteRenderer>();
-        parentRenderer = transform.parent.GetComponent<SpriteRenderer>();
+        if (autoSet)
+        {
+            shadowRenderer = GetComponent<SpriteRenderer>();
+            parentRenderer = transform.parent.GetComponent<SpriteRenderer>();
+        }
+        else
+        {
+            shadowRenderer = GetComponent<SpriteRenderer>();
+        }
 
         InitializeShadow();
     }

@@ -44,9 +44,12 @@ public class PlayerMovement : MonoBehaviour
     [Header("# Move Data")]
     public Vector2 MoveInput { get; private set; }
     public float MovementSpeed { get; private set; }
+    public bool IsMoving { get; private set; }
     public bool IsRunning { get; private set; }
     public float currentSpeed;
 
+    [Header("# Player Render Data")]
+    public int PlayerOrder { get { return playerRenderer.sortingOrder; } }
     // Player
     private PlayerController Player;
     private SpriteRenderer playerRenderer;
@@ -66,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
         Player = GetComponent<PlayerController>();
         MovementSpeed = Player.Data.GroundedData.BaseSpeed;
         playerRenderer = GetComponent<SpriteRenderer>();
-        shadowRenderer = Player.transform.GetChild(0).GetComponent<SpriteRenderer>();
+        shadowRenderer = Player.transform.GetChild(1).GetComponent<SpriteRenderer>();
 
         moveAction = Player.Input.actions["Move"];
         runAction = Player.Input.actions["Sprint"];
@@ -76,13 +79,14 @@ public class PlayerMovement : MonoBehaviour
         moveAction.performed += ctx =>
         {
             MoveInput = ctx.ReadValue<Vector2>();
-
+            IsMoving = true;
             //moveVector = new Vector3(moveInput.x, 0, moveInput.y).normalized;
             //isMove = moveVector.magnitude > 0;
         };
         moveAction.canceled += ctx =>
         {
             MoveInput = Vector2.zero;
+            IsMoving = false;
             //moveVector = Vector3.zero;
             //isMove = false;
         };
