@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c0babff1ed68394c9fbf977ebdf911c, type: 3}
   m_Name: Stone
   m_EditorClassIdentifier: Assembly-CSharp::ResourceItem
-  itemName: "\uB3CC"
+  itemName: "\uB3CC\uBA69\uC774"
   itemId: 1
-  itemDesc: "\uB3CC\uC785\uB2C8\uB2E4."
+  itemDesc: "\uAC00\uACF5\uB418\uC9C0 \uC54A\uC740 \uB3CC\uBA69\uC774 \uC785\uB2C8\uB2E4."
   Icon: {fileID: 21300000, guid: d74e2db7149fb91439eaa8d1cd593a13, type: 3}
   itemType: 0
   maxStack: 999

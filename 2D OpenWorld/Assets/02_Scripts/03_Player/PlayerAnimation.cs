@@ -72,7 +72,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private void Update()
     {
-        Player.Animator.SetInteger(StateParameterHash, (int)Player.stateMachine.CurrentState);
+        Player.Animator.SetInteger(StateParameterHash, (int)Player.StateMachine.CurrentState);
         Player.Animator.SetFloat(DirectionParameterHash, (int)Player.PlayerLook.CurrentLookDirection);
     }
 

@@ -9,18 +9,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75087ede1513ee44e9baebf757ceea63, type: 3}
-  m_Name: Hand
-  m_EditorClassIdentifier: Assembly-CSharp::ToolItem
+  m_Script: {fileID: 11500000, guid: f35426923824ea64b96bd647acbd3617, type: 3}
+  m_Name: WPDT_Hand
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponItem
   itemName: "\uC190"
   itemId: 1001
   itemDesc: "\uC190\uC785\uB2C8\uB2E4."
-  Icon: {fileID: 8818557686247508717, guid: 95b20b13e976a6446a8836c866f2a413, type: 3}
+  Icon: {fileID: 5281840824156573430, guid: 95b20b13e976a6446a8836c866f2a413, type: 3}
   itemType: 2
   maxStack: 1
   isDroppable: 0
   isDestroyable: 0
   buyPrice: 0
   sellPrice: 0
-  equipmentType: 0
-  power: 1
+  slotType: 0
+  equipmentSprite: {fileID: 0}
+  modifiers: []
+  attackDamage: 1
+  attackDelay: 0.5
+  staminaCost: 0
+  manaCost: 0
+  weaponPrefab: {fileID: 0}
+  weaponType: 0

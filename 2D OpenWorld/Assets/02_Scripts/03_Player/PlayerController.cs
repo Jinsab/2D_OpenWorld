@@ -51,8 +51,10 @@ public class PlayerController : MonoBehaviour
 
     [Header("# Player Data")]
     [field: SerializeField] public PlayerMovement PlayerMovement { get; private set; }
+    [field: SerializeField] public PlayerStats PlayerStats { get; private set; }
+    [field: SerializeField] public PlayerCombatController PlayerCombatController { get; private set; }
     [field: SerializeField] public PlayerLook PlayerLook { get; private set; }
-    [field: SerializeField] public PlayerStateMachine stateMachine { get; private set; }
+    [field: SerializeField] public PlayerStateMachine StateMachine { get; private set; }
 
     [Header("# Animations")]
     [field: SerializeField] public PlayerAnimation AnimationData { get; private set; }
@@ -78,10 +80,10 @@ public class PlayerController : MonoBehaviour
         Rigidbody = GetComponent<Rigidbody2D>();
         Animator = GetComponentInChildren<Animator>();
         PlayerMovement = GetComponent<PlayerMovement>();
-        stateMachine = GetComponent<PlayerStateMachine>();
+        StateMachine = GetComponent<PlayerStateMachine>();
 
         PlayerMovement.Initialize();
-        stateMachine.Initialize();
+        StateMachine.Initialize();
     }
 
     public void InputEnabled()

@@ -6,7 +6,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.14 오후 17:54
- *  마지막 수정 일자 : 26.02.14 오후 17:54
+ *  마지막 수정 일자 : 26.02.20 오전 02:17
  *  
  *  [스크립트 목적 및 내용]
  *  1. 채집 노드 (채집 가능한 오브젝트의 기본 클래스)
@@ -17,32 +17,40 @@ using UnityEngine;
  *  1. 
  */
 
-public class ResourceNode : MonoBehaviour, IDamageable
+public class ResourceNode : MonoBehaviour, IHarvestable
 {
     [Header("Resource Info")]
-    public int maxHP = 5;
+    public int maxHP = 5;       // 최대 체력
+    [SerializeField]
+    private int currentHP;      // 현재 체력
+    public int durability = 1;  // 채집 최소 공격력
 
     [Header("Drop Table")]
     public DropTable dropTable;
-
-    private int currentHP;
 
     void Start()
     {
         currentHP = maxHP;
     }
 
-    public void TakeDamage(int amount, GameObject attacker)
+    public void Harvest(int power)
     {
-        currentHP -= amount;
-
-        if (currentHP <= 0)
+        if (durability < power)
         {
-            Harvest();
+            currentHP -= power;
+
+            if (currentHP <= 0)
+            {
+                CompleteHarvest();
+            }
+        }
+        else
+        {
+            Debug.Log("너무 단단합니다!");
         }
     }
 
-    private void Harvest()
+    private void CompleteHarvest()
     {
         dropTable.Drop(transform.position);
         Destroy(gameObject);

@@ -96,13 +96,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Player.stateMachine.CurrentState == PlayerState.Idle)
+        if (Player.StateMachine.CurrentState == PlayerState.Idle)
         {
             currentSpeed = 0f;
         }
         else
         {
-            currentSpeed = Player.stateMachine.CurrentState ==
+            currentSpeed = Player.StateMachine.CurrentState ==
             PlayerState.Run ? MovementSpeed * Player.Data.GroundedData.RunSpeedModifier :
                               MovementSpeed * Player.Data.GroundedData.WalkSpeedModifier;
         }
