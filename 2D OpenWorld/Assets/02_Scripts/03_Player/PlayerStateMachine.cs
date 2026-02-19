@@ -6,7 +6,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.12 오후 20:49
- *  마지막 수정 일자 : 26.02.12 오후 20:49
+ *  마지막 수정 일자 : 26.02.20 오전 02:01
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 상태 머신
@@ -38,9 +38,11 @@ using UnityEngine;
 
 public enum PlayerState
 {
-    Idle,
-    Walk,
-    Run
+    Idle,   // 기본
+    Walk,   // 걷기
+    Run,    // 뛰기
+    Attack, // 공격
+    Stun    // 기절
 }
 
 public class PlayerStateMachine : MonoBehaviour

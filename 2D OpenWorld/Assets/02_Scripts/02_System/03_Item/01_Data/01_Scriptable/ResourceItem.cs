@@ -53,10 +53,4 @@ public class ResourceItem : Item
 
     [Header("# Resource Info")]
     public ResourceType resourceType;
-
-    public override void Use(GameObject user)
-    {
-        // 자원은 기본적으로 직접 사용하지 않음
-        Debug.Log($"{itemName}은(는) 직접 사용할 수 없습니다.");
-    }
 }

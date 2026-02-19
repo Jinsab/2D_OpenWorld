@@ -22,6 +22,7 @@ public class ToolController : MonoBehaviour
     public float range = 1.5f;
     public float testTime = 1f;
     public float currentTime = 0f;
+    public int power;
 
     // Test
     public ToolItem testTool;
@@ -59,7 +60,7 @@ public class ToolController : MonoBehaviour
             
             if (damageable[i] != null)
             {
-                damageable[i].TakeDamage(tool.power, gameObject);
+                damageable[i].TakeDamage(power, gameObject);
             }
         }
     }

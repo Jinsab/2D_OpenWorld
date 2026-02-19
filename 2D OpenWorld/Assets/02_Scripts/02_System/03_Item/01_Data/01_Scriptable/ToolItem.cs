@@ -33,15 +33,15 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Items/Equipment/Tool")]
 public class ToolItem : EquipmentItem
 {
-    public int power = 1;
+    //public int power = 1;
 
-    public override void Use(GameObject user)
-    {
-        ToolController controller = user.GetComponent<ToolController>();
+    //public override void Use(GameObject user)
+    //{
+    //    ToolController controller = user.GetComponent<ToolController>();
 
-        if (controller != null)
-        {
-            controller.UseTool(this);
-        }
-    }
+    //    if (controller != null)
+    //    {
+    //        controller.UseTool(this);
+    //    }
+    //}
 }

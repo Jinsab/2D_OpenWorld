@@ -89,6 +89,4 @@ public abstract class Item : ScriptableObject
 
     public int buyPrice;                // 상점 시스템
     public int sellPrice;               // 상점 시스템
-
-    public abstract void Use(GameObject user);
 }

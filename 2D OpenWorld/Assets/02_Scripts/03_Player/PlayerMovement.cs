@@ -1,7 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Playables;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 /*  
  *  [프로젝트 제목]

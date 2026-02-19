@@ -37,7 +37,7 @@ using UnityEngine;
  *      ├─ ItemDrop
  *      ├─ DropTable
  *      └─ DropData
- *  
+ *      
  *  [스크립트 작성 도움 출처]
  *  1. 
  */
@@ -45,5 +45,11 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Items/Equipment/Armor")]
 public class ArmorItem : EquipmentItem
 {
-    public int defense = 3;
+    public enum ArmorType
+    {
+        Helmet,
+        Armor,
+        Pants,
+        Cape
+    }
 }

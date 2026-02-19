@@ -1,0 +1,85 @@
+using UnityEngine;
+using System.Collections.Generic;
+
+/*  
+ *  [프로젝트 제목]
+ *  2D 오픈월드 생존제작
+ *             
+ *  [프로젝트 일자]
+ *  파일 생성 일자 : 26.02.20 오전 01:37
+ *  마지막 수정 일자 : 26.02.20 오전 02:01
+ *  
+ *  [스크립트 목적 및 내용]
+ *  1. 플레이어 장비 시스템
+ *    1-1. 슬롯 별 아이템 정보 저장
+ *    1-2. 아이템 착용 및 해제
+ *    1-3. 데이터 등록, 능력치 적용, 외형 업데이트
+ *     
+ *  [스크립트 작성 도움 출처]
+ *  1. 
+ */
+
+public class PlayerEquipment : MonoBehaviour
+{
+    // 각 슬롯별 현재 장착된 아이템 저장
+    private Dictionary<EquipmentSlot, EquipmentItem> currentEquipments = new Dictionary<EquipmentSlot, EquipmentItem>();
+
+    private PlayerStats _stats;
+    private CharacterVisuals _visuals;
+    private WeaponController _weaponController;
+
+    private void Awake()
+    {
+        _stats = GetComponent<PlayerStats>();
+        _visuals = GetComponent<CharacterVisuals>();
+        _weaponController = GetComponent<WeaponController>();
+    }
+
+    public void Equip(EquipmentItem newItem)
+    {
+        // 1. 이미 같은 슬롯에 장비가 있다면 먼저 해제
+        if (currentEquipments.ContainsKey(newItem.slotType))
+        {
+            Unequip(newItem.slotType);
+        }
+
+        // 2. 데이터 등록
+        currentEquipments[newItem.slotType] = newItem;
+
+        // 3. 능력치 적용 (PlayerStats 이용)
+        _stats.EquipItemModifiers(newItem.modifiers, newItem);
+
+        // 4. 외형 업데이트
+        _visuals.UpdateVisual(newItem.slotType, newItem.equipmentSprite);
+
+        // 5. 무기일 경우 무기 컨트롤러에 알림
+        if (newItem is WeaponItem weaponItem)
+        {
+            _weaponController.EquipWeapon(weaponItem);
+        }
+
+        Debug.Log($"{newItem.itemName} 장착 완료");
+    }
+
+    public void Unequip(EquipmentSlot slot)
+    {
+        if (!currentEquipments.TryGetValue(slot, out EquipmentItem item)) return;
+
+        // 1. 능력치 제거
+        _stats.UnequipItemModifiers(item);
+
+        // 2. 외형 제거
+        _visuals.ClearVisual(slot);
+
+        // 3. 무기 전용 해제 로직
+        if (slot == EquipmentSlot.Weapon)
+        {
+            _weaponController.UnEquipWeapon();
+        }
+
+        // 4. 데이터 제거
+        currentEquipments.Remove(slot);
+
+        Debug.Log($"{item.itemName} 해제 완료");
+    }
+}
