@@ -53,6 +53,7 @@ using UnityEngine;
  *      │
  *      ├─ ItemDropSpawner
  *      ├─ ItemDrop
+ *      ├─ ItemSet
  *      ├─ DropTable
  *      └─ DropData
  *  

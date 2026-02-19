@@ -30,7 +30,7 @@ using UnityEngine;
  *  1. 
  */
 
-[CreateAssetMenu(menuName = "Item/Consumable Item")]
+[CreateAssetMenu(menuName = "Items/Consumable Item")]
 public class ConsumableItem : Item
 {
     [Header("# Consume Effect")]

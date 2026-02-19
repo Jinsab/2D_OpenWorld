@@ -42,7 +42,7 @@ using UnityEngine;
  *  1. 
  */
 
-[CreateAssetMenu(menuName = "Item/Equipment/Armor")]
+[CreateAssetMenu(menuName = "Items/Equipment/Armor")]
 public class ArmorItem : EquipmentItem
 {
     public int defense = 3;

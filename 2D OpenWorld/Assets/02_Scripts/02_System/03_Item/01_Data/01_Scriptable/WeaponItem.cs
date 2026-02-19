@@ -42,7 +42,7 @@ using UnityEngine;
  *  1. 
  */
 
-[CreateAssetMenu(menuName = "Item/Equipment/Weapon")]
+[CreateAssetMenu(menuName = "Items/Equipment/Weapon")]
 public class WeaponItem : EquipmentItem
 {
     public enum WeaponType

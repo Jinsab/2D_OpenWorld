@@ -33,8 +33,10 @@ using System.Collections.Generic;
 public class ItemDatabase : MonoBehaviour
 {
     public static ItemDatabase Instance;
-
     public List<Item> allItems;
+
+    // 프로젝트 내의 모든 세트 아이템 에셋을 여기에 드래그 앤 드롭으로 등록합니다.
+    public List<ItemSet> allSets = new List<ItemSet>();
 
     private Dictionary<int, Item> itemDict;
 
@@ -56,5 +58,11 @@ public class ItemDatabase : MonoBehaviour
             return item;
 
         return null;
+    }
+
+    // 특정 아이템 ID나 이름으로 세트를 찾는 기능 등을 추가할 수 있습니다.
+    public ItemSet FindSetByItem(Item item)
+    {
+        return allSets.Find(s => s.requiredItems.Contains(item));
     }
 }
