@@ -46,9 +46,9 @@ public abstract class EquipmentItem : Item
 {
     public enum EquipmentType
     {
-        Tool,
         Weapon,
-        Armor
+        Armor,
+        Accessory
     }
 
     [Header("# Equipment Info")]

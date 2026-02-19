@@ -53,4 +53,84 @@ MonoBehaviour:
     contrast: -0.393
     vibrancy: 0
     tint: {r: 0, g: 0, b: 0, a: 0}
+  - downscaleSections:
+    - algorithmIdx: 3
+      iterations: 2
+      horizontalSamplesPerSide: 2
+      verticalSamplesPerSide: 2
+      sampleDistance: 1.5
+    blurSections:
+    - algorithmIdx: 2
+      iterations: 4
+      horizontalSamplesPerSide: 2
+      verticalSamplesPerSide: 2
+      sampleDistance: 1.5
+    referenceResolution: 1080
+    hqResample: 0
+    blurAdditionalDistancePerIteration: 1
+    ditherStrength: 1
+    brightness: -0.137
+    contrast: -0.393
+    vibrancy: 0
+    tint: {r: 0, g: 0, b: 0, a: 0}
+  - downscaleSections:
+    - algorithmIdx: 3
+      iterations: 2
+      horizontalSamplesPerSide: 2
+      verticalSamplesPerSide: 2
+      sampleDistance: 1.5
+    blurSections:
+    - algorithmIdx: 2
+      iterations: 4
+      horizontalSamplesPerSide: 2
+      verticalSamplesPerSide: 2
+      sampleDistance: 1.5
+    referenceResolution: 1080
+    hqResample: 0
+    blurAdditionalDistancePerIteration: 1
+    ditherStrength: 1
+    brightness: -0.137
+    contrast: -0.393
+    vibrancy: 0
+    tint: {r: 0, g: 0, b: 0, a: 0}
+  - downscaleSections:
+    - algorithmIdx: 3
+      iterations: 2
+      horizontalSamplesPerSide: 2
+      verticalSamplesPerSide: 2
+      sampleDistance: 1.5
+    blurSections:
+    - algorithmIdx: 2
+      iterations: 4
+      horizontalSamplesPerSide: 2
+      verticalSamplesPerSide: 2
+      sampleDistance: 1.5
+    referenceResolution: 1080
+    hqResample: 0
+    blurAdditionalDistancePerIteration: 1
+    ditherStrength: 1
+    brightness: -0.137
+    contrast: -0.393
+    vibrancy: 0
+    tint: {r: 0, g: 0, b: 0, a: 0}
+  - downscaleSections:
+    - algorithmIdx: 3
+      iterations: 2
+      horizontalSamplesPerSide: 2
+      verticalSamplesPerSide: 2
+      sampleDistance: 1.5
+    blurSections:
+    - algorithmIdx: 2
+      iterations: 4
+      horizontalSamplesPerSide: 2
+      verticalSamplesPerSide: 2
+      sampleDistance: 1.5
+    referenceResolution: 1080
+    hqResample: 0
+    blurAdditionalDistancePerIteration: 1
+    ditherStrength: 1
+    brightness: -0.137
+    contrast: -0.393
+    vibrancy: 0
+    tint: {r: 0, g: 0, b: 0, a: 0}
   preview: -1

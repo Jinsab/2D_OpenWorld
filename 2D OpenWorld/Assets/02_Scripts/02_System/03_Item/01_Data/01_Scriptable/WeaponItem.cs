@@ -45,5 +45,15 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Item/Equipment/Weapon")]
 public class WeaponItem : EquipmentItem
 {
+    public enum WeaponType
+    {
+        Melee,
+        Range,
+        Magic,
+        Accessory
+    }
+
+    [Header("# Weapon Info")]
+    public WeaponType weaponType;
     public int damage = 5;
 }
