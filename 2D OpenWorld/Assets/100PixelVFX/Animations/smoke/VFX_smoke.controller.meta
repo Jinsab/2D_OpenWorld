@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d5d323b541d6fdb44a8ec5c39fa1df92
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320455
+  packageName: 100 2D Pixel Art VFX
+  packageVersion: 1.0
+  assetPath: Assets/100PixelVFX/Animations/smoke/VFX_smoke.controller
+  uploadId: 756978

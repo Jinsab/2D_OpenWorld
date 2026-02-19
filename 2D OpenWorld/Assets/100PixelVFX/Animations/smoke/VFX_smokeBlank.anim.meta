@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 65ed7cdf35d22dc4b928727d82c3297b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320455
+  packageName: 100 2D Pixel Art VFX
+  packageVersion: 1.0
+  assetPath: Assets/100PixelVFX/Animations/smoke/VFX_smokeBlank.anim
+  uploadId: 756978
