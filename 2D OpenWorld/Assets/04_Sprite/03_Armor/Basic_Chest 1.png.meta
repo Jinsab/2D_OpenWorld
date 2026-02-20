@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 6f107f360c7546e46bab1e0695ec124d
+guid: 5d86d4be93c3f1d478189b41909673df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4995411086706284106
-    second: Basic_Chest_0
+      213: -5754208396991009079
+    second: Basic_Chest 1_0
   - first:
-      213: 5296947181647294735
-    second: Basic_Chest_1
+      213: 637435924455702573
+    second: Basic_Chest 1_1
   - first:
-      213: -2564810637469577969
-    second: Basic_Chest_2
+      213: -3065540311790608946
+    second: Basic_Chest 1_2
   - first:
-      213: -3837830388014853195
-    second: Basic_Chest_3
+      213: -7200738480139907822
+    second: Basic_Chest 1_3
   - first:
-      213: -5579461613694678378
-    second: Basic_Chest_4
+      213: 3057752928788223280
+    second: Basic_Chest 1_4
   - first:
-      213: -3252083096370458300
-    second: Basic_Chest_5
+      213: 3686430831431622757
+    second: Basic_Chest 1_5
   - first:
-      213: 6723009098897755919
-    second: Basic_Chest_6
+      213: 907940305285840406
+    second: Basic_Chest 1_6
   - first:
-      213: -6553026819048167342
-    second: Basic_Chest_7
+      213: -5571878086771615534
+    second: Basic_Chest 1_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -134,7 +134,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Basic_Chest_0
+      name: Basic_Chest 1_0
       rect:
         serializedVersion: 2
         x: 12
@@ -149,14 +149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a461d22aae3435540800000000000000
-      internalID: 4995411086706284106
+      spriteID: 9cee7c533f1f420b0800000000000000
+      internalID: -5754208396991009079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basic_Chest_1
+      name: Basic_Chest 1_1
       rect:
         serializedVersion: 2
         x: 31
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f01f714b569828940800000000000000
-      internalID: 5296947181647294735
+      spriteID: d2041449890a8d800800000000000000
+      internalID: 637435924455702573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basic_Chest_2
+      name: Basic_Chest 1_2
       rect:
         serializedVersion: 2
         x: 54
@@ -193,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0d8b7d6056f76cd0800000000000000
-      internalID: -2564810637469577969
+      spriteID: ecd941f04530575d0800000000000000
+      internalID: -3065540311790608946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basic_Chest_3
+      name: Basic_Chest 1_3
       rect:
         serializedVersion: 2
         x: 73
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b3dc2688994dbac0800000000000000
-      internalID: -3837830388014853195
+      spriteID: 21d46c2e086d11c90800000000000000
+      internalID: -7200738480139907822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basic_Chest_4
+      name: Basic_Chest 1_4
       rect:
         serializedVersion: 2
         x: 94
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69a0dcd3935c192b0800000000000000
-      internalID: -5579461613694678378
+      spriteID: 035155b86125f6a20800000000000000
+      internalID: 3057752928788223280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basic_Chest_5
+      name: Basic_Chest 1_5
       rect:
         serializedVersion: 2
         x: 115
@@ -259,14 +259,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 44159c477a74ed2d0800000000000000
-      internalID: -3252083096370458300
+      spriteID: 560a7844f45d82330800000000000000
+      internalID: 3686430831431622757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basic_Chest_6
+      name: Basic_Chest 1_6
       rect:
         serializedVersion: 2
         x: 136
@@ -281,14 +281,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0f0589c72dec4d50800000000000000
-      internalID: 6723009098897755919
+      spriteID: 61e72dda5e6a99c00800000000000000
+      internalID: 907940305285840406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basic_Chest_7
+      name: Basic_Chest 1_7
       rect:
         serializedVersion: 2
         x: 157
@@ -303,14 +303,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 258a607d3d8fe05a0800000000000000
-      internalID: -6553026819048167342
+      spriteID: 2d8d132b666bca2b0800000000000000
+      internalID: -5571878086771615534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basic_Chest_8
+      name: Basic_Chest 1_8
       rect:
         serializedVersion: 2
         x: 178
@@ -325,14 +325,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6c643cfec37e114bb9b07cdda1eb29e
-      internalID: -1233992842
+      spriteID: f5bfaef6c9ad39e45821ed24ecddac75
+      internalID: 105845504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basic_Chest_9
+      name: Basic_Chest 1_9
       rect:
         serializedVersion: 2
         x: 201
@@ -347,8 +347,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83668581a7f7ca540b8050f6509787e5
-      internalID: -1528882937
+      spriteID: 2527df0b99b1267409175e99bb7017c9
+      internalID: -1875703968
       vertices: []
       indices: 
       edges: []
@@ -357,7 +357,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 937a7cc7f6291424aa2b50d7bbe9ac9d
+    spriteID: 186837485d6a2cb4aad06620dd809fd1
     internalID: 0
     vertices: []
     indices: 
@@ -369,16 +369,16 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Basic_Chest_0: 4995411086706284106
-      Basic_Chest_1: 5296947181647294735
-      Basic_Chest_2: -2564810637469577969
-      Basic_Chest_3: -3837830388014853195
-      Basic_Chest_4: -5579461613694678378
-      Basic_Chest_5: -3252083096370458300
-      Basic_Chest_6: 6723009098897755919
-      Basic_Chest_7: -6553026819048167342
-      Basic_Chest_8: -1233992842
-      Basic_Chest_9: -1528882937
+      Basic_Chest 1_0: -5754208396991009079
+      Basic_Chest 1_1: 637435924455702573
+      Basic_Chest 1_2: -3065540311790608946
+      Basic_Chest 1_3: -7200738480139907822
+      Basic_Chest 1_4: 3057752928788223280
+      Basic_Chest 1_5: 3686430831431622757
+      Basic_Chest 1_6: 907940305285840406
+      Basic_Chest 1_7: -5571878086771615534
+      Basic_Chest 1_8: 105845504
+      Basic_Chest 1_9: -1875703968
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
