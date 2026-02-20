@@ -233,12 +233,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 220
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 25
+        y: 221
+        width: 13
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -255,12 +255,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_1
       rect:
         serializedVersion: 2
-        x: 88
-        y: 220
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 89
+        y: 221
+        width: 13
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -277,12 +277,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_2
       rect:
         serializedVersion: 2
-        x: 152
-        y: 220
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 153
+        y: 221
+        width: 13
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_3
       rect:
         serializedVersion: 2
-        x: 216
-        y: 220
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 217
+        y: 221
+        width: 13
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -321,12 +321,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_4
       rect:
         serializedVersion: 2
-        x: 280
-        y: 220
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 281
+        y: 221
+        width: 13
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_5
       rect:
         serializedVersion: 2
-        x: 345
-        y: 220
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 346
+        y: 221
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -365,12 +365,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_6
       rect:
         serializedVersion: 2
-        x: 409
-        y: 220
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 410
+        y: 221
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -387,12 +387,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_7
       rect:
         serializedVersion: 2
-        x: 473
-        y: 220
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 474
+        y: 221
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -409,12 +409,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_8
       rect:
         serializedVersion: 2
-        x: 537
-        y: 220
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 538
+        y: 221
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -431,12 +431,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_9
       rect:
         serializedVersion: 2
-        x: 601
-        y: 220
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 602
+        y: 221
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -453,12 +453,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_10
       rect:
         serializedVersion: 2
-        x: 665
-        y: 220
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 666
+        y: 221
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -475,12 +475,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_11
       rect:
         serializedVersion: 2
-        x: 729
-        y: 220
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 730
+        y: 221
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -497,12 +497,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_12
       rect:
         serializedVersion: 2
-        x: 25
-        y: 156
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 26
+        y: 157
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -519,12 +519,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_13
       rect:
         serializedVersion: 2
-        x: 89
-        y: 156
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 90
+        y: 157
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -541,12 +541,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_14
       rect:
         serializedVersion: 2
-        x: 153
-        y: 156
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 154
+        y: 157
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -563,12 +563,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_15
       rect:
         serializedVersion: 2
-        x: 217
-        y: 156
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 218
+        y: 157
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -585,12 +585,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_16
       rect:
         serializedVersion: 2
-        x: 281
-        y: 156
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 282
+        y: 157
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -607,12 +607,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_17
       rect:
         serializedVersion: 2
-        x: 345
-        y: 156
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 346
+        y: 157
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -629,12 +629,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_18
       rect:
         serializedVersion: 2
-        x: 409
-        y: 156
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 410
+        y: 157
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -651,12 +651,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_19
       rect:
         serializedVersion: 2
-        x: 473
-        y: 156
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 474
+        y: 157
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -673,12 +673,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_20
       rect:
         serializedVersion: 2
-        x: 537
-        y: 156
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 538
+        y: 157
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -695,12 +695,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_21
       rect:
         serializedVersion: 2
-        x: 601
-        y: 156
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 602
+        y: 157
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -717,12 +717,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_22
       rect:
         serializedVersion: 2
-        x: 665
-        y: 156
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 666
+        y: 157
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -739,12 +739,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_23
       rect:
         serializedVersion: 2
-        x: 729
-        y: 156
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 730
+        y: 157
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -761,12 +761,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_24
       rect:
         serializedVersion: 2
-        x: 25
-        y: 92
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 26
+        y: 93
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -783,12 +783,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_25
       rect:
         serializedVersion: 2
-        x: 89
-        y: 92
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 90
+        y: 93
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -805,12 +805,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_26
       rect:
         serializedVersion: 2
-        x: 153
-        y: 92
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 154
+        y: 93
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -827,12 +827,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_27
       rect:
         serializedVersion: 2
-        x: 217
-        y: 92
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 218
+        y: 93
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -849,12 +849,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_28
       rect:
         serializedVersion: 2
-        x: 281
-        y: 92
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 282
+        y: 93
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -871,12 +871,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_29
       rect:
         serializedVersion: 2
-        x: 345
-        y: 92
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 346
+        y: 93
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -893,12 +893,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_30
       rect:
         serializedVersion: 2
-        x: 409
-        y: 92
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 410
+        y: 93
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -915,12 +915,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_31
       rect:
         serializedVersion: 2
-        x: 473
-        y: 92
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 474
+        y: 93
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -937,12 +937,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_32
       rect:
         serializedVersion: 2
-        x: 537
-        y: 92
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 538
+        y: 93
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -959,12 +959,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_33
       rect:
         serializedVersion: 2
-        x: 601
-        y: 92
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 602
+        y: 93
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -981,12 +981,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_34
       rect:
         serializedVersion: 2
-        x: 665
-        y: 92
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 666
+        y: 93
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1003,12 +1003,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_35
       rect:
         serializedVersion: 2
-        x: 729
-        y: 92
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 730
+        y: 93
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1025,12 +1025,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_36
       rect:
         serializedVersion: 2
-        x: 24
-        y: 28
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 25
+        y: 29
+        width: 13
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1047,12 +1047,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_37
       rect:
         serializedVersion: 2
-        x: 90
-        y: 28
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 91
+        y: 29
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1069,12 +1069,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_38
       rect:
         serializedVersion: 2
-        x: 154
-        y: 28
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 155
+        y: 29
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1091,12 +1091,12 @@ TextureImporter:
       name: Unarmed_Idle3_head_39
       rect:
         serializedVersion: 2
-        x: 218
-        y: 28
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 219
+        y: 29
+        width: 12
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1113,7 +1113,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1190b488fdef7d64aab1e21e67c03bd0
     internalID: 0
     vertices: []
     indices: 
@@ -1121,7 +1121,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Unarmed_Idle3_head_0: 1411977725836914446
       Unarmed_Idle3_head_1: 4271160171118848410

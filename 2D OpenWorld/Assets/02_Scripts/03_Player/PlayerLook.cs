@@ -50,12 +50,12 @@ public class PlayerLook : MonoBehaviour
     public LookDirection CurrentLookDirection { get; private set; }
 
     private Camera mainCam;
-    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer[] spriteRenderers;
 
     void Awake()
     {
         mainCam = Camera.main;
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
     }
 
     void Update()
@@ -74,7 +74,9 @@ public class PlayerLook : MonoBehaviour
         if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
         {
             CurrentLookDirection = LookDirection.Side;
-            spriteRenderer.flipX = dir.x > 0;
+
+            for (int i = 0; i < spriteRenderers.Length; i++)
+                spriteRenderers[i].flipX = dir.x > 0;
         }
         else
         {

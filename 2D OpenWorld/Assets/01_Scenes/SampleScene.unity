@@ -232,6 +232,7 @@ Transform:
   m_Children:
   - {fileID: 1073669718}
   - {fileID: 1167145748}
+  - {fileID: 1494507573}
   m_Father: {fileID: 891860141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &26330263
@@ -282,7 +283,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1475f31393612b444a72190f96ee53a7, type: 2}
+  - {fileID: 2100000, guid: 311d1d55c53a0b9439fbfda9d90861cf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -314,7 +315,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &26538027
 GameObject:
   m_ObjectHideFlags: 0
@@ -2926,7 +2927,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 1475f31393612b444a72190f96ee53a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2958,7 +2959,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1001 &234218975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4574,7 +4575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 660457112}
+  m_Material: {fileID: 858831243}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -10665,7 +10666,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 1475f31393612b444a72190f96ee53a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10697,7 +10698,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &535631888
 GameObject:
   m_ObjectHideFlags: 0
@@ -11227,7 +11228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 660457112}
+  m_Material: {fileID: 858831243}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -18932,7 +18933,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 1475f31393612b444a72190f96ee53a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18964,7 +18965,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &647922393
 GameObject:
   m_ObjectHideFlags: 0
@@ -19102,47 +19103,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647922393}
   m_CullTransparentMesh: 1
---- !u!21 &660457112
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: DefaultProceduralBlurredImage
-  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _DstBlend: 10
-    - _SrcBlend: 5
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &662322275
 GameObject:
   m_ObjectHideFlags: 0
@@ -19399,7 +19359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 660457112}
+  m_Material: {fileID: 858831243}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -23586,6 +23546,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857940049}
   m_CullTransparentMesh: 1
+--- !u!21 &858831243
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DefaultProceduralBlurredImage
+  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _DstBlend: 10
+    - _SrcBlend: 5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &861547754
 GameObject:
   m_ObjectHideFlags: 0
@@ -24363,15 +24364,15 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7405681531410873969, guid: 7fef48c7433b70847853335a1cbd3589, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.8125, y: 1.375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 1
 --- !u!4 &891860141
 Transform:
@@ -24459,7 +24460,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
     oldSize: {x: 0.8125, y: 1.375}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.8125, y: 1.375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -24506,13 +24507,13 @@ MonoBehaviour:
   <Data>k__BackingField: {fileID: 11400000, guid: a4aee3776090977439dd097428d54872, type: 2}
   Input: {fileID: 891860150}
   Rigidbody: {fileID: 891860142}
-  Animator: {fileID: 0}
+  Animator: {fileID: 891860158}
   <PlayerMovement>k__BackingField: {fileID: 891860148}
   <PlayerStats>k__BackingField: {fileID: 891860154}
   <PlayerCombatController>k__BackingField: {fileID: 0}
-  <PlayerLook>k__BackingField: {fileID: 0}
+  <PlayerLook>k__BackingField: {fileID: 891860156}
   <StateMachine>k__BackingField: {fileID: 891860146}
-  <AnimationData>k__BackingField: {fileID: 0}
+  <AnimationData>k__BackingField: {fileID: 891860157}
 --- !u!114 &891860150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27003,7 +27004,7 @@ GameObject:
   - component: {fileID: 1073669719}
   - component: {fileID: 1073669720}
   m_Layer: 3
-  m_Name: Head
+  m_Name: 01_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27018,7 +27019,7 @@ Transform:
   m_GameObject: {fileID: 1073669717}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.555, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27051,7 +27052,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 1475f31393612b444a72190f96ee53a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27074,16 +27075,16 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -8506261480890110653, guid: 7533c54b0f5df074d9e0600b0c51370a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.125, y: 0.8125}
+  m_Size: {x: 0.9375, y: 0.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_SpriteSortPoint: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
 --- !u!114 &1073669720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27096,10 +27097,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
-  m_CategoryHash: 0
-  m_labelHash: 0
+  m_CategoryHash: 2.9092094e-34
+  m_labelHash: 3.631758e-30
   m_SpriteKey: 0
-  m_SpriteHash: 0
+  m_SpriteHash: 78209793
 --- !u!1 &1082755393
 GameObject:
   m_ObjectHideFlags: 0
@@ -28129,7 +28130,7 @@ GameObject:
   - component: {fileID: 1167145750}
   - component: {fileID: 1167145749}
   m_Layer: 3
-  m_Name: Body
+  m_Name: 02_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28150,7 +28151,6 @@ Transform:
   m_Children:
   - {fileID: 220348017}
   - {fileID: 647499269}
-  - {fileID: 1494507573}
   m_Father: {fileID: 26330262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1167145749
@@ -28165,10 +28165,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
-  m_CategoryHash: 0
-  m_labelHash: 0
+  m_CategoryHash: 0.0047193225
+  m_labelHash: 3.631758e-30
   m_SpriteKey: 0
-  m_SpriteHash: 0
+  m_SpriteHash: 553252040
 --- !u!212 &1167145750
 SpriteRenderer:
   serializedVersion: 2
@@ -28195,7 +28195,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 1475f31393612b444a72190f96ee53a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28214,20 +28214,20 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -698825783
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1478410315487737903, guid: 1c0c9b47eece49342afb028f84177a1a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9375, y: 0.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_SpriteSortPoint: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 1
 --- !u!1 &1169852791
 GameObject:
   m_ObjectHideFlags: 0
@@ -31424,7 +31424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 660457112}
+  m_Material: {fileID: 858831243}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -32241,7 +32241,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1167145748}
+  m_Father: {fileID: 26330262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1494507574
 SpriteRenderer:
@@ -35798,7 +35798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 660457112}
+  m_Material: {fileID: 858831243}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -39645,7 +39645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 660457112}
+  m_Material: {fileID: 858831243}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
