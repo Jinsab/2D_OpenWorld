@@ -23,7 +23,7 @@ MonoBehaviour:
   buyPrice: 0
   sellPrice: 0
   slotType: 0
-  equipmentSprite: {fileID: 0}
+  equipmentSprite: {fileID: 3024772523474242210, guid: 95b20b13e976a6446a8836c866f2a413, type: 3}
   modifiers: []
   attackDamage: 1
   attackDelay: 0.5

@@ -80,9 +80,11 @@ public class PlayerController : MonoBehaviour
         Rigidbody = GetComponent<Rigidbody2D>();
         Animator = GetComponentInChildren<Animator>();
         PlayerMovement = GetComponent<PlayerMovement>();
+        PlayerCombatController = GetComponent<PlayerCombatController>();
         StateMachine = GetComponent<PlayerStateMachine>();
 
         PlayerMovement.Initialize();
+        PlayerCombatController.Initialize();
         StateMachine.Initialize();
     }
 

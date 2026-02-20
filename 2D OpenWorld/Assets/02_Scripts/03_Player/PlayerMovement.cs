@@ -96,7 +96,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Player.StateMachine.CurrentState == PlayerState.Idle)
+        if (Player.StateMachine.CurrentState == PlayerState.Idle ||
+            Player.StateMachine.CurrentState == PlayerState.Attack ||
+            Player.StateMachine.CurrentState == PlayerState.Stun)
         {
             currentSpeed = 0f;
         }

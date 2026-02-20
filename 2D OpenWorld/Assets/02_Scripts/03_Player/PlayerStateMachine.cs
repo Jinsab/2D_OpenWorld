@@ -58,16 +58,23 @@ public class PlayerStateMachine : MonoBehaviour
 
     private void Update()
     {
-        if (Player.PlayerMovement.MoveInput == Vector2.zero)
+        if (Player.PlayerCombatController.isAttack)
         {
-            ChangeState(PlayerState.Idle);
+            ChangeState(PlayerState.Attack);
         }
         else
         {
-            if (Player.PlayerMovement.IsRunning)
-                ChangeState(PlayerState.Run);
+            if (Player.PlayerMovement.MoveInput == Vector2.zero)
+            {
+                ChangeState(PlayerState.Idle);
+            }
             else
-                ChangeState(PlayerState.Walk);
+            {
+                if (Player.PlayerMovement.IsRunning)
+                    ChangeState(PlayerState.Run);
+                else
+                    ChangeState(PlayerState.Walk);
+            }
         }
     }
 

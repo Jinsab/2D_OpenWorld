@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 /*  
  *  [프로젝트 제목]
@@ -18,15 +19,46 @@ using UnityEngine;
 
 public class PlayerCombatController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [Header("# Combat Data")]
+    public WeaponItem testWeapon;
+    public WeaponController weaponController;
+    private PlayerController Player;
+    public bool isAttack = false;
+
+    // Player Input System
+    private InputAction attackAction;   // 왼쪽 클릭   (일반 공격)
+    private InputAction specialAction;  // 오른쪽 클릭 (특수 공격)
+
+    public void Initialize()
     {
-        
+        Player = GetComponent<PlayerController>();
+
+        attackAction = Player.Input.actions["Attack"];
+        specialAction = Player.Input.actions["SpecialAttack"];
+
+        // 일반 공격 이벤트
+        attackAction.performed += ctx =>
+        {
+            isAttack = true;
+        };
+        attackAction.canceled += ctx =>
+        {
+            isAttack = false;
+        };
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        //weaponController.EquipWeapon(testWeapon);
+    }
+
+    private void Update()
+    {
+        if (weaponController == null)
+            return;
+
+        if (isAttack)
+            Player.Animator.SetTrigger(Player.AnimationData.AttackParameterHash);
+        //weaponController.HandleAttack();
     }
 }

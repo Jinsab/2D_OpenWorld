@@ -47,8 +47,12 @@ public enum LookDirection
 
 public class PlayerLook : MonoBehaviour
 {
-    public LookDirection CurrentLookDirection { get; private set; }
+    [Header(" # Player State")]
+    public PlayerStateMachine playerStateMachine;
 
+    [Header(" # Look Direction")]
+    public LookDirection CurrentLookDirection { get; private set; }
+    
     private Camera mainCam;
     private SpriteRenderer[] spriteRenderers;
 
@@ -63,27 +67,51 @@ public class PlayerLook : MonoBehaviour
         UpdateLookDirection();
     }
 
-    void UpdateLookDirection()
+    private void UpdateLookDirection()
     {
-        Vector3 mouseWorld = mainCam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-
-        Vector2 dir = (mouseWorld - transform.position);
-
-        dir.Normalize();
-
-        if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
+        if (playerStateMachine.CurrentState == PlayerState.Attack)
         {
-            CurrentLookDirection = LookDirection.Side;
+            if (CurrentLookDirection == LookDirection.Up ||
+                CurrentLookDirection ==LookDirection.Down)
+            {
+                transform.localScale = Vector3.one;
 
-            for (int i = 0; i < spriteRenderers.Length; i++)
-                spriteRenderers[i].flipX = dir.x > 0;
+                //for (int i = 0; i < spriteRenderers.Length; i++)
+                //{
+                //    spriteRenderers[i].flipX = true;
+                //}
+            }
+        }
+        else if (playerStateMachine.CurrentState == PlayerState.Stun)
+        {
+            // 스턴 중엔 회전해선 안됨
         }
         else
         {
-            if (dir.y > 0)
-                CurrentLookDirection = LookDirection.Up;
+            Vector3 mouseWorld = mainCam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+
+            Vector2 dir = (mouseWorld - transform.position);
+
+            dir.Normalize();
+
+            if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
+            {
+                CurrentLookDirection = LookDirection.Side;
+
+                transform.localScale = dir.x > 0 ? new Vector3(-1, 1, 1) : Vector3.one;
+
+                //for (int i = 0; i < spriteRenderers.Length; i++)
+                //{
+                //    spriteRenderers[i].flipX = dir.x > 0;
+                //}
+            }
             else
-                CurrentLookDirection = LookDirection.Down;
+            {
+                if (dir.y > 0)
+                    CurrentLookDirection = LookDirection.Up;
+                else
+                    CurrentLookDirection = LookDirection.Down;
+            }
         }
     }
 }
