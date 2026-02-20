@@ -69,22 +69,10 @@ public class PlayerLook : MonoBehaviour
 
     private void UpdateLookDirection()
     {
-        if (playerStateMachine.CurrentState == PlayerState.Attack)
+        if (playerStateMachine.CurrentState == PlayerState.Attack ||
+            playerStateMachine.CurrentState == PlayerState.Stun)
         {
-            if (CurrentLookDirection == LookDirection.Up ||
-                CurrentLookDirection ==LookDirection.Down)
-            {
-                transform.localScale = Vector3.one;
-
-                //for (int i = 0; i < spriteRenderers.Length; i++)
-                //{
-                //    spriteRenderers[i].flipX = true;
-                //}
-            }
-        }
-        else if (playerStateMachine.CurrentState == PlayerState.Stun)
-        {
-            // 스턴 중엔 회전해선 안됨
+            // 공격 중이거나, 스턴 상태에서는 회전해서는 안됨
         }
         else
         {
@@ -99,11 +87,6 @@ public class PlayerLook : MonoBehaviour
                 CurrentLookDirection = LookDirection.Side;
 
                 transform.localScale = dir.x > 0 ? new Vector3(-1, 1, 1) : Vector3.one;
-
-                //for (int i = 0; i < spriteRenderers.Length; i++)
-                //{
-                //    spriteRenderers[i].flipX = dir.x > 0;
-                //}
             }
             else
             {
@@ -111,6 +94,8 @@ public class PlayerLook : MonoBehaviour
                     CurrentLookDirection = LookDirection.Up;
                 else
                     CurrentLookDirection = LookDirection.Down;
+
+                transform.localScale = Vector3.one;
             }
         }
     }
