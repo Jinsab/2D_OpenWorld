@@ -186,9 +186,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 25
-        y: 220
+        y: 211
         width: 13
-        height: 13
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,10 +207,10 @@ TextureImporter:
       name: Unarmed_Walk3_head_1
       rect:
         serializedVersion: 2
-        x: 89
-        y: 222
-        width: 13
-        height: 13
+        x: 88
+        y: 212
+        width: 14
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,9 +230,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 153
-        y: 221
+        y: 212
         width: 13
-        height: 13
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,9 +252,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 218
-        y: 220
+        y: 211
         width: 13
-        height: 13
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,9 +274,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 282
-        y: 222
-        width: 13
-        height: 13
+        y: 212
+        width: 14
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,9 +318,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 26
-        y: 157
+        y: 148
         width: 12
-        height: 13
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,9 +362,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 154
-        y: 158
+        y: 149
         width: 12
-        height: 13
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,10 +383,10 @@ TextureImporter:
       name: Unarmed_Walk3_head_9
       rect:
         serializedVersion: 2
-        x: 218
-        y: 157
-        width: 12
-        height: 13
+        x: 217
+        y: 148
+        width: 13
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -582,9 +582,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 25
-        y: 29
+        y: 20
         width: 13
-        height: 13
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -603,10 +603,10 @@ TextureImporter:
       name: Unarmed_Walk3_head_19
       rect:
         serializedVersion: 2
-        x: 89
-        y: 31
-        width: 13
-        height: 13
+        x: 88
+        y: 21
+        width: 14
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -670,9 +670,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 282
-        y: 31
-        width: 13
-        height: 13
+        y: 21
+        width: 14
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
