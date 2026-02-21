@@ -61,7 +61,7 @@ public class ShadowController : MonoBehaviour
         // 부모 스프라이트 복사
         shadowRenderer.sprite = parentRenderer.sprite;
         lastSprite = parentRenderer.sprite;
-        shadowRenderer.color = new Color(0, 0, 0, 0.5f);
+        // shadowRenderer.color = new Color(0, 0, 0, 0.5f);
 
         transform.localPosition = new Vector3(0, 1 * shadowOffsetY, 0.0001f);
         transform.localScale = Vector3.one;
@@ -116,6 +116,6 @@ public class ShadowController : MonoBehaviour
 
         // 밤에는 그림자 약하게
         float alpha = Mathf.Lerp(0.6f, 0.3f, sunHeight);
-        shadowRenderer.color = new Color(0, 0, 0, alpha);
+        // shadowRenderer.color = new Color(0, 0, 0, alpha);
     }
 }
