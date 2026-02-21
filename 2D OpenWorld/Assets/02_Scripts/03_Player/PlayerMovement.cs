@@ -47,11 +47,11 @@ public class PlayerMovement : MonoBehaviour
     public float currentSpeed;
 
     [Header("# Player Render Data")]
-    public int PlayerOrder { get { return playerRenderer.sortingOrder; } }
+    public int PlayerOrder { get { return playerRenderer[playerRenderer.Length - 1].sortingOrder; } }
     // Player
     private PlayerController Player;
-    private SpriteRenderer playerRenderer;
-    private SpriteRenderer shadowRenderer;
+    private SpriteRenderer[] playerRenderer;
+    private SpriteRenderer[] shadowRenderer;
 
     // Player Input System
     private InputAction moveAction;
@@ -66,8 +66,8 @@ public class PlayerMovement : MonoBehaviour
     {
         Player = GetComponent<PlayerController>();
         MovementSpeed = Player.Data.GroundedData.BaseSpeed;
-        playerRenderer = GetComponent<SpriteRenderer>();
-        shadowRenderer = Player.transform.GetChild(1).GetComponent<SpriteRenderer>();
+        playerRenderer = Player.transform.GetChild(0).GetComponentsInChildren<SpriteRenderer>();
+        shadowRenderer = Player.transform.GetChild(1).GetComponentsInChildren<SpriteRenderer>();
 
         moveAction = Player.Input.actions["Move"];
         runAction = Player.Input.actions["Sprint"];
@@ -123,8 +123,15 @@ public class PlayerMovement : MonoBehaviour
             sortingY = SortingOrderUtility.UpdateSortingY(transform);
 
             // 그림자는 항상 플레이어 뒤에 있어야 하기 때문에 1을 빼야 함
-            playerRenderer.sortingOrder = sortingY;
-            shadowRenderer.sortingOrder = sortingY - 1;
+            for (int i = 0; i < playerRenderer.Length; i++)
+            {
+                playerRenderer[i].sortingOrder = sortingY + (playerRenderer.Length - 1 - i);
+            }
+
+            for (int i = 0; i < shadowRenderer.Length; i++)
+            {
+                shadowRenderer[i].sortingOrder = sortingY - 1;
+            }
         }
     }
 }
