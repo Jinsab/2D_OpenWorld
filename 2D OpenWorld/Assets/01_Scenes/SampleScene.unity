@@ -229,9 +229,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 530024547}
   - {fileID: 1073669718}
+  - {fileID: 220348017}
+  - {fileID: 647499269}
   - {fileID: 1167145748}
-  - {fileID: 1494507573}
   m_Father: {fileID: 891860141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &26330263
@@ -2819,9 +2821,10 @@ GameObject:
   m_Component:
   - component: {fileID: 220348017}
   - component: {fileID: 220348018}
+  - component: {fileID: 220348020}
   - component: {fileID: 220348019}
   m_Layer: 3
-  m_Name: Equip_Chest
+  m_Name: 03_Equip_Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2840,7 +2843,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1167145748}
+  m_Father: {fileID: 26330262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &220348018
 SpriteRenderer:
@@ -2914,9 +2917,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 9.172792e-31
-  m_labelHash: 9.227875e-26
+  m_labelHash: 0.000000058687675
   m_SpriteKey: 0
   m_SpriteHash: 510898109
+--- !u!114 &220348020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220348016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
+  m_Library: []
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: e98205f162623ab4ea5f3d5360f16000, type: 3}
 --- !u!1001 &234218975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10575,9 +10592,10 @@ GameObject:
   m_Component:
   - component: {fileID: 530024547}
   - component: {fileID: 530024548}
+  - component: {fileID: 530024550}
   - component: {fileID: 530024549}
   m_Layer: 3
-  m_Name: Equip_Head
+  m_Name: 01_Equip_Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10596,7 +10614,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1073669718}
+  m_Father: {fileID: 26330262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &530024548
 SpriteRenderer:
@@ -10670,9 +10688,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 3.4040235e-13
-  m_labelHash: 0.001907987
+  m_labelHash: 0.000000058687675
   m_SpriteKey: 0
   m_SpriteHash: 728230196
+--- !u!114 &530024550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530024546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
+  m_Library: []
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: a9462d86fa756e540bd4a2a3f3852455, type: 3}
 --- !u!1 &535631888
 GameObject:
   m_ObjectHideFlags: 0
@@ -18859,9 +18891,10 @@ GameObject:
   m_Component:
   - component: {fileID: 647499269}
   - component: {fileID: 647499270}
+  - component: {fileID: 647499272}
   - component: {fileID: 647499271}
   m_Layer: 3
-  m_Name: Equip_Pants
+  m_Name: 04_Equip_Pants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18880,7 +18913,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1167145748}
+  m_Father: {fileID: 26330262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &647499270
 SpriteRenderer:
@@ -18954,9 +18987,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 1.6620207e-32
-  m_labelHash: 9.227875e-26
+  m_labelHash: 0.000000058687675
   m_SpriteKey: 0
   m_SpriteHash: 525395556
+--- !u!114 &647499272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647499268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
+  m_Library: []
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: d7225b8186bf0d441a485393249c1d22, type: 3}
 --- !u!1 &647922393
 GameObject:
   m_ObjectHideFlags: 0
@@ -24339,6 +24386,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 26330262}
+  - {fileID: 1494507573}
   - {fileID: 258088038}
   - {fileID: 432900439}
   - {fileID: 585078297}
@@ -24595,7 +24643,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891860139}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
   m_Name: 
@@ -26965,9 +27013,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1073669718}
   - component: {fileID: 1073669719}
+  - component: {fileID: 1073669721}
   - component: {fileID: 1073669720}
   m_Layer: 3
-  m_Name: 01_Head
+  m_Name: 02_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26985,8 +27034,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 530024547}
+  m_Children: []
   m_Father: {fileID: 26330262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1073669719
@@ -27061,9 +27109,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 4.8649936e-17
-  m_labelHash: 0.0000000045354573
+  m_labelHash: 4.6177543e-33
   m_SpriteKey: 0
   m_SpriteHash: 142590361
+--- !u!114 &1073669721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073669717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
+  m_Library: []
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 9d5a782a5cac9814e936097c889d4ad8, type: 3}
 --- !u!1 &1082755393
 GameObject:
   m_ObjectHideFlags: 0
@@ -28091,9 +28153,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1167145748}
   - component: {fileID: 1167145750}
+  - component: {fileID: 1167145751}
   - component: {fileID: 1167145749}
   m_Layer: 3
-  m_Name: 02_Body
+  m_Name: 05_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28111,9 +28174,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 220348017}
-  - {fileID: 647499269}
+  m_Children: []
   m_Father: {fileID: 26330262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1167145749
@@ -28191,6 +28252,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!114 &1167145751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167145747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
+  m_Library: []
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 1fee5b4284035134fb0d66b3f4ebd338, type: 3}
 --- !u!1 &1169852791
 GameObject:
   m_ObjectHideFlags: 0
@@ -32236,7 +32311,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1329835949}
-  m_Father: {fileID: 26330262}
+  m_Father: {fileID: 891860141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1494507574
 SpriteRenderer:
