@@ -250,12 +250,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterBobbing
   Player: {fileID: 891860149}
   idleSpeed: 2
-  idleAmount: 0.01
+  idleAmount: 0.02
   walkSpeed: 10
   walkAmount: 0.05
   runSpeed: 15
   runAmount: 0.1
-  stretchAmount: 0.02
+  stretchAmount: 0.05
   dustParticle: {fileID: 432900438}
   particleCount: 3
 --- !u!1 &26538027
@@ -4549,7 +4549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1789247049}
+  m_Material: {fileID: 651723353}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -11234,7 +11234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1789247049}
+  m_Material: {fileID: 651723353}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -19141,6 +19141,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647922393}
   m_CullTransparentMesh: 1
+--- !u!21 &651723353
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DefaultProceduralBlurredImage
+  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _DstBlend: 10
+    - _SrcBlend: 5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &662322275
 GameObject:
   m_ObjectHideFlags: 0
@@ -19397,7 +19438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1789247049}
+  m_Material: {fileID: 651723353}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -24291,7 +24332,6 @@ GameObject:
   m_Component:
   - component: {fileID: 891860141}
   - component: {fileID: 891860140}
-  - component: {fileID: 891860159}
   - component: {fileID: 891860143}
   - component: {fileID: 891860142}
   - component: {fileID: 891860158}
@@ -24299,7 +24339,6 @@ GameObject:
   - component: {fileID: 891860149}
   - component: {fileID: 891860157}
   - component: {fileID: 891860148}
-  - component: {fileID: 891860156}
   - component: {fileID: 891860154}
   - component: {fileID: 891860146}
   - component: {fileID: 891860152}
@@ -24510,7 +24549,7 @@ MonoBehaviour:
   <PlayerMovement>k__BackingField: {fileID: 891860148}
   <PlayerStats>k__BackingField: {fileID: 891860154}
   <PlayerCombatController>k__BackingField: {fileID: 891860160}
-  <PlayerLook>k__BackingField: {fileID: 891860156}
+  <PlayerLook>k__BackingField: {fileID: 891860161}
   <StateMachine>k__BackingField: {fileID: 891860146}
   <AnimationData>k__BackingField: {fileID: 891860157}
 --- !u!114 &891860150
@@ -24581,19 +24620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d466a3328d5167f4f8ca08c305254ebb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SortingOrderControler
---- !u!114 &891860156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891860139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b560760e1a8b2b44971fb22ef7edd23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerLook
-  playerStateMachine: {fileID: 891860146}
 --- !u!114 &891860157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24627,7 +24653,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: d46cec5b7cc41404c855af90f0dad845, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -24636,20 +24662,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &891860159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891860139}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
-  m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: b970d84043622794db246cd0808fcd3d, type: 3}
 --- !u!114 &891860160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24663,7 +24675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombatController
   testWeapon: {fileID: 0}
-  weaponController: {fileID: 891860161}
+  weaponController: {fileID: 1494507575}
   isAttack: 0
 --- !u!114 &891860161
 MonoBehaviour:
@@ -24674,10 +24686,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 891860139}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0edb5c2352a3c6146901c4833b908f5a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b560760e1a8b2b44971fb22ef7edd23, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeaponController
-  weaponHolder: {fileID: 1494507573}
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerLook
+  playerStateMachine: {fileID: 891860146}
 --- !u!1 &898469432
 GameObject:
   m_ObjectHideFlags: 0
@@ -28190,7 +28202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 2.4253298e-24
-  m_labelHash: 0.0000000045354573
+  m_labelHash: 4.6177543e-33
   m_SpriteKey: 0
   m_SpriteHash: 743157354
 --- !u!212 &1167145750
@@ -31493,7 +31505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1789247049}
+  m_Material: {fileID: 651723353}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -32290,6 +32302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1494507573}
   - component: {fileID: 1494507574}
+  - component: {fileID: 1494507575}
   m_Layer: 3
   m_Name: Equip_Weapon
   m_TagString: Untagged
@@ -32372,6 +32385,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1494507575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494507572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edb5c2352a3c6146901c4833b908f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponController
+  weaponHolder: {fileID: 1329835949}
 --- !u!1 &1515959280
 GameObject:
   m_ObjectHideFlags: 0
@@ -35868,7 +35894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1789247049}
+  m_Material: {fileID: 651723353}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -38054,47 +38080,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784884604}
   m_CullTransparentMesh: 1
---- !u!21 &1789247049
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: DefaultProceduralBlurredImage
-  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _DstBlend: 10
-    - _SrcBlend: 5
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &1794521980
 GameObject:
   m_ObjectHideFlags: 0
@@ -39756,7 +39741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1789247049}
+  m_Material: {fileID: 651723353}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}

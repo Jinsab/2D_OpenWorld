@@ -42,7 +42,8 @@ public enum LookDirection
 {
     Down,
     Up,
-    Side
+    Left,
+    Right
 }
 
 public class PlayerLook : MonoBehaviour
@@ -54,12 +55,10 @@ public class PlayerLook : MonoBehaviour
     public LookDirection CurrentLookDirection { get; private set; }
     
     private Camera mainCam;
-    private SpriteRenderer[] spriteRenderers;
 
     void Awake()
     {
         mainCam = Camera.main;
-        spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
     }
 
     void Update()
@@ -84,9 +83,7 @@ public class PlayerLook : MonoBehaviour
 
             if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
             {
-                CurrentLookDirection = LookDirection.Side;
-
-                transform.localScale = dir.x > 0 ? new Vector3(-1, 1, 1) : Vector3.one;
+                CurrentLookDirection = dir.x > 0 ? LookDirection.Right : LookDirection.Left;
             }
             else
             {
@@ -94,8 +91,6 @@ public class PlayerLook : MonoBehaviour
                     CurrentLookDirection = LookDirection.Up;
                 else
                     CurrentLookDirection = LookDirection.Down;
-
-                transform.localScale = Vector3.one;
             }
         }
     }

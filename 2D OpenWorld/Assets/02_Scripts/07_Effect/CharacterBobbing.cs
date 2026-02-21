@@ -32,6 +32,7 @@ public class CharacterBobbing : MonoBehaviour
     public float runAmount = 0.2f;
 
     private Vector3 startPos;
+    private Vector3 reversePos;
     private float timer;
 
     [Header("Squash and Stretch")]
@@ -85,6 +86,8 @@ public class CharacterBobbing : MonoBehaviour
         float sinValue = Mathf.Sin(timer);
         float newY = startPos.y + Mathf.Sin(timer) * currentAmount;
 
+        Debug.Log(newY);
+
         // 실제 위치 적용
         transform.localPosition = new Vector3(startPos.x, newY, startPos.z);
 
@@ -104,7 +107,10 @@ public class CharacterBobbing : MonoBehaviour
         float stretch = sinValue * stretchAmount * multiplier;
 
         // Y가 늘어날 때 X는 줄어들어야 부피가 유지되어 자연스러움
-        transform.localScale = new Vector3(1f - stretch, 1f + stretch, 1f);
+        if (Player.PlayerLook.CurrentLookDirection == LookDirection.Right)
+            transform.localScale = new Vector3(-1f + stretch, 1f + stretch, 1f);
+        else
+            transform.localScale = new Vector3(1f - stretch, 1f + stretch, 1f);
     }
 
     private void CheckForDust(float sinValue)
