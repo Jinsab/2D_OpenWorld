@@ -18,6 +18,9 @@ using UnityEngine;
 
 public class CharacterBobbing : MonoBehaviour
 {
+    [Header("# Shadow")]
+    public Transform shadowRoot;
+
     [Header("# Movement Data")]
     public PlayerController Player;
 
@@ -32,13 +35,13 @@ public class CharacterBobbing : MonoBehaviour
     public float runAmount = 0.2f;
 
     private Vector3 startPos;
-    private Vector3 reversePos;
+    private Vector3 shadowPos;
     private float timer;
 
-    [Header("Squash and Stretch")]
+    [Header("# Squash and Stretch")]
     public float stretchAmount = 0.1f; // 얼마나 길쭉/넓적해질지
 
-    [Header("Effects")]
+    [Header("# Effects")]
     public ParticleSystem dustParticle;
     public int particleCount;
 
@@ -53,6 +56,7 @@ public class CharacterBobbing : MonoBehaviour
     void Start()
     {
         startPos = transform.localPosition;
+        shadowPos = shadowRoot.localPosition;
     }
 
     void Update()
@@ -86,11 +90,10 @@ public class CharacterBobbing : MonoBehaviour
         float sinValue = Mathf.Sin(timer);
         float newY = startPos.y + Mathf.Sin(timer) * currentAmount;
 
-        Debug.Log(newY);
-
         // 실제 위치 적용
         transform.localPosition = new Vector3(startPos.x, newY, startPos.z);
-
+        // shadowRoot.localPosition = new Vector3(shadowPos.x, newY + shadowPos.y, shadowPos.z);
+        
         // 모양 변형
         ApplySquashAndStretch(sinValue);
 
