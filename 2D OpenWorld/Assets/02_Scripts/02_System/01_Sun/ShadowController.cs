@@ -74,7 +74,7 @@ public class ShadowController : MonoBehaviour
         // 같은 SortingLayer 사용 권장
         // 또한, sortingOrder와 함께 Z축을 사용해야 함
         shadowRenderer.sortingLayerID = parentRenderer.sortingLayerID;
-        shadowRenderer.sortingOrder = Mathf.RoundToInt(shadowRenderer.bounds.size.y * maxLength * precision) - 1;
+        shadowRenderer.sortingOrder = parentRenderer.sortingOrder + Mathf.RoundToInt(shadowRenderer.bounds.size.y * maxLength * precision * 2);
     }
 
     private void UpdateSprite()

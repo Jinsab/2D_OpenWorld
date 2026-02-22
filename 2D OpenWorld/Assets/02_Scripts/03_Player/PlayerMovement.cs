@@ -113,7 +113,9 @@ public class PlayerMovement : MonoBehaviour
         move = Player.Rigidbody.position + move * currentSpeed * Time.fixedDeltaTime;
 
         sortingZ = SortingOrderUtility.UpdateSortingZ(transform) + 1f;
+        // Debug.Log(sortingZ);
         Player.Rigidbody.MovePosition(new Vector3(move.x, move.y, sortingZ));
+        transform.position = new Vector3(transform.position.x, transform.position.y, sortingZ);
     }
 
     private void LateUpdate()
