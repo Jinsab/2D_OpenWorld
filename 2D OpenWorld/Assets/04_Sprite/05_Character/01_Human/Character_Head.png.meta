@@ -332,7 +332,7 @@ TextureImporter:
         serializedVersion: 2
         x: 30
         y: 132
-        width: 12
+        width: 13
         height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -352,9 +352,9 @@ TextureImporter:
       name: Character_Head_2
       rect:
         serializedVersion: 2
-        x: 50
+        x: 49
         y: 132
-        width: 12
+        width: 13
         height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -420,7 +420,7 @@ TextureImporter:
         serializedVersion: 2
         x: 112
         y: 132
-        width: 14
+        width: 13
         height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -442,7 +442,7 @@ TextureImporter:
         serializedVersion: 2
         x: 133
         y: 132
-        width: 14
+        width: 13
         height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -530,7 +530,7 @@ TextureImporter:
         serializedVersion: 2
         x: 215
         y: 132
-        width: 13
+        width: 17
         height: 17
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -551,9 +551,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 241
-        y: 132
+        y: 133
         width: 12
-        height: 22
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

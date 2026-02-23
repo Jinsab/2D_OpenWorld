@@ -215,7 +215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &26330262
 Transform:
   m_ObjectHideFlags: 0
@@ -230,6 +230,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 530024547}
+  - {fileID: 1870250403}
   - {fileID: 1073669718}
   - {fileID: 220348017}
   - {fileID: 647499269}
@@ -762,7 +763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &78411186
 Transform:
   m_ObjectHideFlags: 0
@@ -777,7 +778,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1594481346}
-  - {fileID: 1870250403}
   - {fileID: 2085173136}
   - {fileID: 1314809123}
   - {fileID: 468189900}
@@ -2886,7 +2886,7 @@ GameObject:
   - component: {fileID: 220348020}
   - component: {fileID: 220348019}
   m_Layer: 3
-  m_Name: 03_Equip_Chest
+  m_Name: 04_Equip_Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2956,7 +2956,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2032466198694069298, guid: 2a40c5bc02fbbb3428e88c97456e5329, type: 3}
+  m_Sprite: {fileID: -5215453871602290977, guid: 2a40c5bc02fbbb3428e88c97456e5329, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4611,7 +4611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 995180184}
+  m_Material: {fileID: 2075827800}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -10848,9 +10848,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -698825783
   m_SortingLayer: 3
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 3249594266336203468, guid: 9dd06fbc46deba344ae32e4cb8ae490f, type: 3}
+  m_Sprite: {fileID: 4482234610503642907, guid: 9dd06fbc46deba344ae32e4cb8ae490f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11419,7 +11419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 995180184}
+  m_Material: {fileID: 2075827800}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -19079,7 +19079,7 @@ GameObject:
   - component: {fileID: 647499272}
   - component: {fileID: 647499271}
   m_Layer: 3
-  m_Name: 04_Equip_Pants
+  m_Name: 05_Equip_Pants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19149,7 +19149,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5482973233950139204, guid: 6764ce41067f301439805f34ae86c232, type: 3}
+  m_Sprite: {fileID: 6929166713534582762, guid: 6764ce41067f301439805f34ae86c232, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19172,7 +19172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 1.6620207e-32
-  m_labelHash: 0.000000058687675
+  m_labelHash: 9.227875e-26
   m_SpriteKey: 0
   m_SpriteHash: 525395556
 --- !u!114 &647499272
@@ -19582,7 +19582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 995180184}
+  m_Material: {fileID: 2075827800}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -26038,47 +26038,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5709174388807102234, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
   m_PrefabInstance: {fileID: 349052493}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &995180184
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: DefaultProceduralBlurredImage
-  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _DstBlend: 10
-    - _SrcBlend: 5
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &995848265
 GameObject:
   m_ObjectHideFlags: 0
@@ -27214,7 +27173,7 @@ GameObject:
   - component: {fileID: 1073669721}
   - component: {fileID: 1073669720}
   m_Layer: 3
-  m_Name: 02_Head
+  m_Name: 03_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27284,7 +27243,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1411977725836914446, guid: 7533c54b0f5df074d9e0600b0c51370a, type: 3}
+  m_Sprite: {fileID: 8509766171321743015, guid: b56f6b344cdf22c4b857b9f1216f0b64, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -28354,7 +28313,7 @@ GameObject:
   - component: {fileID: 1167145751}
   - component: {fileID: 1167145749}
   m_Layer: 3
-  m_Name: 05_Body
+  m_Name: 06_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28440,7 +28399,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 8710966123550877348, guid: 1c0c9b47eece49342afb028f84177a1a, type: 3}
+  m_Sprite: {fileID: -6138424380712479603, guid: 6229ab8cd5dd65a4fb80df086f04a0e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -30156,9 +30115,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 2.4253298e-24
-  m_labelHash: 4.6177543e-33
+  m_labelHash: 0.00000001053438
   m_SpriteKey: 0
-  m_SpriteHash: 857833081
+  m_SpriteHash: 398492856
 --- !u!114 &1324196313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30222,7 +30181,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6138424380712479603, guid: 6229ab8cd5dd65a4fb80df086f04a0e9, type: 3}
+  m_Sprite: {fileID: -4488673064694735350, guid: 6229ab8cd5dd65a4fb80df086f04a0e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -32201,7 +32160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 995180184}
+  m_Material: {fileID: 2075827800}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -36744,7 +36703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 995180184}
+  m_Material: {fileID: 2075827800}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -39746,7 +39705,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 78411186}
+  m_Father: {fileID: 26330262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1870250404
 MonoBehaviour:
@@ -39760,10 +39719,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
-  m_CategoryHash: 4.8649936e-17
-  m_labelHash: 6.238237e-31
+  m_CategoryHash: 5.9674735e-17
+  m_labelHash: 0.00000001053438
   m_SpriteKey: 0
-  m_SpriteHash: 633345438
+  m_SpriteHash: 737259552
 --- !u!114 &1870250405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40890,7 +40849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 995180184}
+  m_Material: {fileID: 2075827800}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -43214,6 +43173,47 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!21 &2075827800
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DefaultProceduralBlurredImage
+  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _DstBlend: 10
+    - _SrcBlend: 5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &2085173135
 GameObject:
   m_ObjectHideFlags: 0
@@ -43261,9 +43261,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 4.8649936e-17
-  m_labelHash: 4.6177543e-33
+  m_labelHash: 0.00000001053438
   m_SpriteKey: 0
-  m_SpriteHash: 387256714
+  m_SpriteHash: 871689035
 --- !u!114 &2085173138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43327,7 +43327,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 8509766171321743015, guid: b56f6b344cdf22c4b857b9f1216f0b64, type: 3}
+  m_Sprite: {fileID: -3487550085338159205, guid: b56f6b344cdf22c4b857b9f1216f0b64, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

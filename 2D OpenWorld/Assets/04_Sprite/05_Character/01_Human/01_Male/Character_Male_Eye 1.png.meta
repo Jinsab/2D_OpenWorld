@@ -184,7 +184,7 @@ TextureImporter:
         serializedVersion: 2
         x: 72
         y: 420
-        width: 11
+        width: 13
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -204,9 +204,9 @@ TextureImporter:
       name: Character_Male_Eye 1_4
       rect:
         serializedVersion: 2
-        x: 91
+        x: 92
         y: 420
-        width: 11
+        width: 13
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -226,9 +226,9 @@ TextureImporter:
       name: Character_Male_Eye 1_5
       rect:
         serializedVersion: 2
-        x: 111
+        x: 112
         y: 420
-        width: 11
+        width: 13
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -248,9 +248,9 @@ TextureImporter:
       name: Character_Male_Eye 1_6
       rect:
         serializedVersion: 2
-        x: 131
+        x: 134
         y: 420
-        width: 11
+        width: 9
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -270,9 +270,9 @@ TextureImporter:
       name: Character_Male_Eye 1_7
       rect:
         serializedVersion: 2
-        x: 151
+        x: 155
         y: 420
-        width: 11
+        width: 9
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -292,9 +292,9 @@ TextureImporter:
       name: Character_Male_Eye 1_8
       rect:
         serializedVersion: 2
-        x: 171
+        x: 176
         y: 420
-        width: 11
+        width: 6
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -314,9 +314,9 @@ TextureImporter:
       name: Character_Male_Eye 1_9
       rect:
         serializedVersion: 2
-        x: 191
+        x: 195
         y: 420
-        width: 11
+        width: 8
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -336,9 +336,9 @@ TextureImporter:
       name: Character_Male_Eye 1_10
       rect:
         serializedVersion: 2
-        x: 211
+        x: 215
         y: 420
-        width: 11
+        width: 13
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -358,10 +358,10 @@ TextureImporter:
       name: Character_Male_Eye 1_11
       rect:
         serializedVersion: 2
-        x: 231
-        y: 420
-        width: 11
-        height: 16
+        x: 241
+        y: 421
+        width: 8
+        height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,9 +380,9 @@ TextureImporter:
       name: Character_Male_Eye 1_12
       rect:
         serializedVersion: 2
-        x: 11
+        x: 10
         y: 388
-        width: 11
+        width: 12
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -644,7 +644,7 @@ TextureImporter:
       name: Character_Male_Eye 1_24
       rect:
         serializedVersion: 2
-        x: 11
+        x: 10
         y: 356
         width: 11
         height: 16
@@ -908,7 +908,7 @@ TextureImporter:
       name: Character_Male_Eye 1_36
       rect:
         serializedVersion: 2
-        x: 11
+        x: 10
         y: 324
         width: 11
         height: 16
@@ -1172,7 +1172,7 @@ TextureImporter:
       name: Character_Male_Eye 1_48
       rect:
         serializedVersion: 2
-        x: 11
+        x: 10
         y: 292
         width: 11
         height: 16
@@ -1436,7 +1436,7 @@ TextureImporter:
       name: Character_Male_Eye 1_60
       rect:
         serializedVersion: 2
-        x: 11
+        x: 10
         y: 260
         width: 11
         height: 16
@@ -1700,7 +1700,7 @@ TextureImporter:
       name: Character_Male_Eye 1_72
       rect:
         serializedVersion: 2
-        x: 11
+        x: 10
         y: 228
         width: 11
         height: 16
@@ -1964,7 +1964,7 @@ TextureImporter:
       name: Character_Male_Eye 1_84
       rect:
         serializedVersion: 2
-        x: 11
+        x: 10
         y: 196
         width: 11
         height: 16
@@ -2228,7 +2228,7 @@ TextureImporter:
       name: Character_Male_Eye 1_96
       rect:
         serializedVersion: 2
-        x: 11
+        x: 10
         y: 164
         width: 11
         height: 16
@@ -2492,7 +2492,7 @@ TextureImporter:
       name: Character_Male_Eye 1_108
       rect:
         serializedVersion: 2
-        x: 11
+        x: 10
         y: 132
         width: 11
         height: 16
@@ -2756,7 +2756,7 @@ TextureImporter:
       name: Character_Male_Eye 1_120
       rect:
         serializedVersion: 2
-        x: 11
+        x: 10
         y: 100
         width: 11
         height: 16
@@ -3020,7 +3020,7 @@ TextureImporter:
       name: Character_Male_Eye 1_132
       rect:
         serializedVersion: 2
-        x: 11
+        x: 10
         y: 68
         width: 11
         height: 16
@@ -3284,7 +3284,7 @@ TextureImporter:
       name: Character_Male_Eye 1_144
       rect:
         serializedVersion: 2
-        x: 11
+        x: 10
         y: 36
         width: 11
         height: 16
@@ -3548,7 +3548,7 @@ TextureImporter:
       name: Character_Male_Eye 1_156
       rect:
         serializedVersion: 2
-        x: 11
+        x: 10
         y: 4
         width: 11
         height: 16
@@ -3822,7 +3822,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":12.0,"y":14.0},"gridSpriteSize":{"x":11.0,"y":16.0},"gridSpriteOffset":{"x":11.0,"y":12.0},"gridSpritePadding":{"x":9.0,"y":16.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":12.0,"y":14.0},"gridSpriteSize":{"x":10.0,"y":16.0},"gridSpriteOffset":{"x":9.0,"y":12.0},"gridSpritePadding":{"x":8.0,"y":16.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Character_Male_Eye 1_0: -926809998203237052
       Character_Male_Eye 1_1: -1308174731

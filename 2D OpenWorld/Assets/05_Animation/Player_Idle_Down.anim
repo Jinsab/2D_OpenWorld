@@ -44,7 +44,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 7.6963844e-34
+        value: 0.0012958121
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -53,7 +53,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 2
-        value: 0.97242826
+        value: 1.0779591e-30
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -62,7 +62,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 2.0833333
-        value: 8.383147e-16
+        value: 1.6935687e-26
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -71,7 +71,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 2.1666667
-        value: 0.97242826
+        value: 1.0779591e-30
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -80,6 +80,27 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 2.25
+        value: 0.0012958121
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_SpriteHash
+    path: Visual Root/02_Eyes
+    classID: 114
+    script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+    flags: 1
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
         value: 7.6963844e-34
         inSlope: Infinity
         outSlope: Infinity
@@ -91,7 +112,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_SpriteHash
-    path: Visual Root/02_Head
+    path: Visual Root/03_Head
     classID: 114
     script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
     flags: 1
@@ -112,7 +133,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_SpriteHash
-    path: Visual Root/03_Equip_Chest
+    path: Visual Root/04_Equip_Chest
     classID: 114
     script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
     flags: 1
@@ -133,7 +154,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_SpriteHash
-    path: Visual Root/04_Equip_Pants
+    path: Visual Root/05_Equip_Pants
     classID: 114
     script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
     flags: 1
@@ -150,47 +171,11 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
-      - serializedVersion: 3
-        time: 2
-        value: 1.6925855e-22
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 2.0833333
-        value: 1.4532759e-37
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 2.1666667
-        value: 1.6925855e-22
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 2.25
-        value: 2.8944854e-12
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_SpriteHash
-    path: Visual Root/05_Body
+    path: Visual Root/06_Body
     classID: 114
     script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
     flags: 1
@@ -203,16 +188,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3109696258
-      attribute: 3843704414
-      script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
-      typeID: 114
-      customType: 0
-      isPPtrCurve: 0
-      isIntCurve: 1
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 3624205972
+      path: 3115577608
       attribute: 3843704414
       script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
       typeID: 114
@@ -230,7 +206,7 @@ AnimationClip:
       isIntCurve: 1
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 633200437
+      path: 1913053351
       attribute: 3843704414
       script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
       typeID: 114
@@ -239,7 +215,25 @@ AnimationClip:
       isIntCurve: 1
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3757479728
+      path: 1489951085
+      attribute: 3843704414
+      script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+      typeID: 114
+      customType: 0
+      isPPtrCurve: 0
+      isIntCurve: 1
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 39866037
+      attribute: 3843704414
+      script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+      typeID: 114
+      customType: 0
+      isPPtrCurve: 0
+      isIntCurve: 1
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 1586531386
       attribute: 3843704414
       script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
       typeID: 114
@@ -296,7 +290,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 7.6963844e-34
+        value: 0.0012958121
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -305,7 +299,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 2
-        value: 0.97242826
+        value: 1.0779591e-30
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -314,7 +308,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 2.0833333
-        value: 8.383147e-16
+        value: 1.6935687e-26
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -323,7 +317,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 2.1666667
-        value: 0.97242826
+        value: 1.0779591e-30
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -332,6 +326,27 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 2.25
+        value: 0.0012958121
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_SpriteHash
+    path: Visual Root/02_Eyes
+    classID: 114
+    script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+    flags: 1
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
         value: 7.6963844e-34
         inSlope: Infinity
         outSlope: Infinity
@@ -343,7 +358,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_SpriteHash
-    path: Visual Root/02_Head
+    path: Visual Root/03_Head
     classID: 114
     script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
     flags: 1
@@ -364,7 +379,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_SpriteHash
-    path: Visual Root/03_Equip_Chest
+    path: Visual Root/04_Equip_Chest
     classID: 114
     script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
     flags: 1
@@ -385,7 +400,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_SpriteHash
-    path: Visual Root/04_Equip_Pants
+    path: Visual Root/05_Equip_Pants
     classID: 114
     script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
     flags: 1
@@ -402,47 +417,11 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
-      - serializedVersion: 3
-        time: 2
-        value: 1.6925855e-22
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 2.0833333
-        value: 1.4532759e-37
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 2.1666667
-        value: 1.6925855e-22
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 2.25
-        value: 2.8944854e-12
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_SpriteHash
-    path: Visual Root/05_Body
+    path: Visual Root/06_Body
     classID: 114
     script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
     flags: 1
