@@ -398,7 +398,7 @@ TextureImporter:
         serializedVersion: 2
         x: 91
         y: 132
-        width: 12
+        width: 13
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -418,9 +418,9 @@ TextureImporter:
       name: Character_Male_Body_5
       rect:
         serializedVersion: 2
-        x: 113
+        x: 112
         y: 132
-        width: 12
+        width: 13
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
