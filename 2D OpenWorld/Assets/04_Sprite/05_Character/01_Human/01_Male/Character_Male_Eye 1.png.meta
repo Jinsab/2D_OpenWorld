@@ -248,9 +248,9 @@ TextureImporter:
       name: Character_Male_Eye 1_6
       rect:
         serializedVersion: 2
-        x: 134
+        x: 133
         y: 420
-        width: 9
+        width: 10
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -272,7 +272,7 @@ TextureImporter:
         serializedVersion: 2
         x: 155
         y: 420
-        width: 9
+        width: 10
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -316,7 +316,7 @@ TextureImporter:
         serializedVersion: 2
         x: 195
         y: 420
-        width: 8
+        width: 7
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
