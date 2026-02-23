@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrarySourceAsset
+  m_Library:
+  - m_Name: Player_Male_Eyes
+    m_Hash: 715569737
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Idle_0
+      m_Hash: 288431053
+      m_Sprite: {fileID: 2048938309342959471, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2048938309342959471, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+    - m_Name: Idle_1
+      m_Hash: 641084251
+      m_Sprite: {fileID: 83939436, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 83939436, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+    - m_Name: Idle_2
+      m_Hash: 1061124833
+      m_Sprite: {fileID: 210226925, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 210226925, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+    - m_Name: Side_0
+      m_Hash: 240703086
+      m_Sprite: {fileID: -139718850, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -139718850, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+    - m_Name: Side_1
+      m_Hash: 962586360
+      m_Sprite: {fileID: 256957010, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 256957010, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+    - m_Name: Side_2
+      m_Hash: 542553922
+      m_Sprite: {fileID: 1086806118, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1086806118, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+    - m_Name: Walk_Down
+      m_Hash: 630520127
+      m_Sprite: {fileID: 504495741, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 504495741, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+    - m_Name: Walk_Side_0
+      m_Hash: 435566283
+      m_Sprite: {fileID: 1298365540, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1298365540, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+    - m_Name: Walk_Side_1
+      m_Hash: 787547741
+      m_Sprite: {fileID: -443162142, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -443162142, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+    - m_Name: Attack_Down
+      m_Hash: 222982463
+      m_Sprite: {fileID: -898777893, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -898777893, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+    - m_Name: Attack_Side
+      m_Hash: 842332849
+      m_Sprite: {fileID: -266003152, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -266003152, guid: d6d204f7ef0100743a857335fdf5f15e, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 11
+  - m_Name: Player_Female_Eyes
+    m_Hash: 514367185
+    m_CategoryList: []
+    m_OverrideEntries: []
+    m_FromMain: 0
+    m_EntryOverrideCount: 0
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 639074724172648357
+  m_Version: 1

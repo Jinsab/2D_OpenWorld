@@ -1,0 +1,3679 @@
+fileFormatVersion: 2
+guid: d6d204f7ef0100743a857335fdf5f15e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2048938309342959471
+    second: Character_Male_Eye_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character_Male_Eye_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 420
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67931f598a4f6c10800000000000000
+      internalID: 2048938309342959471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 420
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da97695fecfa1c43915e8837c83aeb4
+      internalID: 83939436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 420
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb308de5cbff8f3438b7a5f69fe939f6
+      internalID: 210226925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 420
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab943c177f2ec44b8ddb9ddc2382d4c
+      internalID: -139718850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_4
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 420
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec53da0e0aadd1478c479ad5d6f0e92
+      internalID: 256957010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 420
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a7eda2c6514b64692b8d8827e0581e
+      internalID: 1086806118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_6
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 420
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3573d971f1f12d418e202288c27e276
+      internalID: 504495741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_7
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 420
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824313ae91058eb4ba5280a5a167f3a8
+      internalID: 1298365540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_8
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 420
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c32e77aece468a4d88a63ccd93bc4d8
+      internalID: -443162142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_9
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 420
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea4603e221f4594589ca9b0b91e11f1
+      internalID: -898777893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_10
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 420
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae06019f52ca65548adf6e6472f726bd
+      internalID: -266003152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_11
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 388
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ba64639fcf66247b36898bca818c94
+      internalID: -1178969855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_12
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 388
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4368e97b0ad217542af6791801473a77
+      internalID: -1345730930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_13
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 388
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1069d863c01eb54cb5276d9b75ca433
+      internalID: -887952874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 388
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7854052d1105744082c68c8b81ce89c
+      internalID: 235861359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_15
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 388
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1730272f9e27c458b89a7a0630603e
+      internalID: -1058074865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_16
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 388
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d40f13a20675e429f30288f6c4863c
+      internalID: 1675373047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_17
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 388
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b863aa2d1756f4da7483e6f5ca92ed
+      internalID: 377163834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_18
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 388
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab33329c5039014982efa3c54de02c9
+      internalID: 199725949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_19
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 388
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6019bd279c120aa42ab410d187e3c216
+      internalID: -920730787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_20
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 388
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e67c85cda584b4b9fb37cf81ffac72
+      internalID: -1319153401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_21
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 388
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c09078241ac7f48bfff70f1139a731
+      internalID: 632236322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 356
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80413703a64c55549b78ae33ed72969b
+      internalID: 1399593753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_23
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 356
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ac3f166f902f744881fb7075c93cdf
+      internalID: -1037848325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_24
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 356
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20feb71cf9ac8241b24df3f904edb98
+      internalID: -953578238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 356
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a02cb5ba11b3d44a12662ca73ecd50
+      internalID: -1724732444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_26
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 356
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd0109bfa31502479523b1c05028fef
+      internalID: -346272557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_27
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 356
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6072e473a2f3f3140b9ed25cea846cd7
+      internalID: -400089606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_28
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 356
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d8ff85b36ccff479ea2284801b0be6
+      internalID: 1452070236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_29
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 356
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da5265077c208d49ad36247bc4ff863
+      internalID: 146812073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_30
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 356
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc2437955bdd5e4ebedbc5b990c0e10
+      internalID: 1906226290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_31
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 356
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51de2ea9a265714d970aec247c41ed2
+      internalID: 20623795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_32
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 356
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436d9156fd479444b97291b2e81cec02
+      internalID: -763428006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_33
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 324
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c85ff180a2dffe43843b9eff7ec6e0c
+      internalID: -298450460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_34
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 324
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e802a0f2e3e72464a9de93fe097bf759
+      internalID: -2115243558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_35
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 324
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b76ce4ca8e647e42a60538358fdf9d1
+      internalID: 1985968703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_36
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 324
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667b99cd1410612418976f8e98002589
+      internalID: 1337959603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_37
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 324
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1238a29b67d4f844db9a8a0b06051935
+      internalID: -2037479334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_38
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 324
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008f52c2f07b9a34c9d7641c14a103c8
+      internalID: 69250706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_39
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 324
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97dbb53cd9cd67641b157b06208c23da
+      internalID: 1167232471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_40
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 324
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf077d502fc89ad44af5d747f56daa43
+      internalID: 1521984709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_41
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 324
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef418da233b6c9c40bf85f6e9ff7c1ed
+      internalID: -1515612140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_42
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 324
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42584d719e6d0624bb16d607edaa4905
+      internalID: 807513956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_43
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 324
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f3ee6f5b49cc24597c4084465e889e
+      internalID: -1908203421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_44
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 292
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f511910825de742973f63b255b169a
+      internalID: -327189862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_45
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 292
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8488f50b703784f92662d51e2f0ecb
+      internalID: 375822256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_46
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 292
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4760e84a6044491439812ad694775419
+      internalID: -1063455972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_47
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 292
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2202126071309f488e5cfff25daf0ed
+      internalID: -348450948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_48
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 292
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7789e69dc8de85245b3876f6ed633cd7
+      internalID: 473537608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_49
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 292
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7c79a8a6a6b244a8157f48e1635525
+      internalID: -114622025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_50
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 292
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d66371220990641a37d5baed26d91e
+      internalID: -1262207039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_51
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 292
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228723041877acf4d87b92b46d7c2ad8
+      internalID: -1784658020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_52
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 292
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9939ddc1c822d4a86f4464ee429d80
+      internalID: 154028656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_53
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 292
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91dc4af53e32836499d23c587107258c
+      internalID: -1480808548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_54
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 292
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc74bbb8313a89a4ca0bfc92c74d52b1
+      internalID: 1162865456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_55
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 260
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1fb6e4ec4ded546a75c7f0cddbd092
+      internalID: -678257935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_56
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 260
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc712a78e9477647b84be7fa284a03f
+      internalID: 1632133855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_57
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 260
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca8e842d3f9234438e8c2b6d9e662e4
+      internalID: -775720314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_58
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 260
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9048185d66b09c488feae24c33fb9a3
+      internalID: -1579969498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_59
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 260
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04702ec19c4ef2841b4331cde8c21d6f
+      internalID: 995161466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_60
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 260
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd4175a6ed706a4399d844fc78e5874
+      internalID: -1653839475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_61
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 260
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87884d7aa8a62c84ab297c25296ab1f8
+      internalID: 401890306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_62
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 260
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef519621783d0540be5acfb774ab80d
+      internalID: -2020292942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_63
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 260
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a253e69774bee146ba4da36a82bf0aa
+      internalID: -263128098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_64
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 260
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c532f7e20186c840bc226d9a39d2eaf
+      internalID: 492898577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_65
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 260
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ac1a13290840244b25ed6fa85b8168
+      internalID: -1438525988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_66
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 228
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a4c22bfd8eb08409f0c140cc57a7de
+      internalID: -209863618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_67
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 228
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766e893a0d42e81418c1ba923b9aab3e
+      internalID: -81694427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_68
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 228
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd997a7c4af5c643aa533b3a807aa76
+      internalID: -83095233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_69
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 228
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb48ef41b2fdebf43818a39c8060d4c7
+      internalID: -245974253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_70
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 228
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529cf406d7424ac40bd5321a10e09603
+      internalID: -2124494035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_71
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 228
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761580063a1596a4fbe1e282b582b2f6
+      internalID: 361654528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_72
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 228
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19fd611fb753fb4f8bca347e12e7788
+      internalID: 562532422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_73
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 228
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943fa83ae98118141add9263143faee5
+      internalID: 697574263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_74
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 228
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1ea9dfd53c26841a409079ca86337d
+      internalID: 1208716710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_75
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 228
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf797e38b9c09eb4e8a86a434259bfdc
+      internalID: 715962501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_76
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 228
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a089df627dae8b54b8d6aec46612c4a9
+      internalID: 596089332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_77
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 196
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90856048532f4244ae380ef66b1f282
+      internalID: 1266921372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_78
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 196
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4cab57057ac1874cbf65f919e944022
+      internalID: 713449980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_79
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 196
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9018817daa6c54abbcc675e007619a
+      internalID: -1202566834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_80
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 196
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143713a18386ed945b2ecc06602f71bc
+      internalID: -72971406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_81
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 196
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea869edc0e65ccb4d838d633bd424b64
+      internalID: -1369059124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_82
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 196
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8197aae27bf44148beb9d20f853af87
+      internalID: -1599787788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_83
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 196
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee125331d2088b4a9a6e582c5131124
+      internalID: 1347889960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_84
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 196
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a871ccb09672144812b75aae0fee0e
+      internalID: 1489611447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_85
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 196
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c433b32cbf30b74aa8681ed12d24bf0
+      internalID: -933329093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_86
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 196
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008ee50d30ab36e4281dc113ddf1eb8d
+      internalID: 1864127420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_87
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 196
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a42b51ba1c1bed4983ce8eba278c196
+      internalID: -371761373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_88
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 164
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8ae217f89258d4c94e95197e65435b
+      internalID: 968195820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_89
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 164
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b054cb77fcf3fef45826a5d5037829af
+      internalID: 1092697137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_90
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 164
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f80ffaf04e366d409dc0708fea6b6d7
+      internalID: 629084176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_91
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 164
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25f45becdded1240aab99accf27f68e
+      internalID: -1831531460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_92
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 164
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f13a1f452f3a534087b2aa2d50e0bdb
+      internalID: 2026880389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_93
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 164
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea581406f4a4b274dacc29098f6ddae3
+      internalID: 2065507888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_94
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 164
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b035629751bc9146aff8d59dde83904
+      internalID: 921520489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_95
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 164
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11238bb5d6fd4048955363600967137
+      internalID: 656082905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_96
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 164
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba101479d792b248b8fe16a53ec89e4
+      internalID: 402267780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_97
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 164
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd2669dbbd741641a5af2b25c183c28
+      internalID: 1293402588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_98
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 164
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40dc4fe76a03e34498f4d2f2d3826ab8
+      internalID: -1109181894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_99
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 132
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d17c00ab00d8946930ecda7a8aa3f0
+      internalID: -107010186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_100
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 132
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171fa0db9c52c424b99cedb97e7cd9ab
+      internalID: 1406828180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_101
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 132
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826d25c614715994381e2791367e5973
+      internalID: 996958301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_102
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 132
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65cfa7b3c13f2f444ba709862e5b5417
+      internalID: 1814050548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_103
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 132
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6bdbb1b9d1c034f8c984dfa52caddc
+      internalID: -207787501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_104
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 132
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b2f739445f8b247aa3486cd2a03a21
+      internalID: -1423077513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_105
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 132
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea51df39cf974e41abbd753b12d88fc
+      internalID: 89341976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_106
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 132
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e52d96507769d4583668bd6119c68d
+      internalID: -2033955628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_107
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 132
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa22efeb48f8adf419a3de1916373d44
+      internalID: 1097610642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_108
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 132
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9ba29bcd228244f89f99bed4659bc0
+      internalID: 1259368431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_109
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 132
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a95325fb4af82748880130441cb2ad6
+      internalID: -475256905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_110
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 100
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f31f47034de1c40bec558445abc6a1
+      internalID: 1622167800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_111
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 100
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf15298045679943b5c172c0fa0331e
+      internalID: -990636930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_112
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 100
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6cba86eb6ac5a4a8aa6b3e38cd852d
+      internalID: -1143130014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_113
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 100
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cce1765b8b0d074b99294439030fbd8
+      internalID: -324933172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_114
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 100
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3d6189aa867c24f8989e489475fc70
+      internalID: 1243630938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_115
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 100
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9944939e5dfdae48997abbd30f768aa
+      internalID: 624212740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_116
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 100
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d97b93f740d4984c817408839714403
+      internalID: -346965600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_117
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 100
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b6d1c039b6fcb4484e8b4356f0ce0b
+      internalID: 703157283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_118
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 100
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9576320aa04b945b52d3edd47fef93
+      internalID: 1891032046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_119
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 100
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0344f06a5b816446883d7e717eb5647
+      internalID: 216919449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_120
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 100
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a699d4c3f288ff41874dc5e838be393
+      internalID: -259041892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_121
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 68
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032daff1042c18043b29374c6a3a9f8b
+      internalID: 1524933569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_122
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 68
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e662de9bb99759b478a60f2c171fe6fb
+      internalID: 2017856935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_123
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 68
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b2c733f40ff6d43af2044d0e38eb3a
+      internalID: -1970199917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_124
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 68
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0701e3a663faed44d8b8d57867107959
+      internalID: 1318760593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_125
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 68
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c0ca2175943c142988b58d7b35948b
+      internalID: -968300614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_126
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 68
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063b1b9778bf15141aef13912172666e
+      internalID: -504995264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_127
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 68
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e047e280c5f962479e14386e4639b1a
+      internalID: -531822215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_128
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 68
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c603b9e61ed017d4c899b9901b6b8f65
+      internalID: 1744113984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_129
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 68
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439438d4f04ee56478f69b9be0f7a48c
+      internalID: 1473885830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_130
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 68
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417a15d8943830c4fb13cc47cb4dc790
+      internalID: 2072977506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_131
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 68
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0839c89f1b7fc3e4e8aa809453ccd427
+      internalID: -1027382942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_132
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 36
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f118f632f8ff0e04c9d1ac2f46cf4204
+      internalID: -571574316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_133
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 36
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215b2d7f4cfe22c41a475090c6eb9576
+      internalID: 2032504679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_134
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 36
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aedf564a3b617247b1c9e585fbe4bc5
+      internalID: 136171732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_135
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 36
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc693e5d62a4924db8e43fd4c94737e
+      internalID: 1217240452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_136
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 36
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68395209a7a1f9e4080e42f0f308a876
+      internalID: 2035500395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_137
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 36
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31c2ee787c1d9c44bffbad0a2f4cc86
+      internalID: -1076396742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_138
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 36
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f88c5ce32fed3c45a7898f95ec2099a
+      internalID: -1207506522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_139
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 36
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17653ab6178acb949a5c4c5f79956d3a
+      internalID: 1432352230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_140
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 36
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5cf545ab9a74f949a25cb5ad8a49753
+      internalID: -624775459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_141
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 36
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d8550a76ceb02438c628974b7c1c92
+      internalID: -361844492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_142
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 36
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dd272f4edf3e544960f5711b4b9eed
+      internalID: 304920888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_143
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e856316acaf83684f83f98432a3f7231
+      internalID: -1172656997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_144
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 4
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1170c0a433747b448bacdbc9de9bca49
+      internalID: -592243525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_145
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 4
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e808af05e9f7ce34aa39cb08f0f01935
+      internalID: 1981948853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_146
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 4
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ed31de4738d2447a5082de0f7987c2
+      internalID: 1771043791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_147
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 4
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f58cd2dfa52444cbef1f271cabd668
+      internalID: -644388486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_148
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 4
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2193e9ea4306a7c4e82d032df220406a
+      internalID: 681679367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_149
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 4
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b6c47cd32573943a3085407a774912
+      internalID: 1462231981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_150
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 4
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e6ba712d6d5c94eb96f7f87e7740c3
+      internalID: 966069063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_151
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 4
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8cc494b0264a4842a347851871ce6ef
+      internalID: 1466389301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_152
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 4
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74f569b504ac0c4aa4d2a7208835f12
+      internalID: -93375154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Male_Eye_153
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 4
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bc98c83b922df41a5b7a8f3b10c211
+      internalID: -260057914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fb2da7091c1195644aa6d26ed1ad226a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":15.0},"gridSpriteSize":{"x":9.0,"y":15.0},"gridSpriteOffset":{"x":9.0,"y":13.0},"gridSpritePadding":{"x":12.0,"y":17.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      - key: SpriteEditor.SliceOnImport
+        value: False
+    nameFileIdTable:
+      Character_Male_Eye_0: 2048938309342959471
+      Character_Male_Eye_1: 83939436
+      Character_Male_Eye_10: -266003152
+      Character_Male_Eye_100: 1406828180
+      Character_Male_Eye_101: 996958301
+      Character_Male_Eye_102: 1814050548
+      Character_Male_Eye_103: -207787501
+      Character_Male_Eye_104: -1423077513
+      Character_Male_Eye_105: 89341976
+      Character_Male_Eye_106: -2033955628
+      Character_Male_Eye_107: 1097610642
+      Character_Male_Eye_108: 1259368431
+      Character_Male_Eye_109: -475256905
+      Character_Male_Eye_11: -1178969855
+      Character_Male_Eye_110: 1622167800
+      Character_Male_Eye_111: -990636930
+      Character_Male_Eye_112: -1143130014
+      Character_Male_Eye_113: -324933172
+      Character_Male_Eye_114: 1243630938
+      Character_Male_Eye_115: 624212740
+      Character_Male_Eye_116: -346965600
+      Character_Male_Eye_117: 703157283
+      Character_Male_Eye_118: 1891032046
+      Character_Male_Eye_119: 216919449
+      Character_Male_Eye_12: -1345730930
+      Character_Male_Eye_120: -259041892
+      Character_Male_Eye_121: 1524933569
+      Character_Male_Eye_122: 2017856935
+      Character_Male_Eye_123: -1970199917
+      Character_Male_Eye_124: 1318760593
+      Character_Male_Eye_125: -968300614
+      Character_Male_Eye_126: -504995264
+      Character_Male_Eye_127: -531822215
+      Character_Male_Eye_128: 1744113984
+      Character_Male_Eye_129: 1473885830
+      Character_Male_Eye_13: -887952874
+      Character_Male_Eye_130: 2072977506
+      Character_Male_Eye_131: -1027382942
+      Character_Male_Eye_132: -571574316
+      Character_Male_Eye_133: 2032504679
+      Character_Male_Eye_134: 136171732
+      Character_Male_Eye_135: 1217240452
+      Character_Male_Eye_136: 2035500395
+      Character_Male_Eye_137: -1076396742
+      Character_Male_Eye_138: -1207506522
+      Character_Male_Eye_139: 1432352230
+      Character_Male_Eye_14: 235861359
+      Character_Male_Eye_140: -624775459
+      Character_Male_Eye_141: -361844492
+      Character_Male_Eye_142: 304920888
+      Character_Male_Eye_143: -1172656997
+      Character_Male_Eye_144: -592243525
+      Character_Male_Eye_145: 1981948853
+      Character_Male_Eye_146: 1771043791
+      Character_Male_Eye_147: -644388486
+      Character_Male_Eye_148: 681679367
+      Character_Male_Eye_149: 1462231981
+      Character_Male_Eye_15: -1058074865
+      Character_Male_Eye_150: 966069063
+      Character_Male_Eye_151: 1466389301
+      Character_Male_Eye_152: -93375154
+      Character_Male_Eye_153: -260057914
+      Character_Male_Eye_16: 1675373047
+      Character_Male_Eye_17: 377163834
+      Character_Male_Eye_18: 199725949
+      Character_Male_Eye_19: -920730787
+      Character_Male_Eye_2: 210226925
+      Character_Male_Eye_20: -1319153401
+      Character_Male_Eye_21: 632236322
+      Character_Male_Eye_22: 1399593753
+      Character_Male_Eye_23: -1037848325
+      Character_Male_Eye_24: -953578238
+      Character_Male_Eye_25: -1724732444
+      Character_Male_Eye_26: -346272557
+      Character_Male_Eye_27: -400089606
+      Character_Male_Eye_28: 1452070236
+      Character_Male_Eye_29: 146812073
+      Character_Male_Eye_3: -139718850
+      Character_Male_Eye_30: 1906226290
+      Character_Male_Eye_31: 20623795
+      Character_Male_Eye_32: -763428006
+      Character_Male_Eye_33: -298450460
+      Character_Male_Eye_34: -2115243558
+      Character_Male_Eye_35: 1985968703
+      Character_Male_Eye_36: 1337959603
+      Character_Male_Eye_37: -2037479334
+      Character_Male_Eye_38: 69250706
+      Character_Male_Eye_39: 1167232471
+      Character_Male_Eye_4: 256957010
+      Character_Male_Eye_40: 1521984709
+      Character_Male_Eye_41: -1515612140
+      Character_Male_Eye_42: 807513956
+      Character_Male_Eye_43: -1908203421
+      Character_Male_Eye_44: -327189862
+      Character_Male_Eye_45: 375822256
+      Character_Male_Eye_46: -1063455972
+      Character_Male_Eye_47: -348450948
+      Character_Male_Eye_48: 473537608
+      Character_Male_Eye_49: -114622025
+      Character_Male_Eye_5: 1086806118
+      Character_Male_Eye_50: -1262207039
+      Character_Male_Eye_51: -1784658020
+      Character_Male_Eye_52: 154028656
+      Character_Male_Eye_53: -1480808548
+      Character_Male_Eye_54: 1162865456
+      Character_Male_Eye_55: -678257935
+      Character_Male_Eye_56: 1632133855
+      Character_Male_Eye_57: -775720314
+      Character_Male_Eye_58: -1579969498
+      Character_Male_Eye_59: 995161466
+      Character_Male_Eye_6: 504495741
+      Character_Male_Eye_60: -1653839475
+      Character_Male_Eye_61: 401890306
+      Character_Male_Eye_62: -2020292942
+      Character_Male_Eye_63: -263128098
+      Character_Male_Eye_64: 492898577
+      Character_Male_Eye_65: -1438525988
+      Character_Male_Eye_66: -209863618
+      Character_Male_Eye_67: -81694427
+      Character_Male_Eye_68: -83095233
+      Character_Male_Eye_69: -245974253
+      Character_Male_Eye_7: 1298365540
+      Character_Male_Eye_70: -2124494035
+      Character_Male_Eye_71: 361654528
+      Character_Male_Eye_72: 562532422
+      Character_Male_Eye_73: 697574263
+      Character_Male_Eye_74: 1208716710
+      Character_Male_Eye_75: 715962501
+      Character_Male_Eye_76: 596089332
+      Character_Male_Eye_77: 1266921372
+      Character_Male_Eye_78: 713449980
+      Character_Male_Eye_79: -1202566834
+      Character_Male_Eye_8: -443162142
+      Character_Male_Eye_80: -72971406
+      Character_Male_Eye_81: -1369059124
+      Character_Male_Eye_82: -1599787788
+      Character_Male_Eye_83: 1347889960
+      Character_Male_Eye_84: 1489611447
+      Character_Male_Eye_85: -933329093
+      Character_Male_Eye_86: 1864127420
+      Character_Male_Eye_87: -371761373
+      Character_Male_Eye_88: 968195820
+      Character_Male_Eye_89: 1092697137
+      Character_Male_Eye_9: -898777893
+      Character_Male_Eye_90: 629084176
+      Character_Male_Eye_91: -1831531460
+      Character_Male_Eye_92: 2026880389
+      Character_Male_Eye_93: 2065507888
+      Character_Male_Eye_94: 921520489
+      Character_Male_Eye_95: 656082905
+      Character_Male_Eye_96: 402267780
+      Character_Male_Eye_97: 1293402588
+      Character_Male_Eye_98: -1109181894
+      Character_Male_Eye_99: -107010186
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
