@@ -396,9 +396,9 @@ TextureImporter:
       name: Character_Male_Body_4
       rect:
         serializedVersion: 2
-        x: 90
+        x: 91
         y: 132
-        width: 14
+        width: 12
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -418,9 +418,9 @@ TextureImporter:
       name: Character_Male_Body_5
       rect:
         serializedVersion: 2
-        x: 112
+        x: 113
         y: 132
-        width: 14
+        width: 12
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -462,9 +462,9 @@ TextureImporter:
       name: Character_Male_Body_7
       rect:
         serializedVersion: 2
-        x: 154
+        x: 155
         y: 132
-        width: 14
+        width: 12
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -684,7 +684,7 @@ TextureImporter:
         serializedVersion: 2
         x: 91
         y: 100
-        width: 12
+        width: 13
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
