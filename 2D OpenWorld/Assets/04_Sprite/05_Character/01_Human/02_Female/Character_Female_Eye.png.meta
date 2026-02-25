@@ -116,10 +116,10 @@ TextureImporter:
       name: Character_Female_Eye_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 240
-        height: 448
+        x: 10
+        y: 420
+        width: 11
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,6 +130,3680 @@ TextureImporter:
       bones: []
       spriteID: ca0a0ff80997efd20800000000000000
       internalID: 3314220037588426924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 420
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9227ad4d1f9a88c4fa3c1843b23660ed
+      internalID: -1798350124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 420
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d33bfd52ed9bd409cc500cc97d816c
+      internalID: 945680581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 420
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42b8b391dce5bb4fb9c87a221b998a7
+      internalID: -838641268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_4
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 420
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45fc87aa8169e24da591e928c78fb8e
+      internalID: 908979743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 420
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720332292ef6d8c4e8120d09b23c5c24
+      internalID: -1883215644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_6
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 420
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309513bd9a0305148b3a4f2270585fe9
+      internalID: -1586618447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_7
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 420
+        width: 6
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43dcde6f79b64c489198e0c688937ad
+      internalID: -1932464702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_8
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 420
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3366dd93a40ab34c8ada43759f5b38d
+      internalID: -1299914884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_9
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 420
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7bc1f8aceeb8945a8940cfe356caff
+      internalID: -2101252165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_10
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 421
+        width: 8
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d207b71fdf1d3d43ad64e5a7f49c1f4
+      internalID: -356101864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_11
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 388
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a89ba6d259d72b4d87ed037c8bf938c
+      internalID: 1060577665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 388
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90c249d25e725e45adae6d4e8a6c8d0
+      internalID: -241221021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_13
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 388
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaabf6298271f2f4b808926d872e0b6c
+      internalID: -105565683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 388
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1af98ab8c7fe047be76a8beaf2d489
+      internalID: -561600087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_15
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 388
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c42c64629c2e54bb39240a3f75cbc7
+      internalID: 1076923436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_16
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 388
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bab978a6f10cf45b164c8e252ed391
+      internalID: -1525693563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_17
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 388
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb0b504111354049a2f4578c7d4e583
+      internalID: 2009268000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_18
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 388
+        width: 6
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ace6f0c0ef56d4b836e3cf6e2657c4
+      internalID: 452096829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_19
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 388
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc04e7c20a34774fa2b912269223674
+      internalID: -775900016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_20
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 388
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49129762b29f908498a49d4e96919f40
+      internalID: -119597173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_21
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 389
+        width: 8
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e224fe44843dd7449aab9c1e0f143ac9
+      internalID: -29564141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_22
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 356
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fc6ad03daa1984381aa7aae469c9d2
+      internalID: -1914217033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 356
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338f8ed13d90bbb4996c44f6e17a908b
+      internalID: 1291679511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_24
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 356
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9decfb8bfda4e234b80977b3d2b4dda2
+      internalID: -2043987224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 356
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5289a127133674b8696a570a4d672e
+      internalID: -1445784498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_26
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 356
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc5ff5ecf127394888b8aaf5e5627c2
+      internalID: 1747618415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_27
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 356
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dc6fce6dddac94ea9278a01352ae8e
+      internalID: -1826335452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_28
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 356
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45195d40eab8cbf44a6d18ff3fcafc93
+      internalID: 885106813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_29
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 356
+        width: 6
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6407c8137077544b02ea498ce016d8
+      internalID: -1138318010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_30
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 356
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222be5c8b311f364ca2a6efd97dc64b7
+      internalID: 1181492180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_31
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 356
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc68c6f8de4fdc4b846b21a7331f652
+      internalID: -358805780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_32
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 357
+        width: 8
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbc5a051a3483e479ed9eafcfc1b451
+      internalID: -2087334688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_33
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 324
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe03e2085960a4a4b9801d9ef6537408
+      internalID: -172431090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 324
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b372520d5a1f249a16b9c3d9d463bb
+      internalID: -2061249302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_35
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 324
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9882e6d0efcc48a46808bad147c244d2
+      internalID: -661478271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_36
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 324
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d43156f7d9cbf499f379dfa29b0afc
+      internalID: 1275160175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_37
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 324
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d30c4bd73b895448caf9c1d3051c41
+      internalID: -1740438042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_38
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 324
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c5fc46880b5a5419b69484c26c0625
+      internalID: -1639861904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_39
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 324
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf115a9254a9124faf524ee7dfad033
+      internalID: 1195158476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_40
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 324
+        width: 6
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e18bbf770b077b45bafb4fb3f17f7d6
+      internalID: -231501802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_41
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 324
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5079dc8deab1ac74cb6d1551867e53f3
+      internalID: -15022341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_42
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 323
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb0f4e910fcc7b479b765e7d4842af1
+      internalID: -1635993971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_43
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 324
+        width: 8
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5436c0618b4de64984afeca1e930652
+      internalID: 1462189346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_44
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 292
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3030db7512bd8c347a56f15dbb8f29f9
+      internalID: -2145776530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_45
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 292
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ef4df64102c45469a1fd3938f3476e
+      internalID: -12983402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_46
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 292
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13441f42a53c78d4090cda0bfc5d9011
+      internalID: -1052111328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_47
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 292
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b00e97f4d2b6e4e8a44f3413e2e649
+      internalID: -1781467967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_48
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 292
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2abf2de5fd741a47bc8d48be5b9a7fe
+      internalID: 281909323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_49
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 292
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031b9eb519c876441b778bd7529ec39c
+      internalID: 167924617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_50
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 292
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6dd8a206a0eb440ab4d813ebae47c2
+      internalID: 620744439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_51
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 292
+        width: 6
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090031bd85c7a4d43828aa43ba00370c
+      internalID: -1438578236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_52
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 292
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed43ecff5b1f7641ac2e4f324c5069f
+      internalID: 1432621785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_53
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 292
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4630f610149db44bc14f694a104b62
+      internalID: 7371910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_54
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 293
+        width: 8
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bec3e0c693233f4486d94755c4e8e8a
+      internalID: -1558387236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_55
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 260
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5070c244503b08d4dabf234a22266c5f
+      internalID: 1396553511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_56
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 260
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e38e1f9eba25974b86a7a44b4f98b7d
+      internalID: 883606281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_57
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 260
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3a25466eca7a74bafe1c95764c68f6
+      internalID: 1007090238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_58
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 260
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cd842c54b38e8418ad59e818364827
+      internalID: 174011326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_59
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 260
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcc3e8a68c7d9d4795c4447230eba59
+      internalID: -337609501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_60
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 260
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e2394d4b88d2648991f54d42d1a495
+      internalID: -1812411007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_61
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 260
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5e256e7cd9e2141bcb46da03ec2b10
+      internalID: -1377862171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_62
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 260
+        width: 6
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d858c3aa7c991b42bb95148633a1c34
+      internalID: -1983329157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_63
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 260
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa795a2f8984154c882c9b8d7330991
+      internalID: -1045056878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_64
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 260
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65257698617e78349ac21b155e2f27e3
+      internalID: 1061253736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_65
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 261
+        width: 8
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986138403a8882a4f9a939781a0d85e9
+      internalID: -1075425428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_66
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 228
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284907fc183aa3245a1903024d2afcbb
+      internalID: 784871910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_67
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 228
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57992f179e639184d8ae68ef9c9e96a8
+      internalID: -17534216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_68
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 227
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d324274ad77789347bd1d4809e9cc4af
+      internalID: -883289426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_69
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 228
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b91116f7c9b7448866a0ee167329d2
+      internalID: -159938489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_70
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 228
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198c817b72e98d048bb9f7f4749bfca5
+      internalID: 1118648517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_71
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 228
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464b5bafee9e3fb4c97492c966550476
+      internalID: -495067088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_72
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 228
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee58cc0c66adcf64abe12d8e55f6498e
+      internalID: -769257001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_73
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 228
+        width: 6
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78945b1a7772ab4f9b01db5de1d9882
+      internalID: -1841972075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_74
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 228
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6782f23d4ad5b48b355c7ed49e172f
+      internalID: -1594800991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_75
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 228
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4756e8a83a602bc4cb8bb46c259ac59d
+      internalID: -932115543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_76
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 229
+        width: 8
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4f3760baba1de42ac129d4ced263a9
+      internalID: 1617238228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_77
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 196
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4ceeca07fe73241a95a7c6da31eac2
+      internalID: 1189797297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_78
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 196
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db2ac0eafe450744a575baefc02e276
+      internalID: 480355392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_79
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 196
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e89466afac258b4db5aebd06f491104
+      internalID: -1466393978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_80
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 196
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6998921dd53574889c2f34aaccc9a1
+      internalID: 338325775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_81
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 196
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250b31be8e4c6fa44ad6b972cde10bf3
+      internalID: -1150050374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_82
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 196
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d9093ff429bfc4cad13d4aaae1a3e4
+      internalID: 1745918768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_83
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 196
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927eb0956b0fd174a96b0ae91818bbfc
+      internalID: -1405612744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_84
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 196
+        width: 6
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2690a6c73af4b42881d2eca2db7710
+      internalID: -1647031113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_85
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 196
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64afea1bfd6afd34e913d8eb528ce52b
+      internalID: 1992708226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_86
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 196
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf93859b1ffe3846bb044c3217bfc10
+      internalID: -1209929480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_87
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 197
+        width: 8
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e86732d90e25f47a589e50d6fd2d9f
+      internalID: -184015250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_88
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 164
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c3d4e7af17da54ca63663ba784e49b
+      internalID: -1397229880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_89
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 164
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0097ae15bd78c0846ba8764e27b486cd
+      internalID: -371338777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_90
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 164
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c5a36eaacf5f74ca01a14d65ecf00c
+      internalID: -2106132400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_91
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 164
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5c113c47ede734db1dab35c0ac6071
+      internalID: -1128231973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_92
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 164
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3714b05c0f5a2b449857781ed0c67940
+      internalID: 953315783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_93
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 164
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f422a9baa1fdd47980acdbd158b0b8
+      internalID: -1732130999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_94
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 164
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97dc83040bb83d247af9a2a2c74c255f
+      internalID: -1006568510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_95
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 164
+        width: 6
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37e8e1acd20bd644b645e7e5ae33a70
+      internalID: 1252596703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_96
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 164
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aea73aa17ccf0b41b563895eb9da204
+      internalID: -869953239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_97
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 164
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9c17532ca9d55498bd54acd7dde202
+      internalID: -21374993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_98
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 165
+        width: 8
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048993e2e613abc4bb1f1bdf6cb6de30
+      internalID: 999771215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_99
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 132
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4234806e74a5d6947b9ce3477e98967f
+      internalID: -110632793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_100
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 132
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b0ad47ae03bee4f930614c7fdba95b
+      internalID: -1637285682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_101
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 132
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b757305d5e3271247855f80a18becacf
+      internalID: -1762787056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_102
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 132
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3dfc57f3dafe443a9e80d08abf7d97
+      internalID: 1003587031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_103
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 132
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb8e274c9fb5c844b875e59aa692d34
+      internalID: -1393500260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_104
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 132
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f3811d0c2509c419ad9b43220c074f
+      internalID: 529148069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_105
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 132
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf9d3425cde3a340a59ab3718278208
+      internalID: -761358598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_106
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 132
+        width: 6
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b0330cef22f6343af2562a72ad5874
+      internalID: 1201844882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_107
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 132
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490c970a591cbe14ebf9163a9d96fdf4
+      internalID: 1326888158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_108
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 132
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f9bdf95445e23409942136fbd37299
+      internalID: -915129780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_109
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 133
+        width: 8
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe988b58d6b9fc84cb5dc5e74bac86fe
+      internalID: 1797600758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_110
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 100
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c555c9bfcbff8cc48ab473e2e692dbcc
+      internalID: -372033418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_111
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 100
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df68264c1428b6e44a589bd88731f734
+      internalID: 1236958868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_112
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 100
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c92e029c83ce01498a55adc7fd7da2a
+      internalID: 1150219192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_113
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 100
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d57890b10fe85845b133ed3bbefc9d0
+      internalID: -377284578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_114
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 100
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db719d4a1b275694a9034f421bc06546
+      internalID: 556509572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_115
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 100
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1410fc42fae742b41ae5d87d89bc3512
+      internalID: 1958054811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_116
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 100
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f28d96b611c27944b656983691c0a12
+      internalID: -1926408365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_117
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 100
+        width: 6
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d548a314b000741ac26143e9c0e19f
+      internalID: -1679199638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_118
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 100
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a487dfadafb4c49a429b3fcef7b807
+      internalID: -1755079451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_119
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 100
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcd74fbb2fbb06458382e06dea42d7c
+      internalID: 1425874885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_120
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 101
+        width: 8
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b76e1d19f9de5489d16db021c5282b
+      internalID: 2129193109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_121
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 68
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36af722d96113d849be99a5f9781ae5e
+      internalID: 127539547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_122
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 68
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704bc852f57d01e4ca48e5ab6cf3edb8
+      internalID: 2126817308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_123
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 68
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f5d6dc853babb42b08547041053f54
+      internalID: -1659014395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_124
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 68
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f377a76dcdfc664ba8549d23421ab34
+      internalID: 564026047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_125
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 68
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809d5aa7705988c40a501bb6c25cca7f
+      internalID: 1430091718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_126
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 68
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf836841d80f8f4baee1408b4ba946a
+      internalID: 1038642730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_127
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 68
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1e90a3af68c7b41bfc99f4d9599556
+      internalID: -464688708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_128
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 68
+        width: 6
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e76fa4e2ed54d418dc6a30451d155f
+      internalID: 1900569415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_129
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 68
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd8d4e7e64dfd149936e4295a270784
+      internalID: 1244283143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_130
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 68
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a537d7a8559fb429c671d442dfb17c
+      internalID: 1325004901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_131
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 69
+        width: 8
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8bdde31640e61479408ccb9dd5f386
+      internalID: -385752927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_132
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 36
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ea4fc6288c3fb4797171551a2a21c8
+      internalID: -235915892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_133
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 36
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c846e7fbc2270aa429fd7462196e6c24
+      internalID: -2047799610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_134
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 36
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed91d3201d0e394e9eca18f66361acc
+      internalID: 1805145194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_135
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 36
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4136948fed984ec46917743a2e782eb9
+      internalID: -636127744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_136
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 36
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cbf4b6e99840fd45974c9325ab43b6f
+      internalID: -827403020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_137
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 36
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e94978c9ee8abf45895993eb765669c
+      internalID: 1024792834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_138
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 36
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0dc4fd9d874e7446a15e5544804a3fd
+      internalID: 284195754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_139
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 36
+        width: 6
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f9e6422b4b81f4da63829e9e7a637c
+      internalID: 421642822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_140
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 36
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d085dd34dbdbf4589900ec5c71f275
+      internalID: 86986509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_141
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 36
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c87b91ea6023df4d96a1a7ba5851794
+      internalID: -256550846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_142
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 37
+        width: 8
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8f8e97e3553d1479ebc975f63f8a32
+      internalID: 1100351138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_143
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 4
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ef0d8e056d3e64c8b05a7c36ef641c
+      internalID: -1587542133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_144
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 4
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fa827f111f0f64b86a5e2925d12b00
+      internalID: 2140635959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_145
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 4
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fca93d9bd442d418a30ffde02a4f7d
+      internalID: -170628346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_146
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 4
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abcaa30247b3e8841b3e90a3e4508487
+      internalID: 1454744706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_147
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 4
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19dbaa193ceee94986b6fcc6907f77d
+      internalID: 1548214911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_148
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 4
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3061cf1842d52944094b59cdea7e6c0c
+      internalID: -83336947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_149
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 4
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd63981be08c5f54980e7eae1aea6e1a
+      internalID: -276050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_150
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 4
+        width: 6
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e0f93461f2a104e9135b4775992cc9
+      internalID: -705991527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_151
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 4
+        width: 7
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d753cce7d6df3fb46a44b8fa593b8a4d
+      internalID: -2114434736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_152
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 4
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73cbc24cf5b92f418e6afd8f5fc56b8
+      internalID: 1068713460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_153
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 5
+        width: 8
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636080d0d3a821f4e8670af32148514e
+      internalID: 349184642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_6_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 420
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a9b6e3e6405b34399a35f3c279205d
+      internalID: -1945298922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_17_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 388
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00bc19bdfd95ac341857bc65a0c4b074
+      internalID: 429151520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_28_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 356
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f58bf7000d4aa419b6eca580419574
+      internalID: 2068141317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_39_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 324
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2aea29ff248f9649ae6fe400e99390a
+      internalID: -579879307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_50_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 292
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3906505acdfcd84c9adc607d2832d32
+      internalID: -2061466041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_61_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 260
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18ead52e7ea7bf409cb93556dfed651
+      internalID: 1743151439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_72_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 228
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b546ecfb3e384439927a5e36b345c7
+      internalID: 503621303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_83_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 196
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b51d81b32151e42bbd073f1c1145a6
+      internalID: 276465733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_94_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 164
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7b8d1620d60a44680053dee9157c72
+      internalID: -163241784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_105_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 132
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b865a9e0662f1464cbf674122de2aa4e
+      internalID: -2087094649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_116_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 100
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154d9579644c070489279bd03350c7ee
+      internalID: 1077722600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_127_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 68
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6cc53d1df6f99d408376d9ab2017768
+      internalID: 1699177801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_138_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 36
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f2d59b32d0aa84499086e7af3fbfa1
+      internalID: 111228839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Female_Eye_149_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 4
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44aaf4b0941117649af1df64d4a221b0
+      internalID: -1986492611
       vertices: []
       indices: 
       edges: []
@@ -148,9 +3822,176 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":15.0},"gridSpriteSize":{"x":9.0,"y":15.0},"gridSpriteOffset":{"x":9.0,"y":13.0},"gridSpritePadding":{"x":12.0,"y":17.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":15.0},"gridSpriteSize":{"x":12.0,"y":16.0},"gridSpriteOffset":{"x":10.0,"y":12.0},"gridSpritePadding":{"x":9.0,"y":16.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Character_Female_Eye_0: 3314220037588426924
+      Character_Female_Eye_1: -1798350124
+      Character_Female_Eye_10: -356101864
+      Character_Female_Eye_100: -1637285682
+      Character_Female_Eye_101: -1762787056
+      Character_Female_Eye_102: 1003587031
+      Character_Female_Eye_103: -1393500260
+      Character_Female_Eye_104: 529148069
+      Character_Female_Eye_105: -761358598
+      Character_Female_Eye_105_1: -2087094649
+      Character_Female_Eye_106: 1201844882
+      Character_Female_Eye_107: 1326888158
+      Character_Female_Eye_108: -915129780
+      Character_Female_Eye_109: 1797600758
+      Character_Female_Eye_11: 1060577665
+      Character_Female_Eye_110: -372033418
+      Character_Female_Eye_111: 1236958868
+      Character_Female_Eye_112: 1150219192
+      Character_Female_Eye_113: -377284578
+      Character_Female_Eye_114: 556509572
+      Character_Female_Eye_115: 1958054811
+      Character_Female_Eye_116: -1926408365
+      Character_Female_Eye_116_1: 1077722600
+      Character_Female_Eye_117: -1679199638
+      Character_Female_Eye_118: -1755079451
+      Character_Female_Eye_119: 1425874885
+      Character_Female_Eye_12: -241221021
+      Character_Female_Eye_120: 2129193109
+      Character_Female_Eye_121: 127539547
+      Character_Female_Eye_122: 2126817308
+      Character_Female_Eye_123: -1659014395
+      Character_Female_Eye_124: 564026047
+      Character_Female_Eye_125: 1430091718
+      Character_Female_Eye_126: 1038642730
+      Character_Female_Eye_127: -464688708
+      Character_Female_Eye_127_1: 1699177801
+      Character_Female_Eye_128: 1900569415
+      Character_Female_Eye_129: 1244283143
+      Character_Female_Eye_13: -105565683
+      Character_Female_Eye_130: 1325004901
+      Character_Female_Eye_131: -385752927
+      Character_Female_Eye_132: -235915892
+      Character_Female_Eye_133: -2047799610
+      Character_Female_Eye_134: 1805145194
+      Character_Female_Eye_135: -636127744
+      Character_Female_Eye_136: -827403020
+      Character_Female_Eye_137: 1024792834
+      Character_Female_Eye_138: 284195754
+      Character_Female_Eye_138_1: 111228839
+      Character_Female_Eye_139: 421642822
+      Character_Female_Eye_14: -561600087
+      Character_Female_Eye_140: 86986509
+      Character_Female_Eye_141: -256550846
+      Character_Female_Eye_142: 1100351138
+      Character_Female_Eye_143: -1587542133
+      Character_Female_Eye_144: 2140635959
+      Character_Female_Eye_145: -170628346
+      Character_Female_Eye_146: 1454744706
+      Character_Female_Eye_147: 1548214911
+      Character_Female_Eye_148: -83336947
+      Character_Female_Eye_149: -276050
+      Character_Female_Eye_149_1: -1986492611
+      Character_Female_Eye_15: 1076923436
+      Character_Female_Eye_150: -705991527
+      Character_Female_Eye_151: -2114434736
+      Character_Female_Eye_152: 1068713460
+      Character_Female_Eye_153: 349184642
+      Character_Female_Eye_16: -1525693563
+      Character_Female_Eye_17: 2009268000
+      Character_Female_Eye_17_1: 429151520
+      Character_Female_Eye_18: 452096829
+      Character_Female_Eye_19: -775900016
+      Character_Female_Eye_2: 945680581
+      Character_Female_Eye_20: -119597173
+      Character_Female_Eye_21: -29564141
+      Character_Female_Eye_22: -1914217033
+      Character_Female_Eye_23: 1291679511
+      Character_Female_Eye_24: -2043987224
+      Character_Female_Eye_25: -1445784498
+      Character_Female_Eye_26: 1747618415
+      Character_Female_Eye_27: -1826335452
+      Character_Female_Eye_28: 885106813
+      Character_Female_Eye_28_1: 2068141317
+      Character_Female_Eye_29: -1138318010
+      Character_Female_Eye_3: -838641268
+      Character_Female_Eye_30: 1181492180
+      Character_Female_Eye_31: -358805780
+      Character_Female_Eye_32: -2087334688
+      Character_Female_Eye_33: -172431090
+      Character_Female_Eye_34: -2061249302
+      Character_Female_Eye_35: -661478271
+      Character_Female_Eye_36: 1275160175
+      Character_Female_Eye_37: -1740438042
+      Character_Female_Eye_38: -1639861904
+      Character_Female_Eye_39: 1195158476
+      Character_Female_Eye_39_1: -579879307
+      Character_Female_Eye_4: 908979743
+      Character_Female_Eye_40: -231501802
+      Character_Female_Eye_41: -15022341
+      Character_Female_Eye_42: -1635993971
+      Character_Female_Eye_43: 1462189346
+      Character_Female_Eye_44: -2145776530
+      Character_Female_Eye_45: -12983402
+      Character_Female_Eye_46: -1052111328
+      Character_Female_Eye_47: -1781467967
+      Character_Female_Eye_48: 281909323
+      Character_Female_Eye_49: 167924617
+      Character_Female_Eye_5: -1883215644
+      Character_Female_Eye_50: 620744439
+      Character_Female_Eye_50_1: -2061466041
+      Character_Female_Eye_51: -1438578236
+      Character_Female_Eye_52: 1432621785
+      Character_Female_Eye_53: 7371910
+      Character_Female_Eye_54: -1558387236
+      Character_Female_Eye_55: 1396553511
+      Character_Female_Eye_56: 883606281
+      Character_Female_Eye_57: 1007090238
+      Character_Female_Eye_58: 174011326
+      Character_Female_Eye_59: -337609501
+      Character_Female_Eye_6: -1586618447
+      Character_Female_Eye_60: -1812411007
+      Character_Female_Eye_61: -1377862171
+      Character_Female_Eye_61_1: 1743151439
+      Character_Female_Eye_62: -1983329157
+      Character_Female_Eye_63: -1045056878
+      Character_Female_Eye_64: 1061253736
+      Character_Female_Eye_65: -1075425428
+      Character_Female_Eye_66: 784871910
+      Character_Female_Eye_67: -17534216
+      Character_Female_Eye_68: -883289426
+      Character_Female_Eye_69: -159938489
+      Character_Female_Eye_6_1: -1945298922
+      Character_Female_Eye_7: -1932464702
+      Character_Female_Eye_70: 1118648517
+      Character_Female_Eye_71: -495067088
+      Character_Female_Eye_72: -769257001
+      Character_Female_Eye_72_1: 503621303
+      Character_Female_Eye_73: -1841972075
+      Character_Female_Eye_74: -1594800991
+      Character_Female_Eye_75: -932115543
+      Character_Female_Eye_76: 1617238228
+      Character_Female_Eye_77: 1189797297
+      Character_Female_Eye_78: 480355392
+      Character_Female_Eye_79: -1466393978
+      Character_Female_Eye_8: -1299914884
+      Character_Female_Eye_80: 338325775
+      Character_Female_Eye_81: -1150050374
+      Character_Female_Eye_82: 1745918768
+      Character_Female_Eye_83: -1405612744
+      Character_Female_Eye_83_1: 276465733
+      Character_Female_Eye_84: -1647031113
+      Character_Female_Eye_85: 1992708226
+      Character_Female_Eye_86: -1209929480
+      Character_Female_Eye_87: -184015250
+      Character_Female_Eye_88: -1397229880
+      Character_Female_Eye_89: -371338777
+      Character_Female_Eye_9: -2101252165
+      Character_Female_Eye_90: -2106132400
+      Character_Female_Eye_91: -1128231973
+      Character_Female_Eye_92: 953315783
+      Character_Female_Eye_93: -1732130999
+      Character_Female_Eye_94: -1006568510
+      Character_Female_Eye_94_1: -163241784
+      Character_Female_Eye_95: 1252596703
+      Character_Female_Eye_96: -869953239
+      Character_Female_Eye_97: -21374993
+      Character_Female_Eye_98: 999771215
+      Character_Female_Eye_99: -110632793
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
