@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 53bb17de51bef40418f81463681263a8
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Components/Prefab/OffScreenDeactivation.cs
+  uploadId: 867030

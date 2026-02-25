@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 132405bb8cf6a243999e602ca515d5f4
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Utility/ProceduralSaveUtility.cs
+  uploadId: 867030

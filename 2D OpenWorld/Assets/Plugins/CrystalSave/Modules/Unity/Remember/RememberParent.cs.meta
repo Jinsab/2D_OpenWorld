@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 651b7183275ef7244999faa6b244c5b4
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Remember/RememberParent.cs
+  uploadId: 867030

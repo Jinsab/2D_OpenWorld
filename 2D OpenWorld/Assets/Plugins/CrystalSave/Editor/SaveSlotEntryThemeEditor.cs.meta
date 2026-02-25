@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 294f1526d2b135e848f53dc2ce748d5e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/SaveSlotEntryThemeEditor.cs
+  uploadId: 867030

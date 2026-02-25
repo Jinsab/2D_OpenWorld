@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 73ae8ae6334ef084c8d2ad1e5a348916
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Remember/RememberCollider.cs
+  uploadId: 867030

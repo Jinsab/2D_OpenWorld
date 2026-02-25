@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b5a888bce73f416229e0be8fd4502173
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/Uninstall/CrystalSave.Uninstall.Editor.asmdef
+  uploadId: 867030

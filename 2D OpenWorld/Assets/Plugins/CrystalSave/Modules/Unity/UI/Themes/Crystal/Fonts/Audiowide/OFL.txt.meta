@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 19883d04b06291b7db764732d929e5e7
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/UI/Themes/Crystal/Fonts/Audiowide/OFL.txt
+  uploadId: 867030

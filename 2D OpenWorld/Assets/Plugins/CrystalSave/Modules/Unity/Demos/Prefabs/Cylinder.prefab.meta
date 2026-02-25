@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 42adc4f567622a304a3a3afaae0a357b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Prefabs/Cylinder.prefab
+  uploadId: 867030

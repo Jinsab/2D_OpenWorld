@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ce4116a15cce7b94b93d3acebca5306a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Prefabs/SpherePooled.prefab
+  uploadId: 867030

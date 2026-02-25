@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 31746cab62d3b3496a61df517262a400
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scenes/SceneBakedRememberPrefabs.unity
+  uploadId: 867030

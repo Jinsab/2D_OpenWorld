@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: df9f2bf43232faa4a9f3396779452681
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scripts/PostProcessingUIToggler.cs
+  uploadId: 867030

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 33dd771d198e2e64e99f49c7484492bc
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/MigrateSpecificGameObjectEditor.cs
+  uploadId: 867030

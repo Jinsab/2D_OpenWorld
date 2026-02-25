@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 105f7c25a63b8ea4c907c0115f6da7e2
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/RememberMeInstallMenu.cs
+  uploadId: 867030

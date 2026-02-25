@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: baacdb761920b0546b41c17d68f371ef
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Utility/Platform/SteamHelper.cs
+  uploadId: 867030

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: ff045a3d717f252478d0ba079ce85971
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Utility/TrackedGameObjectProxy.cs
+  uploadId: 867030

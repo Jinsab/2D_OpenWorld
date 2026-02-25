@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 0d0358d0b06ca3e4fa7fc839436b4720
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scripts/RuntimePrefabInstantiator.cs
+  uploadId: 867030

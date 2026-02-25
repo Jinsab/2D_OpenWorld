@@ -1,0 +1,99 @@
+@page "/crystalsave-demo"
+@inject HttpClient Http
+@using System.Net.Http.Json
+@using System.Net.Http
+@using System.Text
+@using System.Text.Json
+@using System.Collections.Generic
+@using System.IO
+@using UnityEngine
+@using MemoryPack
+
+<h3>Crystal Save Demo</h3>
+
+<button @onclick="Save">Save Slot 1</button>
+<button @onclick="Load">Load Slot 1</button>
+<button @onclick="List">List Slots</button>
+<p>@status</p>
+
+@code {
+    string api = "https://example.com"; // base URL of the backend
+    string apiKey = "SUPER_SECRET_TOKEN";
+    string userId = "player1";
+    string status = string.Empty;
+    Texture2D screenshotTexture = default!; // assume populated elsewhere
+
+    async Task Save()
+    {
+        var payload = new SavePayload(
+            userId,
+            1,
+            Convert.ToBase64String(Encoding.UTF8.GetBytes("Hello from Blazor"))
+        );
+        var response = await Http.PostAsJsonAsync($"{api}/save", payload);
+        if (response.IsSuccessStatusCode)
+        {
+            await UploadImageAsync(1);
+            var metaPayload = new MetadataPayload(
+                userId,
+                1,
+                "Slot 1",
+                DateTime.UtcNow.Ticks,
+                "Main",
+                "1.png",
+                new Dictionary<string,string>{{"Player","Alice"},{"Level","3"}}
+            );
+            await Http.PostAsJsonAsync($"{api}/metadata", metaPayload);
+            status = "Saved!";
+        }
+        else
+        {
+            status = "Save failed";
+        }
+    }
+
+    async Task Load()
+    {
+        var data = await Http.GetStringAsync($"{api}/load?uid=player1&slot=1");
+        status = "Loaded data: " + Encoding.UTF8.GetString(Convert.FromBase64String(data));
+    }
+
+    async Task List()
+    {
+        var slots = await Http.GetFromJsonAsync<List<SlotMeta>>($"{api}/list?uid=player1");
+        status = JsonSerializer.Serialize(slots);
+    }
+
+    async Task UploadImageAsync(int slot)
+    {
+        using var stream = new MemoryStream();
+        screenshotTexture.EncodeToPNG().CopyTo(stream);
+        var content = new MultipartFormDataContent {
+            { new StringContent(userId), "uid" },
+            { new StringContent(slot.ToString()), "slot" },
+            { new StringContent($"{slot}.png"), "name" },
+            { new ByteArrayContent(stream.ToArray()), "shot", $"{slot}.png" }
+        };
+        var req = new HttpRequestMessage(HttpMethod.Post, $"{api}?action=uploadImage")
+        {
+            Content = content
+        };
+        req.Headers.Add("X-API-KEY", apiKey);
+        await Http.SendAsync(req);
+    }
+
+    class SlotMeta
+    {
+        public int slot { get; set; }
+        public string name { get; set; }
+        public long ticks { get; set; }
+        public string scene { get; set; }
+        public string shot { get; set; }
+        public Dictionary<string,string> meta { get; set; }
+    }
+
+    [MemoryPackable]
+    public partial record SavePayload(string uid, int slot, string data);
+    [MemoryPackable]
+    public partial record MetadataPayload(string uid, int slot, string name, long ticks, string scene, string shot, Dictionary<string,string> meta);
+}

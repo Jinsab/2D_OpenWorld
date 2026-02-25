@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: be8d55760f03ea043808828d1249b65b
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Documentation/MySQL Server files/install.php
+  uploadId: 867030

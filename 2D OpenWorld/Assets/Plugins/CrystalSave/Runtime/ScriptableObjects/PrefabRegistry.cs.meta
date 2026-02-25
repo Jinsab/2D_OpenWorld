@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 7a456364ef0663f4a94a054470914e7b
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/ScriptableObjects/PrefabRegistry.cs
+  uploadId: 867030

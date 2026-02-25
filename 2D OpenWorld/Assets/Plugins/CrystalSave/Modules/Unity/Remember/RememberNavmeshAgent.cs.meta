@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: f26d0e82c30d5de4293f2bc327c335cd
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Remember/RememberNavmeshAgent.cs
+  uploadId: 867030

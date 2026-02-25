@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 848e4283ed7c86047b43c3156a3d182e
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/DefineSymbols/DefineSymbols.cs
+  uploadId: 867030

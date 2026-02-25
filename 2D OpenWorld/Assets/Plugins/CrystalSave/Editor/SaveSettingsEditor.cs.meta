@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 149f7e3c52299db9e9e71847008881cb
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/SaveSettingsEditor.cs
+  uploadId: 867030

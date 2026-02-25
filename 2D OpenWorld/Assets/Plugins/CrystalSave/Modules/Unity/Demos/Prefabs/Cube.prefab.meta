@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8806dd097a8e26f40818f30945468ba2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Prefabs/Cube.prefab
+  uploadId: 867030

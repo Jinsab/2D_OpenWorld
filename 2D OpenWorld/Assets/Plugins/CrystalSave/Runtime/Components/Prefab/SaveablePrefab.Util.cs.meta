@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 0261beddf67d0594db8cf310dc63903c
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Components/Prefab/SaveablePrefab.Util.cs
+  uploadId: 867030

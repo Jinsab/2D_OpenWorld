@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 64021007cbe97984c8f9294df5c7429e
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Remember/RememberTransform.cs
+  uploadId: 867030

@@ -1,0 +1,8 @@
+{
+  "name": "com.memorypack.runtime",
+  "version": "1.21.4",
+  "displayName": "MemoryPack Runtime",
+  "description": "MemoryPack runtime & Roslyn generator (embedded)",
+  "unity": "2022.3",
+  "author": { "name": "Cysharp" }
+}

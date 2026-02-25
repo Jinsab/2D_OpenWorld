@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6788264564281254222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8649785028996099006}
+  - component: {fileID: 4365158446213316599}
+  - component: {fileID: 529595749246311369}
+  - component: {fileID: 3578164635361581186}
+  - component: {fileID: 7890721541137210181}
+  - component: {fileID: 2402598571021853067}
+  - component: {fileID: 6751526507987095254}
+  - component: {fileID: 1052310497272512800}
+  m_Layer: 0
+  m_Name: SphereRestore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8649785028996099006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6788264564281254222}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4365158446213316599
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6788264564281254222}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &529595749246311369
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6788264564281254222}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &3578164635361581186
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6788264564281254222}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7890721541137210181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6788264564281254222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c86315cb0905ea40a60a821739ae3a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rememberTypes:
+  - Arawn.CrystalSave.Runtime.RememberGameObject, Assembly-CSharp-firstpass, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  - Arawn.CrystalSave.Runtime.RememberTransform, Assembly-CSharp-firstpass, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  _inner:
+  - {fileID: 6751526507987095254}
+  - {fileID: 1052310497272512800}
+--- !u!114 &2402598571021853067
+MonoBehaviour:
+  m_ObjectHideFlags: 10
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6788264564281254222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf7c31f2ea24f046bd2a2baa3926782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 63f2ef1e93ba4c5aabb8d448e547b858
+--- !u!114 &6751526507987095254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6788264564281254222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b9e004d50f60884d8fef531a443dd87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hiddenByComposite: 1
+  uniqueID: 63f2ef1e93ba4c5aabb8d448e547b858
+  componentID: 06b328fb-5dda-4016-9bd5-6a0d06ed12e3
+  keepAcrossScenes: 0
+  applySavedDataOnRestore: 0
+  rememberHomeScene: 0
+  homeSceneMode: 0
+  homeScene: 
+  homeScenePrefabID: 
+  homeScenes: []
+  VisibleInScenes: []
+  offScreenMask: 11
+  loadPriority: 50
+  deferLowPriorityUntilRequested: 0
+  enablePerformanceCaching: 0
+  enableBatchRegistration: 0
+  propertySettings:
+    RememberActive: 0
+    RememberName: 0
+    RememberLayer: 0
+    RememberTag: 0
+    RememberDestroyed: 1
+  skipSavingWhenUnchanged: 1
+--- !u!114 &1052310497272512800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6788264564281254222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64021007cbe97984c8f9294df5c7429e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hiddenByComposite: 1
+  uniqueID: 63f2ef1e93ba4c5aabb8d448e547b858
+  componentID: f793380d-34a2-4e25-9369-8464ba596e44
+  keepAcrossScenes: 0
+  applySavedDataOnRestore: 0
+  rememberHomeScene: 0
+  homeSceneMode: 0
+  homeScene: 
+  homeScenePrefabID: 
+  homeScenes: []
+  VisibleInScenes: []
+  offScreenMask: 11
+  loadPriority: 50
+  deferLowPriorityUntilRequested: 0
+  enablePerformanceCaching: 0
+  enableBatchRegistration: 0
+  rememberPositionSettings:
+    Save: 1
+    SpaceMode: 0
+  rememberRotationSettings:
+    Save: 0
+    SpaceMode: 0
+  rememberScaleSettings:
+    Save: 0
+    SpaceMode: 0
+  skipSavingWhenUnchanged: 0
+  disableControllerOnApply: 1

@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03b2e2d91d293d49bdaeadbf489d934, type: 3}
+  m_Name: SaveSettings
+  m_EditorClassIdentifier: Assembly-CSharp-firstpass::Arawn.CrystalSave.Runtime.SaveSettings
+  onboardingCompleted: 1
+  saveMethod: 1
+  version:
+    Major: 1
+    Minor: 0
+    Patch: 0
+  saveFileName: Slot_{n}
+  saveKey: Slot_{n}
+  persistentPath:
+    mode: 0
+    customFolderName: CrystalSave
+    nonWebGLOutputRoot: 
+  useManualSync: 0
+  numberOfSaveSlots: 5
+  numberOfQuickSaveSlots: 1
+  quickSaveSlotOffset: 1
+  autoSaveSlotNumber: 1
+  numberOfAutoSaveSlots: 0
+  autoSaveSlotOffset: 200
+  enableEncryption: 0
+  enableCompression: 1
+  encryptSlotMetadata: 0
+  encryptScreenshots: 0
+  useUserIdForEncryption: 1
+  masterSecretSource: 0
+  masterSecretProvider: {fileID: 0}
+  cloudCryptoMode: 0
+  cloudCryptoProvider: {fileID: 0}
+  enableSync: 0
+  syncSettings: {fileID: 0}
+  runPersistentPathMigrationOnStartup: 1
+  autoSaveMigratedData: 0
+  enableScreenshots: 0
+  screenshotFolderName: SaveSlotScreenshots
+  screenshotFormat: 1
+  defaultSlotMetadata: {fileID: 11400000, guid: 68260a55d3152024bb6d48048e8c3306, type: 2}
+  metadataFileNamePattern: Slot{n}_Meta.bin
+  enableSaveFileVerification: 1
+  logLevel: 1
+  autoRegisterTags: 1
+  tagRegistryKey: TagRegistry
+  autoRegisterPrefabs: 0
+  optimizeRuntimeCapture: 1
+  enableLookupCache: 1
+  skipDuplicateIDCheck: 0
+  enableComponentLookupCache: 1
+  scanForExistingGameObjects: 1
+  existingObjectScanBatchSize: 0
+  prefabInstantiationBatchSize: 0
+  groupInstantiationByScene: 0
+  componentApplyBatchSize: 0
+  activeStateApplyBatchSize: 0
+  syncTransformsAfterPrefabLoad: 1
+  applyParentWhenParentInfoMissing: 1
+  enableAssetBasedReuseDuringDeferred: 0
+  registerDisabledComponents: 1
+  disabledComponentScanMode: 1
+  scanOnlyActiveScene: 1
+  usePrefabPooling: 0
+  defaultPrefabPoolSize: 10
+  spawnPooledPrefabsInScene: 0
+  pooledPrefabSpawnBatchSize: 0
+  enablePooledPrefabBatching: 0
+  useAddressables: 0
+  enableCloudSave: 0
+  backend: 0
+  supabaseUrl: 
+  supabaseAnonKey: 
+  bucket: game-saves
+  userFolderStrategy: 2
+  customUserFolderResolver: {fileID: 0}
+  firebaseBucket: game-saves
+  firebaseIdToken: 
+  mySqlApiUrl: http://localhost/crystal-save-api.php
+  mySqlAuthApiUrl: 
+  mySqlApiKey: 
+  tableName: CrystalSaveData
+  mySqlLoginMode: 0
+  cloudSaveTransport: 0
+  defaultAuthProvider: 0
+  keepLocalMirror: 1
+  cloudSaveScreenshots: 0
+  cloudSaveMetadata: 0
+  autoCloudSignIn: 0
+  autoResolveConflicts: 1
+  autoConflictPolicy: 0
+  metadataRules:
+  - type: 0
+    key: 
+    op: 0
+    value: 
+  conflictOverlayCanvas: {fileID: 0}
+  sceneObjectScanMode: 0
+  scenesToScan: []

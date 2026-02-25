@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 79d8edd5472f2bcdd99343cbd606a632
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scenes/PersistentPrefabsAcrossScenes2.unity
+  uploadId: 867030

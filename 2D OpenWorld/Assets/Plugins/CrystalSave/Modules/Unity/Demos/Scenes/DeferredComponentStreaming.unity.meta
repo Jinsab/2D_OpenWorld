@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d44d84a17bdb8f275bb0980752b42ee5
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scenes/DeferredComponentStreaming.unity
+  uploadId: 867030

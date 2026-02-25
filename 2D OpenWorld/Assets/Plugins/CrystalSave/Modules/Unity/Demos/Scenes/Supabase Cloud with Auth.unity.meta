@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 34c7db6361d60714f8a1878142f5578a
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scenes/Supabase Cloud
+    with Auth.unity
+  uploadId: 867030

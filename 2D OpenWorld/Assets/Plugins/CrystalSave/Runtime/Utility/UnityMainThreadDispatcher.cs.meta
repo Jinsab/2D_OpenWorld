@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 29ebd86fc57b6f745951bc4718afbe9f
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Utility/UnityMainThreadDispatcher.cs
+  uploadId: 867030

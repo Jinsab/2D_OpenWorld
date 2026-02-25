@@ -1,0 +1,20 @@
+{
+  "name": "Arawn.CrystalSave.DefineSymbols.Editor",
+  "references": [
+    "UnityEditor.CoreModule",
+    "UnityEngine.CoreModule",
+    "Arawn.CrystalSave.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
+

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: c9e851dccb2aca14aa89e30ce5f788c3
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/ScriptableObjects/MigrationAction.cs
+  uploadId: 867030

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 6ace3de347871444babf9f7b7c9e1c23
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Managers/VersionManager.cs
+  uploadId: 867030

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: e903b5814bdabb14abc76896d9cfe909
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Utility/SaveDataSerializer.cs
+  uploadId: 867030

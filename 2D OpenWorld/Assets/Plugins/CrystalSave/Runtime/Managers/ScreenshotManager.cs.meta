@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: c0d10c11d9cd41145847b9f9b3bff775
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Managers/ScreenshotManager.cs
+  uploadId: 867030

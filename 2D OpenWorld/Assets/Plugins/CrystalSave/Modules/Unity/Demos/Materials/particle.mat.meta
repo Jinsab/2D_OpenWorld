@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cdab2cde5cbc4914eaf7d374e4db36d8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Materials/particle.mat
+  uploadId: 867030

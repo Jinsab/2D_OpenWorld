@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 32cb0eb6fcf0bbcfbbe3d0f40adcde5d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Sync/SyncSettings.cs
+  uploadId: 867030

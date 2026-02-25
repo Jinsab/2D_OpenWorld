@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d71d67703ed6b1348b1cb3c3dc0b0395
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Prefabs/Sphere.prefab
+  uploadId: 867030

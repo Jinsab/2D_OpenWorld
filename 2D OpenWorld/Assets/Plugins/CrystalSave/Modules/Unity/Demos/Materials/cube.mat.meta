@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f8a70c4593d8fb2478dad4d79a40cbc7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Materials/cube.mat
+  uploadId: 867030

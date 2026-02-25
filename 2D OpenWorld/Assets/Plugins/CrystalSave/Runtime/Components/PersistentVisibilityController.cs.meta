@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 03ffb1537ba622849b315f1f399dbc6c
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Components/PersistentVisibilityController.cs
+  uploadId: 867030

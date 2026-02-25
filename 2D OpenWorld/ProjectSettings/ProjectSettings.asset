@@ -675,7 +675,8 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Standalone: MEMORYPACK;ARAWN_REMEMBERME;REMEMBERME_EDITOR_COROUTINES_PRESENT;REMEMBERME_URP_PRESENT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 3198d9e8aace3ce4b8dc62e17b0d4812
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Remember/RememberAnimator.cs
+  uploadId: 867030

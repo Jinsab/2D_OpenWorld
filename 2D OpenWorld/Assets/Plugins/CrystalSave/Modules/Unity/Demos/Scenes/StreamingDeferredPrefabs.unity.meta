@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2a0ce55d921c4f82e9f4831c30550699
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scenes/StreamingDeferredPrefabs.unity
+  uploadId: 867030

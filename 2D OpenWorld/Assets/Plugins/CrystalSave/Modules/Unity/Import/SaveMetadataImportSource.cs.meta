@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a3d0d8c96bdd2ff6d8817a0b248a9bb6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Import/SaveMetadataImportSource.cs
+  uploadId: 867030

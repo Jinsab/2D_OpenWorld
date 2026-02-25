@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 394ffe0805646ae41bd7d98119bf4740
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/PrefabRegistryEditor.cs
+  uploadId: 867030

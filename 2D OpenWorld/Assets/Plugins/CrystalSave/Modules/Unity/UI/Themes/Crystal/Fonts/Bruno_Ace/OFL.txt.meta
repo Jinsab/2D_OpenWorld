@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 02153ffae3dbbb7889f10eb171e7ec87
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/UI/Themes/Crystal/Fonts/Bruno_Ace/OFL.txt
+  uploadId: 867030

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8fc45331cfe8e891db6c5fcf0cf41c46
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/UI/Themes/Crystal/Crystal -
+    SaveSlotsRuntimeTheme.asset
+  uploadId: 867030

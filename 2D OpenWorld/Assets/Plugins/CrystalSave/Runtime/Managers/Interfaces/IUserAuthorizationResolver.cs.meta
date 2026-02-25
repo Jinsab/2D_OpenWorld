@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: ded51bb78f3485116894ea429eec8f63
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Managers/Interfaces/IUserAuthorizationResolver.cs
+  uploadId: 867030

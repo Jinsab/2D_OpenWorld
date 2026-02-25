@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 2cd09eb82896d334ba7a91d2a8af3747
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/MigrateMultipleSkinnedMeshRenderersEditor.cs
+  uploadId: 867030

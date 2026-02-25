@@ -1,0 +1,10 @@
+{
+  "name": "CrystalSave.Uninstall.Editor",
+  "rootNamespace": "Arawn.CrystalSave.Editor.Uninstall",
+  "references": [],
+  "includePlatforms": [ "Editor" ],
+  "autoReferenced": true,
+  "overrideReferences": false,
+  "allowUnsafeCode": false
+}
+

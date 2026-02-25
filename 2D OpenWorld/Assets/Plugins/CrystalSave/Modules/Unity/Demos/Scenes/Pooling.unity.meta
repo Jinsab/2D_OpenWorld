@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a252ca392f565c44b8cea1836781a741
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scenes/Pooling.unity
+  uploadId: 867030

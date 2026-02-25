@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 01e1c38cf89e5504582010b2c8b08a6a
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scenes/UserSettings-HDRP.unity
+  uploadId: 867030

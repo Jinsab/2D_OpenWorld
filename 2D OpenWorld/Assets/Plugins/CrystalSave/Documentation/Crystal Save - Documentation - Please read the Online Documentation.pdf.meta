@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cc4405f060c69ccd38e003408a6c5629
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Documentation/Crystal Save - Documentation
+    - Please read the Online Documentation.pdf
+  uploadId: 867030

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: ee3a757cf7f73c41890e17249f1ee02b
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/ScriptableObjects/CustomFolderAuthResolver.cs
+  uploadId: 867030

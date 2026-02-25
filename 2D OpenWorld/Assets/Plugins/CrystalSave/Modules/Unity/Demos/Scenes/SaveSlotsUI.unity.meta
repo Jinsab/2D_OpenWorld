@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 269bd3b77ca749b3aa9f17b48b7bfce5
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scenes/SaveSlotsUI.unity
+  uploadId: 867030

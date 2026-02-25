@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5597f3137626260aca1cb75fbe756b11, type: 3}
+  m_Name: Crystal - SaveSlotEntryTheme
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
+  backgroundColor: {r: 0.43137255, g: 0.5529412, b: 0.61960787, a: 0.78431374}
+  textColor: {r: 0.8319662, g: 0.8521788, b: 0.90367043, a: 1}
+  buttonTextColor: {r: 0.8414015, g: 0.8892496, b: 0.8920642, a: 1}
+  inputTextColor: {r: 0, g: 0, b: 0, a: 1}
+  inputPlaceholderColor: {r: 0, g: 0, b: 0, a: 0}
+  inputCaretColor: {r: 0, g: 0, b: 0, a: 0}
+  inputSelectionColor: {r: 0, g: 0, b: 0, a: 0}
+  inputBackgroundSprite: {fileID: 0}
+  inputBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  sizeDelta: {x: 0, y: 0}
+  positionOffset: {x: 0, y: 0, z: 0}
+  screenshotPlaceholder: {fileID: 0}
+  renameButtonSprite: {fileID: 21300000, guid: 0a0dbc99572294517a5d8ab3c8d42680, type: 3}
+  loadButtonSprite: {fileID: 21300000, guid: 0a0dbc99572294517a5d8ab3c8d42680, type: 3}
+  saveButtonSprite: {fileID: 21300000, guid: 0a0dbc99572294517a5d8ab3c8d42680, type: 3}
+  deleteButtonSprite: {fileID: 21300000, guid: 0a0dbc99572294517a5d8ab3c8d42680, type: 3}
+  confirmDeleteButtonSprite: {fileID: 21300000, guid: 0a0dbc99572294517a5d8ab3c8d42680, type: 3}
+  cancelDeleteButtonSprite: {fileID: 21300000, guid: 0a0dbc99572294517a5d8ab3c8d42680, type: 3}
+  panel: {fileID: 0}
+  panelSprite: {fileID: 0}
+  panelColor: {r: 0.2627451, g: 0.49019608, b: 0.6117647, a: 0.9607843}
+  overlayColor: {r: 0, g: 0, b: 0, a: 0.5}

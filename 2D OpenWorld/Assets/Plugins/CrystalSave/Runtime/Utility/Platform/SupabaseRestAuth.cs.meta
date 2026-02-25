@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 01ea9c2aa13166c478cc13f92a37855c
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Utility/Platform/SupabaseRestAuth.cs
+  uploadId: 867030

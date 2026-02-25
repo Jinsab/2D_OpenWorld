@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 6defe8ebb8dc6e44dbc0aad21ae48fba
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Utility/Platform/FacebookSDK.cs
+  uploadId: 867030

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 892df864887e03944836b3fb0fa65982
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scenes/PersistentObjectsScene2.unity
+  uploadId: 867030

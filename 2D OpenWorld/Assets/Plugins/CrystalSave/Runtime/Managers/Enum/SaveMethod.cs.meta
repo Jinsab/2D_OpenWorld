@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 46cc8ee0d94403f4a9d3414c027b3fee
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Managers/Enum/SaveMethod.cs
+  uploadId: 867030

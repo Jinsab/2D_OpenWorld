@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 676a283c87f8fb345ad26b9bf957d8bd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scenes/RegisterUnRegisterAtRuntime_Profiles/GameObject
+    (1) Profile.asset
+  uploadId: 867030

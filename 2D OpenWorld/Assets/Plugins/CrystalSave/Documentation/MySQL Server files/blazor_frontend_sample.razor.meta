@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 20b038239c07a54f086ae2de64114ad4
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Documentation/MySQL Server files/blazor_frontend_sample.razor
+  uploadId: 867030

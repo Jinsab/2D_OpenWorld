@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: fe45d1b81bd029e40a01a216ffc451b8
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Utility/DestroyHelper.cs
+  uploadId: 867030

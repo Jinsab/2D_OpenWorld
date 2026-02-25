@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: c94b14c029433104d986cd572979da43
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Attributes/RememberIconAttributes.cs
+  uploadId: 867030

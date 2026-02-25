@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 66f1976de76b3f740a5b01dbed2dbe13
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scenes/Unity Cloud Save
+    AuthSwitchDemo.unity
+  uploadId: 867030

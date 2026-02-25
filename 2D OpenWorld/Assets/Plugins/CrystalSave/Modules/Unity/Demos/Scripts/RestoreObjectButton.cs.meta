@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 93cb65da833dc0c40aabc8b425768455
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scripts/RestoreObjectButton.cs
+  uploadId: 867030

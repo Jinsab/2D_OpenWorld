@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ec880a4bc15e2a62d9e7c5197598aeb8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Prefabs/SphereRestore.prefab
+  uploadId: 867030

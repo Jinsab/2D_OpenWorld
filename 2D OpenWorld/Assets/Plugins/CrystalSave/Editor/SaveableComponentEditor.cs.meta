@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: d3f3dbcf58f0c1e44920cdc0c47e2791
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/SaveableComponentEditor.cs
+  uploadId: 867030

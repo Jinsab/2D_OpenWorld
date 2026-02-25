@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4a8d35b4d10e4764cba0844ddf683fe5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Materials/sphere.mat
+  uploadId: 867030

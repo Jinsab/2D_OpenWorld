@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 53a7af2fd76394fbeb9804a07c5259c0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/UI/Prefabs/CustomMetadataLine.prefab
+  uploadId: 867030

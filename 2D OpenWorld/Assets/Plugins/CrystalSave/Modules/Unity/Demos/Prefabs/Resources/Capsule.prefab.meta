@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 178d2d359e7c5ae4fbf48a74535dd5ab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Prefabs/Resources/Capsule.prefab
+  uploadId: 867030

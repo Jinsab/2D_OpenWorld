@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c53dc6bc076d4934096f2aade4f0583d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scenes/UserSettings-URP/Sky
+    and Fog Global Volume Profile.asset
+  uploadId: 867030

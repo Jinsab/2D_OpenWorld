@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 21c0244cba6ff1b4db748f27827ced59
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Migration/MigrateSpecificParent.cs
+  uploadId: 867030

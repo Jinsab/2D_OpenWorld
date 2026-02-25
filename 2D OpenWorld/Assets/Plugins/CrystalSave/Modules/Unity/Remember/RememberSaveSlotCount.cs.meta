@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 93fec4db2fcbd350fa79dc052df071ec
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Remember/RememberSaveSlotCount.cs
+  uploadId: 867030

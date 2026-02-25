@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8688229f59dc41c1e963faae9b145019
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/UI/Themes/Crystal/Fonts/Anta/OFL.txt
+  uploadId: 867030

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 921760c27f37eee43b7e1352afbd4845
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Pool/SaveablePrefabPool.cs
+  uploadId: 867030

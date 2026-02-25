@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 488896e1a42dc2649b7e7025d4d85076
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/ScriptableObjects/SceneObjectRegistry.cs
+  uploadId: 867030

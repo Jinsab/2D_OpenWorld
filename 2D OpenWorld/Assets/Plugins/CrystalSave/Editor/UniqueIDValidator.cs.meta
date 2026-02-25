@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: aeef7709d938c8e46be63ce7cb92f382
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/UniqueIDValidator.cs
+  uploadId: 867030

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 48e6a1222e65618c59a81685f8fc6e3f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Sync/Reconciliation/SyncReconciler.cs
+  uploadId: 867030

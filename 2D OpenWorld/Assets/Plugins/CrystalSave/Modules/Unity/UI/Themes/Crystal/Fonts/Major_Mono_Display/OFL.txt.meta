@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 321314d8a974b965db333f0284ede937
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/UI/Themes/Crystal/Fonts/Major_Mono_Display/OFL.txt
+  uploadId: 867030

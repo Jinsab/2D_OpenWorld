@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6c5f5da4815538b42b1823c224b442b3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Scenes/RegisterUnRegisterAtRuntime/Sky
+    and Fog Settings.asset
+  uploadId: 867030

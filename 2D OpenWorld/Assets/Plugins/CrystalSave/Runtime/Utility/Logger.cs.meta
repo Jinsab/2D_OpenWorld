@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 863556b922dd5544082bbf24e2fe38fd
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Utility/Logger.cs
+  uploadId: 867030

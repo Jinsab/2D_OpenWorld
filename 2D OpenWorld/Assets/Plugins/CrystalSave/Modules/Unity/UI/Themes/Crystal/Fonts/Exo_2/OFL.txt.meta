@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0d02a98f446751488b9b468c25a5e65b
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/UI/Themes/Crystal/Fonts/Exo_2/OFL.txt
+  uploadId: 867030

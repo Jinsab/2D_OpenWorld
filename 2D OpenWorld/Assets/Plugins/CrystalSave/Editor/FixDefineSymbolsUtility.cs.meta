@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 91d4fa98060584f1b938a83bc1cf52b3
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/FixDefineSymbolsUtility.cs
+  uploadId: 867030

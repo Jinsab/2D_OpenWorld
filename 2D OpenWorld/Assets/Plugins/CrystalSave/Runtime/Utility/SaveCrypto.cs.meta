@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 78aa5cfa0ad1a4a91baa7987610824ab
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Utility/SaveCrypto.cs
+  uploadId: 867030

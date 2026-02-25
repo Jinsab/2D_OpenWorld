@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 2fd8457d216812846ac17ed67e697c5f
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Utility/SaveManagerEventArgs.cs
+  uploadId: 867030

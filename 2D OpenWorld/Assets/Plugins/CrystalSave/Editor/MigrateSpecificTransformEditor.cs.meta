@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: fccd22ef1fb8380459ccb35de7c5c012
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/MigrateSpecificTransformEditor.cs
+  uploadId: 867030

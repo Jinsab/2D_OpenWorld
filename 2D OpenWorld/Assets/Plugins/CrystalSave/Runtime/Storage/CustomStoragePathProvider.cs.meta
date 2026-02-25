@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: d6736e0a1eb5bccb59972b1440587e62
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Storage/CustomStoragePathProvider.cs
+  uploadId: 867030

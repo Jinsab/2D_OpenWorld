@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: e4b691b5a6880ef47982b299dae35a12
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/WebGL/WebGLFileSystem.cs
+  uploadId: 867030

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 4ecc17fefe203884492b6b5e882f9174
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Events/AuthEventsRelay.cs
+  uploadId: 867030

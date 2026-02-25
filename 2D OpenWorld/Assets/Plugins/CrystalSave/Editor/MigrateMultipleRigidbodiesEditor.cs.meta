@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 4b1fcfa6de6082444a044d859e94cefa
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/MigrateMultipleRigidbodiesEditor.cs
+  uploadId: 867030

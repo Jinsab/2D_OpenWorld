@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 6b4312e4a4c9b18159ba40f16095caf0
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Remember/AnimatorTriggerHelper.cs
+  uploadId: 867030

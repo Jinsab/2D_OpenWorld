@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 362744479472ebb52ad326d572307d54
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Managers/Systems/MySqlSaveSystem.cs
+  uploadId: 867030

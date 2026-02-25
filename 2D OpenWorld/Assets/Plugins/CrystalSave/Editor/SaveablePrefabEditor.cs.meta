@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: b9953a531bf88344dbe57cadcb9b4534
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/SaveablePrefabEditor.cs
+  uploadId: 867030

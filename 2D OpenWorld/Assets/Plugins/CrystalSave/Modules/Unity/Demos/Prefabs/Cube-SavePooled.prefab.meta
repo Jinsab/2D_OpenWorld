@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bd2ee940d6a893b4d87ab37f66461ad2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/Demos/Prefabs/Cube-SavePooled.prefab
+  uploadId: 867030

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 41db4d11cf1fbf2468819a3d32e7b48f
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Runtime/Utility/ResourceLoader.cs
+  uploadId: 867030

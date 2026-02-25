@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: d38fce0667d18158a963e891eb9d4371
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/SaveSlotsRuntimeUIEditor.cs
+  uploadId: 867030

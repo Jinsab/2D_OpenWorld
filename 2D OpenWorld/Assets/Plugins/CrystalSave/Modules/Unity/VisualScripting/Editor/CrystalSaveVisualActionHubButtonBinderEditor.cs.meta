@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0d86d8f5f94650289a72a2219f6b3204
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/VisualScripting/Editor/CrystalSaveVisualActionHubButtonBinderEditor.cs
+  uploadId: 867030

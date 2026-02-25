@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ba02756627f0a1ed3894208bd7cc706a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Modules/Unity/UI/Prefabs/SaveSlotEntryUI.prefab
+  uploadId: 867030

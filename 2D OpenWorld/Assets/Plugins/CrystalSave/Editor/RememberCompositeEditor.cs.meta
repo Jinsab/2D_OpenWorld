@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 657fcdb485bb1b442bde13bd31f058d0
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344712
+  packageName: Crystal Save Core Bundle
+  packageVersion: 1.1.9
+  assetPath: Assets/Plugins/CrystalSave/Editor/RememberCompositeEditor.cs
+  uploadId: 867030

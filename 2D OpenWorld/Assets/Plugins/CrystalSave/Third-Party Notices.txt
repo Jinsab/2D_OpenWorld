@@ -1,0 +1,18 @@
+This Unity asset optionally downloads and installs upon consent MemoryPack 1.21.4.
+
+MemoryPack © 2022-2025 Cysharp – MIT licence
+Licence: https://github.com/Cysharp/MemoryPack/blob/v1.21.4/LICENSE
+
+MemoryPack’s NuGet package contains pre-compiled Microsoft BCL helpers:
+
+• System.Collections.Immutable © Microsoft Corporation – MIT
+  Licence: https://licenses.nuget.org/MIT
+• System.Runtime.CompilerServices.Unsafe © Microsoft Corporation – MIT
+  Licence: https://licenses.nuget.org/MIT
+
+BouncyCastle.Cryptography 2.6.1
+(© The Legion of the Bouncy Castle — MIT)
+
+Used only when the active Build Target is WebGL or Linux (AES-GCM / SHA-3 for browser builds).
+
+Licence → https://github.com/bcgit/bc-csharp/blob/master/LICENSE.md
