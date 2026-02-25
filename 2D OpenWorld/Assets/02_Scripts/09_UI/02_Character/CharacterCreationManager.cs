@@ -40,43 +40,50 @@ public class CharacterCreationManager : MonoBehaviour
     public SpriteLibrary headLib;  // 플레이어 머리 모양 SpriteLibrary
     public SpriteLibrary eyesLib;  // 플레이어의 눈 모양 SpriteLibrary
     public SpriteLibrary hairLib;  // 플레이어 헤어스타일 SpriteLibrary
-    public SpriteLibrary clothLib; // 플레이어 상&하의 SpriteLibrary
+    public SpriteLibrary chestLib; // 플레이어 상의 SpriteLibrary
+    public SpriteLibrary pantsLib; // 플레이어 하의 SpriteLibrary
 
     [Header("Appearance Options")]
     public List<EquipmentOption> bodyOptions;   // 전체 체형&피부 리스트
     public List<EquipmentOption> eyesOptions;   // 전체 눈 색 리스트
-    public SpriteLibraryAsset[] hairOptions;
-    public SpriteLibraryAsset[] clothOptions;
+    public SpriteLibraryAsset[] hairOptions;    // 전체 헤어스타일 리스트
 
     [Header("Current Selection")]
     public bool isMale = true; // 현재 선택된 성별
 
     [Header("Equipment Assets")]
-    public List<EquipmentOption> chestOptions; // 전체 상의 리스트
+    public List<EquipmentOption> chestOptions;    // 전체 상의 리스트
+    public List<EquipmentOption> pantsOptions;    // 전체 하의 리스트
     private List<EquipmentOption> filteredChests; // 현재 성별에 맞는 상의 리스트
+    private List<EquipmentOption> filteredPants;  // 현재 성별에 맞는 하의 리스트
     private List<EquipmentOption> filteredEyes;   // 현재 성별에 맞는 눈 모양 리스트
-    private List<EquipmentOption> filteredBodys;   // 현재 성별에 맞는 눈 모양 리스트
+    private List<EquipmentOption> filteredBodys;  // 현재 성별에 맞는 체형&피부 리스트
+    
     private int currentChestIndex = 0;
+    private int currentPantsIndex = 0;
     private int currentEyesIndex = 0;
-
-    public SpriteLibrary chestLib; // 플레이어의 상의 SpriteLibrary
-
     private int currentBodyIndex = 0;
     private int currentHairIndex = 0;
-    private int currentClothIndex = 0;
 
     void Start()
     {
         RefreshFilteredOptions();
     }
 
+    #region Gender
     // [성별 변경 버튼 클릭 시 호출]
     public void ToggleGender()
     {
         isMale = !isMale;
-        currentChestIndex = 0; // 성별 변경 시 인덱스 초기화
+        //.. currentChestIndex = 0; // 성별 변경 시 인덱스 초기화
+
         RefreshFilteredOptions();
-        ApplyCurrentChest(); // 바뀐 성별 리스트의 첫 번째 옷 적용
+
+        // 바뀐 성별에 따라 외형(상의, 하의, 눈, 체형&피부) 정보 갱신
+        ApplyCurrentChest(); // 바뀐 성별의 상의
+        ApplyCurrentPants(); // 바뀐 성별의 하의
+        ApplyCurrentEyes();  // 바뀐 성별의 눈
+        ApplyCurrentBody();  // 바뀐 성별의 체형&피부
 
         Debug.Log($"성별 전환 : {(isMale ? "남성" : "여성")}");
     }
@@ -87,11 +94,13 @@ public class CharacterCreationManager : MonoBehaviour
         if (isMale)
         {
             filteredChests = chestOptions.Where(opt => !opt.isFemaleOnly).ToList();
+            filteredPants = pantsOptions.Where(opt => !opt.isFemaleOnly).ToList();
             filteredEyes = eyesOptions.Where(opt => !opt.isFemaleOnly).ToList();
         }
         else
         {
             filteredChests = chestOptions.Where(opt => !opt.isMaleOnly).ToList();
+            filteredPants = pantsOptions.Where(opt => !opt.isMaleOnly).ToList();
             filteredEyes = eyesOptions.Where(opt => !opt.isMaleOnly).ToList();
         }
     }
@@ -112,19 +121,19 @@ public class CharacterCreationManager : MonoBehaviour
         // UI 리스트 필터링 업데이트 (이전 답변 로직과 연동)
         RefreshFilteredOptions();
     }
+    #endregion
 
+    #region Eyes
     // [UI 버튼: 다음 눈으로 변경]
-    public void NextEyes(bool next)
+    public void NextEyes(int value)
     {
         if (filteredEyes.Count == 0)
             return;
 
         // 항상 양수 나머지를 얻는 방법
-        if (next)
-            currentEyesIndex = ((currentEyesIndex + 1) % filteredEyes.Count + filteredEyes.Count) % filteredEyes.Count;
-        else
-            currentEyesIndex = ((currentEyesIndex - 1) % filteredEyes.Count + filteredEyes.Count) % filteredEyes.Count;
-        
+        currentEyesIndex =
+            ((currentEyesIndex + value) % filteredEyes.Count + filteredEyes.Count) % filteredEyes.Count;
+
         ApplyCurrentEyes();
     }
 
@@ -135,12 +144,18 @@ public class CharacterCreationManager : MonoBehaviour
             eyesLib.spriteLibraryAsset = filteredEyes[currentEyesIndex].asset;
         }
     }
+    #endregion
 
-    // [UI 버튼: 다음 옷으로 변경]
-    public void NextChest()
+    #region Cloth
+    // [UI 버튼: 다음 상의로 변경]
+    public void NextChest(int value)
     {
-        if (filteredChests.Count == 0) return;
-        currentChestIndex = (currentChestIndex + 1) % filteredChests.Count;
+        if (filteredChests.Count == 0)
+            return;
+
+        currentChestIndex =
+            ((currentChestIndex + value) % filteredChests.Count + filteredChests.Count) % filteredChests.Count;
+        
         ApplyCurrentChest();
     }
 
@@ -152,17 +167,36 @@ public class CharacterCreationManager : MonoBehaviour
         }
     }
 
+    // [UI 버튼: 다음 하의로 변경]
+    public void NextPants(int value)
+    {
+        if (filteredPants.Count == 0)
+            return;
+
+        currentPantsIndex =
+            ((currentPantsIndex + value) % filteredPants.Count + filteredPants.Count) % filteredPants.Count;
+
+        ApplyCurrentPants();
+    }
+
+    private void ApplyCurrentPants()
+    {
+        if (filteredPants.Count > 0)
+        {
+            pantsLib.spriteLibraryAsset = filteredPants[currentPantsIndex].asset;
+        }
+    }
+    #endregion
+
+    #region Body
     // [UI 버튼: 다음 피부색으로 변경]
-    public void NextBody(bool next)
+    public void NextBody(int value)
     {
         if (filteredBodys.Count == 0)
             return;
-
-        if (next)
-            currentBodyIndex = ((currentBodyIndex + 1) % filteredBodys.Count + filteredBodys.Count) % filteredBodys.Count;
-        else
-            currentBodyIndex = ((currentBodyIndex - 1) % filteredBodys.Count + filteredBodys.Count) % filteredBodys.Count;
-
+        
+        currentBodyIndex = ((currentBodyIndex + value) % filteredBodys.Count + filteredBodys.Count) % filteredBodys.Count;
+        
         ApplyCurrentBody();
     }
 
@@ -173,6 +207,7 @@ public class CharacterCreationManager : MonoBehaviour
             bodyLib.spriteLibraryAsset = filteredBodys[currentBodyIndex].asset;
         }
     }
+    #endregion
 
     // UI 버튼: 다음 헤어 스타일로 변경
     public void NextHair()

@@ -720,7 +720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 400726312}
+  m_Material: {fileID: 1012574863}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2865,7 +2865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 400726312}
+  m_Material: {fileID: 1012574863}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -3450,47 +3450,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec808ee9b39f47d4eac5985e9c2503ce, type: 3}
---- !u!21 &400726312
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: DefaultProceduralBlurredImage
-  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _DstBlend: 10
-    - _SrcBlend: 5
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &415284023
 GameObject:
   m_ObjectHideFlags: 0
@@ -3651,7 +3610,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 439653089}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1934523433}
+        m_TargetAssemblyTypeName: CharacterCreationManager, Assembly-CSharp
+        m_MethodName: NextBody
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &439653089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4046,11 +4017,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1934523433}
         m_TargetAssemblyTypeName: CharacterCreationManager, Assembly-CSharp
         m_MethodName: NextEyes
-        m_Mode: 6
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -4925,7 +4896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be9dc56d305de9a43b44e6f120dafaba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.BlurredImage
-  m_Material: {fileID: 1810682491}
+  m_Material: {fileID: 1478763468}
   m_Color: {r: 0.81368893, g: 0.8679245, b: 0.7669396, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -6296,7 +6267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 400726312}
+  m_Material: {fileID: 1012574863}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -7157,7 +7128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 400726312}
+  m_Material: {fileID: 1012574863}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -7635,7 +7606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 400726312}
+  m_Material: {fileID: 1012574863}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -8810,11 +8781,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1934523433}
         m_TargetAssemblyTypeName: CharacterCreationManager, Assembly-CSharp
         m_MethodName: NextEyes
-        m_Mode: 6
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: -1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8941,7 +8912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 400726312}
+  m_Material: {fileID: 1012574863}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -9291,6 +9262,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003383413}
   m_CullTransparentMesh: 1
+--- !u!21 &1012574863
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DefaultProceduralBlurredImage
+  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _DstBlend: 10
+    - _SrcBlend: 5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &1043268460
 GameObject:
   m_ObjectHideFlags: 0
@@ -10713,7 +10725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 400726312}
+  m_Material: {fileID: 1012574863}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -11177,11 +11189,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1934523433}
         m_TargetAssemblyTypeName: CharacterCreationManager, Assembly-CSharp
         m_MethodName: NextBody
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12604,7 +12616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 400726312}
+  m_Material: {fileID: 1012574863}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -12862,6 +12874,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458681271}
   m_CullTransparentMesh: 1
+--- !u!21 &1478763468
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DefaultBlurredImage
+  m_Shader: {fileID: 4800000, guid: 0bc497fc7237fb94a98a758638ed8902, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &1504213057
 GameObject:
   m_ObjectHideFlags: 0
@@ -14116,7 +14167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 400726312}
+  m_Material: {fileID: 1012574863}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -14471,7 +14522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 400726312}
+  m_Material: {fileID: 1012574863}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -15443,7 +15494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 400726312}
+  m_Material: {fileID: 1012574863}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -16254,45 +16305,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798107925}
   m_CullTransparentMesh: 1
---- !u!21 &1810682491
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: DefaultBlurredImage
-  m_Shader: {fileID: 4800000, guid: 0bc497fc7237fb94a98a758638ed8902, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &1846977321
 GameObject:
   m_ObjectHideFlags: 0
@@ -16746,7 +16758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 400726312}
+  m_Material: {fileID: 1012574863}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -17323,7 +17335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 400726312}
+  m_Material: {fileID: 1012574863}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -17613,7 +17625,8 @@ MonoBehaviour:
   headLib: {fileID: 881491074}
   eyesLib: {fileID: 500641481}
   hairLib: {fileID: 842418271}
-  clothLib: {fileID: 1684018559}
+  chestLib: {fileID: 0}
+  pantsLib: {fileID: 0}
   bodyOptions:
   - itemName: 
     asset: {fileID: 0}
@@ -17749,10 +17762,9 @@ MonoBehaviour:
     isMaleOnly: 0
     isFemaleOnly: 1
   hairOptions: []
-  clothOptions: []
   isMale: 1
   chestOptions: []
-  chestLib: {fileID: 0}
+  pantsOptions: []
 --- !u!1 &1958563156
 GameObject:
   m_ObjectHideFlags: 0
