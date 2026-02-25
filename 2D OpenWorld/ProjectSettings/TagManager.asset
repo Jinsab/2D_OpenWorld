@@ -18,7 +18,7 @@ TagManager:
   - Shadow
   - Effect
   - Enemy
-  - 
+  - OverUI
   - 
   - 
   - 
@@ -58,6 +58,9 @@ TagManager:
     locked: 0
   - name: Effects
     uniqueID: 1863926219
+    locked: 0
+  - name: UI
+    uniqueID: 2514121797
     locked: 0
   m_RenderingLayers:
   - Default
