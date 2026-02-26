@@ -720,7 +720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1012574863}
+  m_Material: {fileID: 2021729094}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2865,7 +2865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1012574863}
+  m_Material: {fileID: 2021729094}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -3308,7 +3308,6 @@ Transform:
   - {fileID: 1684018560}
   - {fileID: 881491075}
   - {fileID: 500641479}
-  - {fileID: 473280126}
   - {fileID: 842418272}
   m_Father: {fileID: 261076515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4222,173 +4221,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465350883}
   m_CullTransparentMesh: 1
---- !u!1 &473280125
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 473280126}
-  - component: {fileID: 473280131}
-  - component: {fileID: 473280130}
-  - component: {fileID: 473280129}
-  - component: {fileID: 473280128}
-  - component: {fileID: 473280127}
-  m_Layer: 5
-  m_Name: 02_Eyes (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &473280126
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473280125}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 357141347}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.5625, y: 1}
-  m_Pivot: {x: 0.5, y: -0}
---- !u!114 &473280127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473280125}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -926809998203237052, guid: 255bf85b416112a44bb2cb81d2cba3cf, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &473280128
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473280125}
-  m_CullTransparentMesh: 1
---- !u!114 &473280129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473280125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
-  m_CategoryHash: 5.9674735e-17
-  m_labelHash: 0.00000001053438
-  m_SpriteKey: 0
-  m_SpriteHash: 737259552
---- !u!114 &473280130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473280125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
-  m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 45334a31b507d0d4490a97e34196278b, type: 3}
---- !u!212 &473280131
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473280125}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 1475f31393612b444a72190f96ee53a7, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -698825783
-  m_SortingLayer: 3
-  m_SortingOrder: 4
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: -356101864, guid: bd8e599e01c37114f91c0ebc3841cb99, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.5, y: 0.9375}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 1
 --- !u!1 &474975689
 GameObject:
   m_ObjectHideFlags: 0
@@ -4896,7 +4728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be9dc56d305de9a43b44e6f120dafaba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.BlurredImage
-  m_Material: {fileID: 1478763468}
+  m_Material: {fileID: 0}
   m_Color: {r: 0.81368893, g: 0.8679245, b: 0.7669396, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -6267,7 +6099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1012574863}
+  m_Material: {fileID: 2021729094}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -7128,7 +6960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1012574863}
+  m_Material: {fileID: 2021729094}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -7606,7 +7438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1012574863}
+  m_Material: {fileID: 2021729094}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -8912,7 +8744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1012574863}
+  m_Material: {fileID: 2021729094}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -9262,47 +9094,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003383413}
   m_CullTransparentMesh: 1
---- !u!21 &1012574863
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: DefaultProceduralBlurredImage
-  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _DstBlend: 10
-    - _SrcBlend: 5
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &1043268460
 GameObject:
   m_ObjectHideFlags: 0
@@ -10725,7 +10516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1012574863}
+  m_Material: {fileID: 2021729094}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -12616,7 +12407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1012574863}
+  m_Material: {fileID: 2021729094}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -12874,45 +12665,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458681271}
   m_CullTransparentMesh: 1
---- !u!21 &1478763468
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: DefaultBlurredImage
-  m_Shader: {fileID: 4800000, guid: 0bc497fc7237fb94a98a758638ed8902, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &1504213057
 GameObject:
   m_ObjectHideFlags: 0
@@ -13992,7 +13744,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 322.505, y: -105.68}
+  m_AnchoredPosition: {x: 322.505, y: -105.67}
   m_SizeDelta: {x: 595.01, y: 65.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1613120773
@@ -14167,7 +13919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1012574863}
+  m_Material: {fileID: 2021729094}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -14522,7 +14274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1012574863}
+  m_Material: {fileID: 2021729094}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -15440,7 +15192,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -30, y: -30}
-  m_SizeDelta: {x: 645.01, y: 163.35}
+  m_SizeDelta: {x: 645.01, y: 163.34}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1757751152
 MonoBehaviour:
@@ -15494,7 +15246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1012574863}
+  m_Material: {fileID: 2021729094}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -15788,7 +15540,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 25, y: -25}
-  m_SizeDelta: {x: 595.01, y: 28.01}
+  m_SizeDelta: {x: 595.01, y: 28}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1781641183
 MonoBehaviour:
@@ -16758,7 +16510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1012574863}
+  m_Material: {fileID: 2021729094}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -17335,7 +17087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1012574863}
+  m_Material: {fileID: 2021729094}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -17625,29 +17377,55 @@ MonoBehaviour:
   headLib: {fileID: 881491074}
   eyesLib: {fileID: 500641481}
   hairLib: {fileID: 842418271}
-  chestLib: {fileID: 0}
-  pantsLib: {fileID: 0}
+  chestLib: {fileID: 1684018559}
+  pantsLib: {fileID: 183295237}
+  headOptions:
+  - {fileID: 7108339969198208228, guid: 9d5a782a5cac9814e936097c889d4ad8, type: 3}
+  - {fileID: 7108339969198208228, guid: af218b2c8663f4b43b782c565376c0ca, type: 3}
+  - {fileID: 7108339969198208228, guid: 04a0fc5d146495740b164650d1f4823c, type: 3}
+  - {fileID: 7108339969198208228, guid: e97db2e779f38b143908db0d079a5272, type: 3}
+  - {fileID: 7108339969198208228, guid: 271533cc935f48b45ad87613d1b40e65, type: 3}
   bodyOptions:
-  - itemName: 
-    asset: {fileID: 0}
-    isMaleOnly: 0
+  - itemName: M_Type_01
+    asset: {fileID: 7108339969198208228, guid: 1fee5b4284035134fb0d66b3f4ebd338, type: 3}
+    isMaleOnly: 1
     isFemaleOnly: 0
-  - itemName: 
-    asset: {fileID: 0}
-    isMaleOnly: 0
+  - itemName: M_Type_02
+    asset: {fileID: 7108339969198208228, guid: 8b4d05998b2cdad42ac2084d1526e8c4, type: 3}
+    isMaleOnly: 1
     isFemaleOnly: 0
-  - itemName: 
-    asset: {fileID: 0}
-    isMaleOnly: 0
+  - itemName: M_Type_03
+    asset: {fileID: 7108339969198208228, guid: 3b23b0f8f5470d44d97be332544333f2, type: 3}
+    isMaleOnly: 1
     isFemaleOnly: 0
-  - itemName: 
-    asset: {fileID: 0}
-    isMaleOnly: 0
+  - itemName: M_Type_04
+    asset: {fileID: 7108339969198208228, guid: 97a62d0d77fc4f74ca9693c86bbb1155, type: 3}
+    isMaleOnly: 1
     isFemaleOnly: 0
-  - itemName: 
-    asset: {fileID: 0}
-    isMaleOnly: 0
+  - itemName: M_Type_05
+    asset: {fileID: 7108339969198208228, guid: 48a781f3fa383784fae1f034ade6f99a, type: 3}
+    isMaleOnly: 1
     isFemaleOnly: 0
+  - itemName: F_Type_01
+    asset: {fileID: 7108339969198208228, guid: 84683e89baa4d924b83d33fdcb157042, type: 3}
+    isMaleOnly: 0
+    isFemaleOnly: 1
+  - itemName: F_Type_02
+    asset: {fileID: 7108339969198208228, guid: c6cf74d6632fd034ca3669fe9a578773, type: 3}
+    isMaleOnly: 0
+    isFemaleOnly: 1
+  - itemName: F_Type_03
+    asset: {fileID: 7108339969198208228, guid: 5fa6938377f551649846aefb343378da, type: 3}
+    isMaleOnly: 0
+    isFemaleOnly: 1
+  - itemName: F_Type_04
+    asset: {fileID: 7108339969198208228, guid: e3c682ed3833a1442ad89380bfd0b906, type: 3}
+    isMaleOnly: 0
+    isFemaleOnly: 1
+  - itemName: F_Type_05
+    asset: {fileID: 7108339969198208228, guid: 7640e33386ca8a946a3353fa5acbf368, type: 3}
+    isMaleOnly: 0
+    isFemaleOnly: 1
   eyesOptions:
   - itemName: M_Type_01
     asset: {fileID: 7108339969198208228, guid: 83e50fdc60499e240a8fe020badb0b0a, type: 3}
@@ -17761,10 +17539,27 @@ MonoBehaviour:
     asset: {fileID: 7108339969198208228, guid: ef94a926f68eb3d44a7cadfbf6a8ec06, type: 3}
     isMaleOnly: 0
     isFemaleOnly: 1
-  hairOptions: []
+  hairOptions:
+  - {fileID: 7108339969198208228, guid: 9d5a782a5cac9814e936097c889d4ad8, type: 3}
   isMale: 1
-  chestOptions: []
-  pantsOptions: []
+  chestOptions:
+  - itemName: M_Type_01
+    asset: {fileID: 7108339969198208228, guid: e98205f162623ab4ea5f3d5360f16000, type: 3}
+    isMaleOnly: 1
+    isFemaleOnly: 0
+  - itemName: F_Type_01
+    asset: {fileID: 7108339969198208228, guid: d100b5f8e8d190949a0244ffbf8ec5bd, type: 3}
+    isMaleOnly: 0
+    isFemaleOnly: 1
+  pantsOptions:
+  - itemName: M_Type_01
+    asset: {fileID: 7108339969198208228, guid: d7225b8186bf0d441a485393249c1d22, type: 3}
+    isMaleOnly: 1
+    isFemaleOnly: 0
+  - itemName: F_Type_01
+    asset: {fileID: 7108339969198208228, guid: 1afa62e440a0c764eb28f95dfc9e4aff, type: 3}
+    isMaleOnly: 0
+    isFemaleOnly: 1
 --- !u!1 &1958563156
 GameObject:
   m_ObjectHideFlags: 0
@@ -18683,6 +18478,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019758554}
   m_CullTransparentMesh: 1
+--- !u!21 &2021729094
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DefaultProceduralBlurredImage
+  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _DstBlend: 10
+    - _SrcBlend: 5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &2036418893
 GameObject:
   m_ObjectHideFlags: 0

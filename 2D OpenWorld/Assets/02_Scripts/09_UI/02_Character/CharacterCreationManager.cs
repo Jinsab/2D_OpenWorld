@@ -44,6 +44,7 @@ public class CharacterCreationManager : MonoBehaviour
     public SpriteLibrary pantsLib; // 플레이어 하의 SpriteLibrary
 
     [Header("Appearance Options")]
+    public SpriteLibraryAsset[] headOptions;   // 전체 체형&피부 리스트
     public List<EquipmentOption> bodyOptions;   // 전체 체형&피부 리스트
     public List<EquipmentOption> eyesOptions;   // 전체 눈 색 리스트
     public SpriteLibraryAsset[] hairOptions;    // 전체 헤어스타일 리스트
@@ -54,6 +55,7 @@ public class CharacterCreationManager : MonoBehaviour
     [Header("Equipment Assets")]
     public List<EquipmentOption> chestOptions;    // 전체 상의 리스트
     public List<EquipmentOption> pantsOptions;    // 전체 하의 리스트
+   
     private List<EquipmentOption> filteredChests; // 현재 성별에 맞는 상의 리스트
     private List<EquipmentOption> filteredPants;  // 현재 성별에 맞는 하의 리스트
     private List<EquipmentOption> filteredEyes;   // 현재 성별에 맞는 눈 모양 리스트
@@ -96,12 +98,14 @@ public class CharacterCreationManager : MonoBehaviour
             filteredChests = chestOptions.Where(opt => !opt.isFemaleOnly).ToList();
             filteredPants = pantsOptions.Where(opt => !opt.isFemaleOnly).ToList();
             filteredEyes = eyesOptions.Where(opt => !opt.isFemaleOnly).ToList();
+            filteredBodys = bodyOptions.Where(opt => !opt.isFemaleOnly).ToList();
         }
         else
         {
             filteredChests = chestOptions.Where(opt => !opt.isMaleOnly).ToList();
             filteredPants = pantsOptions.Where(opt => !opt.isMaleOnly).ToList();
             filteredEyes = eyesOptions.Where(opt => !opt.isMaleOnly).ToList();
+            filteredBodys = bodyOptions.Where(opt => !opt.isMaleOnly).ToList();
         }
     }
 
@@ -188,15 +192,16 @@ public class CharacterCreationManager : MonoBehaviour
     }
     #endregion
 
-    #region Body
+    #region Head&Body
     // [UI 버튼: 다음 피부색으로 변경]
     public void NextBody(int value)
     {
         if (filteredBodys.Count == 0)
             return;
-        
+
         currentBodyIndex = ((currentBodyIndex + value) % filteredBodys.Count + filteredBodys.Count) % filteredBodys.Count;
-        
+        Debug.Log($"체형&피부 변경: {currentBodyIndex} / {filteredBodys.Count}");
+
         ApplyCurrentBody();
     }
 
@@ -205,6 +210,7 @@ public class CharacterCreationManager : MonoBehaviour
         if (filteredBodys.Count > 0)
         {
             bodyLib.spriteLibraryAsset = filteredBodys[currentBodyIndex].asset;
+            UpdatePreview(headLib, headOptions[currentBodyIndex]); // 체형&피부 변경 시 머리도 같이 변경
         }
     }
     #endregion
