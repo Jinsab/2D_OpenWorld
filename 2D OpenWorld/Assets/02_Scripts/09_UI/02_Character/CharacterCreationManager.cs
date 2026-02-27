@@ -10,7 +10,7 @@ using UnityEngine.U2D.Animation;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.25 오후 23:11
- *  마지막 수정 일자 : 26.02.27 오후 14:45
+ *  마지막 수정 일자 : 26.02.27 오후 19:25
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 생성 시스템 - 캐릭터 생성 관리
@@ -18,10 +18,14 @@ using UnityEngine.U2D.Animation;
  *    
  *  2. 큰 그림
  *    - Character Create System (캐릭터 생성 시스템)
- *      └─ CharacterDataManager (캐릭터 데이터 매니저) 
- *         └─ CharacterCreationManager (캐릭터 생성 매니저)
- *            ├─ CharacterAppearanceData (캐릭터 외형 데이터)
- *            └─ EquipmentOption (성별 전용 아이템)
+ *      ├─ CharacterDataManager (캐릭터 데이터 매니저) 
+ *      │  └─ CharacterCreationManager (캐릭터 생성 매니저)
+ *      │     └─ CharacterData (캐릭터 전체 데이터)
+ *      │        ├─ CharacterAppearanceData(캐릭터 외형 데이터)
+ *      │        └─ EquipmentOption (성별 전용 아이템)
+ *      │
+ *      └─ CharacterSelectManager (캐릭터 선택 매니저 - 전체 슬롯 관리)
+ *         └─ CharacterSlot (캐릭터 슬롯 데이터 - 슬롯 업데이트 스크립트)
  *               
  *  [스크립트 작성 도움 출처]
  *  1. https://github.com/dotnet/csharplang/issues/1408
@@ -198,14 +202,14 @@ public class CharacterCreationManager : MonoBehaviour
     public void OnClickStartGame()
     {
         // 1. 현재 선택된 에셋들을 데이터 매니저에 저장
-        CharacterDataManager.Instance.playerAppearance = GetFinalData();
+        CharacterDataManager.Instance.playerData = GetFinalData();
 
         // 2. 인게임 씬으로 이동
         UnityEngine.SceneManagement.SceneManager.LoadScene("02_InGameScene");
     }
 
     // 최종 선택 데이터 반환 (게임 시작 시 호출)
-    public CharacterAppearanceData GetFinalData()
+    public CharacterAppearanceData GetAppearanceData()
     {
         return new CharacterAppearanceData
         {
@@ -217,6 +221,18 @@ public class CharacterCreationManager : MonoBehaviour
             hairAsset = hairOptions[currentHairIndex],
             chestAsset = filteredChests[currentChestIndex].asset,
             pantsAsset = filteredPants[currentPantsIndex].asset
+        };
+    }
+
+    public CharacterData GetFinalData()
+    {
+        return new CharacterData
+        {
+            isEmpty = false,                      // 데이터 존재 여부 (캐릭터 슬롯이 비어있는지 여부)
+            appearanceData = GetAppearanceData(), // 현재 선택된 외형 데이터
+            level = 1,                            // 초기 레벨
+            inventory = new Inventory(),          // 초기 인벤토리
+            type = 0                              // 초기 난이도 (예: 0 - 쉬움)
         };
     }
 }
