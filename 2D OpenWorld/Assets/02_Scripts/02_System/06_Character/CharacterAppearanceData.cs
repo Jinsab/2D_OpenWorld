@@ -27,6 +27,7 @@ using UnityEngine.U2D.Animation;
 [System.Serializable]
 public class CharacterAppearanceData
 {
+    public string name;                   // 캐릭터 이름
     public bool gender;                   // 성별 (true: male, false: female)
     public SpriteLibraryAsset bodyAsset;  // 체형 & 피부색
     public SpriteLibraryAsset headAsset;  // 얼굴

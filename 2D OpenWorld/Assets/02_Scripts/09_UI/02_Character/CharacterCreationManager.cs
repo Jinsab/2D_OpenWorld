@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.U2D.Animation;
 
@@ -9,7 +10,7 @@ using UnityEngine.U2D.Animation;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.25 오후 23:11
- *  마지막 수정 일자 : 26.02.25 오후 23:18
+ *  마지막 수정 일자 : 26.02.27 오후 14:45
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 생성 시스템 - 캐릭터 생성 관리
@@ -35,7 +36,7 @@ public class CharacterCreationManager : MonoBehaviour
     public GenderPreset malePreset;
     public GenderPreset femalePreset;
 
-    [Header("Preview Player")]
+    [Header("# Preview Player")]
     public SpriteLibrary bodyLib;  // 플레이어 체형&피부 SpriteLibrary
     public SpriteLibrary headLib;  // 플레이어 머리 모양 SpriteLibrary
     public SpriteLibrary eyesLib;  // 플레이어의 눈 모양 SpriteLibrary
@@ -43,16 +44,17 @@ public class CharacterCreationManager : MonoBehaviour
     public SpriteLibrary chestLib; // 플레이어 상의 SpriteLibrary
     public SpriteLibrary pantsLib; // 플레이어 하의 SpriteLibrary
 
-    [Header("Appearance Options")]
+    [Header("# Appearance Options")]
     public SpriteLibraryAsset[] headOptions;   // 전체 체형&피부 리스트
     public List<EquipmentOption> bodyOptions;   // 전체 체형&피부 리스트
     public List<EquipmentOption> eyesOptions;   // 전체 눈 색 리스트
     public SpriteLibraryAsset[] hairOptions;    // 전체 헤어스타일 리스트
 
-    [Header("Current Selection")]
+    [Header("# Current Selection")]
     public bool isMale = true; // 현재 선택된 성별
+    public TMP_InputField namaInput; 
 
-    [Header("Equipment Assets")]
+    [Header("# Equipment Assets")]
     public List<EquipmentOption> chestOptions;    // 전체 상의 리스트
     public List<EquipmentOption> pantsOptions;    // 전체 하의 리스트
    
@@ -82,14 +84,80 @@ public class CharacterCreationManager : MonoBehaviour
         RefreshFilteredOptions();
 
         // 바뀐 성별에 따라 외형(상의, 하의, 눈, 체형&피부) 정보 갱신
-        ApplyCurrentChest(); // 바뀐 성별의 상의
-        ApplyCurrentPants(); // 바뀐 성별의 하의
-        ApplyCurrentEyes();  // 바뀐 성별의 눈
-        ApplyCurrentBody();  // 바뀐 성별의 체형&피부
+        ApplyCurrentData(filteredChests, chestLib, currentChestIndex); // 바뀐 성별의 상의
+        ApplyCurrentData(filteredPants, pantsLib, currentPantsIndex);  // 바뀐 성별의 하의
+        ApplyCurrentData(filteredEyes, eyesLib, currentEyesIndex);     // 바뀐 성별의 눈
+        ApplyCurrentData(filteredBodys, bodyLib, currentBodyIndex);    // 바뀐 성별의 체형&피부
 
-        Debug.Log($"성별 전환 : {(isMale ? "남성" : "여성")}");
+        // Debug.Log($"성별 전환 : {(isMale ? "남성" : "여성")}");
+    }
+    #endregion
+
+    #region Eyes
+    // [UI 버튼: 다음 눈으로 변경]
+    public void NextEyes(int value)
+    {
+        if (filteredEyes.Count == 0)
+            return;
+
+        // 항상 양수 나머지를 얻는 방법
+        currentEyesIndex =
+            ((currentEyesIndex + value) % filteredEyes.Count + filteredEyes.Count) % filteredEyes.Count;
+
+        ApplyCurrentData(filteredEyes, eyesLib, currentEyesIndex);
+    }
+    #endregion
+
+    #region Cloth
+    // [UI 버튼: 다음 상의로 변경]
+    public void NextChest(int value)
+    {
+        if (filteredChests.Count == 0)
+            return;
+
+        currentChestIndex =
+            ((currentChestIndex + value) % filteredChests.Count + filteredChests.Count) % filteredChests.Count;
+
+        ApplyCurrentData(filteredChests, chestLib, currentChestIndex);
     }
 
+    // [UI 버튼: 다음 하의로 변경]
+    public void NextPants(int value)
+    {
+        if (filteredPants.Count == 0)
+            return;
+
+        currentPantsIndex =
+            ((currentPantsIndex + value) % filteredPants.Count + filteredPants.Count) % filteredPants.Count;
+
+        ApplyCurrentData(filteredPants, pantsLib, currentPantsIndex);
+    }
+    #endregion
+
+    #region Head&Body
+    // [UI 버튼: 다음 피부색으로 변경]
+    public void NextBody(int value)
+    {
+        if (filteredBodys.Count == 0)
+            return;
+
+        currentBodyIndex = ((currentBodyIndex + value) % filteredBodys.Count + filteredBodys.Count) % filteredBodys.Count;
+        Debug.Log($"체형&피부 변경: {currentBodyIndex} / {filteredBodys.Count}");
+
+        ApplyCurrentData(filteredBodys, bodyLib, currentBodyIndex);
+    }
+    #endregion
+
+    #region Hair
+    // UI 버튼: 다음 헤어 스타일로 변경
+    public void NextHair()
+    {
+        currentHairIndex = (currentHairIndex + 1) % hairOptions.Length;
+        UpdatePreview(hairLib, hairOptions[currentHairIndex]);
+    }
+    #endregion
+
+    #region Util
     // [성별에 맞는 아이템만 필터링]
     private void RefreshFilteredOptions()
     {
@@ -109,120 +177,15 @@ public class CharacterCreationManager : MonoBehaviour
         }
     }
 
-    // 성별 버튼 클릭 시 호출
-    public void SelectGender()
-    {
-        isMale = !isMale;
-        GenderPreset selected = isMale ? malePreset : femalePreset;
-
-        // 모든 부위의 라이브러리를 프리셋으로 즉시 교체
-        //bodyLib.spriteLibraryAsset = selected.defaultBody;
-        //headLib.spriteLibraryAsset = selected.defaultHead;
-        //hairLib.spriteLibraryAsset = selected.defaultHair;
-        //chestLib.spriteLibraryAsset = selected.defaultChest;
-        //pantsLib.spriteLibraryAsset = selected.defaultPants;
-
-        // UI 리스트 필터링 업데이트 (이전 답변 로직과 연동)
-        RefreshFilteredOptions();
-    }
-    #endregion
-
-    #region Eyes
-    // [UI 버튼: 다음 눈으로 변경]
-    public void NextEyes(int value)
-    {
-        if (filteredEyes.Count == 0)
-            return;
-
-        // 항상 양수 나머지를 얻는 방법
-        currentEyesIndex =
-            ((currentEyesIndex + value) % filteredEyes.Count + filteredEyes.Count) % filteredEyes.Count;
-
-        ApplyCurrentEyes();
-    }
-
-    private void ApplyCurrentEyes()
-    {
-        if (filteredEyes.Count > 0)
-        {
-            eyesLib.spriteLibraryAsset = filteredEyes[currentEyesIndex].asset;
-        }
-    }
-    #endregion
-
-    #region Cloth
-    // [UI 버튼: 다음 상의로 변경]
-    public void NextChest(int value)
-    {
-        if (filteredChests.Count == 0)
-            return;
-
-        currentChestIndex =
-            ((currentChestIndex + value) % filteredChests.Count + filteredChests.Count) % filteredChests.Count;
-        
-        ApplyCurrentChest();
-    }
-
-    private void ApplyCurrentChest()
-    {
-        if (filteredChests.Count > 0)
-        {
-            chestLib.spriteLibraryAsset = filteredChests[currentChestIndex].asset;
-        }
-    }
-
-    // [UI 버튼: 다음 하의로 변경]
-    public void NextPants(int value)
-    {
-        if (filteredPants.Count == 0)
-            return;
-
-        currentPantsIndex =
-            ((currentPantsIndex + value) % filteredPants.Count + filteredPants.Count) % filteredPants.Count;
-
-        ApplyCurrentPants();
-    }
-
-    private void ApplyCurrentPants()
-    {
-        if (filteredPants.Count > 0)
-        {
-            pantsLib.spriteLibraryAsset = filteredPants[currentPantsIndex].asset;
-        }
-    }
-    #endregion
-
-    #region Head&Body
-    // [UI 버튼: 다음 피부색으로 변경]
-    public void NextBody(int value)
-    {
-        if (filteredBodys.Count == 0)
-            return;
-
-        currentBodyIndex = ((currentBodyIndex + value) % filteredBodys.Count + filteredBodys.Count) % filteredBodys.Count;
-        Debug.Log($"체형&피부 변경: {currentBodyIndex} / {filteredBodys.Count}");
-
-        ApplyCurrentBody();
-    }
-
-    private void ApplyCurrentBody()
-    {
-        if (filteredBodys.Count > 0)
-        {
-            bodyLib.spriteLibraryAsset = filteredBodys[currentBodyIndex].asset;
-            UpdatePreview(headLib, headOptions[currentBodyIndex]); // 체형&피부 변경 시 머리도 같이 변경
-        }
-    }
-    #endregion
-
-    // UI 버튼: 다음 헤어 스타일로 변경
-    public void NextHair()
-    {
-        currentHairIndex = (currentHairIndex + 1) % hairOptions.Length;
-        UpdatePreview(hairLib, hairOptions[currentHairIndex]);
-    }
-
     // 공통 업데이트 로직
+    private void ApplyCurrentData(List<EquipmentOption> filteredData, SpriteLibrary lib, int currentIndex)
+    {
+        if (filteredData.Count > 0)
+        {
+            lib.spriteLibraryAsset = filteredData[currentIndex].asset;
+        }
+    }
+
     private void UpdatePreview(SpriteLibrary lib, SpriteLibraryAsset asset)
     {
         if (lib != null && asset != null)
@@ -230,15 +193,30 @@ public class CharacterCreationManager : MonoBehaviour
             lib.spriteLibraryAsset = asset;
         }
     }
+    #endregion
+
+    public void OnClickStartGame()
+    {
+        // 1. 현재 선택된 에셋들을 데이터 매니저에 저장
+        CharacterDataManager.Instance.playerAppearance = GetFinalData();
+
+        // 2. 인게임 씬으로 이동
+        UnityEngine.SceneManagement.SceneManager.LoadScene("02_InGameScene");
+    }
 
     // 최종 선택 데이터 반환 (게임 시작 시 호출)
     public CharacterAppearanceData GetFinalData()
     {
         return new CharacterAppearanceData
         {
-            //bodyAsset = bodyOptions[currentBodyIndex],
-            //hairAsset = hairOptions[currentHairIndex],
-            // ... 나머지 데이터 채우기
+            name = namaInput.text, // 이름은 추후 입력받는 UI에서 설정하도록 변경 가능
+            gender = isMale,
+            bodyAsset = filteredBodys[currentBodyIndex].asset,
+            headAsset = headOptions[currentBodyIndex],
+            eyesAsset = filteredEyes[currentEyesIndex].asset,
+            hairAsset = hairOptions[currentHairIndex],
+            chestAsset = filteredChests[currentChestIndex].asset,
+            pantsAsset = filteredPants[currentPantsIndex].asset
         };
     }
 }
