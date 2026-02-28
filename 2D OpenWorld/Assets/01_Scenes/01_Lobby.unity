@@ -256,6 +256,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3474230}
   m_CullTransparentMesh: 1
+--- !u!1 &5993789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5993790}
+  - component: {fileID: 5993791}
+  m_Layer: 5
+  m_Name: Name&Type&PlayTime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5993790
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5993789}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1230837832}
+  - {fileID: 1300845369}
+  - {fileID: 1153734072}
+  m_Father: {fileID: 1854022252}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 90}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5993791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5993789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 20
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &16408542
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,7 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1151,7 +1216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1856,143 +1921,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143103366}
-  m_CullTransparentMesh: 1
---- !u!1 &145236994
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 145236995}
-  - component: {fileID: 145236997}
-  - component: {fileID: 145236996}
-  m_Layer: 5
-  m_Name: Type
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &145236995
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145236994}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1854022252}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &145236996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145236994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "\uC77C\uBC18"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
-  m_sharedMaterial: {fileID: 5731025436253080797, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 1024
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_characterHorizontalScale: 1
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 0
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &145236997
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145236994}
   m_CullTransparentMesh: 1
 --- !u!1 &169221357
 GameObject:
@@ -3745,7 +3673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -7120,6 +7048,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649622924}
   m_CullTransparentMesh: 1
+--- !u!21 &658529100
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DefaultProceduralBlurredImage
+  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _DstBlend: 10
+    - _SrcBlend: 5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &664408084
 GameObject:
   m_ObjectHideFlags: 0
@@ -7169,7 +7138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -7535,7 +7504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -8043,7 +8012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -8533,7 +8502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -9232,7 +9201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -9877,7 +9846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -11392,7 +11361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -12004,7 +11973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -12357,7 +12326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -12710,7 +12679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -14188,6 +14157,314 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111627527}
   m_CullTransparentMesh: 1
+--- !u!1 &1153734071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1153734072}
+  - component: {fileID: 1153734074}
+  - component: {fileID: 1153734073}
+  m_Layer: 5
+  m_Name: Play Time
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1153734072
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153734071}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1879128229}
+  m_Father: {fileID: 5993790}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 300, y: 90}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1153734073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153734071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 658529100}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 4376878531266988640, guid: e607be7c6f682b94386d0c882ebc73c2, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 2
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 1
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 255
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &1153734074
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153734071}
+  m_CullTransparentMesh: 1
 --- !u!1 &1154106589
 GameObject:
   m_ObjectHideFlags: 0
@@ -14239,7 +14516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -14850,7 +15127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -15107,6 +15384,314 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228261213}
+  m_CullTransparentMesh: 1
+--- !u!1 &1230837831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1230837832}
+  - component: {fileID: 1230837834}
+  - component: {fileID: 1230837833}
+  m_Layer: 5
+  m_Name: Name Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1230837832
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230837831}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1667378901}
+  m_Father: {fileID: 5993790}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 300, y: 90}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &1230837833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230837831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 658529100}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 4376878531266988640, guid: e607be7c6f682b94386d0c882ebc73c2, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 2
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 1
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 255
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &1230837834
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230837831}
   m_CullTransparentMesh: 1
 --- !u!1 &1243040366
 GameObject:
@@ -15491,47 +16076,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.8, y: 0.5}
   m_EdgeRadius: 0
---- !u!21 &1279983390
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: DefaultProceduralBlurredImage
-  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _DstBlend: 10
-    - _SrcBlend: 5
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &1281295988
 GameObject:
   m_ObjectHideFlags: 0
@@ -15744,6 +16288,314 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281738907}
+  m_CullTransparentMesh: 1
+--- !u!1 &1300845368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1300845369}
+  - component: {fileID: 1300845371}
+  - component: {fileID: 1300845370}
+  m_Layer: 5
+  m_Name: Type Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1300845369
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300845368}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1592453912}
+  m_Father: {fileID: 5993790}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 300, y: 90}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1300845370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300845368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 658529100}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 4376878531266988640, guid: e607be7c6f682b94386d0c882ebc73c2, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 2
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 1
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 255
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &1300845371
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300845368}
   m_CullTransparentMesh: 1
 --- !u!1 &1328251203
 GameObject:
@@ -16559,7 +17411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -17178,7 +18030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -17770,6 +18622,179 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!1 &1495878449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1495878450}
+  - component: {fileID: 1495878454}
+  - component: {fileID: 1495878453}
+  - component: {fileID: 1495878452}
+  - component: {fileID: 1495878451}
+  m_Layer: 5
+  m_Name: Type Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1495878450
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495878449}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2105706586}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 25, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &1495878451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495878449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &1495878452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495878449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &1495878453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495878449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uCCB4\uB825: 100, \uB9C8\uB098: 100"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
+  m_sharedMaterial: {fileID: 5731025436253080797, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4280700527
+  m_fontColor: {r: 0.43529415, g: 0.30588236, b: 0.14901961, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1495878454
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495878449}
+  m_CullTransparentMesh: 1
 --- !u!1 &1504213057
 GameObject:
   m_ObjectHideFlags: 0
@@ -18022,7 +19047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -18957,7 +19982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -19473,6 +20498,179 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579290466}
   m_CullTransparentMesh: 1
+--- !u!1 &1592453911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1592453912}
+  - component: {fileID: 1592453916}
+  - component: {fileID: 1592453915}
+  - component: {fileID: 1592453914}
+  - component: {fileID: 1592453913}
+  m_Layer: 5
+  m_Name: Type Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1592453912
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592453911}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1300845369}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1592453913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592453911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &1592453914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592453911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &1592453915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592453911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC77C\uBC18"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
+  m_sharedMaterial: {fileID: 5731025436253080797, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4280700527
+  m_fontColor: {r: 0.43529415, g: 0.30588236, b: 0.14901961, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1592453916
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592453911}
+  m_CullTransparentMesh: 1
 --- !u!1 &1598933368
 GameObject:
   m_ObjectHideFlags: 0
@@ -19878,7 +21076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -20233,7 +21431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -20639,8 +21837,10 @@ GameObject:
   - component: {fileID: 1667378901}
   - component: {fileID: 1667378903}
   - component: {fileID: 1667378902}
+  - component: {fileID: 1667378905}
+  - component: {fileID: 1667378904}
   m_Layer: 5
-  m_Name: Name
+  m_Name: Name Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20658,13 +21858,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1854022252}
+  m_Father: {fileID: 1230837832}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 190}
-  m_Pivot: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 25, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1667378902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20685,7 +21885,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TEST01
+  m_text: testtest
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
   m_sharedMaterial: {fileID: 5731025436253080797, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
@@ -20694,8 +21894,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4280700527
+  m_fontColor: {r: 0.43529415, g: 0.30588236, b: 0.14901961, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -20765,6 +21965,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667378900}
   m_CullTransparentMesh: 1
+--- !u!114 &1667378904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667378900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &1667378905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667378900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &1673497774
 GameObject:
   m_ObjectHideFlags: 0
@@ -21479,7 +22713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -22514,7 +23748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -23047,6 +24281,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1854022252}
+  - component: {fileID: 1854022253}
+  - component: {fileID: 1854022254}
   m_Layer: 5
   m_Name: Name&Type
   m_TagString: Untagged
@@ -23066,15 +24302,55 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1667378901}
-  - {fileID: 145236995}
+  - {fileID: 5993790}
+  - {fileID: 2105706586}
   m_Father: {fileID: 1200449408}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 520, y: -95}
+  m_SizeDelta: {x: 0, y: 190}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1854022253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854022251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 2
+  m_VerticalFit: 0
+--- !u!114 &1854022254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854022251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.VerticalLayoutGroup
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 10
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1861348494
 GameObject:
   m_ObjectHideFlags: 0
@@ -23254,7 +24530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -23511,6 +24787,179 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872662940}
+  m_CullTransparentMesh: 1
+--- !u!1 &1879128228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1879128229}
+  - component: {fileID: 1879128233}
+  - component: {fileID: 1879128232}
+  - component: {fileID: 1879128231}
+  - component: {fileID: 1879128230}
+  m_Layer: 5
+  m_Name: Type Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1879128229
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879128228}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1153734072}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1879128230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879128228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &1879128231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879128228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &1879128232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879128228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 12:19:13
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
+  m_sharedMaterial: {fileID: 5731025436253080797, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4280700527
+  m_fontColor: {r: 0.43529415, g: 0.30588236, b: 0.14901961, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1879128233
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879128228}
   m_CullTransparentMesh: 1
 --- !u!1 &1911179736
 GameObject:
@@ -23831,7 +25280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -26130,7 +27579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1279983390}
+  m_Material: {fileID: 658529100}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -26380,6 +27829,314 @@ MonoBehaviour:
   animationMode: 0
   selectable: {fileID: 0}
   scriptDrivenAnimationState: 0
+--- !u!1 &2105706585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2105706586}
+  - component: {fileID: 2105706588}
+  - component: {fileID: 2105706587}
+  m_Layer: 5
+  m_Name: HP&MP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2105706586
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105706585}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1495878450}
+  m_Father: {fileID: 1854022252}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 620, y: 90}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &2105706587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105706585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 658529100}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 4376878531266988640, guid: e607be7c6f682b94386d0c882ebc73c2, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 2
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 1
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 255
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &2105706588
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105706585}
+  m_CullTransparentMesh: 1
 --- !u!1 &2108932351
 GameObject:
   m_ObjectHideFlags: 0
