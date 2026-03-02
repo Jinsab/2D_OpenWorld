@@ -1,3 +1,5 @@
+using TMPro;
+using UnityEditor.U2D.Animation;
 using UnityEngine;
 
 /*  
@@ -6,7 +8,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.27 오후 18:53
- *  마지막 수정 일자 : 26.03.02 오후 18:06
+ *  마지막 수정 일자 : 26.03.02 오후 21:18
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 슬롯 시스템 - 캐릭터 선택 및 생성 칸 이동
@@ -31,18 +33,88 @@ using UnityEngine;
 
 public class CharacterSlot : MonoBehaviour
 {
+    [Header("# Info Group")]
     public GameObject infoGroup;
+    public CharacterData characterData;
+
+    [Header("# Info Text")]
+    public TMP_Text nameText;
+    public TMP_Text typeText;
+    public TMP_Text timeText;
+    public TMP_Text hpText;
+    public TMP_Text mpText;
+    public TMP_Text levelText;
+    
+    [Header("# Empty Group")]
     public GameObject emptyGroup;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    // 슬롯이 활성화될 때마다 캐릭터 데이터에 따라 UI 업데이트
+    private void OnEnable()
     {
-        
+        if (characterData.isEmpty)
+        {
+            infoGroup.SetActive(false);
+            emptyGroup.SetActive(true);
+        }
+        else
+        {
+            infoGroup.SetActive(true);
+            emptyGroup.SetActive(false);
+
+            SetSlot(characterData);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    // 데이터를 받아서 슬롯 UI를 갱신하는 함수
+    public void SetSlot(CharacterData data)
     {
-        
+        nameText.text = data.appearanceData.name;
+
+        switch (data.type)
+        {
+            case 0:
+                typeText.text = "쉬움";
+                break;
+            case 1:
+                typeText.text = "보통";
+                break;
+            case 2:
+                typeText.text = "어려움";
+                break;
+            default:
+                typeText.text = "하드코어";
+                break;
+        }
+
+        // 시간은 시:분:초로 변환하여 표시 (예시: 11h 30m 45s)
+        timeText.text = $"{(int)(data.playTime / 3600)}h {(int)((data.playTime % 3600) / 60)}m {(int)(data.playTime % 60)}s";
+
+        // HP와 MP는 StatType을 사용하여 캐릭터의 최대 체력과 최대 마나를 가져와서 표시
+        // StatType.MaxHealth와 StatType.MaxMana는 enum으로 정의되어 있어야 하며, 캐릭터의 statData에서 해당 키로 값을 가져와야 합니다.
+        // TryGetValue를 사용하여 해당 키가 존재하는지 확인하고, 존재하면 LastValue를 표시하고, 존재하지 않으면 "Key Not Found" 메시지를 표시합니다.
+        if (data.statData.Stats.TryGetValue(StatType.MaxHealth, out CharacterStat HP))
+            hpText.text = $"{HP.LastValue} HP";
+        else
+            hpText.text = "HP Key Not Found";
+
+        if (data.statData.Stats.TryGetValue(StatType.MaxMana, out CharacterStat MP))
+            mpText.text = $"{MP.LastValue} MP";
+        else
+            mpText.text = "MP Key Not Found";
+
+        levelText.text = data.level.ToString();
+    }
+
+    public void CharacterSelect()
+    {
+        if (characterData.isEmpty)
+        {
+            // 캐릭터 정보가 없으므로 캐릭터 생성 화면으로 이동
+
+        }
+        else
+        {
+            // 캐릭터 정보가 있으므로 캐릭터 선택 완료, 해당 월드로 이동
+        }
     }
 }

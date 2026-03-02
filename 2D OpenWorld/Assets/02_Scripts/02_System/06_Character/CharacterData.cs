@@ -4,7 +4,7 @@
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.27 오후 19:25
- *  마지막 수정 일자 : 26.02.27 오후 19:25
+ *  마지막 수정 일자 : 26.03.02 오후 21:18
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 생성 시스템 - 캐릭터 데이터
@@ -27,11 +27,14 @@ public class CharacterData
     // 캐릭터 외형 데이터 (이름, 성별, 체형&피부, 얼굴, 눈 모양, 헤어 스타일, 기본 상·하의)
     public CharacterAppearanceData appearanceData;
 
-    // 캐릭터 레벨, 이후 스킬 데이터로 확장 가능
-    public int level;
+    // 캐릭터 스탯 데이터 (체력, 공격력, 방어력 등)
+    public PlayerStats statData;
 
     // 캐릭터 인벤토리 데이터 (아이템, 장비 등)
     public Inventory inventory;
+
+    // 캐릭터 레벨, 이후 스킬 데이터로 확장 가능
+    public int level;
 
     // "일반" 등 (캐릭터 난이도 또는 유형 구분용)
     // 0 : 쉬움 (아이템 드롭 없음, 레벨 유지)
@@ -39,4 +42,7 @@ public class CharacterData
     // 2 : 어려움 (캐릭터 사망 시 모든 아이템 드롭, 레벨 감소)
     // 3 : 하드코어 (캐릭터 사망 시 데이터 삭제)
     public int type;
+
+    // 플레이 시간 (초 단위)
+    public float playTime;
 }

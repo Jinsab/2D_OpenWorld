@@ -35,7 +35,14 @@ using System.Collections.Generic;
 [Serializable]
 public class CharacterStat
 {
-    public float BaseValue; // 기본값 (예: 기본 공격력 10)
+    // 기본값 (예: 기본 공격력 10)
+    public float BaseValue;
+
+    // 최종 값 (계산된 값, 읽기 전용)
+    public float LastValue
+    {
+        get { return lastValue; }
+    }
 
     private readonly List<StatModifier> statModifiers = new List<StatModifier>();
     public IReadOnlyList<StatModifier> StatModifiers => statModifiers.AsReadOnly();

@@ -26,6 +26,7 @@
 public enum StatType
 {
     MaxHealth,      // 최대 체력
+    MaxMana,        // 최대 마나
     MoveSpeed,      // 이동 속도
     AttackDamage,   // 공격력
     AttackSpeed,    // 공격 속도
