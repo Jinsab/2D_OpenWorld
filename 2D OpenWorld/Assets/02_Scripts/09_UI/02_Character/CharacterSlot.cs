@@ -102,7 +102,7 @@ public class CharacterSlot : MonoBehaviour
         else
             mpText.text = "MP Key Not Found";
 
-        levelText.text = data.level.ToString();
+        levelText.text = $"{data.level} LV";
     }
 
     public void CharacterSelect()
@@ -110,11 +110,12 @@ public class CharacterSlot : MonoBehaviour
         if (characterData.isEmpty)
         {
             // 캐릭터 정보가 없으므로 캐릭터 생성 화면으로 이동
-
+            Debug.Log("빈 슬롯 선택 - 캐릭터 생성 화면으로 이동");
         }
         else
         {
             // 캐릭터 정보가 있으므로 캐릭터 선택 완료, 해당 월드로 이동
+            Debug.Log($"캐릭터 선택 완료 - {characterData.appearanceData.name}, 월드로 이동");
         }
     }
 }
