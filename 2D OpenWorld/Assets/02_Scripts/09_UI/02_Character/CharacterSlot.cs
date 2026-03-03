@@ -52,8 +52,10 @@ public class CharacterSlot : MonoBehaviour
     public GameObject emptyGroup;
 
     // 슬롯이 활성화될 때마다 캐릭터 데이터에 따라 UI 업데이트
-    private void OnEnable()
+    public void PreviewCharacter()
     {
+        Debug.Log(characterData == null ? "캐릭터 데이터 없음" : $"캐릭터 데이터 있음 - {characterData.appearanceData.name}");
+
         if (characterData.isEmpty)
         {
             infoGroup.SetActive(false);

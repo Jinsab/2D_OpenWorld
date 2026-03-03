@@ -47,18 +47,37 @@ public class CharacterDataManager : MonoBehaviour
         {
             Instance = this;
 
-            characterDataList = new CharacterData[10]; // 캐릭터 데이터 리스트 초기화
+            InitCharacterData(); // 캐릭터 데이터 리스트 초기화
             DontDestroyOnLoad(gameObject); // 씬 전환 시 파괴 방지
-
-            // 저장된 데이터가 있다면 불러오고, 없다면 불러오지 않음
-            if (SaveManager.Instance.HasSaveAt(1))
-            {
-                SaveManager.Instance.Load(1, restoreLastActiveScene: true); // 저장된 데이터 로드
-            }
         }
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void InitCharacterData()
+    {
+        // 저장된 데이터가 있다면 불러오고, 없다면 불러오지 않음
+        if (SaveManager.Instance.HasSaveAt(1))
+        {
+            SaveManager.Instance.Load(1, restoreLastActiveScene: true); // 저장된 데이터 로드
+        }
+
+        characterDataList = new CharacterData[10];
+
+        for (int i = 0; i < characterDataList.Length; i++)
+        {
+            characterDataList[i] = new CharacterData
+            {
+                isEmpty = true,
+                appearanceData = new CharacterAppearanceData(),
+                statData = new PlayerStats(),
+                inventory = new Inventory(),
+                level = 0,
+                type = 0,
+                playTime = 0f
+            };
         }
     }
 

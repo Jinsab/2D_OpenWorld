@@ -1,3 +1,4 @@
+using UnityEditor.U2D.Animation;
 using UnityEngine;
 
 /*  
@@ -29,11 +30,6 @@ public class CharacterSlotManager : MonoBehaviour
     [Header("# Character Slot Prefab")]
     public GameObject characterSlotPrefab;
 
-    private void Start()
-    {
-        CreateCharacterSlots();
-    }
-
     // 캐릭터 목록 창이 활성화될 때마다
     // 슬롯 목록도 캐릭터 데이터에 따라 UI 업데이트
     private void OnEnable()
@@ -41,43 +37,14 @@ public class CharacterSlotManager : MonoBehaviour
         UpdateCharacterSlots();
     }
 
-    private void CreateCharacterSlots()
-    {
-        characterSlots = new CharacterSlot[CharacterDataManager.Instance.characterDataList.Length];
-
-        for (int i = 0; i < characterSlots.Length; i++)
-        {
-            GameObject slot = Instantiate(characterSlotPrefab, this.transform);
-            characterSlots[i] = slot.GetComponent<CharacterSlot>();
-
-            slot.SetActive(false); // 초기에는 슬롯 비활성화
-        }
-    }
-
     public void UpdateCharacterSlots()
     {
-        //// 기존 슬롯 제거
-        //foreach (Transform child in transform)
-        //{
-        //    Destroy(child.gameObject);
-        //}
-        //// 캐릭터 데이터 리스트를 받아와서 슬롯 생성 및 업데이트
-        //Debug.Log(CharacterDataManager.Instance.characterDataList.Length);
-        //foreach (CharacterData characterData in CharacterDataManager.Instance.characterDataList)
-        //{
-        //    Debug.Log("캐릭터 데이터 리스트 받기");
-        //    GameObject slot = Instantiate(characterSlotPrefab, this.transform);
-        //    CharacterSlot characterSlot = slot.GetComponent<CharacterSlot>();
-        //    characterSlot.characterData = characterData;
-        //    slot.SetActive(true);
-        //}
-
-        // 슬롯 제거 없이 캐릭터 데이터 리스트를 받아와서 슬롯 업데이트
+        // 캐릭터 데이터 리스트를 받아와서 슬롯 업데이트
         for (int i = 0; i < characterSlots.Length; i++)
         {
             Debug.Log($"캐릭터 데이터 리스트 받기 - 슬롯 {i}");
             characterSlots[i].characterData = CharacterDataManager.Instance.characterDataList[i];
-            characterSlots[i].gameObject.SetActive(true);
+            characterSlots[i].PreviewCharacter();
         }
     }
 
