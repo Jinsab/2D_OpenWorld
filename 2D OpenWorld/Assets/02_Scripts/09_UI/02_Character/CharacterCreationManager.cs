@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.U2D.Animation;
@@ -10,7 +11,7 @@ using UnityEngine.U2D.Animation;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.25 오후 23:11
- *  마지막 수정 일자 : 26.02.27 오후 19:25
+ *  마지막 수정 일자 : 26.03.03 오후 14:48
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 생성 시스템 - 캐릭터 생성 관리
@@ -146,6 +147,7 @@ public class CharacterCreationManager : MonoBehaviour
             return;
 
         currentBodyIndex = ((currentBodyIndex + value) % filteredBodys.Count + filteredBodys.Count) % filteredBodys.Count;
+        UpdatePreview(headLib, headOptions[currentBodyIndex]); // 머리 모양도 체형&피부에 맞춰 변경
         Debug.Log($"체형&피부 변경: {currentBodyIndex} / {filteredBodys.Count}");
 
         ApplyCurrentData(filteredBodys, bodyLib, currentBodyIndex);
@@ -203,9 +205,10 @@ public class CharacterCreationManager : MonoBehaviour
     {
         // 1. 현재 선택된 에셋들을 데이터 매니저에 저장
         CharacterDataManager.Instance.playerData = GetFinalData();
+        CharacterDataManager.Instance.SaveCharacterData();
 
         // 2. 인게임 씬으로 이동
-        UnityEngine.SceneManagement.SceneManager.LoadScene("02_InGameScene");
+        // UnityEngine.SceneManagement.SceneManager.LoadScene("02_InGameScene");
     }
 
     // 최종 선택 데이터 반환 (게임 시작 시 호출)
@@ -230,9 +233,11 @@ public class CharacterCreationManager : MonoBehaviour
         {
             isEmpty = false,                      // 데이터 존재 여부 (캐릭터 슬롯이 비어있는지 여부)
             appearanceData = GetAppearanceData(), // 현재 선택된 외형 데이터
-            level = 1,                            // 초기 레벨
+            statData = new PlayerStats(),         // 초기 스탯 데이터 (추후 커스터마이징 가능)
             inventory = new Inventory(),          // 초기 인벤토리
-            type = 0                              // 초기 난이도 (예: 0 - 쉬움)
+            level = 1,                            // 초기 레벨
+            type = 0,                             // 초기 난이도 (예: 0 - 쉬움)
+            playTime = 0f                         // 초기 플레이 시간
         };
     }
 }

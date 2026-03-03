@@ -33,6 +33,10 @@ using UnityEngine;
 
 public class CharacterSlot : MonoBehaviour
 {
+    [Header("# Character Group")]
+    public GameObject selectGroup;
+    public GameObject createGroup;
+
     [Header("# Info Group")]
     public GameObject infoGroup;
     public CharacterData characterData;
@@ -105,17 +109,24 @@ public class CharacterSlot : MonoBehaviour
         levelText.text = $"{data.level} LV";
     }
 
-    public void CharacterSelect()
+    public void CharacterSelect(int index)
     {
         if (characterData.isEmpty)
         {
             // 캐릭터 정보가 없으므로 캐릭터 생성 화면으로 이동
             Debug.Log("빈 슬롯 선택 - 캐릭터 생성 화면으로 이동");
+
+            CharacterDataManager.Instance.characterIndex = index; // 선택한 슬롯 인덱스 저장
+
+            selectGroup.SetActive(false);
+            createGroup.SetActive(true);
         }
         else
         {
             // 캐릭터 정보가 있으므로 캐릭터 선택 완료, 해당 월드로 이동
             Debug.Log($"캐릭터 선택 완료 - {characterData.appearanceData.name}, 월드로 이동");
+        
+            
         }
     }
 }

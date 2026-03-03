@@ -1,3 +1,4 @@
+using Arawn.CrystalSave.Runtime;
 using UnityEngine;
 
 /*  
@@ -6,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.25 오후 23:11
- *  마지막 수정 일자 : 26.02.27 오후 19:21
+ *  마지막 수정 일자 : 26.03.03 오후 14:54
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 생성 시스템 - 캐릭터 데이터 관리
@@ -32,7 +33,12 @@ public class CharacterDataManager : MonoBehaviour
 {
     public static CharacterDataManager Instance;
 
-    // 플레이어 데이터
+    // 임시: 캐릭터 슬롯 10칸 까지
+    [Header("# Character List")]
+    public CharacterData[] characterDataList = new CharacterData[10];
+
+    [Header("# Player Data")]
+    public int characterIndex = 0;
     public CharacterData playerData;
 
     private void Awake()
@@ -40,11 +46,36 @@ public class CharacterDataManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            CharacterListInit(); // 캐릭터 리스트 초기화
             DontDestroyOnLoad(gameObject); // 씬 전환 시 파괴 방지
+
+            // 저장된 데이터가 있다면 불러오고, 없다면 불러오지 않음
+            if (SaveManager.Instance.HasSaveAt(1))
+            {
+                SaveManager.Instance.Load(1, restoreLastActiveScene: true); // 저장된 데이터 로드
+            }
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+
+    private void CharacterListInit()
+    {
+        for (int i = 0; i < characterDataList.Length; i++)
+        {
+            characterDataList[i] = new CharacterData();
+        }
+    }
+
+    public void SaveCharacterData()
+    {
+        Debug.Log($"{characterIndex}번 캐릭터 저장");
+        // 현재 플레이어 데이터를 캐릭터 리스트에 저장
+        characterDataList[characterIndex] = playerData;
+    
+        // 데이터 저장
+        SaveManager.Instance.Save(1);
     }
 }
