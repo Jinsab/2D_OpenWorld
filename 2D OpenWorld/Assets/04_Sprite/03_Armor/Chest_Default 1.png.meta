@@ -499,9 +499,9 @@ TextureImporter:
       name: Chest_Default 1_14
       rect:
         serializedVersion: 2
-        x: 32
+        x: 31
         y: 4
-        width: 11
+        width: 10
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -521,9 +521,9 @@ TextureImporter:
       name: Chest_Default 1_15
       rect:
         serializedVersion: 2
-        x: 49
+        x: 51
         y: 4
-        width: 11
+        width: 10
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}

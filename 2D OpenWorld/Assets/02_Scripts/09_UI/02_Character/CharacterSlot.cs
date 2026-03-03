@@ -130,6 +130,50 @@ public class CharacterSlot : MonoBehaviour
         previewChest.sprite = data.appearanceData.chestAsset.GetSprite("Equip_Chest", "Idle_Left");
         previewPants.sprite = data.appearanceData.pantsAsset.GetSprite("Equip_Pants", "Idle_Left");
         previewBody.sprite = data.appearanceData.bodyAsset.GetSprite("Player_Base_Body", "Idle_Side_0");
+
+        previewHair.rectTransform.sizeDelta =
+            new Vector2(
+                previewHair.sprite.rect.width * 6,
+                previewHair.sprite.rect.height * 6);
+        previewEyes.rectTransform.sizeDelta =
+            new Vector2(
+                previewEyes.sprite.rect.width * 6,
+                previewEyes.sprite.rect.height * 6);
+        previewHead.rectTransform.sizeDelta =
+            new Vector2(
+                previewHead.sprite.rect.width * 6,
+                previewHead.sprite.rect.height * 6);
+        previewChest.rectTransform.sizeDelta =
+            new Vector2(
+                previewChest.sprite.rect.width * 6,
+                previewChest.sprite.rect.height * 6);
+        previewPants.rectTransform.sizeDelta =
+            new Vector2(
+                previewPants.sprite.rect.width * 6,
+                previewPants.sprite.rect.height * 6);
+        previewBody.rectTransform.sizeDelta =
+            new Vector2(
+                previewBody.sprite.rect.width * 6,
+                previewBody.sprite.rect.height * 6);
+
+        // 여성 캐릭터의 경우 추가적인 위치 조정
+        if (data.appearanceData.gender == false)
+        {
+            previewChest.rectTransform.anchoredPosition =
+                new Vector2(
+                    -3f,
+                    previewChest.rectTransform.anchoredPosition.y);
+
+            previewPants.rectTransform.anchoredPosition =
+                new Vector2(
+                    -3f,
+                    previewPants.rectTransform.anchoredPosition.y);
+
+            previewBody.rectTransform.anchoredPosition =
+                new Vector2(
+                    -3f,
+                    previewBody.rectTransform.anchoredPosition.y);
+        }
     }
 
     public void CharacterSelect(int index)

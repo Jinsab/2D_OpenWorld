@@ -2956,7 +2956,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2032466198694069298, guid: 2a40c5bc02fbbb3428e88c97456e5329, type: 3}
+  m_Sprite: {fileID: 7378357041033756144, guid: c20e0f51e863d9c419e265bc873bc18c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2979,9 +2979,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 9.172792e-31
-  m_labelHash: 6.238237e-31
+  m_labelHash: 0.000000058687675
   m_SpriteKey: 0
-  m_SpriteHash: 510898109
+  m_SpriteHash: 954980590
 --- !u!114 &220348020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2995,7 +2995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
   m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: e98205f162623ab4ea5f3d5360f16000, type: 3}
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: d100b5f8e8d190949a0244ffbf8ec5bd, type: 3}
 --- !u!1001 &234218975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4611,7 +4611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1456959934}
+  m_Material: {fileID: 1482362393}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -10850,7 +10850,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6311828716821104194, guid: e8dc127894c11ed439dbb9ad510d7229, type: 3}
+  m_Sprite: {fileID: -2897292299274751917, guid: e8dc127894c11ed439dbb9ad510d7229, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10873,9 +10873,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 3.4040235e-13
-  m_labelHash: 6.238237e-31
+  m_labelHash: 0.000000058687675
   m_SpriteKey: 0
-  m_SpriteHash: 728230196
+  m_SpriteHash: 234856039
 --- !u!114 &530024550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11419,7 +11419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1456959934}
+  m_Material: {fileID: 1482362393}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -19149,7 +19149,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5482973233950139204, guid: 6764ce41067f301439805f34ae86c232, type: 3}
+  m_Sprite: {fileID: 3937671051688023628, guid: e15ec6b4e12810148b75f23622ef45d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19172,9 +19172,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 1.6620207e-32
-  m_labelHash: 6.238237e-31
+  m_labelHash: 0.000000058687675
   m_SpriteKey: 0
-  m_SpriteHash: 525395556
+  m_SpriteHash: 969445687
 --- !u!114 &647499272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19188,7 +19188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
   m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: d7225b8186bf0d441a485393249c1d22, type: 3}
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 1afa62e440a0c764eb28f95dfc9e4aff, type: 3}
 --- !u!1 &647922393
 GameObject:
   m_ObjectHideFlags: 0
@@ -19582,7 +19582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1456959934}
+  m_Material: {fileID: 1482362393}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -27243,7 +27243,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3487550085338159205, guid: b56f6b344cdf22c4b857b9f1216f0b64, type: 3}
+  m_Sprite: {fileID: 8509766171321743015, guid: b56f6b344cdf22c4b857b9f1216f0b64, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -27266,9 +27266,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 4.8649936e-17
-  m_labelHash: 6.238237e-31
+  m_labelHash: 4.6177543e-33
   m_SpriteKey: 0
-  m_SpriteHash: 142590361
+  m_SpriteHash: 387256714
 --- !u!114 &1073669721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28347,9 +28347,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 2.4253298e-24
-  m_labelHash: 6.238237e-31
+  m_labelHash: 4.6177543e-33
   m_SpriteKey: 0
-  m_SpriteHash: 743157354
+  m_SpriteHash: 857833081
 --- !u!212 &1167145750
 SpriteRenderer:
   serializedVersion: 2
@@ -28399,7 +28399,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4488673064694735350, guid: 6229ab8cd5dd65a4fb80df086f04a0e9, type: 3}
+  m_Sprite: {fileID: -2208682243481012657, guid: 449645ca1bf136546ab4d9dcd8762f97, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -28422,7 +28422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
   m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 1fee5b4284035134fb0d66b3f4ebd338, type: 3}
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 84683e89baa4d924b83d33fdcb157042, type: 3}
 --- !u!1 &1169852791
 GameObject:
   m_ObjectHideFlags: 0
@@ -32160,7 +32160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1456959934}
+  m_Material: {fileID: 1482362393}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -32418,47 +32418,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448127612}
   m_CullTransparentMesh: 1
---- !u!21 &1456959934
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: DefaultProceduralBlurredImage
-  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _DstBlend: 10
-    - _SrcBlend: 5
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1458840964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32988,6 +32947,47 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
+--- !u!21 &1482362393
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DefaultProceduralBlurredImage
+  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _DstBlend: 10
+    - _SrcBlend: 5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &1494507572
 GameObject:
   m_ObjectHideFlags: 0
@@ -36744,7 +36744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1456959934}
+  m_Material: {fileID: 1482362393}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -39761,9 +39761,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 5.9674735e-17
-  m_labelHash: 6.238237e-31
+  m_labelHash: 1.3971405e-28
   m_SpriteKey: 0
-  m_SpriteHash: 984209469
+  m_SpriteHash: 633345438
 --- !u!114 &1870250405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39777,7 +39777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
   m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 83e50fdc60499e240a8fe020badb0b0a, type: 3}
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 45334a31b507d0d4490a97e34196278b, type: 3}
 --- !u!212 &1870250406
 SpriteRenderer:
   serializedVersion: 2
@@ -39827,7 +39827,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 4
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -926809998203237052, guid: 255bf85b416112a44bb2cb81d2cba3cf, type: 3}
+  m_Sprite: {fileID: -838641268, guid: bd8e599e01c37114f91c0ebc3841cb99, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -40890,7 +40890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1456959934}
+  m_Material: {fileID: 1482362393}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}

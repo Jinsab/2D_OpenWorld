@@ -25,7 +25,7 @@ MonoBehaviour:
     customFolderName: CrystalSave
     nonWebGLOutputRoot: 
   useManualSync: 0
-  numberOfSaveSlots: 5
+  numberOfSaveSlots: 10
   numberOfQuickSaveSlots: 1
   quickSaveSlotOffset: 1
   autoSaveSlotNumber: 1

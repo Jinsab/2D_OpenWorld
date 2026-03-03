@@ -1,4 +1,6 @@
 using Arawn.CrystalSave.Runtime;
+using NatureBackgroundsPixelArt;
+using Unity.Multiplayer.PlayMode;
 using UnityEngine;
 
 /*  
@@ -41,13 +43,15 @@ public class CharacterDataManager : MonoBehaviour
     public int characterIndex = 0;
     public CharacterData playerData;
 
+    private bool IsInitialized = false;
+
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
 
-            InitCharacterData(); // 캐릭터 데이터 리스트 초기화
+            
             DontDestroyOnLoad(gameObject); // 씬 전환 시 파괴 방지
         }
         else
@@ -56,13 +60,30 @@ public class CharacterDataManager : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        SaveManager.Initialized += (manager) =>
+        {
+            Debug.Log("SaveManager is ready!");
+
+            IsInitialized = true;
+
+            InitCharacterData(); // 캐릭터 데이터 리스트 초기화
+        };
+    }
+
     private void InitCharacterData()
     {
         // 저장된 데이터가 있다면 불러오고, 없다면 불러오지 않음
-        if (SaveManager.Instance.HasSaveAt(1))
+        Debug.Log("데이터 불러오기");
+
+
+        for (int i = 0; i < characterDataList.Length; i++)
         {
-            SaveManager.Instance.Load(1, restoreLastActiveScene: true); // 저장된 데이터 로드
+            SaveManager.Instance.Load(i + 1, restoreLastActiveScene: true); // 저장된 데이터 로드
+            Debug.Log($"{i + 1}번 캐릭터 데이터 로드");
         }
+
 
         characterDataList = new CharacterData[10];
 
@@ -83,11 +104,14 @@ public class CharacterDataManager : MonoBehaviour
 
     public void SaveCharacterData()
     {
-        Debug.Log($"{characterIndex}번 캐릭터 저장");
-        // 현재 플레이어 데이터를 캐릭터 리스트에 저장
-        characterDataList[characterIndex] = playerData;
-    
-        // 데이터 저장
-        SaveManager.Instance.Save(1);
+        if (IsInitialized)
+        {
+            Debug.Log($"{characterIndex}번 캐릭터 저장");
+            // 현재 플레이어 데이터를 캐릭터 리스트에 저장
+            characterDataList[characterIndex] = playerData;
+
+            // 데이터 저장
+            SaveManager.Instance.Save(characterIndex + 1);
+        }
     }
 }
