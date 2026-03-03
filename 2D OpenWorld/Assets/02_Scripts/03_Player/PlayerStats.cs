@@ -26,6 +26,7 @@ public class PlayerStats : MonoBehaviour
     {
         // 초기화 예시 (실제로는 데이터 시트나 ScriptableObject에서 불러올 수 있음)
         InitStat(StatType.MaxHealth, 100f);
+        InitStat(StatType.MaxMana, 100f);
         InitStat(StatType.MoveSpeed, 5f);
         InitStat(StatType.AttackDamage, 10f);
     }

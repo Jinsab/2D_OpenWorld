@@ -1,6 +1,8 @@
+using JeffGrawAssets.FlexibleUI;
 using TMPro;
 using UnityEditor.U2D.Animation;
 using UnityEngine;
+using UnityEngine.U2D.Animation;
 
 /*  
  *  [프로젝트 제목]
@@ -40,6 +42,14 @@ public class CharacterSlot : MonoBehaviour
     public GameObject infoGroup;
     public CharacterData characterData;
 
+    [Header("# Player Preview")]
+    public FlexibleImage previewHair;
+    public FlexibleImage previewEyes;
+    public FlexibleImage previewHead;
+    public FlexibleImage previewChest;
+    public FlexibleImage previewPants;
+    public FlexibleImage previewBody;
+
     [Header("# Info Text")]
     public TMP_Text nameText;
     public TMP_Text typeText;
@@ -73,6 +83,8 @@ public class CharacterSlot : MonoBehaviour
     // 데이터를 받아서 슬롯 UI를 갱신하는 함수
     public void SetSlot(CharacterData data)
     {
+        SetPortrait(data);
+
         nameText.text = data.appearanceData.name;
 
         switch (data.type)
@@ -108,6 +120,16 @@ public class CharacterSlot : MonoBehaviour
             mpText.text = "MP Key Not Found";
 
         levelText.text = $"{data.level} LV";
+    }
+
+    private void SetPortrait(CharacterData data)
+    {
+        previewHair.sprite = data.appearanceData.hairAsset.GetSprite("Equip_Hair", "Idle_Left");
+        previewEyes.sprite = data.appearanceData.eyesAsset.GetSprite("Player_Base_Eyes", "Side_0");
+        previewHead.sprite = data.appearanceData.headAsset.GetSprite("Player_Base_Head", "Idle_Side_0");
+        previewChest.sprite = data.appearanceData.chestAsset.GetSprite("Equip_Chest", "Idle_Left");
+        previewPants.sprite = data.appearanceData.pantsAsset.GetSprite("Equip_Pants", "Idle_Left");
+        previewBody.sprite = data.appearanceData.bodyAsset.GetSprite("Player_Base_Body", "Idle_Side_0");
     }
 
     public void CharacterSelect(int index)

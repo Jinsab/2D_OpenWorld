@@ -72,8 +72,8 @@ public class CharacterDataManager : MonoBehaviour
             {
                 isEmpty = true,
                 appearanceData = new CharacterAppearanceData(),
-                statData = new PlayerStats(),
-                inventory = new Inventory(),
+                statData = gameObject.AddComponent<PlayerStats>(),
+                inventory = gameObject.AddComponent<Inventory>(),
                 level = 0,
                 type = 0,
                 playTime = 0f

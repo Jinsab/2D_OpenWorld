@@ -231,13 +231,13 @@ public class CharacterCreationManager : MonoBehaviour
     {
         return new CharacterData
         {
-            isEmpty = false,                      // 데이터 존재 여부 (캐릭터 슬롯이 비어있는지 여부)
+            isEmpty = false, // 데이터 존재 여부 (캐릭터 슬롯이 비어있는지 여부)
             appearanceData = GetAppearanceData(), // 현재 선택된 외형 데이터
-            statData = new PlayerStats(),         // 초기 스탯 데이터 (추후 커스터마이징 가능)
-            inventory = new Inventory(),          // 초기 인벤토리
-            level = 1,                            // 초기 레벨
-            type = 0,                             // 초기 난이도 (예: 0 - 쉬움)
-            playTime = 0f                         // 초기 플레이 시간
+            statData = gameObject.AddComponent<PlayerStats>(), // 초기 스탯 데이터 (추후 커스터마이징 가능)
+            inventory = gameObject.AddComponent<Inventory>(), // 초기 인벤토리
+            level = 1, // 초기 레벨
+            type = 0, // 초기 난이도 (예: 0 - 쉬움)
+            playTime = 0f // 초기 플레이 시간
         };
     }
 }
