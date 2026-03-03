@@ -7,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.25 오후 23:11
- *  마지막 수정 일자 : 26.03.03 오후 14:54
+ *  마지막 수정 일자 : 26.03.03 오후 15:54
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 생성 시스템 - 캐릭터 데이터 관리
@@ -35,7 +35,7 @@ public class CharacterDataManager : MonoBehaviour
 
     // 임시: 캐릭터 슬롯 10칸 까지
     [Header("# Character List")]
-    public CharacterData[] characterDataList = new CharacterData[10];
+    public CharacterData[] characterDataList;
 
     [Header("# Player Data")]
     public int characterIndex = 0;
@@ -46,7 +46,8 @@ public class CharacterDataManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            CharacterListInit(); // 캐릭터 리스트 초기화
+
+            characterDataList = new CharacterData[10]; // 캐릭터 데이터 리스트 초기화
             DontDestroyOnLoad(gameObject); // 씬 전환 시 파괴 방지
 
             // 저장된 데이터가 있다면 불러오고, 없다면 불러오지 않음
@@ -58,14 +59,6 @@ public class CharacterDataManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-        }
-    }
-
-    private void CharacterListInit()
-    {
-        for (int i = 0; i < characterDataList.Length; i++)
-        {
-            characterDataList[i] = new CharacterData();
         }
     }
 

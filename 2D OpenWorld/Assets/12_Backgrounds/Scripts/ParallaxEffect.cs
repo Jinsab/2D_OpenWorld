@@ -23,7 +23,7 @@ namespace NatureBackgroundsPixelArt
             player = GameObject.FindWithTag("Player").GetComponent<Transform>();
             spriteWidth = GetComponent<SpriteRenderer>().bounds.size.x / 3;
 
-            transform.position = new Vector2(mainCamera.position.x, player.position.y - 1f);
+            transform.position = new Vector2(mainCamera.position.x, player.position.y - 6f);
             initialPos = transform.position;
         }
 

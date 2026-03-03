@@ -33,9 +33,8 @@ using UnityEngine;
 
 public class CharacterSlot : MonoBehaviour
 {
-    [Header("# Character Group")]
-    public GameObject selectGroup;
-    public GameObject createGroup;
+    [Header("# Character Slot Manager")]
+    public CharacterSlotManager slotManager;
 
     [Header("# Info Group")]
     public GameObject infoGroup;
@@ -118,8 +117,7 @@ public class CharacterSlot : MonoBehaviour
 
             CharacterDataManager.Instance.characterIndex = index; // 선택한 슬롯 인덱스 저장
 
-            selectGroup.SetActive(false);
-            createGroup.SetActive(true);
+            slotManager.ShowCreateGroup();
         }
         else
         {
