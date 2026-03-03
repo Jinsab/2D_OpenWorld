@@ -116,6 +116,7 @@ MonoBehaviour:
   autoContainer: {fileID: 8605331604880949735}
   dropdownPrefab: {fileID: 3575403121684230651, guid: 23dd63cddfe99ae119920321364619e5, type: 3}
   slotNamePattern: '{meta:Level Name}'
+  preserveSlotName: 1
   slotNameInput: {fileID: 0}
   saveButton: {fileID: 1685133819653492748}
   loadButton: {fileID: 960622180523604829}

@@ -1,4 +1,5 @@
 using Arawn.CrystalSave.Runtime;
+using MemoryPack;
 using NatureBackgroundsPixelArt;
 using Unity.Multiplayer.PlayMode;
 using UnityEngine;
@@ -30,6 +31,7 @@ using UnityEngine;
  *  [스크립트 작성 도움 출처]
  *  1. 
  */
+
 
 public class CharacterDataManager : MonoBehaviour
 {
@@ -77,29 +79,28 @@ public class CharacterDataManager : MonoBehaviour
         // 저장된 데이터가 있다면 불러오고, 없다면 불러오지 않음
         Debug.Log("데이터 불러오기");
 
-
-        for (int i = 0; i < characterDataList.Length; i++)
-        {
-            SaveManager.Instance.Load(i + 1, restoreLastActiveScene: true); // 저장된 데이터 로드
-            Debug.Log($"{i + 1}번 캐릭터 데이터 로드");
-        }
-
-
         characterDataList = new CharacterData[10];
 
         for (int i = 0; i < characterDataList.Length; i++)
         {
-            characterDataList[i] = new CharacterData
-            {
-                isEmpty = true,
-                appearanceData = new CharacterAppearanceData(),
-                statData = gameObject.AddComponent<PlayerStats>(),
-                inventory = gameObject.AddComponent<Inventory>(),
-                level = 0,
-                type = 0,
-                playTime = 0f
-            };
+            // SaveManager.Instance.Load(i + 1, restoreLastActiveScene: false); // 저장된 데이터 로드
+            
+            // Debug.Log($"{i + 1}번 캐릭터 데이터 로드");
         }
+
+        //for (int i = 0; i < characterDataList.Length; i++)
+        //{
+        //    characterDataList[i] = new CharacterData
+        //    {
+        //        isEmpty = true,
+        //        appearanceData = new CharacterAppearanceData(),
+        //        statData = gameObject.AddComponent<PlayerStats>(),
+        //        inventory = gameObject.AddComponent<Inventory>(),
+        //        level = 0,
+        //        type = 0,
+        //        playTime = 0f
+        //    };
+        //}
     }
 
     public void SaveCharacterData()

@@ -1047,7 +1047,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5746881935651066925}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
         m_MethodName: CancelInvoke
         m_Mode: 1
@@ -1382,7 +1382,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5746881935651066925}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Arawn.CrystalSave.UI.SaveSlotEntryUI, Assembly-CSharp-firstpass
         m_MethodName: OnDeleteClicked
         m_Mode: 1
@@ -1759,7 +1759,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5746881935651066925}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Arawn.CrystalSave.UI.SaveSlotEntryUI, Assembly-CSharp-firstpass
         m_MethodName: OnLoadClicked
         m_Mode: 1
@@ -1892,7 +1892,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5746881935651066925}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Arawn.CrystalSave.UI.SaveSlotEntryUI, Assembly-CSharp-firstpass
         m_MethodName: OnRenameClicked
         m_Mode: 1
@@ -2683,7 +2683,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5746881935651066925}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Arawn.CrystalSave.UI.SaveSlotEntryUI, Assembly-CSharp-firstpass
         m_MethodName: OnDeleteClicked
         m_Mode: 1
@@ -2704,7 +2704,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1391558032594236994}
-  - component: {fileID: 5746881935651066925}
   - component: {fileID: 6640324004723787416}
   m_Layer: 5
   m_Name: SaveSlotEntryUI
@@ -2744,36 +2743,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5746881935651066925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8654735723271306943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bea7488173ec1f8a48876ea4d95819db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  background: {fileID: 8425668655300247405}
-  screenshotImage: {fileID: 3164388543796422847}
-  slotNameText: {fileID: 5346935422212165191}
-  metadataText: {fileID: 6960510942333824457}
-  customMetadataContainer: {fileID: 2787462982043377115}
-  customMetadataLinePrefab: {fileID: 9127082348821985875, guid: 53a7af2fd76394fbeb9804a07c5259c0, type: 3}
-  renameInput: {fileID: 1420260472696844398}
-  hideRenameInputOnStart: 1
-  renameButton: {fileID: 622928104997615516}
-  loadButton: {fileID: 1082517427018169169}
-  saveButton: {fileID: 8503147485569261728}
-  deleteButton: {fileID: 5922335260324914214}
-  panel: {fileID: 5082648963947995521}
-  syncOverlay: {fileID: 5082648963947995521}
-  deleteConfirmationWindow: {fileID: 7811923296706309712}
-  confirmDeleteButton: {fileID: 6987112232430721333}
-  cancelDeleteButton: {fileID: 4572528996564499621}
-  theme: {fileID: 11400000, guid: 380ed50b9d8b285e1b6724a43dd9af39, type: 2}
 --- !u!114 &6640324004723787416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2994,7 +2963,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5746881935651066925}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Arawn.CrystalSave.UI.SaveSlotEntryUI, Assembly-CSharp-firstpass
         m_MethodName: OnSaveClicked
         m_Mode: 1

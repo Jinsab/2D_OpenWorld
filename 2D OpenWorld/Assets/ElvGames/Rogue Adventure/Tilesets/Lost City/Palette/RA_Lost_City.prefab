@@ -4215,7 +4215,7 @@ Tilemap:
       - {fileID: -37322242, guid: 9c0e17836a19f1747b2da4c63c83b9bc, type: 3}
       - {fileID: 1377041818, guid: 9c0e17836a19f1747b2da4c63c83b9bc, type: 3}
       - {fileID: 93773690, guid: 9c0e17836a19f1747b2da4c63c83b9bc, type: 3}
-      m_AnimationSpeed: 6
+      m_AnimationSpeed: 6.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 2, y: -20, z: 0}
@@ -4335,7 +4335,7 @@ Tilemap:
       - {fileID: 1962071087, guid: 9c0e17836a19f1747b2da4c63c83b9bc, type: 3}
       - {fileID: -947065174, guid: 9c0e17836a19f1747b2da4c63c83b9bc, type: 3}
       - {fileID: 1289351066, guid: 9c0e17836a19f1747b2da4c63c83b9bc, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 7, y: -19, z: 0}
@@ -4500,7 +4500,7 @@ Tilemap:
       - {fileID: 1300187476, guid: 9c0e17836a19f1747b2da4c63c83b9bc, type: 3}
       - {fileID: -2040832351, guid: 9c0e17836a19f1747b2da4c63c83b9bc, type: 3}
       - {fileID: -154551588, guid: 9c0e17836a19f1747b2da4c63c83b9bc, type: 3}
-      m_AnimationSpeed: 6
+      m_AnimationSpeed: 6.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 1, y: -17, z: 0}
@@ -4545,7 +4545,7 @@ Tilemap:
       - {fileID: -488776309, guid: 9c0e17836a19f1747b2da4c63c83b9bc, type: 3}
       - {fileID: 1996601343, guid: 9c0e17836a19f1747b2da4c63c83b9bc, type: 3}
       - {fileID: -386059983, guid: 9c0e17836a19f1747b2da4c63c83b9bc, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 7, y: -17, z: 0}
@@ -6221,6 +6221,7 @@ Tilemap:
     e33: 1
 --- !u!483693784 &6839718802468061050
 TilemapRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6236,6 +6237,11 @@ TilemapRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6257,9 +6263,11 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -6267,7 +6275,6 @@ TilemapRenderer:
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
-  m_MaskInteraction: 0
 --- !u!1 &2642355636456423425
 GameObject:
   m_ObjectHideFlags: 0

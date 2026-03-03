@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3498064108619343375}
   - component: {fileID: 2672523193900088370}
   - component: {fileID: 466678968273328146}
-  - component: {fileID: -6727286408332310450}
   m_Layer: 0
   m_Name: Capsule A
   m_TagString: Untagged
@@ -63,6 +62,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -84,9 +85,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!136 &466678968273328146
 CapsuleCollider:
@@ -111,49 +114,3 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-6727286408332310450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3071202532754174561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42da28972ea9eb74bb9cf4d899d66806, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enablePerformanceCaching: 1
-  enableBatchRegistration: 1
-  trackSkinnedMeshOverrides: 0
-  trackBlendshapeOverrides: 0
-  trackMaterialOverrides: 0
-  trackAddedComponents: 0
-  trackParticleSnapshots: 0
-  trackChildStateOverrides: 1
-  trackChildTransformOverrides: 0
-  trackComponentBlobs: 0
-  trackColliderSettings: 0
-  skipSavingWhenUnchanged: 1
-  loadPriority: 0
-  deferLowPriorityUntilRequested: 1
-  disablePooling: 0
-  uniqueID: 
-  prefabAssetID: 92893d7f-84a5-4f2d-96ce-e8ea053f388b
-  keepAcrossScenes: 0
-  applySavedComponentDataOnRespawn: 0
-  rememberHomeScene: 0
-  homeSceneCaptureMode: 0
-  homeScene: 
-  VisibleInScenes: []
-  offScreenMask: 0
-  RegisterWithSaveSystem: 1
-  autoAssignInstanceIDWhenUnregistered: 1
-  propertySettings:
-    RememberActive: 1
-    RememberName: 1
-    RememberLayer: 1
-    RememberTag: 1
-    RememberDestroyed: 1
-  isAddedAtRuntime: 0
-  originalPrefabAsset: {fileID: 0}

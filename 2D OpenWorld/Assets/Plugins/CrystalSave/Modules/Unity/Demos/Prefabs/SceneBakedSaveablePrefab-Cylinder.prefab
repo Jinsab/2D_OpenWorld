@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6317082292115897493}
   - component: {fileID: 2242171707402065992}
   - component: {fileID: 5786465009241876236}
-  - component: {fileID: -3042750321408147393}
   m_Layer: 0
   m_Name: SceneBakedSaveablePrefab-Cylinder
   m_TagString: Untagged
@@ -115,51 +114,3 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &-3042750321408147393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5997086034723620671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42da28972ea9eb74bb9cf4d899d66806, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp-firstpass::Arawn.CrystalSave.Runtime.SaveablePrefab
-  enablePerformanceCaching: 1
-  enableBatchRegistration: 0
-  trackSkinnedMeshOverrides: 0
-  trackBlendshapeOverrides: 0
-  trackMaterialOverrides: 0
-  trackAddedComponents: 0
-  trackParticleSnapshots: 0
-  trackChildStateOverrides: 1
-  trackChildTransformOverrides: 0
-  trackComponentBlobs: 0
-  trackColliderSettings: 0
-  skipSavingWhenUnchanged: 0
-  loadPriority: 50
-  deferLowPriorityUntilRequested: 0
-  disablePooling: 0
-  uniqueID: 
-  prefabAssetID: 18aa2380-42ee-4f31-8114-43b260f1da6f
-  keepAcrossScenes: 0
-  applySavedComponentDataOnRespawn: 0
-  reuseSceneInstanceOnLoad: 0
-  autoEnforceReuseSceneInstanceOnLoad: 1
-  rememberHomeScene: 1
-  homeSceneCaptureMode: 0
-  homeScene: 
-  VisibleInScenes: []
-  offScreenMask: 0
-  RegisterWithSaveSystem: 1
-  autoAssignInstanceIDWhenUnregistered: 1
-  propertySettings:
-    RememberActive: 1
-    RememberName: 1
-    RememberLayer: 1
-    RememberTag: 1
-    RememberDestroyed: 0
-  isAddedAtRuntime: 0
-  originalPrefabAsset: {fileID: 0}

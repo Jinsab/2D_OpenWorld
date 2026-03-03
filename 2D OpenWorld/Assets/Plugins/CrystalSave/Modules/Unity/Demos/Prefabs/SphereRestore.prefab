@@ -12,10 +12,6 @@ GameObject:
   - component: {fileID: 4365158446213316599}
   - component: {fileID: 529595749246311369}
   - component: {fileID: 3578164635361581186}
-  - component: {fileID: 7890721541137210181}
-  - component: {fileID: 2402598571021853067}
-  - component: {fileID: 6751526507987095254}
-  - component: {fileID: 1052310497272512800}
   m_Layer: 0
   m_Name: SphereRestore
   m_TagString: Untagged
@@ -93,6 +89,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!135 &3578164635361581186
 SphereCollider:
@@ -115,110 +112,3 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7890721541137210181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6788264564281254222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c86315cb0905ea40a60a821739ae3a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rememberTypes:
-  - Arawn.CrystalSave.Runtime.RememberGameObject, Assembly-CSharp-firstpass, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  - Arawn.CrystalSave.Runtime.RememberTransform, Assembly-CSharp-firstpass, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  _inner:
-  - {fileID: 6751526507987095254}
-  - {fileID: 1052310497272512800}
---- !u!114 &2402598571021853067
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6788264564281254222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbf7c31f2ea24f046bd2a2baa3926782, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 63f2ef1e93ba4c5aabb8d448e547b858
---- !u!114 &6751526507987095254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6788264564281254222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b9e004d50f60884d8fef531a443dd87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hiddenByComposite: 1
-  uniqueID: 63f2ef1e93ba4c5aabb8d448e547b858
-  componentID: 06b328fb-5dda-4016-9bd5-6a0d06ed12e3
-  keepAcrossScenes: 0
-  applySavedDataOnRestore: 0
-  rememberHomeScene: 0
-  homeSceneMode: 0
-  homeScene: 
-  homeScenePrefabID: 
-  homeScenes: []
-  VisibleInScenes: []
-  offScreenMask: 11
-  loadPriority: 50
-  deferLowPriorityUntilRequested: 0
-  enablePerformanceCaching: 0
-  enableBatchRegistration: 0
-  propertySettings:
-    RememberActive: 0
-    RememberName: 0
-    RememberLayer: 0
-    RememberTag: 0
-    RememberDestroyed: 1
-  skipSavingWhenUnchanged: 1
---- !u!114 &1052310497272512800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6788264564281254222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64021007cbe97984c8f9294df5c7429e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hiddenByComposite: 1
-  uniqueID: 63f2ef1e93ba4c5aabb8d448e547b858
-  componentID: f793380d-34a2-4e25-9369-8464ba596e44
-  keepAcrossScenes: 0
-  applySavedDataOnRestore: 0
-  rememberHomeScene: 0
-  homeSceneMode: 0
-  homeScene: 
-  homeScenePrefabID: 
-  homeScenes: []
-  VisibleInScenes: []
-  offScreenMask: 11
-  loadPriority: 50
-  deferLowPriorityUntilRequested: 0
-  enablePerformanceCaching: 0
-  enableBatchRegistration: 0
-  rememberPositionSettings:
-    Save: 1
-    SpaceMode: 0
-  rememberRotationSettings:
-    Save: 0
-    SpaceMode: 0
-  rememberScaleSettings:
-    Save: 0
-    SpaceMode: 0
-  skipSavingWhenUnchanged: 0
-  disableControllerOnApply: 1

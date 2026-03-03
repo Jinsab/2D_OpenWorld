@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5124375112018007303}
   - component: {fileID: 2871101567585199666}
   - component: {fileID: 6181837441873669237}
-  - component: {fileID: 8001904358243723118}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -91,6 +90,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &6181837441873669237
 BoxCollider:
@@ -113,59 +113,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8001904358243723118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912478035526057816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42da28972ea9eb74bb9cf4d899d66806, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enablePerformanceCaching: 0
-  enableBatchRegistration: 0
-  trackSkinnedMeshOverrides: 0
-  trackBlendshapeOverrides: 0
-  trackMaterialOverrides: 0
-  trackAddedComponents: 0
-  trackParticleSnapshots: 0
-  trackChildStateOverrides: 1
-  trackChildTransformOverrides: 0
-  trackComponentBlobs: 0
-  trackColliderSettings: 0
-  skipSavingWhenUnchanged: 1
-  loadPriority: 50
-  deferLowPriorityUntilRequested: 0
-  disablePooling: 0
-  uniqueID: 
-  prefabAssetID: c2729a6c-2d6f-461a-9f75-cb526dfb7af0
-  keepAcrossScenes: 0
-  applySavedComponentDataOnRespawn: 0
-  reuseSceneInstanceOnLoad: 0
-  autoEnforceReuseSceneInstanceOnLoad: 1
-  rememberHomeScene: 0
-  homeSceneCaptureMode: 0
-  homeScene: 
-  VisibleInScenes: []
-  offScreenMask: 11
-  RegisterWithSaveSystem: 1
-  autoAssignInstanceIDWhenUnregistered: 1
-  propertySettings:
-    RememberActive: 1
-    RememberName: 0
-    RememberLayer: 0
-    RememberTag: 0
-    RememberDestroyed: 1
-  enableTimeMachineRecording: 0
-  autoStartRecording: 1
-  useInterval: 1
-  snapshotInterval: 0.1
-  maxSnapshots: 500
-  isAddedAtRuntime: 0
-  originalPrefabAsset: {fileID: 0}
 --- !u!1 &6838987074994599799
 GameObject:
   m_ObjectHideFlags: 0

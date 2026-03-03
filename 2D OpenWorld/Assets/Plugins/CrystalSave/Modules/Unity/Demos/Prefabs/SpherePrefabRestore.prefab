@@ -12,9 +12,6 @@ GameObject:
   - component: {fileID: 4455826572220736116}
   - component: {fileID: 2807869818940460501}
   - component: {fileID: 3643535056310472432}
-  - component: {fileID: 452000638818113727}
-  - component: {fileID: 8207858721461567239}
-  - component: {fileID: 3936576128933308229}
   - component: {fileID: 4352150047929147391}
   m_Layer: 0
   m_Name: SpherePrefabRestore
@@ -93,6 +90,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!135 &3643535056310472432
 SphereCollider:
@@ -115,107 +113,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &452000638818113727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4471722414458435545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42da28972ea9eb74bb9cf4d899d66806, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enablePerformanceCaching: 0
-  enableBatchRegistration: 0
-  trackSkinnedMeshOverrides: 0
-  trackBlendshapeOverrides: 0
-  trackMaterialOverrides: 0
-  trackAddedComponents: 0
-  trackParticleSnapshots: 0
-  trackChildStateOverrides: 1
-  trackChildTransformOverrides: 0
-  trackComponentBlobs: 0
-  trackColliderSettings: 0
-  skipSavingWhenUnchanged: 0
-  loadPriority: 50
-  deferLowPriorityUntilRequested: 0
-  disablePooling: 0
-  uniqueID: 
-  prefabAssetID: 0e749701-be89-42ed-94be-6b24a0b90b93
-  keepAcrossScenes: 0
-  applySavedComponentDataOnRespawn: 0
-  reuseSceneInstanceOnLoad: 0
-  rememberHomeScene: 0
-  homeSceneCaptureMode: 0
-  homeScene: 
-  VisibleInScenes: []
-  offScreenMask: 0
-  RegisterWithSaveSystem: 1
-  autoAssignInstanceIDWhenUnregistered: 1
-  propertySettings:
-    RememberActive: 1
-    RememberName: 1
-    RememberLayer: 1
-    RememberTag: 1
-    RememberDestroyed: 0
-  isAddedAtRuntime: 0
-  originalPrefabAsset: {fileID: 0}
---- !u!114 &8207858721461567239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4471722414458435545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c86315cb0905ea40a60a821739ae3a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rememberTypes:
-  - Arawn.CrystalSave.Runtime.RememberRigidbody, Assembly-CSharp-firstpass, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  _inner:
-  - {fileID: 3936576128933308229}
---- !u!114 &3936576128933308229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4471722414458435545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5c565d1f60f0e9418d5d551fb019ecd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hiddenByComposite: 1
-  uniqueID: 557375050dea40b6bd18efd0ce31bf38
-  componentID: e7b5d2a4-e704-449b-a23d-4d5b1f2392c5
-  keepAcrossScenes: 0
-  applySavedDataOnRestore: 0
-  rememberHomeScene: 0
-  homeSceneMode: 0
-  homeScene: 
-  homeScenePrefabID: 
-  homeScenes: []
-  VisibleInScenes: []
-  offScreenMask: 11
-  loadPriority: 50
-  deferLowPriorityUntilRequested: 0
-  enablePerformanceCaching: 0
-  skipSavingWhenUnchanged: 0
-  rememberIsKinematic: 1
-  rememberUseGravity: 1
-  rememberMass: 1
-  rememberDrag: 1
-  rememberAngularDrag: 1
-  rememberConstraints: 1
-  rememberVelocity: 1
-  rememberAngularVelocity: 1
-  rememberDetectCollisions: 1
 --- !u!54 &4352150047929147391
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3637282535801267891}
   - component: {fileID: 3346213721848616792}
   - component: {fileID: 2719643346205237639}
-  - component: {fileID: -1707208028546769542}
   m_Layer: 0
   m_Name: CubeTower
   m_TagString: Untagged
@@ -141,53 +140,3 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-1707208028546769542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7703414311087167075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42da28972ea9eb74bb9cf4d899d66806, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp-firstpass::Arawn.CrystalSave.Runtime.SaveablePrefab
-  enablePerformanceCaching: 1
-  enableBatchRegistration: 1
-  trackSkinnedMeshOverrides: 0
-  trackBlendshapeOverrides: 0
-  trackTextureOverrides: 0
-  trackMaterialOverrides: 0
-  trackAddedComponents: 0
-  trackParticleSnapshots: 0
-  trackChildStateOverrides: 1
-  trackChildTransformOverrides: 0
-  trackComponentBlobs: 0
-  trackColliderSettings: 0
-  skipSavingWhenUnchanged: 1
-  loadPriority: 50
-  deferLowPriorityUntilRequested: 0
-  disablePooling: 0
-  uniqueID: 
-  prefabAssetID: 8020c1e0-68b5-4c53-a79a-8420fcb8d66b
-  keepAcrossScenes: 0
-  applySavedComponentDataOnRespawn: 0
-  reuseSceneInstanceOnLoad: 0
-  autoEnforceReuseSceneInstanceOnLoad: 1
-  rememberHomeScene: 1
-  homeSceneCaptureMode: 0
-  homeScene: 
-  VisibleInScenes:
-  - PersistentObjectsScene1
-  offScreenMask: 0
-  RegisterWithSaveSystem: 1
-  autoAssignInstanceIDWhenUnregistered: 1
-  propertySettings:
-    RememberActive: 1
-    RememberName: 1
-    RememberLayer: 1
-    RememberTag: 1
-    RememberDestroyed: 0
-  isAddedAtRuntime: 0
-  originalPrefabAsset: {fileID: 0}

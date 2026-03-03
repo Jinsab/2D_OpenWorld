@@ -48,7 +48,6 @@ GameObject:
   - component: {fileID: 8428876687130611101}
   - component: {fileID: 603081732743938576}
   - component: {fileID: 4461321296533352208}
-  - component: {fileID: 8718440697142765778}
   m_Layer: 5
   m_Name: Save Menu
   m_TagString: Untagged
@@ -140,31 +139,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8718440697142765778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238989562101507636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e3e9f688750f50afaf6009dff4ac88e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollRect: {fileID: 7873018451450101673}
-  slotPrefab: {fileID: 5746881935651066925, guid: ba02756627f0a1ed3894208bd7cc706a, type: 3}
-  panel: {fileID: 2590126594027613667}
-  titleBackgroundPanel: {fileID: 534213156181372714}
-  titleSaveGameText: {fileID: 3944485213000078899}
-  theme: {fileID: 11400000, guid: 8fc45331cfe8e891db6c5fcf0cf41c46, type: 2}
-  showScreenshots: 1
-  showMetadata: 1
-  showCustomMetadata: 1
-  showRename: 1
-  showLoad: 1
-  showSave: 1
-  showDelete: 1
 --- !u!1 &1100980910413547240
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8319662, g: 0.8521788, b: 0.90367043, a: 1}
+  m_Color: {r: 0.9757794, g: 0.9757794, b: 0.9757794, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -945,7 +919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7921569, g: 0.7921569, b: 0.7921569, a: 0.9607843}
+  m_Color: {r: 0.7921569, g: 0.7921569, b: 0.7921569, a: 0.88235295}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
