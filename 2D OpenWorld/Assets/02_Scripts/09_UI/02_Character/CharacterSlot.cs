@@ -2,7 +2,6 @@ using JeffGrawAssets.FlexibleUI;
 using TMPro;
 using UnityEditor.U2D.Animation;
 using UnityEngine;
-using UnityEngine.U2D.Animation;
 
 /*  
  *  [프로젝트 제목]
@@ -38,17 +37,12 @@ public class CharacterSlot : MonoBehaviour
     [Header("# Character Slot Manager")]
     public CharacterSlotManager slotManager;
 
+    [Header("# Character Preview")]
+    public CharacterPortrait portrait;
+
     [Header("# Info Group")]
     public GameObject infoGroup;
     public CharacterData characterData;
-
-    [Header("# Player Preview")]
-    public FlexibleImage previewHair;
-    public FlexibleImage previewEyes;
-    public FlexibleImage previewHead;
-    public FlexibleImage previewChest;
-    public FlexibleImage previewPants;
-    public FlexibleImage previewBody;
 
     [Header("# Info Text")]
     public TMP_Text nameText;
@@ -64,7 +58,7 @@ public class CharacterSlot : MonoBehaviour
     // 슬롯이 활성화될 때마다 캐릭터 데이터에 따라 UI 업데이트
     public void PreviewCharacter()
     {
-        Debug.Log(characterData == null ? "캐릭터 데이터 없음" : $"캐릭터 데이터 있음 - {characterData.appearanceData.name}");
+        Debug.Log(characterData == null ? "캐릭터 데이터 없음" : $"캐릭터 데이터 있음 - {characterData.name}");
 
         if (characterData.isEmpty)
         {
@@ -83,9 +77,9 @@ public class CharacterSlot : MonoBehaviour
     // 데이터를 받아서 슬롯 UI를 갱신하는 함수
     public void SetSlot(CharacterData data)
     {
-        SetPortrait(data);
+        portrait.SetPortrait(data);
 
-        nameText.text = data.appearanceData.name;
+        nameText.text = data.name;
 
         switch (data.type)
         {
@@ -109,71 +103,17 @@ public class CharacterSlot : MonoBehaviour
         // HP와 MP는 StatType을 사용하여 캐릭터의 최대 체력과 최대 마나를 가져와서 표시
         // StatType.MaxHealth와 StatType.MaxMana는 enum으로 정의되어 있어야 하며, 캐릭터의 statData에서 해당 키로 값을 가져와야 합니다.
         // TryGetValue를 사용하여 해당 키가 존재하는지 확인하고, 존재하면 LastValue를 표시하고, 존재하지 않으면 "Key Not Found" 메시지를 표시합니다.
-        if (data.statData.Stats.TryGetValue(StatType.MaxHealth, out CharacterStat HP))
-            hpText.text = $"{HP.LastValue} HP";
-        else
-            hpText.text = "HP Key Not Found";
+        //if (data.statData.Stats.TryGetValue(StatType.MaxHealth, out CharacterStat HP))
+        //    hpText.text = $"{HP.LastValue} HP";
+        //else
+        //    hpText.text = "HP Key Not Found";
 
-        if (data.statData.Stats.TryGetValue(StatType.MaxMana, out CharacterStat MP))
-            mpText.text = $"{MP.LastValue} MP";
-        else
-            mpText.text = "MP Key Not Found";
+        //if (data.statData.Stats.TryGetValue(StatType.MaxMana, out CharacterStat MP))
+        //    mpText.text = $"{MP.LastValue} MP";
+        //else
+        //    mpText.text = "MP Key Not Found";
 
         levelText.text = $"{data.level} LV";
-    }
-
-    private void SetPortrait(CharacterData data)
-    {
-        previewHair.sprite = data.appearanceData.hairAsset.GetSprite("Equip_Hair", "Idle_Left");
-        previewEyes.sprite = data.appearanceData.eyesAsset.GetSprite("Player_Base_Eyes", "Side_0");
-        previewHead.sprite = data.appearanceData.headAsset.GetSprite("Player_Base_Head", "Idle_Side_0");
-        previewChest.sprite = data.appearanceData.chestAsset.GetSprite("Equip_Chest", "Idle_Left");
-        previewPants.sprite = data.appearanceData.pantsAsset.GetSprite("Equip_Pants", "Idle_Left");
-        previewBody.sprite = data.appearanceData.bodyAsset.GetSprite("Player_Base_Body", "Idle_Side_0");
-
-        previewHair.rectTransform.sizeDelta =
-            new Vector2(
-                previewHair.sprite.rect.width * 6,
-                previewHair.sprite.rect.height * 6);
-        previewEyes.rectTransform.sizeDelta =
-            new Vector2(
-                previewEyes.sprite.rect.width * 6,
-                previewEyes.sprite.rect.height * 6);
-        previewHead.rectTransform.sizeDelta =
-            new Vector2(
-                previewHead.sprite.rect.width * 6,
-                previewHead.sprite.rect.height * 6);
-        previewChest.rectTransform.sizeDelta =
-            new Vector2(
-                previewChest.sprite.rect.width * 6,
-                previewChest.sprite.rect.height * 6);
-        previewPants.rectTransform.sizeDelta =
-            new Vector2(
-                previewPants.sprite.rect.width * 6,
-                previewPants.sprite.rect.height * 6);
-        previewBody.rectTransform.sizeDelta =
-            new Vector2(
-                previewBody.sprite.rect.width * 6,
-                previewBody.sprite.rect.height * 6);
-
-        // 여성 캐릭터의 경우 추가적인 위치 조정
-        if (data.appearanceData.gender == false)
-        {
-            previewChest.rectTransform.anchoredPosition =
-                new Vector2(
-                    -3f,
-                    previewChest.rectTransform.anchoredPosition.y);
-
-            previewPants.rectTransform.anchoredPosition =
-                new Vector2(
-                    -3f,
-                    previewPants.rectTransform.anchoredPosition.y);
-
-            previewBody.rectTransform.anchoredPosition =
-                new Vector2(
-                    -3f,
-                    previewBody.rectTransform.anchoredPosition.y);
-        }
     }
 
     public void CharacterSelect(int index)
@@ -190,7 +130,7 @@ public class CharacterSlot : MonoBehaviour
         else
         {
             // 캐릭터 정보가 있으므로 캐릭터 선택 완료, 해당 월드로 이동
-            Debug.Log($"캐릭터 선택 완료 - {characterData.appearanceData.name}, 월드로 이동");
+            Debug.Log($"캐릭터 선택 완료 - {characterData.name}, 월드로 이동");
         
             
         }

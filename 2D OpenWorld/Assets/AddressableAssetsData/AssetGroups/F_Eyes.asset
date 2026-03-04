@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: F_Eyes
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: F_Eyes
+  m_GUID: aec97626406f28f4889ce9875e87e0a5
+  m_SerializeEntries:
+  - m_GUID: 114c67deb06c075498359ae17d199710
+    m_Address: Assets/04_Sprite/04_Library/02_Eyes/01_Human/02_Female/Character_Base_Female_Eyes_Type04.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1bb0ace3bae09d441ab10f6af47a303d
+    m_Address: Assets/04_Sprite/04_Library/02_Eyes/01_Human/02_Female/Character_Base_Female_Eyes_Type10.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b0f201ccbf73cd4abcbdbc46e1d1dde
+    m_Address: Assets/04_Sprite/04_Library/02_Eyes/01_Human/02_Female/Character_Base_Female_Eyes_Type08.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 433b5a5412efe314b9c02d668883a8aa
+    m_Address: Assets/04_Sprite/04_Library/02_Eyes/01_Human/02_Female/Character_Base_Female_Eyes_Type06.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 45334a31b507d0d4490a97e34196278b
+    m_Address: Assets/04_Sprite/04_Library/02_Eyes/01_Human/02_Female/Character_Base_Female_Eyes.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5664846ae3ffc6b4189225cafa39cc3c
+    m_Address: Assets/04_Sprite/04_Library/02_Eyes/01_Human/02_Female/Character_Base_Female_Eyes_Type09.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88aff74278d3ca9419e365a917fe1ec6
+    m_Address: Assets/04_Sprite/04_Library/02_Eyes/01_Human/02_Female/Character_Base_Female_Eyes_Type05.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90f7e39aa60b6a341a4d4377a585a7d0
+    m_Address: Assets/04_Sprite/04_Library/02_Eyes/01_Human/02_Female/Character_Base_Female_Eyes_Type07.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 97b4befc3a182a047b823581e32d0edb
+    m_Address: Assets/04_Sprite/04_Library/02_Eyes/01_Human/02_Female/Character_Base_Female_Eyes_Type12.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa228ba2ffd8e1145b3ddcabc2d16b74
+    m_Address: Assets/04_Sprite/04_Library/02_Eyes/01_Human/02_Female/Character_Base_Female_Eyes_Type03.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d09bb0a955b999a4582fab2bacbf2049
+    m_Address: Assets/04_Sprite/04_Library/02_Eyes/01_Human/02_Female/Character_Base_Female_Eyes_Type02.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d3332753ca9027747800dc296500d3ad
+    m_Address: Assets/04_Sprite/04_Library/02_Eyes/01_Human/02_Female/Character_Base_Female_Eyes_Type01.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef94a926f68eb3d44a7cadfbf6a8ec06
+    m_Address: Assets/04_Sprite/04_Library/02_Eyes/01_Human/02_Female/Character_Base_Female_Eyes_Type13.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f942223490f3b8e4dae69d6f464cb3ff
+    m_Address: Assets/04_Sprite/04_Library/02_Eyes/01_Human/02_Female/Character_Base_Female_Eyes_Type11.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 12114c87845bba04f99c9f30991a9652, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 64f0bb96738bb754b993cf8b0dd3108d, type: 2}
+    - {fileID: 11400000, guid: 1e1e523e220855c4a93481e37c70745e, type: 2}

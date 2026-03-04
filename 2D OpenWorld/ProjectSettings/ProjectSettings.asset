@@ -676,7 +676,7 @@ PlayerSettings:
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
   scriptingDefineSymbols:
-    Standalone: MEMORYPACK;ARAWN_REMEMBERME;REMEMBERME_EDITOR_COROUTINES_PRESENT;REMEMBERME_URP_PRESENT
+    Standalone: MEMORYPACK;ARAWN_REMEMBERME;REMEMBERME_EDITOR_COROUTINES_PRESENT;REMEMBERME_ADDRESSABLES_PRESENT;REMEMBERME_URP_PRESENT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

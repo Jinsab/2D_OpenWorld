@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Chest_F
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Chest_F
+  m_GUID: 0b41099e634eb924aa5085cc30aed37d
+  m_SerializeEntries:
+  - m_GUID: d100b5f8e8d190949a0244ffbf8ec5bd
+    m_Address: Assets/04_Sprite/04_Library/04_Chest/01_Human/02_Female/Character_Base_Female_Chest_Type01.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 12114c87845bba04f99c9f30991a9652, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7282ee037b2c23c4695fde708579e62a, type: 2}
+    - {fileID: 11400000, guid: 821398d1d61151b40b569e28ef20ed11, type: 2}

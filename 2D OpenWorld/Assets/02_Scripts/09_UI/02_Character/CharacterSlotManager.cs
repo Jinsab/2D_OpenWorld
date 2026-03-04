@@ -42,7 +42,9 @@ public class CharacterSlotManager : MonoBehaviour
         // 캐릭터 데이터 리스트를 받아와서 슬롯 업데이트
         for (int i = 0; i < characterSlots.Length; i++)
         {
-            // Debug.Log($"캐릭터 데이터 리스트 받기 - 슬롯 {i}");
+            //Debug.Log($"캐릭터 데이터 리스트 받기 - 슬롯 {i}");
+            //Debug.Log($"슬롯 접속 {CharacterDataManager.Instance.characterDataList.Length}");
+
             characterSlots[i].characterData = CharacterDataManager.Instance.characterDataList[i];
             characterSlots[i].PreviewCharacter();
         }

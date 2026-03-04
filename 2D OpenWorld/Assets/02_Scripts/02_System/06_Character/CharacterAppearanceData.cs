@@ -27,12 +27,19 @@ using UnityEngine.U2D.Animation;
 [System.Serializable]
 public class CharacterAppearanceData
 {
-    public string name;                   // 캐릭터 이름
     public bool gender;                   // 성별 (true: male, false: female)
-    public SpriteLibraryAsset bodyAsset;  // 체형 & 피부색
-    public SpriteLibraryAsset headAsset;  // 얼굴
-    public SpriteLibraryAsset eyesAsset;  // 눈 모양
-    public SpriteLibraryAsset hairAsset;  // 헤어 스타일
-    public SpriteLibraryAsset chestAsset; // 기본 상의
-    public SpriteLibraryAsset pantsAsset; // 기본 하의
+    //public SpriteLibraryAsset hairAsset;  // 헤어 스타일
+    //public SpriteLibraryAsset eyesAsset;  // 눈 모양
+    //public SpriteLibraryAsset headAsset;  // 머리 & 피부색
+    //public SpriteLibraryAsset chestAsset; // 기본 상의
+    //public SpriteLibraryAsset pantsAsset; // 기본 하의
+    //public SpriteLibraryAsset bodyAsset;  // 체형 & 몸통 & 피부색
+
+    // 에셋 직접 참조 대신 에셋의 이름을 저장
+    public string hairAssetName;
+    public string eyesAssetName;
+    public string headAssetName;
+    public string chestAssetName;
+    public string pantsAssetName;
+    public string bodyAssetName;
 }

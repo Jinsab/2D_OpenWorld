@@ -7,7 +7,7 @@ using System.Collections.Generic;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.20 오전 01:37
- *  마지막 수정 일자 : 26.02.20 오전 01:41
+ *  마지막 수정 일자 : 26.03.04 오후 16:20
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 스탯 관리
@@ -17,10 +17,17 @@ using System.Collections.Generic;
  *  1. 
  */
 
+[System.Serializable]
+public struct StatEntry { public string statName; public float value; }
+
+[System.Serializable]
 public class PlayerStats : MonoBehaviour
 {
     // Dictionary를 사용하여 StatType으로 개별 Stat에 접근
     public Dictionary<StatType, CharacterStat> Stats = new Dictionary<StatType, CharacterStat>();
+
+    // Dictionary 대신 List<struct> 또는 List<class>를 사용하여 직렬화 가능하게 만듭니다.
+    // public List<StatEntry> Stats = new List<StatEntry>();
 
     private void Awake()
     {

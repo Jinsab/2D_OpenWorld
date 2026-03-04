@@ -8,7 +8,7 @@ using System.Linq;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.14 오후 21:15
- *  마지막 수정 일자 : 26.02.17 오후 22:14
+ *  마지막 수정 일자 : 26.03.04 오후 16:20
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 슬롯 단위 인벤토리
@@ -45,6 +45,7 @@ public class InventorySlot
     }
 }
 
+[System.Serializable]
 public class Inventory : MonoBehaviour
 {
     public List<InventorySlot> slots;

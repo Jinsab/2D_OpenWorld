@@ -216,14 +216,19 @@ public class CharacterCreationManager : MonoBehaviour
     {
         return new CharacterAppearanceData
         {
-            name = namaInput.text, // 이름은 추후 입력받는 UI에서 설정하도록 변경 가능
             gender = isMale,
-            bodyAsset = filteredBodys[currentBodyIndex].asset,
-            headAsset = headOptions[currentBodyIndex],
-            eyesAsset = filteredEyes[currentEyesIndex].asset,
-            hairAsset = hairOptions[currentHairIndex],
-            chestAsset = filteredChests[currentChestIndex].asset,
-            pantsAsset = filteredPants[currentPantsIndex].asset
+            //bodyAsset = filteredBodys[currentBodyIndex].asset,
+            //headAsset = headOptions[currentBodyIndex],
+            //eyesAsset = filteredEyes[currentEyesIndex].asset,
+            //hairAsset = hairOptions[currentHairIndex],
+            //chestAsset = filteredChests[currentChestIndex].asset,
+            //pantsAsset = filteredPants[currentPantsIndex].asset
+            bodyAssetName = JsonUtility.ToJson(filteredBodys[currentBodyIndex].asset),
+            headAssetName = JsonUtility.ToJson(headOptions[currentBodyIndex]),
+            eyesAssetName = JsonUtility.ToJson(filteredEyes[currentEyesIndex].asset),
+            hairAssetName = JsonUtility.ToJson(hairOptions[currentHairIndex]),
+            chestAssetName = JsonUtility.ToJson(filteredChests[currentChestIndex].asset),
+            pantsAssetName = JsonUtility.ToJson(filteredPants[currentPantsIndex].asset)
         };
     }
 
@@ -231,10 +236,11 @@ public class CharacterCreationManager : MonoBehaviour
     {
         return new CharacterData
         {
+            name = namaInput.text, // 이름은 입력받는 UI 설정
             isEmpty = false, // 데이터 존재 여부 (캐릭터 슬롯이 비어있는지 여부)
             appearanceData = GetAppearanceData(), // 현재 선택된 외형 데이터
-            statData = gameObject.AddComponent<PlayerStats>(), // 초기 스탯 데이터 (추후 커스터마이징 가능)
-            inventory = gameObject.AddComponent<Inventory>(), // 초기 인벤토리
+            // statData = gameObject.AddComponent<PlayerStats>(), // 초기 스탯 데이터 (추후 커스터마이징 가능)
+            // inventory = gameObject.AddComponent<Inventory>(), // 초기 인벤토리
             level = 1, // 초기 레벨
             type = 0, // 초기 난이도 (예: 0 - 쉬움)
             playTime = 0f // 초기 플레이 시간

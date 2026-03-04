@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Body_F
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Body_F
+  m_GUID: 0065d86a5633e61429a62a37a883c102
+  m_SerializeEntries:
+  - m_GUID: 5fa6938377f551649846aefb343378da
+    m_Address: Assets/04_Sprite/04_Library/06_Body/01_Human/02_Female/Character_Base_Female_Body_Type03.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7640e33386ca8a946a3353fa5acbf368
+    m_Address: Assets/04_Sprite/04_Library/06_Body/01_Human/02_Female/Character_Base_Female_Body_Type05.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84683e89baa4d924b83d33fdcb157042
+    m_Address: Assets/04_Sprite/04_Library/06_Body/01_Human/02_Female/Character_Base_Female_Body_Type01.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6cf74d6632fd034ca3669fe9a578773
+    m_Address: Assets/04_Sprite/04_Library/06_Body/01_Human/02_Female/Character_Base_Female_Body_Type02.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e3c682ed3833a1442ad89380bfd0b906
+    m_Address: Assets/04_Sprite/04_Library/06_Body/01_Human/02_Female/Character_Base_Female_Body_Type04.spriteLib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 12114c87845bba04f99c9f30991a9652, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: f6604ea6cca7cbe46bc734eeadbfa7e6, type: 2}
+    - {fileID: 11400000, guid: fd1bae97a0baf994ba19c330b95fcf07, type: 2}
