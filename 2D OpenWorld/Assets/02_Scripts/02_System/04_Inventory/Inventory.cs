@@ -34,13 +34,13 @@ public class InventorySlot
     public int amount;
 
     // 런타임 전용 (저장 안 됨)
-    [System.NonSerialized]
-    public Item item;
+    //[System.NonSerialized]
+    //public Item item;
 
     public InventorySlot(Item item, int amount)
     {
         itemId = item.itemId;
-        this.item = item;
+        // this.item = item;
         this.amount = amount;
     }
 }
@@ -160,7 +160,7 @@ public class Inventory : MonoBehaviour
         // 모든 슬롯이 maxStack인지 확인
         foreach (var slot in slots)
         {
-            if (slot.amount < slot.item.maxStack)
+            if (slot.amount < ItemDatabase.Instance.GetItem(slot.itemId).maxStack)
                 return false;
         }
 

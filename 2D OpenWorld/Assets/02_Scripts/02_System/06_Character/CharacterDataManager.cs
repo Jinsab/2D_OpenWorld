@@ -94,7 +94,7 @@ public class CharacterDataManager : MonoBehaviour
                 isEmpty = true,
                 appearanceData = new CharacterAppearanceData(),
                 // statData = gameObject.AddComponent<PlayerStats>(),
-                // inventory = gameObject.AddComponent<Inventory>(),
+                inventory = gameObject.AddComponent<Inventory>(),
                 level = 0,
                 type = 0,
                 playTime = 0f
@@ -108,6 +108,11 @@ public class CharacterDataManager : MonoBehaviour
         {
             Debug.Log($"{characterIndex}번 캐릭터 저장");
             // 현재 플레이어 데이터를 캐릭터 리스트에 저장
+            // 인벤토리 및 스탯은 따로 추가해야 함.
+            // Creation 구역에서 처리하게 될 경우, 세이브 로드 과정에서 소실될 수 있음
+            // 그러므로, 인벤토리 및 스탯은 CharacterDataManager에서 직접 관리하는 것이 좋을 듯
+            playerData.inventory = gameObject.AddComponent<Inventory>();
+
             characterDataList[characterIndex] = playerData;
 
             // 데이터 저장

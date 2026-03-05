@@ -34,7 +34,7 @@ public class CharacterData
     // public PlayerStats statData;
 
     // 캐릭터 인벤토리 데이터 (아이템, 장비 등)
-    // public Inventory inventory;
+    public Inventory inventory;
 
     // 캐릭터 레벨, 이후 스킬 데이터로 확장 가능
     public int level;

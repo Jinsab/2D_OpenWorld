@@ -111,7 +111,7 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
         if (!DragController.Instance.IsDragging())
         {
             // 전체 들기
-            DragController.Instance.StartDrag(slotData.item, slotData.amount);
+            DragController.Instance.StartDrag(ItemDatabase.Instance.GetItem(slotData.itemId), slotData.amount);
             slotData.amount = 0;
         }
         else
@@ -132,7 +132,7 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
         {
             // 절반 들기
             int half = slotData.amount / 2;
-            DragController.Instance.StartDrag(slotData.item, half);
+            DragController.Instance.StartDrag(ItemDatabase.Instance.GetItem(slotData.itemId), half);
             slotData.amount -= half;
         }
         else
