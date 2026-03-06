@@ -92,7 +92,7 @@ public class CharacterDataManager : MonoBehaviour
                 appearanceData = new CharacterAppearanceData(),
                 // 스탯 및 인벤토리 데이터는 캐릭터 생성 과정에서 연결만 하므로,
                 // 여기서는 빈 데이터로 초기화
-                // statData = new StatData(),
+                statData = new PlayerStatData(),
                 inventoryData = new InventoryData(),
                 level = 0,
                 type = 0,

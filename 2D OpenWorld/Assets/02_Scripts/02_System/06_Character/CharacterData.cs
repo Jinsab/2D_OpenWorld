@@ -31,7 +31,7 @@ public class CharacterData
     public CharacterAppearanceData appearanceData;
 
     // 캐릭터 스탯 데이터 (체력, 공격력, 방어력 등)
-    // public PlayerStatsData statData;
+    public PlayerStatData statData;
 
     // 캐릭터 인벤토리 데이터 (아이템, 장비 등)
     public InventoryData inventoryData;

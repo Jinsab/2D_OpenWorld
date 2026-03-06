@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
+using System.Linq;
 
 /*  
  *  [프로젝트 제목]
@@ -7,7 +9,7 @@ using System.Collections.Generic;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.20 오전 01:37
- *  마지막 수정 일자 : 26.03.04 오후 16:20
+ *  마지막 수정 일자 : 26.03.06 오후 15:25
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 스탯 관리
@@ -17,17 +19,16 @@ using System.Collections.Generic;
  *  1. 
  */
 
-[System.Serializable]
-public struct StatEntry { public string statName; public float value; }
+
 
 [System.Serializable]
 public class PlayerStats : MonoBehaviour
 {
     // Dictionary를 사용하여 StatType으로 개별 Stat에 접근
-    public Dictionary<StatType, CharacterStat> Stats = new Dictionary<StatType, CharacterStat>();
+    // public Dictionary<StatType, CharacterStat> Stats = new Dictionary<StatType, CharacterStat>();
 
     // Dictionary 대신 List<struct> 또는 List<class>를 사용하여 직렬화 가능하게 만듭니다.
-    // public List<StatEntry> Stats = new List<StatEntry>();
+    public PlayerStatData statData;
 
     private void Awake()
     {
@@ -40,7 +41,7 @@ public class PlayerStats : MonoBehaviour
 
     private void InitStat(StatType type, float baseValue)
     {
-        Stats[type] = new CharacterStat { BaseValue = baseValue };
+        statData.Stats.Add(new StatEntry(type, new CharacterStat { BaseValue = baseValue }));
     }
 
     // 외부(장착 시스템)에서 호출할 함수
@@ -51,18 +52,27 @@ public class PlayerStats : MonoBehaviour
             // Data(데이터 구조체)를 실제 Modifier(계산용 객체)로 변환
             StatModifier newMod = new StatModifier(data.value, data.type, source);
 
-            if (Stats.TryGetValue(data.statType, out CharacterStat stat))
+            try
             {
-                stat.AddModifier(newMod);
+                statData.Stats.FirstOrDefault(entry => entry.statType == data.statType).stat.AddModifier(newMod);
             }
+            catch (IndexOutOfRangeException e)
+            {
+                Debug.Log($"EquipItemModifiers Processing failed: {e.Message}");
+            }
+
+            //if (Stats.TryGetValue(data.statType, out CharacterStat stat))
+            //{
+            //    stat.AddModifier(newMod);
+            //}
         }
     }
 
     public void UnequipItemModifiers(object source)
     {
-        foreach (var stat in Stats.Values)
+        foreach (var stat in statData.Stats)
         {
-            stat.RemoveAllModifiersFromSource(source);
+            stat.stat.RemoveAllModifiersFromSource(source);
         }
     }
 }
