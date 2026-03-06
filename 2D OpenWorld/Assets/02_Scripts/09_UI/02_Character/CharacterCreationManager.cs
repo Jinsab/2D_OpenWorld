@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.U2D.Animation;
 
@@ -223,12 +224,12 @@ public class CharacterCreationManager : MonoBehaviour
             //hairAsset = hairOptions[currentHairIndex],
             //chestAsset = filteredChests[currentChestIndex].asset,
             //pantsAsset = filteredPants[currentPantsIndex].asset
-            bodyAssetName = JsonUtility.ToJson(filteredBodys[currentBodyIndex].asset),
-            headAssetName = JsonUtility.ToJson(headOptions[currentBodyIndex]),
-            eyesAssetName = JsonUtility.ToJson(filteredEyes[currentEyesIndex].asset),
-            hairAssetName = JsonUtility.ToJson(hairOptions[currentHairIndex]),
-            chestAssetName = JsonUtility.ToJson(filteredChests[currentChestIndex].asset),
-            pantsAssetName = JsonUtility.ToJson(filteredPants[currentPantsIndex].asset)
+            bodyAssetName = $"Assets/04_Sprite/04_Library/06_Body/01_Human/{(isMale == true ? "01_Male/" : "02_Female/")}{filteredBodys[currentBodyIndex].asset.name}.spriteLib",
+            headAssetName = $"Assets/04_Sprite/04_Library/03_Head/01_Human/{headOptions[currentBodyIndex].name}.spriteLib",
+            eyesAssetName = $"Assets/04_Sprite/04_Library/02_Eyes/01_Human/{(isMale == true ? "01_Male/" : "02_Female/")}{filteredEyes[currentEyesIndex].asset.name}.spriteLib",
+            hairAssetName = $"Assets/04_Sprite/04_Library/01_Hair/01_Human/{hairOptions[currentHairIndex].name}.spriteLib",
+            chestAssetName = $"Assets/04_Sprite/04_Library/04_Chest/01_Human/{(isMale == true ? "01_Male/" : "02_Female/")}{filteredChests[currentChestIndex].asset.name}.spriteLib",
+            pantsAssetName = $"Assets/04_Sprite/04_Library/05_Pants/01_Human/{(isMale == true ? "01_Male/" : "02_Female/")}{filteredPants[currentPantsIndex].asset.name}.spriteLib",
         };
     }
 

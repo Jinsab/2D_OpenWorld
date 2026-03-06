@@ -49,6 +49,7 @@ public class CharacterPortrait : MonoBehaviour
         Debug.Log("Setting portrait for character: " + data.name);
         visualManager.InitializePlayer(data.appearanceData);
 
+        Debug.Log("Setting Hair");
         previewHair.sprite = visualManager.hairLib.GetSprite("Equip_Hair", "Idle_Left");
         previewEyes.sprite = visualManager.eyesLib.GetSprite("Player_Base_Eyes", "Side_0");
         previewHead.sprite = visualManager.headLib.GetSprite("Player_Base_Head", "Idle_Side_0");

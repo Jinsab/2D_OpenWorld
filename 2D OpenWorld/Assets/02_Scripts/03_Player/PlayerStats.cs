@@ -20,7 +20,8 @@ using System.Linq;
  *    1-3. 저장 시에는 다시 직렬화된 List로 변환하여 저장하는 방식으로 구현
  *     
  *  [스크립트 작성 도움 출처]
- *  1. 
+ *  1. https://learn.microsoft.com/ko-kr/dotnet/api/system.collections.generic.dictionary-2.trygetvalue?view=net-8.0
+ *  2. https://timeboxstory.tistory.com/138#:~:text=Unity%2C%20C%23%20%2D%20%EB%B0%B0%EC%97%B4%2C%EB%A6%AC%EC%8A%A4%ED%8A%B8%2C%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC%EB%A5%BC%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%ED%8C%8C%EC%9D%BC%EB%A1%9C%20%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0,%ED%95%98%EA%B3%A0%20%EC%A0%80%EC%9E%A5%ED%95%98%EB%A9%B4%20%EC%84%A4%EC%B9%98%EB%90%9C%20%EB%82%B4%20%EA%B2%8C%EC%9E%84%EB%A7%8C%20%EC%A0%80%EC%9E%A5%EB%90%98%EB%A9%B4%20%EB%90%9C%EB%8B%A4.
  */
 
 public class PlayerStats : MonoBehaviour

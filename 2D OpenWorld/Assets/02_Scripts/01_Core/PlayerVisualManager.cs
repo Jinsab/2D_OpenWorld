@@ -15,11 +15,11 @@ public class PlayerVisualManager : MonoBehaviour
     public void InitializePlayer(CharacterAppearanceData data)
     {
         // JSON에서 불러온 string 이름들로 각각 로드 시작
-        //loader.LoadAndApplyAsset(data.hairAssetName, hairLib);
-        //loader.LoadAndApplyAsset(data.hairAssetName, eyesLib);
-        //loader.LoadAndApplyAsset(data.headAssetName, headLib);
-        //loader.LoadAndApplyAsset(data.bodyAssetName, chestLib);
-        //loader.LoadAndApplyAsset(data.bodyAssetName, pantsLib);
-        //loader.LoadAndApplyAsset(data.bodyAssetName, bodyLib);
+        loader.LoadAndApplyAsset(data.hairAssetName, hairLib);
+        loader.LoadAndApplyAsset(data.eyesAssetName, eyesLib);
+        loader.LoadAndApplyAsset(data.headAssetName, headLib);
+        loader.LoadAndApplyAsset(data.chestAssetName, chestLib);
+        loader.LoadAndApplyAsset(data.pantsAssetName, pantsLib);
+        loader.LoadAndApplyAsset(data.bodyAssetName, bodyLib);
     }
 }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AddressableAssets; // Addressables 필수
 using UnityEngine.ResourceManagement.AsyncOperations; // 비동기 작업 필수
+using UnityEngine.ResourceManagement.ResourceLocations;
 using UnityEngine.U2D.Animation; // Sprite Library 필수
 
 public class AddressableAssetLoader : MonoBehaviour
@@ -20,6 +21,8 @@ public class AddressableAssetLoader : MonoBehaviour
         {
             // 성공 시 라이브러리에 에셋 할당
             library.spriteLibraryAsset = handle.Result;
+            Debug.Log($"Address is : {handle.Result}");
+            Debug.Log($"[Addressable] Sprite Library Loaded: {handle.Result.name}");
             Debug.Log($"[Addressables] {assetAddress} 로드 및 적용 완료");
         }
         else
@@ -28,6 +31,27 @@ public class AddressableAssetLoader : MonoBehaviour
             // 실패 시 메모리 해제
             Addressables.Release(handle);
         }
+    }
+
+    //특정 부위의 SpriteLibrary를 String Address 경로로 변환하는 함수
+    public async void SaveAssetAddress(string assetAddress, SpriteLibrary library)
+    {
+        if (library == null || library.spriteLibraryAsset == null) return;
+
+        var asset = library.spriteLibraryAsset;
+
+        // 모든 로케이터를 순회하며 해당 에셋의 위치 정보를 찾습니다.
+        foreach (var locator in Addressables.ResourceLocators)
+        {
+            // 에셋의 인스턴스 ID나 참조를 통해 위치 정보를 확인합니다.
+            if (locator.Locate(asset, typeof(SpriteLibraryAsset), out var locations))
+            {
+                // 첫 번째 일치하는 주소(Primary Key)를 반환합니다.
+                Debug.Log(locations[0].PrimaryKey);
+            }
+        }
+
+        Debug.Log("Address Not Found");
     }
 
     // 씬이 종료되거나 캐릭터가 파괴될 때 메모리 해제가 필요할 수 있습니다.
