@@ -1,6 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 /*  
@@ -9,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.14 오후 21:15
- *  마지막 수정 일자 : 26.03.06 오후 14:04
+ *  마지막 수정 일자 : 26.03.06 오후 14:40
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 슬롯 단위 인벤토리
@@ -47,6 +45,8 @@ public class Inventory : MonoBehaviour
             // 슬롯 리스트가 null인 경우에만 초기화 (이미 데이터가 있다면 유지)
             if (inventoryData.slots == null)
             {
+                Debug.Log("InventoryData Slots Null! Initializing New Slots.");
+
                 inventoryData.slots = new List<InventorySlot>(inventoryData.maxSlots);
             }
             else

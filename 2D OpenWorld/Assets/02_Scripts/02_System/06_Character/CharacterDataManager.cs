@@ -1,7 +1,4 @@
 using Arawn.CrystalSave.Runtime;
-using MemoryPack;
-using NatureBackgroundsPixelArt;
-using Unity.Multiplayer.PlayMode;
 using UnityEngine;
 
 /*  
@@ -10,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.25 오후 23:11
- *  마지막 수정 일자 : 26.03.03 오후 15:54
+ *  마지막 수정 일자 : 26.03.06 오후 14:55
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 생성 시스템 - 캐릭터 데이터 관리
@@ -93,8 +90,10 @@ public class CharacterDataManager : MonoBehaviour
             {
                 isEmpty = true,
                 appearanceData = new CharacterAppearanceData(),
-                // statData = gameObject.AddComponent<PlayerStats>(),
-                inventory = gameObject.AddComponent<Inventory>(),
+                // 스탯 및 인벤토리 데이터는 캐릭터 생성 과정에서 연결만 하므로,
+                // 여기서는 빈 데이터로 초기화
+                // statData = new StatData(),
+                inventoryData = new InventoryData(),
                 level = 0,
                 type = 0,
                 playTime = 0f
@@ -107,12 +106,8 @@ public class CharacterDataManager : MonoBehaviour
         if (IsInitialized)
         {
             Debug.Log($"{characterIndex}번 캐릭터 저장");
-            // 현재 플레이어 데이터를 캐릭터 리스트에 저장
-            // 인벤토리 및 스탯은 따로 추가해야 함.
-            // Creation 구역에서 처리하게 될 경우, 세이브 로드 과정에서 소실될 수 있음
-            // 그러므로, 인벤토리 및 스탯은 CharacterDataManager에서 직접 관리하는 것이 좋을 듯
-            playerData.inventory = gameObject.AddComponent<Inventory>();
 
+            // 현재 플레이어 데이터를 캐릭터 리스트에 저장
             characterDataList[characterIndex] = playerData;
 
             // 데이터 저장

@@ -66,7 +66,7 @@ public class InventoryUI : MonoBehaviour
     void CreateSlots()
     {
         // 한 줄이 n인 인벤토리가 있다면, 최대 슬롯 / n칸 만큼의 줄 수가 필요함
-        int line = Mathf.CeilToInt((float)inventory.maxSlots / lineCount);
+        int line = Mathf.CeilToInt((float)inventory.inventoryData.maxSlots / lineCount);
         int currentSlotCount = 0;
 
         // Width(가로)와 Height(세로) 계산하기
@@ -101,7 +101,7 @@ public class InventoryUI : MonoBehaviour
             currentSlotCount += lineCount;
         }
 
-        for (int i = currentSlotCount; i < inventory.maxSlots; i++)
+        for (int i = currentSlotCount; i < inventory.inventoryData.maxSlots; i++)
         {
             GameObject obj = Instantiate(slotPrefab, slotParent);
             InventorySlotUI slotUI = obj.GetComponent<InventorySlotUI>();
@@ -115,8 +115,8 @@ public class InventoryUI : MonoBehaviour
     {
         for (int i = 0; i < slotUIs.Count; i++)
         {
-            if (i < inventory.slots.Count)
-                slotUIs[i].Set(inventory.slots[i]);
+            if (i < inventory.inventoryData.slots.Count)
+                slotUIs[i].Set(inventory.inventoryData.slots[i]);
             else
                 slotUIs[i].Clear();
         }
