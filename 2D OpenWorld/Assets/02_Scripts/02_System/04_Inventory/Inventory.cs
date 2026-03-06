@@ -1,6 +1,7 @@
-using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
+using UnityEngine;
 
 /*  
  *  [프로젝트 제목]
@@ -8,7 +9,7 @@ using System.Linq;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.14 오후 21:15
- *  마지막 수정 일자 : 26.03.04 오후 16:20
+ *  마지막 수정 일자 : 26.03.06 오후 14:04
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 슬롯 단위 인벤토리
@@ -16,7 +17,9 @@ using System.Linq;
  *    
  *  2. 큰 그림
  *    - Inventory System
- *      ├─ Inventory (인벤토리 데이터 로직)
+ *      ├─ Inventory (InventoryData를 가지는 로직, 아이템 추가, 삭제 등 가공의 역할을 함)
+ *      │  └─ InventoryData (인벤토리 데이터 - 아이템 ID, 수량 등 '값'만 가집니다.) (저장 대상)
+ *      │
  *      └─ Inventory UI (전체 UI 관리)
  *         ├─ InventorySlotUI (슬롯 단위 UI)
  *         ├─ DragController (마우스 드래그 전담)
@@ -28,33 +31,65 @@ using System.Linq;
  */
 
 [System.Serializable]
-public class InventorySlot
-{
-    public int itemId;
-    public int amount;
-
-    // 런타임 전용 (저장 안 됨)
-    //[System.NonSerialized]
-    //public Item item;
-
-    public InventorySlot(Item item, int amount)
-    {
-        itemId = item.itemId;
-        // this.item = item;
-        this.amount = amount;
-    }
-}
-
-[System.Serializable]
 public class Inventory : MonoBehaviour
 {
-    public List<InventorySlot> slots;
+    [Header("# Inventory Connection Data")]
+    public InventoryData inventoryData;
 
-    public int maxSlots = 20;
-
-    private void Awake()
+    private void Start()
     {
-        slots = new List<InventorySlot>(maxSlots);
+        // 인벤토리 데이터 초기화
+        // 이 때, 저장된(이미 있는) 데이터는 유지되어야 하므로, null 체크 후 초기화
+
+        if (inventoryData != null)
+        {
+            // 연결된 인벤토리 정보가 있다면,
+            // 슬롯 리스트가 null인 경우에만 초기화 (이미 데이터가 있다면 유지)
+            if (inventoryData.slots == null)
+            {
+                inventoryData.slots = new List<InventorySlot>(inventoryData.maxSlots);
+            }
+            else
+            {
+                Debug.Log("InventoryData Connected! Using Existing Data.");
+
+                // 인벤토리 현재 슬롯이 maxSlots보다 적은 경우,
+                // 부족한 슬롯을 채워줌
+                if (inventoryData.slots.Count < inventoryData.maxSlots)
+                {
+                    Debug.Log("InventoryData Slots Less than MaxSlots! Adding Missing Slots.");
+                    
+                    int slotsToAdd = inventoryData.maxSlots - inventoryData.slots.Count;
+                    for (int i = 0; i < slotsToAdd; i++)
+                    {
+                        inventoryData.slots.Add(new InventorySlot());
+                    }
+                }
+
+                // 반대로 인벤토리 슬롯이 maxSlots보다 많은 경우,
+                // 초과된 슬롯을 제거 (데이터 정합성 유지)
+                if (inventoryData.slots.Count > inventoryData.maxSlots)
+                {
+                    Debug.Log("InventoryData Slots More than MaxSlots! Removing Extra Slots.");
+
+                    int slotsToRemove = inventoryData.slots.Count - inventoryData.maxSlots;
+                    inventoryData.slots.RemoveRange(inventoryData.maxSlots, slotsToRemove);
+                }
+            }
+        }
+        else
+        {
+            // 연결된 인벤토리 정보가 없으므로 오류 메시지로 표기
+            Debug.Log("InventoryData Not Connected! Using Temporary Data.");
+
+            // 임시 데이터 생성 (디버그용)
+            inventoryData = new InventoryData
+            {
+                maxSlots = 20,
+                slots = new List<InventorySlot>(inventoryData.maxSlots)
+            };
+        }
+
     }
 
     #region Add
@@ -63,7 +98,7 @@ public class Inventory : MonoBehaviour
         int remaining = amount;
 
         // 1️. 기존 스택에 먼저 채우기
-        foreach (var slot in slots)
+        foreach (var slot in inventoryData.slots)
         {
             if (slot.itemId != item.itemId)
                 continue;
@@ -82,11 +117,11 @@ public class Inventory : MonoBehaviour
         }
 
         // 2️. 빈 슬롯에 새로 추가
-        while (remaining > 0 && slots.Count < maxSlots)
+        while (remaining > 0 && inventoryData.slots.Count < inventoryData.maxSlots)
         {
             int add = Mathf.Min(item.maxStack, remaining);
 
-            slots.Add(new InventorySlot(item, add));
+            inventoryData.slots.Add(new InventorySlot(item, add));
             remaining -= add;
         }
 
@@ -100,9 +135,9 @@ public class Inventory : MonoBehaviour
         int remaining = amount;
 
         // 같은 아이템 슬롯을 뒤에서부터 제거 (안전)
-        for (int i = slots.Count - 1; i >= 0; i--)
+        for (int i = inventoryData.slots.Count - 1; i >= 0; i--)
         {
-            var slot = slots[i];
+            var slot = inventoryData.slots[i];
 
             if (slot.itemId != itemId)
                 continue;
@@ -115,7 +150,7 @@ public class Inventory : MonoBehaviour
             else
             {
                 remaining -= slot.amount;
-                slots.RemoveAt(i);
+                inventoryData.slots.RemoveAt(i);
 
                 if (remaining <= 0)
                     return amount;
@@ -132,7 +167,7 @@ public class Inventory : MonoBehaviour
         int space = 0;
 
         // 기존 스택 공간
-        foreach (var slot in slots)
+        foreach (var slot in inventoryData.slots)
         {
             if (slot.itemId == item.itemId)
             {
@@ -141,7 +176,7 @@ public class Inventory : MonoBehaviour
         }
 
         // 빈 슬롯 공간
-        int emptySlots = maxSlots - slots.Count;
+        int emptySlots = inventoryData.maxSlots - inventoryData.slots.Count;
         space += emptySlots * item.maxStack;
 
         return space;
@@ -154,11 +189,11 @@ public class Inventory : MonoBehaviour
 
     public bool IsFull()
     {
-        if (slots.Count < maxSlots)
+        if (inventoryData.slots.Count < inventoryData.maxSlots)
             return false;
 
         // 모든 슬롯이 maxStack인지 확인
-        foreach (var slot in slots)
+        foreach (var slot in inventoryData.slots)
         {
             if (slot.amount < ItemDatabase.Instance.GetItem(slot.itemId).maxStack)
                 return false;
@@ -173,7 +208,7 @@ public class Inventory : MonoBehaviour
     {
         int total = 0;
 
-        foreach (var slot in slots)
+        foreach (var slot in inventoryData.slots)
         {
             if (slot.itemId == itemId)
                 total += slot.amount;
@@ -185,12 +220,12 @@ public class Inventory : MonoBehaviour
     public void SortByID()
     {
         // ID 순 정렬
-        slots.Sort((a, b) => a.itemId.CompareTo(b.itemId));
+        inventoryData.slots.Sort((a, b) => a.itemId.CompareTo(b.itemId));
 
         // 같은 아이템 자동 병합
         Dictionary<int, int> merged = new Dictionary<int, int>();
 
-        foreach (var slot in slots)
+        foreach (var slot in inventoryData.slots)
         {
             if (!merged.ContainsKey(slot.itemId))
                 merged[slot.itemId] = 0;
@@ -198,7 +233,7 @@ public class Inventory : MonoBehaviour
             merged[slot.itemId] += slot.amount;
         }
 
-        slots.Clear();
+        inventoryData.slots.Clear();
 
         foreach (var pair in merged)
         {
@@ -209,7 +244,7 @@ public class Inventory : MonoBehaviour
             while (total > 0)
             {
                 int add = Mathf.Min(item.maxStack, total);
-                slots.Add(new InventorySlot(item, add));
+                inventoryData.slots.Add(new InventorySlot(item, add));
                 total -= add;
             }
         }
