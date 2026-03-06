@@ -29,6 +29,7 @@
  *  1. 
  */
 
+[System.Serializable]
 public enum StatModType
 {
     Flat = 100,         // 더하기      우선순위 낮음

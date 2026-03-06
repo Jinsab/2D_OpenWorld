@@ -121,12 +121,14 @@ public class CharacterSlot : MonoBehaviour
             if (HP != null)
                 hpText.text = $"{HP.LastValue} HP";
             else
-                hpText.text = "HP Key Not Found";
+                // hpText.text = "HP Key Not Found";
+                hpText.text = "HP 100";
 
             if (MP != null)
                 mpText.text = $"{MP.LastValue} MP";
             else
-                mpText.text = "MP Key Not Found";
+                // mpText.text = "MP Key Not Found";
+                mpText.text = "MP 100";
         }
 
         levelText.text = $"{data.level} LV";

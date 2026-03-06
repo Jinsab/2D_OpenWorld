@@ -50,6 +50,7 @@ public class InventorySlot
     }
 }
 
+[System.Serializable]
 public class InventoryData
 {
     [Header("# Inventory Data")]
