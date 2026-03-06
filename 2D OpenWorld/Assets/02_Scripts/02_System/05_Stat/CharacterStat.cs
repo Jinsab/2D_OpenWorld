@@ -7,7 +7,7 @@ using System.Collections.Generic;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.19 오후 17:17
- *  마지막 수정 일자 : 26.02.19 오후 17:17
+ *  마지막 수정 일자 : 26.03.06 오후 16:48
  *  
  *  [스크립트 목적 및 내용]
  *  1. 아이템 스크립트
@@ -32,17 +32,11 @@ using System.Collections.Generic;
  *  1. 
  */
 
-[Serializable]
+[System.Serializable]
 public class CharacterStat
 {
     // 기본값 (예: 기본 공격력 10)
     public float BaseValue;
-
-    // 최종 값 (계산된 값, 읽기 전용)
-    public float LastValue
-    {
-        get { return lastValue; }
-    }
 
     private readonly List<StatModifier> statModifiers = new List<StatModifier>();
     public IReadOnlyList<StatModifier> StatModifiers => statModifiers.AsReadOnly();
@@ -50,6 +44,7 @@ public class CharacterStat
     private bool isDirty = true; // 값이 변경되었는지 확인용
     private float lastValue;     // 캐싱된 최종값
 
+    // 최종 값 (계산된 값, 읽기 전용)
     public float Value
     {
         get

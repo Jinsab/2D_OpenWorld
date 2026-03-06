@@ -7,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.06 오후 14:56
- *  마지막 수정 일자 : 26.03.06 오후 14:57
+ *  마지막 수정 일자 : 26.03.06 오후 17:48
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 데이터 저장/불러오기 시스템
@@ -24,14 +24,14 @@ public sealed class RememberCharacterData : SaveableComponent
 
     protected override byte[] SerializeComponentData()
     {
-        Debug.Log("오류 체크 1");
+        Debug.Log("Save data to Json");
         
         return Serializer.Serialize(JsonUtility.ToJson(CharacterDataManager.characterDataList[CharacterDataManager.characterIndex]));
     }
 
     protected override void DeserializeComponentData(byte[] data)
     {
-        Debug.Log("오류 체크 2");
+        Debug.Log("Load Json to data");
 
         CharacterData character = 
             JsonUtility.FromJson<CharacterData>(Serializer.Deserialize<string>(data));

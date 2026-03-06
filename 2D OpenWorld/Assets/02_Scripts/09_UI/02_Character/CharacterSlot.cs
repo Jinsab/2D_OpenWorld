@@ -9,7 +9,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.27 오후 18:53
- *  마지막 수정 일자 : 26.03.06 오후 14:57
+ *  마지막 수정 일자 : 26.03.06 오후 17:49
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 슬롯 시스템 - 캐릭터 선택 및 생성 칸 이동
@@ -119,13 +119,13 @@ public class CharacterSlot : MonoBehaviour
             CharacterStat MP = data.statData.Stats.Find(x => x.statType == StatType.MaxMana).stat;
 
             if (HP != null)
-                hpText.text = $"{HP.LastValue} HP";
+                hpText.text = $"{HP.Value} HP";
             else
                 // hpText.text = "HP Key Not Found";
                 hpText.text = "HP 100";
 
             if (MP != null)
-                mpText.text = $"{MP.LastValue} MP";
+                mpText.text = $"{MP.Value} MP";
             else
                 // mpText.text = "MP Key Not Found";
                 mpText.text = "MP 100";
