@@ -113,6 +113,22 @@ public class CharacterSlot : MonoBehaviour
         //else
         //    mpText.text = "MP Key Not Found";
 
+        if (data.statData != null)
+        {
+            CharacterStat HP = data.statData.Stats.Find(x => x.statType == StatType.MaxHealth).stat;
+            CharacterStat MP = data.statData.Stats.Find(x => x.statType == StatType.MaxMana).stat;
+
+            if (HP != null)
+                hpText.text = $"{HP.LastValue} HP";
+            else
+                hpText.text = "HP Key Not Found";
+
+            if (MP != null)
+                mpText.text = $"{MP.LastValue} MP";
+            else
+                mpText.text = "MP Key Not Found";
+        }
+
         levelText.text = $"{data.level} LV";
     }
 

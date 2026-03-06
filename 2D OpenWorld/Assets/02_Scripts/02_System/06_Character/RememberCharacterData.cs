@@ -40,6 +40,7 @@ public sealed class RememberCharacterData : SaveableComponent
         CharacterDataManager.characterDataList[CharacterDataManager.characterIndex] = character;
         Debug.Log($"Load Character : {character.name}");
         Debug.Log($"Load Character Inventory Data : {character.inventoryData}");
+        Debug.Log($"Load Character Stat Data : {character.statData}");
 
         //Debug.Log("오류 체크 3");
         //// 기존 컴포넌트를 가져오거나 없으면 추가

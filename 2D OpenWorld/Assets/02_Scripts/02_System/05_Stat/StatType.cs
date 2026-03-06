@@ -4,7 +4,7 @@
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.19 오후 16:52
- *  마지막 수정 일자 : 26.02.19 오후 17:20
+ *  마지막 수정 일자 : 26.03.06 오후 15:49
  *  
  *  [스크립트 목적 및 내용]
  *  1. 스탯 - 능력치 정의
@@ -25,14 +25,14 @@
 
 public enum StatType
 {
-    MaxHealth,      // 최대 체력
-    MaxMana,        // 최대 마나
-    MoveSpeed,      // 이동 속도
-    AttackDamage,   // 공격력
-    AttackSpeed,    // 공격 속도
-    MiningSpeed,    // 채광 속도
-    Armor,          // 방어력
-    CritChance,     // 치명타 확률
-    CritDamage,     // 치명타 공격력
-    LightRadius     // 발광 범위
+    MaxHealth,      // 최대 체력 (플레이어, 몬스터 등 모든 캐릭터에 적용)
+    MaxMana,        // 최대 마나 (플레이어에게만 적용)
+    MoveSpeed,      // 이동 속도 (플레이어, 몬스터 등 모든 캐릭터에 적용)
+    AttackDamage,   // 공격력 (플레이어, 몬스터 등 모든 캐릭터에 적용)
+    AttackSpeed,    // 공격 속도 (플레이어, 몬스터 등 모든 캐릭터에 적용)
+    MiningSpeed,    // 채광 속도 (플레이어에게만 적용)
+    Armor,          // 방어력 (플레이어, 몬스터 등 모든 캐릭터에 적용)
+    CritChance,     // 치명타 확률 (플레이어에게만 적용)
+    CritDamage,     // 치명타 공격력 (플레이어에게만 적용)
+    LightRadius     // 발광 범위 (플레이어, 몬스터, 오브젝트 등 모든 요소에 적용)
 }
