@@ -37,9 +37,30 @@ public class CharacterAppearanceData
 
     // 에셋 직접 참조 대신 에셋의 이름을 저장
     public string hairAssetName;
+    public string hairAssetPath = "Assets/04_Sprite/04_Library/01_Hair/01_Human/";
+    
     public string eyesAssetName;
+    public string eyesAssetPath = "Assets/04_Sprite/04_Library/02_Eyes/01_Human/";
+    
     public string headAssetName;
+    public string headAssetPath = "Assets/04_Sprite/04_Library/03_Head/01_Human/";
+    
     public string chestAssetName;
+    public string chestAssetPath = "Assets/04_Sprite/04_Library/04_Chest/01_Human/";
+    
     public string pantsAssetName;
+    public string pantsAssetPath = "Assets/04_Sprite/04_Library/05_Pants/01_Human/";
+    
     public string bodyAssetName;
+    public string bodyAssetPath = "Assets/04_Sprite/04_Library/06_Body/01_Human/";
+
+    public string GetFullAssetPath(string assetName, string assetPath)
+    {
+        return $"{assetPath}{assetName}.spriteLib";
+    }
+
+    public string GetFullAssetPath(string assetName, string assetPath, bool gender)
+    {
+        return $"{assetPath}{(gender == true ? "01_Male/" : "02_Female/")}{assetName}.spriteLib";
+    }
 }

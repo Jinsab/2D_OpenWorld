@@ -21,8 +21,8 @@ public class AddressableAssetLoader : MonoBehaviour
         {
             // 성공 시 라이브러리에 에셋 할당
             library.spriteLibraryAsset = handle.Result;
-            Debug.Log($"Address is : {handle.Result}");
-            Debug.Log($"[Addressable] Sprite Library Loaded: {handle.Result.name}");
+            // Debug.Log($"Address is : {handle.Result}");
+            // Debug.Log($"[Addressable] Sprite Library Loaded: {handle.Result.name}");
             Debug.Log($"[Addressables] {assetAddress} 로드 및 적용 완료");
         }
         else
@@ -34,7 +34,7 @@ public class AddressableAssetLoader : MonoBehaviour
     }
 
     //특정 부위의 SpriteLibrary를 String Address 경로로 변환하는 함수
-    public async void SaveAssetAddress(string assetAddress, SpriteLibrary library)
+    public void SaveAssetAddress(string assetAddress, SpriteLibrary library)
     {
         if (library == null || library.spriteLibraryAsset == null) return;
 
@@ -49,6 +49,8 @@ public class AddressableAssetLoader : MonoBehaviour
                 // 첫 번째 일치하는 주소(Primary Key)를 반환합니다.
                 Debug.Log(locations[0].PrimaryKey);
             }
+
+            Addressables.Release(locator);
         }
 
         Debug.Log("Address Not Found");
