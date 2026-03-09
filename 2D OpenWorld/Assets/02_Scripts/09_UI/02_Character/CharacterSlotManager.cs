@@ -7,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.03 오후 15:05
- *  마지막 수정 일자 : 26.03.03 오후 16:00
+ *  마지막 수정 일자 : 26.03.09 오후 16:14
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 생성 시스템 - 캐릭터 슬롯 매니저
@@ -32,18 +32,13 @@ public class CharacterSlotManager : MonoBehaviour
 
     // 캐릭터 목록 창이 활성화될 때마다
     // 슬롯 목록도 캐릭터 데이터에 따라 UI 업데이트
-    private void OnEnable()
-    {
-        UpdateCharacterSlots();
-    }
-
     public void UpdateCharacterSlots()
     {
         // 캐릭터 데이터 리스트를 받아와서 슬롯 업데이트
         for (int i = 0; i < characterSlots.Length; i++)
         {
-            //Debug.Log($"캐릭터 데이터 리스트 받기 - 슬롯 {i}");
-            //Debug.Log($"슬롯 접속 {CharacterDataManager.Instance.characterDataList.Length}");
+            // Debug.Log($"캐릭터 데이터 리스트 받기 - 슬롯 {i}");
+            // Debug.Log($"슬롯 접속 {CharacterDataManager.Instance.characterDataList.Length}");
 
             characterSlots[i].characterData = CharacterDataManager.Instance.characterDataList[i];
             characterSlots[i].PreviewCharacter();

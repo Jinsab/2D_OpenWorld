@@ -1,5 +1,4 @@
 using JeffGrawAssets.FlexibleUI;
-using Unity.VisualScripting;
 using UnityEngine;
 
 /*  
@@ -8,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.27 오후 18:53
- *  마지막 수정 일자 : 26.03.02 오후 21:18
+ *  마지막 수정 일자 : 26.03.09 오후 15:15
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 슬롯 시스템 - 캐릭터 선택 및 생성 칸 이동
@@ -44,12 +43,11 @@ public class CharacterPortrait : MonoBehaviour
     [Header("# Visual Manager ")]
     public PlayerVisualManager visualManager;
 
-    public void SetPortrait(CharacterData data)
+    public async void SetPortrait(CharacterData data)
     {
         Debug.Log("Setting portrait for character: " + data.name);
-        visualManager.InitializePlayer(data.appearanceData);
+        await visualManager.InitializePlayer(data.appearanceData);
 
-        Debug.Log("Setting Hair");
         previewHair.sprite = visualManager.hairLib.GetSprite("Equip_Hair", "Idle_Left");
         previewEyes.sprite = visualManager.eyesLib.GetSprite("Player_Base_Eyes", "Side_0");
         previewHead.sprite = visualManager.headLib.GetSprite("Player_Base_Head", "Idle_Side_0");
@@ -85,6 +83,8 @@ public class CharacterPortrait : MonoBehaviour
         // 여성 캐릭터의 경우 추가적인 위치 조정
         if (data.appearanceData.gender == false)
         {
+            Debug.Log("성별이 여성이므로 세부 위치 조정이 필요합니다.");
+
             previewChest.rectTransform.anchoredPosition =
                 new Vector2(
                     -3f,

@@ -1,4 +1,5 @@
 using Arawn.CrystalSave.Runtime;
+using System.Threading.Tasks;
 using UnityEngine;
 
 /*  
@@ -7,7 +8,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.25 오후 23:11
- *  마지막 수정 일자 : 26.03.06 오후 14:55
+ *  마지막 수정 일자 : 26.03.09 오후 16:14
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 생성 시스템 - 캐릭터 데이터 관리
@@ -32,10 +33,11 @@ using UnityEngine;
 public class CharacterDataManager : MonoBehaviour
 {
     public static CharacterDataManager Instance;
-
+    
     // 임시: 캐릭터 슬롯 10칸 까지
     [Header("# Character List")]
     public CharacterData[] characterDataList;
+    public CharacterSlotManager characterSlotManager;
 
     [Header("# Player Data")]
     public int characterIndex = 0;
@@ -49,7 +51,6 @@ public class CharacterDataManager : MonoBehaviour
         {
             Instance = this;
 
-            
             DontDestroyOnLoad(gameObject); // 씬 전환 시 파괴 방지
         }
         else
@@ -58,47 +59,86 @@ public class CharacterDataManager : MonoBehaviour
         }
     }
 
-    void Start()
+    private void Start()
     {
-        SaveManager.Initialized += (manager) =>
+        // Subscribe to load completion
+        SaveManager.Instance.OnLoadCompleted += OnSaveSlotLoaded;
+
+        // Also handle failures
+        SaveManager.Instance.OnLoadFailed += OnSaveSlotLoadFailed;
+
+        SaveManager.Initialized += async (manager) =>
         {
             Debug.Log("SaveManager is ready!");
 
             IsInitialized = true;
-
-            InitCharacterData(); // 캐릭터 데이터 리스트 초기화
+            await InitCharacterData(); // 캐릭터 데이터 리스트 초기화
         };
     }
 
-    private void InitCharacterData()
+    private void OnSaveSlotLoaded(object sender, SaveLoadEventArgs args)
+    {
+        Debug.Log($"03. Slot {args.Slot.SlotNumber} loaded successfully!");
+
+        UpdateData();
+    }
+
+    private void OnSaveSlotLoadFailed(object sender, OperationFailedEventArgs args)
+    {
+        Debug.LogError($"03. Failed to load: {args.ErrorMessage}");
+        
+        // Show error UI to player
+        UpdateData();
+    }
+
+    private async Awaitable InitCharacterData()
     {
         // 저장된 데이터가 있다면 불러오고, 없다면 불러오지 않음
-        Debug.Log("데이터 불러오기");
+        Debug.Log("01. Try Load Data to SaveManager!");
 
-        characterDataList = new CharacterData[1];
+        characterDataList = new CharacterData[10];
 
-        for (int i = 0; i < characterDataList.Length; i++)
+        bool hasSlotSave = await SaveManager.Instance.HasSaveAtAsync(1);
+
+        if (hasSlotSave)
         {
-            // SaveManager.Instance.Load(i + 1, restoreLastActiveScene: false); // 저장된 데이터 로드
-            
-            // Debug.Log($"{i + 1}번 캐릭터 데이터 로드");
+            Debug.Log("02. Has Slot 1 Save Data");
+
+            var result = await SaveManager.Instance.LoadSaveSlotAsync(
+                slotNumber: 1,
+                restoreLastActiveScene: false  // Key parameter!
+            );
         }
+    }
 
+    private void UpdateData()
+    {
+        // If you have specific data structures,
+        // you can now extract them from the loaded save.
         for (int i = 0; i < characterDataList.Length; i++)
         {
-            characterDataList[i] = new CharacterData
+            if (characterDataList[i] == null)
             {
-                isEmpty = true,
-                appearanceData = new CharacterAppearanceData(),
-                // 스탯 및 인벤토리 데이터는 캐릭터 생성 과정에서 연결만 하므로,
-                // 여기서는 빈 데이터로 초기화
-                statData = new PlayerStatData(),
-                inventoryData = new InventoryData(),
-                level = 0,
-                type = 0,
-                playTime = 0f
-            };
+                characterDataList[i] = new CharacterData
+                {
+                    isEmpty = true,
+                    appearanceData = new CharacterAppearanceData(),
+                    // Stat Data and Inventory Data are just linked during character creation,
+                    // so we initialize them as empty here
+                    statData = new PlayerStatData(),
+                    inventoryData = new InventoryData(),
+                    level = 0,
+                    type = 0,
+                    playTime = 0f
+                };
+            }
         }
+
+        // Update UI
+        // Slot Manager should have a method to receive the character data
+        // list and update the UI accordingly
+        characterSlotManager.UpdateCharacterSlots();
+
     }
 
     public void SaveCharacterData()
@@ -111,7 +151,17 @@ public class CharacterDataManager : MonoBehaviour
             characterDataList[characterIndex] = playerData;
 
             // 데이터 저장
-            SaveManager.Instance.Save(characterIndex + 1);
+            SaveManager.Instance.Save(1);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        // Always unsubscribe to prevent memory leaks
+        if (SaveManager.Instance != null)
+        {
+            SaveManager.Instance.OnLoadCompleted -= OnSaveSlotLoaded;
+            SaveManager.Instance.OnLoadFailed -= OnSaveSlotLoadFailed;
         }
     }
 }

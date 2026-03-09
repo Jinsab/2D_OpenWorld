@@ -7,7 +7,7 @@ using UnityEngine.U2D.Animation; // Sprite Library 필수
 public class AddressableAssetLoader : MonoBehaviour
 {
     // 특정 부위의 SpriteLibraryAsset을 로드하여 적용하는 함수
-    public async void LoadAndApplyAsset(string assetAddress, SpriteLibrary library)
+    public async Awaitable LoadAndApplyAsset(string assetAddress, SpriteLibrary library)
     {
         if (string.IsNullOrEmpty(assetAddress) || library == null) return;
 
@@ -28,9 +28,10 @@ public class AddressableAssetLoader : MonoBehaviour
         else
         {
             Debug.LogError($"[Addressables] {assetAddress} 로드 실패!");
-            // 실패 시 메모리 해제
-            Addressables.Release(handle);
         }
+
+        // 성공, 실패 상관 없이 메모리 해제
+        Addressables.Release(handle);
     }
 
     //특정 부위의 SpriteLibrary를 String Address 경로로 변환하는 함수

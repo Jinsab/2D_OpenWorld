@@ -1,6 +1,4 @@
-using JeffGrawAssets.FlexibleUI;
 using TMPro;
-using UnityEditor.U2D.Animation;
 using UnityEngine;
 
 /*  
@@ -9,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.27 오후 18:53
- *  마지막 수정 일자 : 26.03.06 오후 17:49
+ *  마지막 수정 일자 : 26.03.09 오후 16:15
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 슬롯 시스템 - 캐릭터 선택 및 생성 칸 이동
@@ -58,20 +56,25 @@ public class CharacterSlot : MonoBehaviour
     // 슬롯이 활성화될 때마다 캐릭터 데이터에 따라 UI 업데이트
     public void PreviewCharacter()
     {
-        Debug.Log(characterData == null ? "캐릭터 데이터 없음" : $"캐릭터 데이터 있음 - {characterData.name}");
-
-        if (characterData.isEmpty)
+        // 일반적으로는 캐릭터 데이터를 넘겨주지만 예외 발생으로 인하여
+        // 캐릭터 데이터가 null인 경우, 빈 슬롯으로 간주하여 UI를 업데이트 해야 함
+        if (characterData != null)
         {
-            infoGroup.SetActive(false);
-            emptyGroup.SetActive(true);
-        }
-        else
-        {
-            infoGroup.SetActive(true);
-            emptyGroup.SetActive(false);
+            if (!characterData.isEmpty)
+            {
+                infoGroup.SetActive(true);
+                emptyGroup.SetActive(false);
 
-            SetSlot(characterData);
+                SetSlot(characterData);
+
+                return;
+            }
         }
+
+        Debug.Log("캐릭터 데이터가 null이거나 빈 슬롯입니다. 빈 슬롯으로 간주하여 UI 업데이트.");
+
+        infoGroup.SetActive(false);
+        emptyGroup.SetActive(true);
     }
 
     // 데이터를 받아서 슬롯 UI를 갱신하는 함수
@@ -148,6 +151,7 @@ public class CharacterSlot : MonoBehaviour
         else
         {
             // 캐릭터 정보가 있으므로 캐릭터 선택 완료, 해당 월드로 이동
+            // 이후 절차적 맵 생성 시스템과 연동하여 맵 시드 정보도 전달해야 할 것임
             Debug.Log($"캐릭터 선택 완료 - {characterData.name}, 월드로 이동");
 
             // 인벤토리 및 스탯은 순수 데이터이므로,
