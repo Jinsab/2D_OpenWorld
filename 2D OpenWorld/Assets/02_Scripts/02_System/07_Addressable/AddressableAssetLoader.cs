@@ -31,7 +31,33 @@ public class AddressableAssetLoader : MonoBehaviour
         }
 
         // 성공, 실패 상관 없이 메모리 해제
-        Addressables.Release(handle);
+        // Addressables.Release(handle);
+    }
+
+    // 모든 부위의 SpriteLibraryAsset을 로드하여 적용하는 함수
+    public async Awaitable LoadAndApplyAsset(string[] assetAdrs, SpriteLibrary[] libs)
+    {
+        if (assetAdrs == null || libs == null) return;
+
+        // 1. 모든 핸들을 리스트에 담아 동시에 실행
+        var locationsTask = Addressables.LoadResourceLocationsAsync(assetAdrs, Addressables.MergeMode.Union);
+        var locations = await locationsTask.Task;
+
+        // 2. 모든 에셋을 한 번에 로드 (IList<SpriteLibraryAsset>)
+        var loadTask = Addressables.LoadAssetsAsync<SpriteLibraryAsset>(locations, null);
+        var loadedAssets = await loadTask.Task;
+
+        // 3. 로드된 결과를 부위별 컴포넌트에 매칭하여 할당
+        for (int i = 0; i < loadedAssets.Count; i++)
+        {
+            // 각 부위 컴포넌트에 안전하게 할당
+            if (libs[i] != null)
+            {
+                libs[i].spriteLibraryAsset = loadedAssets[i];
+
+                Debug.Log($"[Addressables] {assetAdrs[i]} 로드 및 적용 완료");
+            }
+        }
     }
 
     //특정 부위의 SpriteLibrary를 String Address 경로로 변환하는 함수

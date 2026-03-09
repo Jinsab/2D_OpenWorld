@@ -53,13 +53,33 @@ public class PlayerVisualManager : MonoBehaviour
             // 그러지 못하고 다른 작업을 대기하게 될 수 있음
             // 최악의 경우 데드락 상태를 유발할 수 있음
 
+            await loader.LoadAndApplyAsset(
+                new string[]
+                {
+                    loadHairPath,
+                    loadEyesPath,
+                    loadHeadPath,
+                    loadChestPath,
+                    loadPantsPath,
+                    loadBodyPath
+                },
+                new SpriteLibrary[]
+                {
+                    hairLib,
+                    eyesLib,
+                    headLib,
+                    chestLib,
+                    pantsLib,
+                    bodyLib
+                });
+
             // JSON에서 불러온 string 이름들로 각각 로드 시작
-            await loader.LoadAndApplyAsset(loadHairPath, hairLib);
-            await loader.LoadAndApplyAsset(loadEyesPath, eyesLib);
-            await loader.LoadAndApplyAsset(loadHeadPath, headLib);
-            await loader.LoadAndApplyAsset(loadChestPath, chestLib);
-            await loader.LoadAndApplyAsset(loadPantsPath, pantsLib);
-            await loader.LoadAndApplyAsset(loadBodyPath, bodyLib);
+            //await loader.LoadAndApplyAsset(loadHairPath, hairLib);
+            //await loader.LoadAndApplyAsset(loadEyesPath, eyesLib);
+            //await loader.LoadAndApplyAsset(loadHeadPath, headLib);
+            //await loader.LoadAndApplyAsset(loadChestPath, chestLib);
+            //await loader.LoadAndApplyAsset(loadPantsPath, pantsLib);
+            //await loader.LoadAndApplyAsset(loadBodyPath, bodyLib);
         }
         catch (System.Exception ex)
         {

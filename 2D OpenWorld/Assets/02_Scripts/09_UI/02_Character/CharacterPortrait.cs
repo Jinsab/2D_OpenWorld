@@ -48,12 +48,35 @@ public class CharacterPortrait : MonoBehaviour
         Debug.Log("Setting portrait for character: " + data.name);
         await visualManager.InitializePlayer(data.appearanceData);
 
-        previewHair.sprite = visualManager.hairLib.GetSprite("Equip_Hair", "Idle_Left");
-        previewEyes.sprite = visualManager.eyesLib.GetSprite("Player_Base_Eyes", "Side_0");
-        previewHead.sprite = visualManager.headLib.GetSprite("Player_Base_Head", "Idle_Side_0");
-        previewChest.sprite = visualManager.chestLib.GetSprite("Equip_Chest", "Idle_Left");
-        previewPants.sprite = visualManager.pantsLib.GetSprite("Equip_Pants", "Idle_Left");
-        previewBody.sprite = visualManager.bodyLib.GetSprite("Player_Base_Body", "Idle_Side_0");
+        if (visualManager.hairLib != null)
+            previewHair.sprite = visualManager.hairLib.spriteLibraryAsset.GetSprite("Equip_Hair", "Idle_Left");
+        else
+            Debug.Log("Hair library is null. Cannot set hair sprite.");
+
+        if (visualManager.eyesLib != null)
+            previewEyes.sprite = visualManager.eyesLib.spriteLibraryAsset.GetSprite("Player_Base_Eyes", "Side_0");
+        else
+            Debug.Log("Eyes library is null. Cannot set eyes sprite.");
+
+        if (visualManager.headLib != null)
+            previewHead.sprite = visualManager.headLib.spriteLibraryAsset.GetSprite("Player_Base_Head", "Idle_Side_0");
+        else
+            Debug.Log("Head library is null. Cannot set head sprite.");
+        
+        if (visualManager.chestLib != null)
+            previewChest.sprite = visualManager.chestLib.spriteLibraryAsset.GetSprite("Equip_Chest", "Idle_Left");
+        else
+            Debug.Log("Chest library is null. Cannot set chest sprite.");
+
+        if (visualManager.pantsLib != null)
+            previewPants.sprite = visualManager.pantsLib.spriteLibraryAsset.GetSprite("Equip_Pants", "Idle_Left");
+        else
+            Debug.Log("Pants library is null. Cannot set pants sprite.");
+
+        if (visualManager.bodyLib != null)
+            previewBody.sprite = visualManager.bodyLib.spriteLibraryAsset.GetSprite("Player_Base_Body", "Idle_Side_0");
+        else
+            Debug.Log("Body library is null. Cannot set body sprite.");
 
         previewHair.rectTransform.sizeDelta =
             new Vector2(
