@@ -12,7 +12,7 @@ using UnityEngine.U2D.Animation;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.25 오후 23:11
- *  마지막 수정 일자 : 26.03.03 오후 14:48
+ *  마지막 수정 일자 : 26.03.09 오후 16:47
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 생성 시스템 - 캐릭터 생성 관리
@@ -207,9 +207,6 @@ public class CharacterCreationManager : MonoBehaviour
         // 1. 현재 선택된 에셋들을 데이터 매니저에 저장
         CharacterDataManager.Instance.playerData = GetFinalData();
         CharacterDataManager.Instance.SaveCharacterData();
-
-        // 2. 인게임 씬으로 이동
-        // UnityEngine.SceneManagement.SceneManager.LoadScene("02_InGameScene");
     }
 
     // 최종 선택 데이터 반환 (게임 시작 시 호출)
@@ -218,18 +215,6 @@ public class CharacterCreationManager : MonoBehaviour
         return new CharacterAppearanceData
         {
             gender = isMale,
-            //bodyAsset = filteredBodys[currentBodyIndex].asset,
-            //headAsset = headOptions[currentBodyIndex],
-            //eyesAsset = filteredEyes[currentEyesIndex].asset,
-            //hairAsset = hairOptions[currentHairIndex],
-            //chestAsset = filteredChests[currentChestIndex].asset,
-            //pantsAsset = filteredPants[currentPantsIndex].asset
-            //bodyAssetName = $"Assets/04_Sprite/04_Library/06_Body/01_Human/{(isMale == true ? "01_Male/" : "02_Female/")}{filteredBodys[currentBodyIndex].asset.name}.spriteLib",
-            //headAssetName = $"Assets/04_Sprite/04_Library/03_Head/01_Human/{headOptions[currentBodyIndex].name}.spriteLib",
-            //eyesAssetName = $"Assets/04_Sprite/04_Library/02_Eyes/01_Human/{(isMale == true ? "01_Male/" : "02_Female/")}{filteredEyes[currentEyesIndex].asset.name}.spriteLib",
-            //hairAssetName = $"Assets/04_Sprite/04_Library/01_Hair/01_Human/{hairOptions[currentHairIndex].name}.spriteLib",
-            //chestAssetName = $"Assets/04_Sprite/04_Library/04_Chest/01_Human/{(isMale == true ? "01_Male/" : "02_Female/")}{filteredChests[currentChestIndex].asset.name}.spriteLib",
-            //pantsAssetName = $"Assets/04_Sprite/04_Library/05_Pants/01_Human/{(isMale == true ? "01_Male/" : "02_Female/")}{filteredPants[currentPantsIndex].asset.name}.spriteLib",
             bodyAssetName = filteredBodys[currentBodyIndex].asset.name,
             headAssetName = headOptions[currentBodyIndex].name,
             eyesAssetName = filteredEyes[currentEyesIndex].asset.name,

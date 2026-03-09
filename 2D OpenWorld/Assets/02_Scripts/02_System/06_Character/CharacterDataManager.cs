@@ -111,7 +111,7 @@ public class CharacterDataManager : MonoBehaviour
         }
     }
 
-    private void UpdateData()
+    public void UpdateData()
     {
         // If you have specific data structures,
         // you can now extract them from the loaded save.
@@ -138,7 +138,22 @@ public class CharacterDataManager : MonoBehaviour
         // Slot Manager should have a method to receive the character data
         // list and update the UI accordingly
         characterSlotManager.UpdateCharacterSlots();
+    }
 
+    public void DeleteData(int index)
+    {
+        characterDataList[index] = new CharacterData
+        {
+            isEmpty = true,
+            appearanceData = new CharacterAppearanceData(),
+            // Stat Data and Inventory Data are just linked during character creation,
+            // so we initialize them as empty here
+            statData = new PlayerStatData(),
+            inventoryData = new InventoryData(),
+            level = 0,
+            type = 0,
+            playTime = 0f
+        };
     }
 
     public void SaveCharacterData()

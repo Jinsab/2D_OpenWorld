@@ -166,6 +166,14 @@ public class CharacterSlot : MonoBehaviour
             // 이것은 새로운 씬에서 Player가 생성되면
             // AddComponent<Inventory>()를 한 뒤,
             // 저장된 InventoryData를 주입(Injection)해 줍니다.
+
+            // 2. 인게임 씬으로 이동
+            UnityEngine.SceneManagement.SceneManager.LoadScene("02_InGameScene");
         }
+    }
+
+    public void DeleteCharacterData(int index)
+    {
+        CharacterDataManager.Instance.DeleteData(index);
     }
 }

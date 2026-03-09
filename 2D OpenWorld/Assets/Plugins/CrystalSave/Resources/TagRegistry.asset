@@ -12,4 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1dca1efcc7080c41a13725c19933be7, type: 3}
   m_Name: TagRegistry
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::Arawn.CrystalSave.Runtime.TagRegistry
-  Tags: []
+  Tags:
+  - Untagged
+  - Respawn
+  - Finish
+  - EditorOnly
+  - MainCamera
+  - Player
+  - GameController
+  - World
+  - Harvest
+  - DropItem
