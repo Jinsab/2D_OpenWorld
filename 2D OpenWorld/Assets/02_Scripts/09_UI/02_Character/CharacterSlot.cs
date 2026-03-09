@@ -80,7 +80,7 @@ public class CharacterSlot : MonoBehaviour
     // 데이터를 받아서 슬롯 UI를 갱신하는 함수
     public void SetSlot(CharacterData data)
     {
-        portrait.SetPortrait(data);
+        portrait.SetPortraitView(data);
 
         nameText.text = data.name;
 

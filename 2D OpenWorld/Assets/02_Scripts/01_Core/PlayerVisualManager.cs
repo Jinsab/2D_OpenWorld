@@ -43,6 +43,16 @@ public class PlayerVisualManager : MonoBehaviour
             string loadPantsPath = data.GetFullAssetPath(data.pantsAssetName, data.pantsAssetPath, data.gender);
             string loadBodyPath = data.GetFullAssetPath(data.bodyAssetName, data.bodyAssetPath, data.gender);
 
+
+            // Awaitable에서 await을 여 러번 사용할 때 
+            // 처음 await으로 완료된 awaitableInstance는 풀로 돌아가기 때문에
+            // 이미 await한 awaitableInstance를 다시 await하려고 할 때
+            // 해당 Awaitable 인스턴스가 사실 다른 곳에서 실행된 async 메서드의
+            // 반화 값으로 사용 중일 수 있기 때문에 예상하지 못한 동작이 일어날 수 있음
+            // 본래라면 두 번째 await 코드 실행이 완료되어야 하지만,
+            // 그러지 못하고 다른 작업을 대기하게 될 수 있음
+            // 최악의 경우 데드락 상태를 유발할 수 있음
+
             // JSON에서 불러온 string 이름들로 각각 로드 시작
             await loader.LoadAndApplyAsset(loadHairPath, hairLib);
             await loader.LoadAndApplyAsset(loadEyesPath, eyesLib);

@@ -43,7 +43,7 @@ public class CharacterPortrait : MonoBehaviour
     [Header("# Visual Manager ")]
     public PlayerVisualManager visualManager;
 
-    public async void SetPortrait(CharacterData data)
+    public async void SetPortraitView(CharacterData data)
     {
         Debug.Log("Setting portrait for character: " + data.name);
         await visualManager.InitializePlayer(data.appearanceData);
@@ -81,10 +81,10 @@ public class CharacterPortrait : MonoBehaviour
                 previewBody.sprite.rect.height * 6);
 
         // 여성 캐릭터의 경우 추가적인 위치 조정
-        if (data.appearanceData.gender == false)
+        if (!data.appearanceData.gender)
         {
-            Debug.Log("성별이 여성이므로 세부 위치 조정이 필요합니다.");
-
+            // Debug.Log("성별이 여성이므로 세부 위치 조정이 필요합니다.");
+            
             previewChest.rectTransform.anchoredPosition =
                 new Vector2(
                     -3f,

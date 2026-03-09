@@ -30,6 +30,11 @@ public class CharacterSlotManager : MonoBehaviour
     [Header("# Character Slot Prefab")]
     public GameObject characterSlotPrefab;
 
+    private void OnEnable()
+    {
+        UpdateCharacterSlots();
+    }
+
     // 캐릭터 목록 창이 활성화될 때마다
     // 슬롯 목록도 캐릭터 데이터에 따라 UI 업데이트
     public void UpdateCharacterSlots()
