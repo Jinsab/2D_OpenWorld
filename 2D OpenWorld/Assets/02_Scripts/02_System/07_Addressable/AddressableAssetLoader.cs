@@ -31,7 +31,7 @@ public class AddressableAssetLoader : MonoBehaviour
 
     [Header("# Caching Asset Data")]
     [SerializedDictionary("string", "SpriteLibrary")]
-    public SerializedDictionary<string, SpriteLibrary> CachingAssetData;
+    public SerializedDictionary<string, SpriteLibraryAsset> CachingAssetData;
 
     private void Awake()
     {
@@ -46,41 +46,42 @@ public class AddressableAssetLoader : MonoBehaviour
             Destroy(gameObject);
         }
 
-        CachingAssetData = new SerializedDictionary<string, SpriteLibrary>();
+        CachingAssetData = new SerializedDictionary<string, SpriteLibraryAsset>();
     }
 
     // 에셋 로드 요청이 들어오면 딕셔너리에 해당 주소(Key)의 에셋이 있는지 확인
     // 이미 있다면 await 없이 즉시 반환
     // 없다면 Addressables로 로드 시도 후 딕셔너리에 저장하고 반환
-    public SpriteLibrary TryAssetLoad(string adr)
+    public async Awaitable<SpriteLibraryAsset> TryAssetLoad(string adr)
     {
+        if (string.IsNullOrEmpty(adr))
+            return null;
+
         // 내부 캐싱에 해당 주소(Key)가 있는지 확인하기
         if (CachingAssetData.ContainsKey(adr))
         {
-            if (CachingAssetData.TryGetValue(adr, out SpriteLibrary cachedLib))
+            if (CachingAssetData.TryGetValue(adr, out SpriteLibraryAsset cachedLib))
             {
                 if (cachedLib != null)
                 {
                     // 캐싱된 에셋이 유효하다면 즉시 반환
                     Debug.Log($"[Cache] {adr} 에셋이 이미 로드되어 있습니다.");
+
                     return cachedLib;
-                }
-                else
-                {
-                    
                 }
             }
         }
-        else
-        {
-            CachingAssetData.Add(adr, );
-        }
+
+        // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
+        await LoadAndApplyAsset(adr);
+
+        return CachingAssetData[adr];
     }
 
     // 특정 부위의 SpriteLibraryAsset을 로드하여 적용하는 함수
-    public async Awaitable LoadAndApplyAsset(string assetAddress, SpriteLibrary library)
+    public async Awaitable LoadAndApplyAsset(string assetAddress)
     {
-        if (string.IsNullOrEmpty(assetAddress) || library == null) return;
+        if (string.IsNullOrEmpty(assetAddress)) return;
 
         // Addressables를 통해 비동기로 에셋 로드 시도
         AsyncOperationHandle<SpriteLibraryAsset> handle = Addressables.LoadAssetAsync<SpriteLibraryAsset>(assetAddress);
@@ -90,31 +91,28 @@ public class AddressableAssetLoader : MonoBehaviour
 
         if (handle.Status == AsyncOperationStatus.Succeeded)
         {
-            // 성공 시에는 라이브러리에 에셋 할당
             // 성공 로그 출력 및 내부 캐싱을 도입하여 딕셔너리에 값을 넣음
             // 최종적으로는 메모리 해제
-            library.spriteLibraryAsset = handle.Result;
-            CachingAssetData.TryAdd(assetAddress, library);
+            CachingAssetData.TryAdd(assetAddress, handle.Result);
 
             Debug.Log($"[Addressables] {assetAddress} 로드 및 적용 완료");
         }
         else
         {
             // 실패 시에는 에러 로그 출력 및 메모리 해제
-
             Debug.LogError($"[Addressables] {assetAddress} 로드 실패!");
 
             Addressables.Release(handle);
         }
 
         // 성공, 실패 상관 없이 메모리 해제
-        // Addressables.Release(handle);
+        Addressables.Release(handle);
     }
 
-    // 모든 부위의 SpriteLibraryAsset을 로드하여 적용하는 함수
-    public async Awaitable LoadAndApplyAsset(string[] assetAdrs, SpriteLibrary[] libs)
+    // n개의 SpriteLibraryAsset을 로드하여 적용하는 함수
+    public async Awaitable LoadAndApplyAsset(string[] assetAdrs)
     {
-        if (assetAdrs == null || libs == null) return;
+        if (assetAdrs == null) return;
 
         // 1. 모든 핸들을 리스트에 담아 동시에 실행
         var locationsTask = Addressables.LoadResourceLocationsAsync(assetAdrs, Addressables.MergeMode.Union);
@@ -127,13 +125,14 @@ public class AddressableAssetLoader : MonoBehaviour
         // 3. 로드된 결과를 부위별 컴포넌트에 매칭하여 할당
         for (int i = 0; i < loadedAssets.Count; i++)
         {
-            // 각 부위 컴포넌트에 안전하게 할당
-            if (libs[i] != null)
+            // 각 부위 안전하게 할당
+            if (CachingAssetData.TryAdd(assetAdrs[i], loadedAssets[i]))
             {
-                libs[i].spriteLibraryAsset = loadedAssets[i];
-                CachingAssetData.TryAdd(assetAdrs[i], libs[i]);
-
-                Debug.Log($"[Addressables] {assetAdrs[i]} 로드 및 적용 완료");
+                Debug.Log($"[Addressables] {assetAdrs[i]} 로드 완료");
+            }
+            else
+            {
+                Debug.Log($"[Addressables] {assetAdrs[i]} 가 이미 있습니다!");
             }
         }
     }
