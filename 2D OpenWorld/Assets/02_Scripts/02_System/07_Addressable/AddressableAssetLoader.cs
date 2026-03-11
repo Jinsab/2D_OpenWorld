@@ -1,5 +1,4 @@
 using AYellowpaper.SerializedCollections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AddressableAssets; // Addressables 필수
 using UnityEngine.ResourceManagement.AsyncOperations; // 비동기 작업 필수
@@ -11,7 +10,7 @@ using UnityEngine.U2D.Animation; // Sprite Library 필수
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.09 오후 14:32
- *  마지막 수정 일자 : 26.03.10 오후 17:55
+ *  마지막 수정 일자 : 26.03.11 오후 22:02
  *  
  *  [스크립트 목적 및 내용]
  *  1. 유니티 어드레서블 - 에셋 로더
@@ -157,13 +156,15 @@ public class AddressableAssetLoader : MonoBehaviour
                         }
                     }
                 }
+                else
+                {
+                    // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
+                    Debug.Log($"[Cache] {adrs[i]} 에셋의 정보가 없습니다. 로드를 시도합니다.");
+                    await LoadAndApplyAsset(adrs[i]);
+
+                    chacedlibs[i] = CachingAssetData.TryGetValue(adrs[i], out SpriteLibraryAsset loadLib) ? loadLib : null;
+                }
             }
-
-            // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
-            Debug.Log($"[Cache] {adrs[i]} 에셋의 정보가 없습니다. 로드를 시도합니다.");
-            await LoadAndApplyAsset(adrs[i]);
-
-            chacedlibs[i] = CachingAssetData.TryGetValue(adrs[i], out SpriteLibraryAsset loadLib) ? loadLib : null;
         }
 
         return chacedlibs;
@@ -202,13 +203,15 @@ public class AddressableAssetLoader : MonoBehaviour
                         }
                     }
                 }
+                else
+                {
+                    // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
+                    Debug.Log($"[Cache] {adrs[i]} 에셋의 정보가 없습니다. 로드를 시도합니다.");
+                    await LoadAndApplyAsset(adrs[i]);
+
+                    libs[i].spriteLibraryAsset = CachingAssetData.TryGetValue(adrs[i], out SpriteLibraryAsset loadLib) ? loadLib : null;
+                }
             }
-
-            // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
-            Debug.Log($"[Cache] {adrs[i]} 에셋의 정보가 없습니다. 로드를 시도합니다.");
-            await LoadAndApplyAsset(adrs[i]);
-
-            libs[i].spriteLibraryAsset = CachingAssetData.TryGetValue(adrs[i], out SpriteLibraryAsset loadLib) ? loadLib : null;
         }
     }
 
