@@ -51,7 +51,7 @@ public class PlayerVisualManager : MonoBehaviour
             // 그러지 못하고 다른 작업을 대기하게 될 수 있음
             // 최악의 경우 데드락 상태를 유발할 수 있음
 
-            await AddressableAssetLoader.Instance.LoadAndApplyAsset(
+            await AddressableAssetLoader.Instance.TryAssetLoad(
                 new string[]
                 {
                     loadHairPath,

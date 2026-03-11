@@ -21,7 +21,12 @@ using UnityEngine.U2D.Animation; // Sprite Library 필수
  *    1-4. 특정 부위의 SpriteLibrary를 String Address 경로로 변환하는 함수도 포함
  *  
  *  [스크립트 작성 도움 출처]
- *  1. 
+ *  1. https://stackoverflow.com/questions/1621351/convert-dictionary-keyscollection-to-array-of-strings
+ *  2. https://learn.microsoft.com/ko-kr/dotnet/fundamentals/code-analysis/quality-rules/ca1864
+ *  3. https://developer-talk.tistory.com/693
+ *  4. https://docs.unity3d.com/Packages/com.unity.2d.animation@13.0/manual/SLAsset.html
+ *  5. https://learn.microsoft.com/ko-kr/dotnet/csharp/programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer
+ *  6. https://discussions.unity.com/t/on-async-await-with-awaitables-as-a-coroutine-replacement/1554090
  */
 
 public class AddressableAssetLoader : MonoBehaviour
@@ -55,7 +60,12 @@ public class AddressableAssetLoader : MonoBehaviour
     public async Awaitable<SpriteLibraryAsset> TryAssetLoad(string adr)
     {
         if (string.IsNullOrEmpty(adr))
+        {
+            Debug.Log("[Cache] Dictionary의 Key 값은 Null이 될 수 없습니다!");
             return null;
+        }
+
+        Debug.Log($"[Cache] {adr} 에셋 로드를 시도합니다.");
 
         // 내부 캐싱에 해당 주소(Key)가 있는지 확인하기
         if (CachingAssetData.ContainsKey(adr))
@@ -73,9 +83,133 @@ public class AddressableAssetLoader : MonoBehaviour
         }
 
         // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
+        Debug.Log($"[Cache] {adr} 에셋의 정보가 없습니다. 로드를 시도합니다.");
         await LoadAndApplyAsset(adr);
 
-        return CachingAssetData[adr];
+        return CachingAssetData.TryGetValue(adr, out SpriteLibraryAsset loadLib) ? loadLib : null;
+    }
+
+    public async Awaitable TryAssetLoad(string adr, SpriteLibrary lib)
+    {
+        if (string.IsNullOrEmpty(adr))
+        {
+            Debug.Log("[Cache] Dictionary의 Key 값은 Null이 될 수 없습니다!");
+            return;
+        }
+
+        Debug.Log($"[Cache] {adr} 에셋 로드를 시도합니다.");
+
+        // 내부 캐싱에 해당 주소(Key)가 있는지 확인하기
+        if (CachingAssetData.ContainsKey(adr))
+        {
+            if (CachingAssetData.TryGetValue(adr, out SpriteLibraryAsset cachedLib))
+            {
+                if (cachedLib != null)
+                {
+                    // 캐싱된 에셋이 유효하다면 즉시 반환
+                    Debug.Log($"[Cache] {adr} 에셋이 이미 로드되어 있습니다.");
+
+                    lib.spriteLibraryAsset = cachedLib;
+                    return;
+                }
+            }
+        }
+
+        // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
+        Debug.Log($"[Cache] {adr} 에셋의 정보가 없습니다. 로드를 시도합니다.");
+        await LoadAndApplyAsset(adr);
+
+        lib.spriteLibraryAsset = CachingAssetData.TryGetValue(adr, out SpriteLibraryAsset loadLib) ? loadLib : null;
+    }
+
+    public async Awaitable<SpriteLibraryAsset[]> TryAssetLoad(string[] adrs)
+    {
+        if (adrs == null)
+            return null;
+        else
+            if (adrs.Length == 0)
+                return null;
+
+        SpriteLibraryAsset[] chacedlibs = new SpriteLibraryAsset[adrs.Length];
+
+        for (int i = 0; i < adrs.Length; i++)
+        {
+            if (adrs == null)
+            {
+                Debug.Log("[Cache] Dictionary의 Key 값은 Null이 될 수 없습니다!");
+                return null;
+            }
+            else
+            {
+                Debug.Log($"[Cache] {adrs[i]} 에셋 로드를 시도합니다.");
+
+                // 내부 캐싱에 해당 주소(Key)가 있는지 확인하기
+                if (CachingAssetData.ContainsKey(adrs[i]))
+                {
+                    if (CachingAssetData.TryGetValue(adrs[i], out SpriteLibraryAsset cachedLib))
+                    {
+                        if (cachedLib != null)
+                        {
+                            // 캐싱된 에셋이 유효하다면 즉시 반환
+                            Debug.Log($"[Cache] {adrs[i]} 에셋이 이미 로드되어 있습니다.");
+
+                            chacedlibs[i] = cachedLib;
+                        }
+                    }
+                }
+            }
+
+            // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
+            Debug.Log($"[Cache] {adrs[i]} 에셋의 정보가 없습니다. 로드를 시도합니다.");
+            await LoadAndApplyAsset(adrs[i]);
+
+            chacedlibs[i] = CachingAssetData.TryGetValue(adrs[i], out SpriteLibraryAsset loadLib) ? loadLib : null;
+        }
+
+        return chacedlibs;
+    }
+
+    public async Awaitable TryAssetLoad(string[] adrs, SpriteLibrary[] libs)
+    {
+        if (adrs == null)
+            return;
+        else
+            if (adrs.Length == 0)
+                return;
+
+        for (int i = 0; i < adrs.Length; i++)
+        {
+            if (adrs == null)
+            {
+                Debug.Log("[Cache] Dictionary의 Key 값은 Null이 될 수 없습니다!");
+                return;
+            }
+            else
+            {
+                Debug.Log($"[Cache] {adrs[i]} 에셋 로드를 시도합니다.");
+
+                // 내부 캐싱에 해당 주소(Key)가 있는지 확인하기
+                if (CachingAssetData.ContainsKey(adrs[i]))
+                {
+                    if (CachingAssetData.TryGetValue(adrs[i], out SpriteLibraryAsset cachedLib))
+                    {
+                        if (cachedLib != null)
+                        {
+                            // 캐싱된 에셋이 유효하다면 즉시 반환
+                            Debug.Log($"[Cache] {adrs[i]} 에셋이 이미 로드되어 있습니다.");
+
+                            libs[i].spriteLibraryAsset = cachedLib;
+                        }
+                    }
+                }
+            }
+
+            // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
+            Debug.Log($"[Cache] {adrs[i]} 에셋의 정보가 없습니다. 로드를 시도합니다.");
+            await LoadAndApplyAsset(adrs[i]);
+
+            libs[i].spriteLibraryAsset = CachingAssetData.TryGetValue(adrs[i], out SpriteLibraryAsset loadLib) ? loadLib : null;
+        }
     }
 
     // 특정 부위의 SpriteLibraryAsset을 로드하여 적용하는 함수
