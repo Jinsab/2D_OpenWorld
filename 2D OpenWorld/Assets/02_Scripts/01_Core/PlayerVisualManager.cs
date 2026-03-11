@@ -20,8 +20,6 @@ using UnityEngine.U2D.Animation;
 
 public class PlayerVisualManager : MonoBehaviour
 {
-    public AddressableAssetLoader loader; // 위에서 만든 로더
-
     public SpriteLibrary hairLib;
     public SpriteLibrary eyesLib;
     public SpriteLibrary headLib;
@@ -53,7 +51,7 @@ public class PlayerVisualManager : MonoBehaviour
             // 그러지 못하고 다른 작업을 대기하게 될 수 있음
             // 최악의 경우 데드락 상태를 유발할 수 있음
 
-            await loader.LoadAndApplyAsset(
+            await AddressableAssetLoader.Instance.LoadAndApplyAsset(
                 new string[]
                 {
                     loadHairPath,
