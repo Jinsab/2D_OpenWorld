@@ -7,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.06 오후 14:56
- *  마지막 수정 일자 : 26.03.06 오후 17:48
+ *  마지막 수정 일자 : 26.03.12 오후 15:53
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 데이터 저장/불러오기 시스템
@@ -18,6 +18,13 @@ using UnityEngine;
  *  1. 
  */
 
+[System.Serializable]
+public class SerializationWrapper
+{
+    public CharacterData[] characters; // 배열 사용
+    // 또는 List<CharacterData> characters; 도 가능
+}
+
 public sealed class RememberCharacterData : SaveableComponent
 {
     public CharacterDataManager CharacterDataManager;
@@ -25,21 +32,33 @@ public sealed class RememberCharacterData : SaveableComponent
     protected override byte[] SerializeComponentData()
     {
         Debug.Log("Save data to Json");
-        Debug.Log(CharacterDataManager.characterIndex);
-        
-        return Serializer.Serialize(JsonUtility.ToJson(CharacterDataManager.characterDataList[CharacterDataManager.characterIndex]));
+        //Debug.Log(CharacterDataManager.characterIndex);
+
+        SerializationWrapper wrapper = new SerializationWrapper();
+        wrapper.characters = CharacterDataManager.characterDataList;
+
+        // return Serializer.Serialize(JsonUtility.ToJson(CharacterDataManager.characterDataList[CharacterDataManager.characterIndex]));
+        return Serializer.Serialize(JsonUtility.ToJson(wrapper));
     }
 
     protected override void DeserializeComponentData(byte[] data)
     {
         Debug.Log("Load Json to data");
+        SerializationWrapper decodedWrapper =
+            JsonUtility.FromJson<SerializationWrapper>(Serializer.Deserialize<string>(data));
 
-        CharacterData character =
-            JsonUtility.FromJson<CharacterData>(Serializer.Deserialize<string>(data));
+        //CharacterDataManager.characterDataList[CharacterDataManager.characterIndex] = character;
+        //Debug.Log($"Load Character : {character.name}");
+        //Debug.Log($"Load Character Inventory Data : {character.inventoryData}");
+        //Debug.Log($"Load Character Stat Data : {character.statData}");
+        Debug.Log("Load Data: " + decodedWrapper.characters.Length);
+        CharacterDataManager.characterDataList = decodedWrapper.characters;
 
-        CharacterDataManager.characterDataList[CharacterDataManager.characterIndex] = character;
-        Debug.Log($"Load Character : {character.name}");
-        Debug.Log($"Load Character Inventory Data : {character.inventoryData}");
-        Debug.Log($"Load Character Stat Data : {character.statData}");
+        foreach (CharacterData characterData in decodedWrapper.characters)
+        {
+            Debug.Log($"Load Character : {characterData.name}");
+            Debug.Log($"Load Character Inventory Data : {characterData.inventoryData}");
+            Debug.Log($"Load Character Stat Data : {characterData.statData}");
+        }
     }
 }

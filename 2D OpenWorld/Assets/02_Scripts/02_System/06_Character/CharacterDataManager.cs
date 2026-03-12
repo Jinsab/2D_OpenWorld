@@ -109,6 +109,11 @@ public class CharacterDataManager : MonoBehaviour
                 restoreLastActiveScene: false  // Key parameter!
             );
         }
+        else
+        {
+            characterDataList = new CharacterData[10];
+            UpdateData();
+        }
     }
 
     public void UpdateData()

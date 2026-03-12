@@ -139,7 +139,7 @@ public class CharacterSlot : MonoBehaviour
 
     public void CharacterSelect(int index)
     {
-        if (characterData.isEmpty)
+        if (characterData.isEmpty || characterData == null)
         {
             // 캐릭터 정보가 없으므로 캐릭터 생성 화면으로 이동
             Debug.Log("빈 슬롯 선택 - 캐릭터 생성 화면으로 이동");
