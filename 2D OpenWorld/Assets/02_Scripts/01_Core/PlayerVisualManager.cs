@@ -81,7 +81,7 @@ public class PlayerVisualManager : MonoBehaviour
         }
         catch (System.Exception ex)
         {
-            Debug.LogError($"캐릭터 외형 로드 중 오류 발생: {ex.Message}");
+            Log.Error("Asset", $"캐릭터 외형 로드 중 오류 발생: {ex.Message}");
         }
     }
 }

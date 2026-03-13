@@ -72,7 +72,7 @@ public class CharacterSlot : MonoBehaviour
             }
         }
 
-        Debug.Log("캐릭터 데이터가 null이거나 빈 슬롯입니다. 빈 슬롯으로 간주하여 UI 업데이트.");
+        Log.Ui("캐릭터 데이터가 null이거나 빈 슬롯입니다. 빈 슬롯으로 간주하여 UI 업데이트.");
 
         infoGroup.SetActive(false);
         emptyGroup.SetActive(true);
@@ -143,7 +143,7 @@ public class CharacterSlot : MonoBehaviour
         if (characterData.isEmpty || characterData == null)
         {
             // 캐릭터 정보가 없으므로 캐릭터 생성 화면으로 이동
-            Debug.Log("빈 슬롯 선택 - 캐릭터 생성 화면으로 이동");
+            Log.Ui("빈 슬롯 선택 - 캐릭터 생성 화면으로 이동");
 
             CharacterDataManager.Instance.characterIndex = index; // 선택한 슬롯 인덱스 저장
 
@@ -153,7 +153,7 @@ public class CharacterSlot : MonoBehaviour
         {
             // 캐릭터 정보가 있으므로 캐릭터 선택 완료, 해당 월드로 이동
             // 이후 절차적 맵 생성 시스템과 연동하여 맵 시드 정보도 전달해야 할 것임
-            Debug.Log($"캐릭터 선택 완료 - {characterData.name}, 월드로 이동");
+            Log.Ui($"캐릭터 선택 완료 - {characterData.name}, 월드로 이동");
 
             // 인벤토리 및 스탯은 순수 데이터이므로,
             // 플레이어가 접속하였을 때 실제로 사용되는 시점에

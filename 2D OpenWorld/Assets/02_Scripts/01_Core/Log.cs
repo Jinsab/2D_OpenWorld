@@ -40,9 +40,9 @@ public static class Log
     // 연보라색
     public static void Char(string msg) => Debug.Log($"<color=#9b59b6>[CHAR]</color> {msg}");
     // 연분홍색
-    public static void UI(string msg) => Debug.Log($"<color=#e6b3dc>[UI]</color> {msg}");
+    public static void Ui(string msg) => Debug.Log($"<color=#e6b3dc>[UI]</color> {msg}");
     // 아이보리색
-    public static void GAME(string msg) => Debug.Log($"<color=#e6dcbe>[GAME]</color> {msg}");
+    public static void Game(string msg) => Debug.Log($"<color=#e6dcbe>[GAME]</color> {msg}");
 
     // 에러는 공용으로 사용
     public static void Error(string tag, string msg) => Debug.LogError($"[{tag}] {msg}");

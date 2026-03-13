@@ -10,7 +10,7 @@ using UnityEngine.U2D.Animation; // Sprite Library 필수
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.09 오후 14:32
- *  마지막 수정 일자 : 26.03.11 오후 22:02
+ *  마지막 수정 일자 : 26.03.13 오후 17:58
  *  
  *  [스크립트 목적 및 내용]
  *  1. 유니티 어드레서블 - 에셋 로더
@@ -60,11 +60,11 @@ public class AddressableAssetLoader : MonoBehaviour
     {
         if (string.IsNullOrEmpty(adr))
         {
-            Debug.Log("[Cache] Dictionary의 Key 값은 Null이 될 수 없습니다!");
+            Log.Asset("Dictionary의 Key 값은 Null이 될 수 없습니다!");
             return null;
         }
 
-        Debug.Log($"[Cache] {adr} 에셋 로드를 시도합니다.");
+        Log.Asset($"{adr} 에셋 로드를 시도합니다.");
 
         // 내부 캐싱에 해당 주소(Key)가 있는지 확인하기
         if (CachingAssetData.ContainsKey(adr))
@@ -74,7 +74,7 @@ public class AddressableAssetLoader : MonoBehaviour
                 if (cachedLib != null)
                 {
                     // 캐싱된 에셋이 유효하다면 즉시 반환
-                    Debug.Log($"[Cache] {adr} 에셋이 이미 로드되어 있습니다.");
+                    Log.Asset($"{adr} 에셋이 이미 로드되어 있습니다.");
 
                     return cachedLib;
                 }
@@ -82,7 +82,7 @@ public class AddressableAssetLoader : MonoBehaviour
         }
 
         // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
-        Debug.Log($"[Cache] {adr} 에셋의 정보가 없습니다. 로드를 시도합니다.");
+        Log.Asset($"{adr} 에셋의 정보가 없습니다. 로드를 시도합니다.");
         await LoadAndApplyAsset(adr);
 
         return CachingAssetData.TryGetValue(adr, out SpriteLibraryAsset loadLib) ? loadLib : null;
@@ -92,11 +92,11 @@ public class AddressableAssetLoader : MonoBehaviour
     {
         if (string.IsNullOrEmpty(adr))
         {
-            Debug.Log("[Cache] Dictionary의 Key 값은 Null이 될 수 없습니다!");
+            Log.Asset("Dictionary의 Key 값은 Null이 될 수 없습니다!");
             return;
         }
 
-        Debug.Log($"[Cache] {adr} 에셋 로드를 시도합니다.");
+        Log.Asset($"{adr} 에셋 로드를 시도합니다.");
 
         // 내부 캐싱에 해당 주소(Key)가 있는지 확인하기
         if (CachingAssetData.ContainsKey(adr))
@@ -106,7 +106,7 @@ public class AddressableAssetLoader : MonoBehaviour
                 if (cachedLib != null)
                 {
                     // 캐싱된 에셋이 유효하다면 즉시 반환
-                    Debug.Log($"[Cache] {adr} 에셋이 이미 로드되어 있습니다.");
+                    Log.Asset($"{adr} 에셋이 이미 로드되어 있습니다.");
 
                     lib.spriteLibraryAsset = cachedLib;
                     return;
@@ -115,7 +115,7 @@ public class AddressableAssetLoader : MonoBehaviour
         }
 
         // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
-        Debug.Log($"[Cache] {adr} 에셋의 정보가 없습니다. 로드를 시도합니다.");
+        Log.Asset($"{adr} 에셋의 정보가 없습니다. 로드를 시도합니다.");
         await LoadAndApplyAsset(adr);
 
         lib.spriteLibraryAsset = CachingAssetData.TryGetValue(adr, out SpriteLibraryAsset loadLib) ? loadLib : null;
@@ -135,12 +135,12 @@ public class AddressableAssetLoader : MonoBehaviour
         {
             if (adrs == null)
             {
-                Debug.Log("[Cache] Dictionary의 Key 값은 Null이 될 수 없습니다!");
+                Log.Asset("Dictionary의 Key 값은 Null이 될 수 없습니다!");
                 return null;
             }
             else
             {
-                Debug.Log($"[Cache] {adrs[i]} 에셋 로드를 시도합니다.");
+                Log.Asset($"{adrs[i]} 에셋 로드를 시도합니다.");
 
                 // 내부 캐싱에 해당 주소(Key)가 있는지 확인하기
                 if (CachingAssetData.ContainsKey(adrs[i]))
@@ -150,7 +150,7 @@ public class AddressableAssetLoader : MonoBehaviour
                         if (cachedLib != null)
                         {
                             // 캐싱된 에셋이 유효하다면 즉시 반환
-                            Debug.Log($"[Cache] {adrs[i]} 에셋이 이미 로드되어 있습니다.");
+                            Log.Asset($"{adrs[i]} 에셋이 이미 로드되어 있습니다.");
 
                             chacedlibs[i] = cachedLib;
                         }
@@ -159,7 +159,7 @@ public class AddressableAssetLoader : MonoBehaviour
                 else
                 {
                     // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
-                    Debug.Log($"[Cache] {adrs[i]} 에셋의 정보가 없습니다. 로드를 시도합니다.");
+                    Log.Asset($"{adrs[i]} 에셋의 정보가 없습니다. 로드를 시도합니다.");
                     await LoadAndApplyAsset(adrs[i]);
 
                     chacedlibs[i] = CachingAssetData.TryGetValue(adrs[i], out SpriteLibraryAsset loadLib) ? loadLib : null;
@@ -182,12 +182,12 @@ public class AddressableAssetLoader : MonoBehaviour
         {
             if (adrs == null)
             {
-                Debug.Log("[Cache] Dictionary의 Key 값은 Null이 될 수 없습니다!");
+                Log.Asset("Dictionary의 Key 값은 Null이 될 수 없습니다!");
                 return;
             }
             else
             {
-                Debug.Log($"[Cache] {adrs[i]} 에셋 로드를 시도합니다.");
+                Log.Asset($"{adrs[i]} 에셋 로드를 시도합니다.");
 
                 // 내부 캐싱에 해당 주소(Key)가 있는지 확인하기
                 if (CachingAssetData.ContainsKey(adrs[i]))
@@ -197,7 +197,7 @@ public class AddressableAssetLoader : MonoBehaviour
                         if (cachedLib != null)
                         {
                             // 캐싱된 에셋이 유효하다면 즉시 반환
-                            Debug.Log($"[Cache] {adrs[i]} 에셋이 이미 로드되어 있습니다.");
+                            Log.Asset($"{adrs[i]} 에셋이 이미 로드되어 있습니다.");
 
                             libs[i].spriteLibraryAsset = cachedLib;
                         }
@@ -206,7 +206,7 @@ public class AddressableAssetLoader : MonoBehaviour
                 else
                 {
                     // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
-                    Debug.Log($"[Cache] {adrs[i]} 에셋의 정보가 없습니다. 로드를 시도합니다.");
+                    Log.Asset($"{adrs[i]} 에셋의 정보가 없습니다. 로드를 시도합니다.");
                     await LoadAndApplyAsset(adrs[i]);
 
                     libs[i].spriteLibraryAsset = CachingAssetData.TryGetValue(adrs[i], out SpriteLibraryAsset loadLib) ? loadLib : null;
@@ -232,14 +232,12 @@ public class AddressableAssetLoader : MonoBehaviour
             // 최종적으로는 메모리 해제
             CachingAssetData.TryAdd(assetAddress, handle.Result);
 
-            Debug.Log($"[Addressables] {assetAddress} 로드 및 적용 완료");
+            Log.Asset($"{assetAddress} 로드 및 적용 완료");
         }
         else
         {
-            // 실패 시에는 에러 로그 출력 및 메모리 해제
-            Debug.LogError($"[Addressables] {assetAddress} 로드 실패!");
-
-            Addressables.Release(handle);
+            // 실패 시에는 에러 로그 출력
+            Log.Error("Asset", $"{assetAddress} 로드 실패!");
         }
 
         // 성공, 실패 상관 없이 메모리 해제
@@ -255,47 +253,64 @@ public class AddressableAssetLoader : MonoBehaviour
         var locationsTask = Addressables.LoadResourceLocationsAsync(assetAdrs, Addressables.MergeMode.Union);
         var locations = await locationsTask.Task;
 
+        if (locationsTask.Status == AsyncOperationStatus.Failed)
+        {
+            Log.Error("Asset", "Addressables Load Resource Locations Failed!");
+            return;
+        }
+
         // 2. 모든 에셋을 한 번에 로드 (IList<SpriteLibraryAsset>)
         var loadTask = Addressables.LoadAssetsAsync<SpriteLibraryAsset>(locations, null);
         var loadedAssets = await loadTask.Task;
 
         // 3. 로드된 결과를 부위별 컴포넌트에 매칭하여 할당
-        for (int i = 0; i < loadedAssets.Count; i++)
+        if (loadTask.Status == AsyncOperationStatus.Succeeded)
         {
-            // 각 부위 안전하게 할당
-            if (CachingAssetData.TryAdd(assetAdrs[i], loadedAssets[i]))
+            for (int i = 0; i < loadedAssets.Count; i++)
             {
-                Debug.Log($"[Addressables] {assetAdrs[i]} 로드 완료");
-            }
-            else
-            {
-                Debug.Log($"[Addressables] {assetAdrs[i]} 가 이미 있습니다!");
+                // 각 부위 안전하게 할당
+                if (CachingAssetData.TryAdd(assetAdrs[i], loadedAssets[i]))
+                {
+                    Log.Asset($"{assetAdrs[i]} 로드 완료");
+                }
+                else
+                {
+                    Log.Asset($"{assetAdrs[i]} 가 이미 있습니다!");
+                }
             }
         }
+        else
+        {
+            // 실패 시에는 에러 로그 출력 및 메모리 해제
+            Log.Error("Asset", "Addressables Load Asset Failed!");
+        }
+
+        Addressables.Release(locationsTask);
+        Addressables.Release(loadTask);
     }
 
     //특정 부위의 SpriteLibrary를 String Address 경로로 변환하는 함수
-    public void SaveAssetAddress(string assetAddress, SpriteLibrary library)
-    {
-        if (library == null || library.spriteLibraryAsset == null) return;
+    //public void SaveAssetAddress(string assetAddress, SpriteLibrary library)
+    //{
+    //    if (library == null || library.spriteLibraryAsset == null) return;
 
-        var asset = library.spriteLibraryAsset;
+    //    var asset = library.spriteLibraryAsset;
 
-        // 모든 로케이터를 순회하며 해당 에셋의 위치 정보를 찾습니다.
-        foreach (var locator in Addressables.ResourceLocators)
-        {
-            // 에셋의 인스턴스 ID나 참조를 통해 위치 정보를 확인합니다.
-            if (locator.Locate(asset, typeof(SpriteLibraryAsset), out var locations))
-            {
-                // 첫 번째 일치하는 주소(Primary Key)를 반환합니다.
-                Debug.Log(locations[0].PrimaryKey);
-            }
+    //    // 모든 로케이터를 순회하며 해당 에셋의 위치 정보를 찾습니다.
+    //    foreach (var locator in Addressables.ResourceLocators)
+    //    {
+    //        // 에셋의 인스턴스 ID나 참조를 통해 위치 정보를 확인합니다.
+    //        if (locator.Locate(asset, typeof(SpriteLibraryAsset), out var locations))
+    //        {
+    //            // 첫 번째 일치하는 주소(Primary Key)를 반환합니다.
+    //            Debug.Log(locations[0].PrimaryKey);
+    //        }
 
-            Addressables.Release(locator);
-        }
+    //        Addressables.Release(locator);
+    //    }
 
-        Debug.Log("Address Not Found");
-    }
+    //    Debug.Log("Address Not Found");
+    //}
 
     // 씬이 종료되거나 캐릭터가 파괴될 때 메모리 해제가 필요할 수 있습니다.
     // Addressables.Release(handle); 호출 필요

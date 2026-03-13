@@ -8,7 +8,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.25 오후 23:11
- *  마지막 수정 일자 : 26.03.09 오후 16:14
+ *  마지막 수정 일자 : 26.03.13 오후 17:35
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 생성 시스템 - 캐릭터 데이터 관리
@@ -69,7 +69,7 @@ public class CharacterDataManager : MonoBehaviour
 
         SaveManager.Initialized += async (manager) =>
         {
-            Debug.Log("SaveManager is ready!");
+            Log.Save("SaveManager is ready!");
 
             IsInitialized = true;
             await InitCharacterData(); // 캐릭터 데이터 리스트 초기화
@@ -78,14 +78,14 @@ public class CharacterDataManager : MonoBehaviour
 
     private void OnSaveSlotLoaded(object sender, SaveLoadEventArgs args)
     {
-        Debug.Log($"03. Slot {args.Slot.SlotNumber} loaded successfully!");
+        Log.Save($"Slot {args.Slot.SlotNumber} loaded successfully!");
 
         UpdateData();
     }
 
     private void OnSaveSlotLoadFailed(object sender, OperationFailedEventArgs args)
     {
-        Debug.LogError($"03. Failed to load: {args.ErrorMessage}");
+        Log.Error("Save", $"Failed to load: {args.ErrorMessage}");
         
         // Show error UI to player
         UpdateData();
@@ -94,7 +94,7 @@ public class CharacterDataManager : MonoBehaviour
     private async Awaitable InitCharacterData()
     {
         // 저장된 데이터가 있다면 불러오고, 없다면 불러오지 않음
-        Debug.Log("01. Try Load Data to SaveManager!");
+        Log.Save("Try Load Data to SaveManager!");
 
         characterDataList = new CharacterData[10];
 
@@ -102,7 +102,7 @@ public class CharacterDataManager : MonoBehaviour
 
         if (hasSlotSave)
         {
-            Debug.Log("02. Has Slot 1 Save Data");
+            Log.Save("Has Slot 1 Save Data");
 
             var result = await SaveManager.Instance.LoadSaveSlotAsync(
                 slotNumber: 1,
@@ -165,7 +165,7 @@ public class CharacterDataManager : MonoBehaviour
     {
         if (IsInitialized)
         {
-            Debug.Log($"{characterIndex}번 캐릭터 저장");
+            Log.Save("캐릭터 저장 시도");
 
             // 현재 플레이어 데이터를 캐릭터 리스트에 저장
             characterDataList[characterIndex] = playerData;
