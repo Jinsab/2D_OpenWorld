@@ -7,7 +7,7 @@ using UnityEngine.U2D.Animation;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.09 오후 14:32
- *  마지막 수정 일자 : 26.03.11 오후 22:02
+ *  마지막 수정 일자 : 26.03.13 오후 18:05
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 생성 시스템 - 캐릭터 데이터
@@ -42,7 +42,7 @@ public class PlayerVisualManager : MonoBehaviour
             string loadBodyPath = data.GetFullAssetPath(data.bodyAssetName, data.bodyAssetPath, data.gender);
 
 
-            // Awaitable에서 await을 여 러번 사용할 때 
+            // Awaitable에서 await을 여러번 사용할 때 
             // 처음 await으로 완료된 awaitableInstance는 풀로 돌아가기 때문에
             // 이미 await한 awaitableInstance를 다시 await하려고 할 때
             // 해당 Awaitable 인스턴스가 사실 다른 곳에서 실행된 async 메서드의
@@ -78,6 +78,8 @@ public class PlayerVisualManager : MonoBehaviour
             //await loader.LoadAndApplyAsset(loadChestPath, chestLib);
             //await loader.LoadAndApplyAsset(loadPantsPath, pantsLib);
             //await loader.LoadAndApplyAsset(loadBodyPath, bodyLib);
+
+            Log.Asset("Success Asset Load!");
         }
         catch (System.Exception ex)
         {

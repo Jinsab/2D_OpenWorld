@@ -60,11 +60,11 @@ public class AddressableAssetLoader : MonoBehaviour
     {
         if (string.IsNullOrEmpty(adr))
         {
-            Log.Asset("Dictionary의 Key 값은 Null이 될 수 없습니다!");
+            Log.DB("Dictionary의 Key 값은 Null이 될 수 없습니다!");
             return null;
         }
 
-        Log.Asset($"{adr} 에셋 로드를 시도합니다.");
+        Log.DB($"{adr} 에셋 로드를 시도합니다.");
 
         // 내부 캐싱에 해당 주소(Key)가 있는지 확인하기
         if (CachingAssetData.ContainsKey(adr))
@@ -74,7 +74,7 @@ public class AddressableAssetLoader : MonoBehaviour
                 if (cachedLib != null)
                 {
                     // 캐싱된 에셋이 유효하다면 즉시 반환
-                    Log.Asset($"{adr} 에셋이 이미 로드되어 있습니다.");
+                    Log.DB($"{adr} 에셋이 이미 로드되어 있습니다.");
 
                     return cachedLib;
                 }
@@ -82,7 +82,7 @@ public class AddressableAssetLoader : MonoBehaviour
         }
 
         // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
-        Log.Asset($"{adr} 에셋의 정보가 없습니다. 로드를 시도합니다.");
+        Log.DB($"{adr} 에셋의 정보가 없습니다. 로드를 시도합니다.");
         await LoadAndApplyAsset(adr);
 
         return CachingAssetData.TryGetValue(adr, out SpriteLibraryAsset loadLib) ? loadLib : null;
@@ -92,11 +92,11 @@ public class AddressableAssetLoader : MonoBehaviour
     {
         if (string.IsNullOrEmpty(adr))
         {
-            Log.Asset("Dictionary의 Key 값은 Null이 될 수 없습니다!");
+            Log.DB("Dictionary의 Key 값은 Null이 될 수 없습니다!");
             return;
         }
 
-        Log.Asset($"{adr} 에셋 로드를 시도합니다.");
+        Log.DB($"{adr} 에셋 로드를 시도합니다.");
 
         // 내부 캐싱에 해당 주소(Key)가 있는지 확인하기
         if (CachingAssetData.ContainsKey(adr))
@@ -106,7 +106,7 @@ public class AddressableAssetLoader : MonoBehaviour
                 if (cachedLib != null)
                 {
                     // 캐싱된 에셋이 유효하다면 즉시 반환
-                    Log.Asset($"{adr} 에셋이 이미 로드되어 있습니다.");
+                    Log.DB($"{adr} 에셋이 이미 로드되어 있습니다.");
 
                     lib.spriteLibraryAsset = cachedLib;
                     return;
@@ -115,7 +115,7 @@ public class AddressableAssetLoader : MonoBehaviour
         }
 
         // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
-        Log.Asset($"{adr} 에셋의 정보가 없습니다. 로드를 시도합니다.");
+        Log.DB($"{adr} 에셋의 정보가 없습니다. 로드를 시도합니다.");
         await LoadAndApplyAsset(adr);
 
         lib.spriteLibraryAsset = CachingAssetData.TryGetValue(adr, out SpriteLibraryAsset loadLib) ? loadLib : null;
@@ -135,12 +135,12 @@ public class AddressableAssetLoader : MonoBehaviour
         {
             if (adrs == null)
             {
-                Log.Asset("Dictionary의 Key 값은 Null이 될 수 없습니다!");
+                Log.DB("Dictionary의 Key 값은 Null이 될 수 없습니다!");
                 return null;
             }
             else
             {
-                Log.Asset($"{adrs[i]} 에셋 로드를 시도합니다.");
+                Log.DB($"{adrs[i]} 에셋 로드를 시도합니다.");
 
                 // 내부 캐싱에 해당 주소(Key)가 있는지 확인하기
                 if (CachingAssetData.ContainsKey(adrs[i]))
@@ -150,7 +150,7 @@ public class AddressableAssetLoader : MonoBehaviour
                         if (cachedLib != null)
                         {
                             // 캐싱된 에셋이 유효하다면 즉시 반환
-                            Log.Asset($"{adrs[i]} 에셋이 이미 로드되어 있습니다.");
+                            Log.DB($"{adrs[i]} 에셋이 이미 로드되어 있습니다.");
 
                             chacedlibs[i] = cachedLib;
                         }
@@ -159,7 +159,7 @@ public class AddressableAssetLoader : MonoBehaviour
                 else
                 {
                     // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
-                    Log.Asset($"{adrs[i]} 에셋의 정보가 없습니다. 로드를 시도합니다.");
+                    Log.DB($"{adrs[i]} 에셋의 정보가 없습니다. 로드를 시도합니다.");
                     await LoadAndApplyAsset(adrs[i]);
 
                     chacedlibs[i] = CachingAssetData.TryGetValue(adrs[i], out SpriteLibraryAsset loadLib) ? loadLib : null;
@@ -182,12 +182,12 @@ public class AddressableAssetLoader : MonoBehaviour
         {
             if (adrs == null)
             {
-                Log.Asset("Dictionary의 Key 값은 Null이 될 수 없습니다!");
+                Log.DB("Dictionary의 Key 값은 Null이 될 수 없습니다!");
                 return;
             }
             else
             {
-                Log.Asset($"{adrs[i]} 에셋 로드를 시도합니다.");
+                Log.DB($"{adrs[i]} 에셋 로드를 시도합니다.");
 
                 // 내부 캐싱에 해당 주소(Key)가 있는지 확인하기
                 if (CachingAssetData.ContainsKey(adrs[i]))
@@ -197,7 +197,7 @@ public class AddressableAssetLoader : MonoBehaviour
                         if (cachedLib != null)
                         {
                             // 캐싱된 에셋이 유효하다면 즉시 반환
-                            Log.Asset($"{adrs[i]} 에셋이 이미 로드되어 있습니다.");
+                            Log.DB($"{adrs[i]} 에셋이 이미 로드되어 있습니다.");
 
                             libs[i].spriteLibraryAsset = cachedLib;
                         }
@@ -206,7 +206,7 @@ public class AddressableAssetLoader : MonoBehaviour
                 else
                 {
                     // 해당 주소(Key)가 없었으므로 내부 캐싱에 로드를 시도
-                    Log.Asset($"{adrs[i]} 에셋의 정보가 없습니다. 로드를 시도합니다.");
+                    Log.DB($"{adrs[i]} 에셋의 정보가 없습니다. 로드를 시도합니다.");
                     await LoadAndApplyAsset(adrs[i]);
 
                     libs[i].spriteLibraryAsset = CachingAssetData.TryGetValue(adrs[i], out SpriteLibraryAsset loadLib) ? loadLib : null;

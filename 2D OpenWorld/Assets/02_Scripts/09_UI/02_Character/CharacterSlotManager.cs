@@ -67,6 +67,9 @@ public class CharacterSlotManager : MonoBehaviour
     public void DeleteCharacterData()
     {
         CharacterDataManager.Instance.DeleteData(deleteSlotIndex);
+        CharacterDataManager.Instance.SaveCharacterData();
+
+        Log.UI($"Delete Character Slot Number: {deleteSlotIndex}");
         UpdateCharacterSlots();
     }
 }

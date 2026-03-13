@@ -18,6 +18,8 @@ using UnityEngine;
  *           - JSON 직렬화/역직렬화, 로컬 저장, 암호화
  *         - 리소스 로드 [ASSET]
  *           - Addressables 로딩, 캐싱, 에셋 해제(Release)
+ *         - DB 시스템 [DB]
+ *           - Database 로딩, 캐싱
  *         - 플레이어/캐릭터 [CHAR]
  *           - 캐릭터 생성, 데이터 할당, 비주얼 업데이트(Sprite Lib)
  *         - UI/UX [UI]
@@ -31,17 +33,19 @@ using UnityEngine;
 
 public static class Log
 {
-    // 하늘색
+    // Bleu de France
     public static void Core(string msg) => Debug.Log($"<color=#3498db>[CORE]</color> {msg}");
-    // 연녹색
+    // Renewable Energy
     public static void Save(string msg) => Debug.Log($"<color=#2ecc71>[SAVE]</color> {msg}");
-    // 연노라색
+    // Uranium
     public static void Asset(string msg) => Debug.Log($"<color=#f1c40f>[ASSET]</color> {msg}");
-    // 연보라색
+    // Light Aqua
+    public static void DB(string msg) => Debug.Log($"<color=#cdf7f7>[DB]</color> {msg}");
+    // Deep Lilac
     public static void Char(string msg) => Debug.Log($"<color=#9b59b6>[CHAR]</color> {msg}");
-    // 연분홍색
-    public static void Ui(string msg) => Debug.Log($"<color=#e6b3dc>[UI]</color> {msg}");
-    // 아이보리색
+    // Frost Pink
+    public static void UI(string msg) => Debug.Log($"<color=#e6b3dc>[UI]</color> {msg}");
+    // Natural Cream
     public static void Game(string msg) => Debug.Log($"<color=#e6dcbe>[GAME]</color> {msg}");
 
     // 에러는 공용으로 사용

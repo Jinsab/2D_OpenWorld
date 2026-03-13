@@ -45,7 +45,7 @@ public class CharacterPortrait : MonoBehaviour
 
     public async void SetPortraitView(CharacterData data)
     {
-        Log.Ui("Setting portrait for character: " + data.name);
+        Log.UI("Setting portrait for character: " + data.name);
         await visualManager.InitializePlayer(data.appearanceData);
 
         if (visualManager.hairLib != null)
