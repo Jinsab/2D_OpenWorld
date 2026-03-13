@@ -7,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.06 오후 14:56
- *  마지막 수정 일자 : 26.03.12 오후 15:53
+ *  마지막 수정 일자 : 26.03.13 오후 17:23
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 데이터 저장/불러오기 시스템
@@ -15,7 +15,10 @@ using UnityEngine;
  *    1-2. 이는 유지되어, 실제 데이터로써 저장 및 불러오기로 넘겨주어야 함
  *      
  *  [스크립트 작성 도움 출처]
- *  1. 
+ *  1. https://docs.unity3d.com/kr/2021.3/Manual/JSONSerialization.html
+ *  2. https://www.reddit.com/r/Unity3D/comments/zmj5ja/list_array_to_json_file_makes_objects_with_parsed/?tl=ko
+ *  3. https://game-happy-world.tistory.com/37
+ *  4. https://lee-hataeg.tistory.com/33
  */
 
 [System.Serializable]
@@ -31,7 +34,7 @@ public sealed class RememberCharacterData : SaveableComponent
 
     protected override byte[] SerializeComponentData()
     {
-        Debug.Log("Save data to Json");
+        Log.Save("Save data to Json");
         //Debug.Log(CharacterDataManager.characterIndex);
 
         SerializationWrapper wrapper = new SerializationWrapper();
@@ -43,7 +46,7 @@ public sealed class RememberCharacterData : SaveableComponent
 
     protected override void DeserializeComponentData(byte[] data)
     {
-        Debug.Log("Load Json to data");
+        Log.Save("Attempt to Deserialize the wrapped Json Data");
         SerializationWrapper decodedWrapper =
             JsonUtility.FromJson<SerializationWrapper>(Serializer.Deserialize<string>(data));
 
@@ -51,14 +54,14 @@ public sealed class RememberCharacterData : SaveableComponent
         //Debug.Log($"Load Character : {character.name}");
         //Debug.Log($"Load Character Inventory Data : {character.inventoryData}");
         //Debug.Log($"Load Character Stat Data : {character.statData}");
-        Debug.Log("Load Data: " + decodedWrapper.characters.Length);
+        Log.Save("Success Load Data: " + decodedWrapper.characters.Length);
         CharacterDataManager.characterDataList = decodedWrapper.characters;
 
-        foreach (CharacterData characterData in decodedWrapper.characters)
-        {
-            Debug.Log($"Load Character : {characterData.name}");
-            Debug.Log($"Load Character Inventory Data : {characterData.inventoryData}");
-            Debug.Log($"Load Character Stat Data : {characterData.statData}");
-        }
+        //foreach (CharacterData characterData in decodedWrapper.characters)
+        //{
+        //    Debug.Log($"Load Character : {characterData.name}");
+        //    Debug.Log($"Load Character Inventory Data : {characterData.inventoryData}");
+        //    Debug.Log($"Load Character Stat Data : {characterData.statData}");
+        //}
     }
 }

@@ -7,13 +7,14 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.27 오후 18:53
- *  마지막 수정 일자 : 26.03.09 오후 16:15
+ *  마지막 수정 일자 : 26.03.13 오후 16:31
  *  
  *  [스크립트 목적 및 내용]
  *  1. 캐릭터 슬롯 시스템 - 캐릭터 선택 및 생성 칸 이동
  *    1-1. 슬롯에 따라 캐릭터 선택 또는 생성 화면으로 이동
  *    1-2. 슬롯에 유무에 따라 정보를 기입할 수 있어야 함.
  *    1-3. 빈 슬롯이면 클릭하여 캐릭터 데이터 생성 창으로 이동되어야 함.
+ *    1-4. 캐릭터 삭제 시 해당 슬롯의 Index 정보에 따라 처리됨
  *    
  *  2. 큰 그림
  *    - Character Create System (캐릭터 생성 시스템)
@@ -172,8 +173,9 @@ public class CharacterSlot : MonoBehaviour
         }
     }
 
-    public void DeleteCharacterData(int index)
+    public void SetDeleteSlotIndex(int index)
     {
-        CharacterDataManager.Instance.DeleteData(index);
+        // 삭제 버튼은 캐릭터 정보가 있을 때에만 나타나므로, Empty 및 null 체크가 필요 없음
+        slotManager.deleteSlotIndex = index;
     }
 }

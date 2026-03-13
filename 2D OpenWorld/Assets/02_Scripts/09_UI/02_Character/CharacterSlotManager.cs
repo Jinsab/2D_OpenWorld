@@ -30,6 +30,9 @@ public class CharacterSlotManager : MonoBehaviour
     [Header("# Character Slot Prefab")]
     public GameObject characterSlotPrefab;
 
+    [Header("# Slot Paramter ")]
+    public int deleteSlotIndex;
+
     private void OnEnable()
     {
         UpdateCharacterSlots();
@@ -60,5 +63,11 @@ public class CharacterSlotManager : MonoBehaviour
     {
         selectGroup.SetActive(false);
         createGroup.SetActive(true);
+    }
+
+    public void DeleteCharacterData()
+    {
+        CharacterDataManager.Instance.DeleteData(deleteSlotIndex);
+        UpdateCharacterSlots();
     }
 }
