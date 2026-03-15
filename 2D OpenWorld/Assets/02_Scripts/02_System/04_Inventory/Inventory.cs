@@ -45,19 +45,19 @@ public class Inventory : MonoBehaviour
             // 슬롯 리스트가 null인 경우에만 초기화 (이미 데이터가 있다면 유지)
             if (inventoryData.slots == null)
             {
-                Debug.Log("InventoryData Slots Null! Initializing New Slots.");
+                Log.Game("InventoryData Slots Null! Initializing New Slots.");
 
                 inventoryData.slots = new List<InventorySlot>(inventoryData.maxSlots);
             }
             else
             {
-                Debug.Log("InventoryData Connected! Using Existing Data.");
+                Log.Game("InventoryData Connected! Using Existing Data.");
 
                 // 인벤토리 현재 슬롯이 maxSlots보다 적은 경우,
                 // 부족한 슬롯을 채워줌
                 if (inventoryData.slots.Count < inventoryData.maxSlots)
                 {
-                    Debug.Log("InventoryData Slots Less than MaxSlots! Adding Missing Slots.");
+                    Log.Game("InventoryData Slots Less than MaxSlots! Adding Missing Slots.");
                     
                     int slotsToAdd = inventoryData.maxSlots - inventoryData.slots.Count;
                     for (int i = 0; i < slotsToAdd; i++)
@@ -70,7 +70,7 @@ public class Inventory : MonoBehaviour
                 // 초과된 슬롯을 제거 (데이터 정합성 유지)
                 if (inventoryData.slots.Count > inventoryData.maxSlots)
                 {
-                    Debug.Log("InventoryData Slots More than MaxSlots! Removing Extra Slots.");
+                    Log.Game("InventoryData Slots More than MaxSlots! Removing Extra Slots.");
 
                     int slotsToRemove = inventoryData.slots.Count - inventoryData.maxSlots;
                     inventoryData.slots.RemoveRange(inventoryData.maxSlots, slotsToRemove);
@@ -80,7 +80,7 @@ public class Inventory : MonoBehaviour
         else
         {
             // 연결된 인벤토리 정보가 없으므로 오류 메시지로 표기
-            Debug.Log("InventoryData Not Connected! Using Temporary Data.");
+            Log.Error("Game", "InventoryData Not Connected! Using Temporary Data.");
 
             // 임시 데이터 생성 (디버그용)
             inventoryData = new InventoryData

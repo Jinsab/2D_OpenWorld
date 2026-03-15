@@ -67,7 +67,7 @@ public class PlayerStats : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("PlayerStats: statData is null. Initializing with default values.");
+            Log.Error("Game", "PlayerStats: statData is null. Initializing with default values.");
         }
     }
 
@@ -77,13 +77,13 @@ public class PlayerStats : MonoBehaviour
         // 데이터가 없다면 새로 추가, 있다면 기존 데이터 유지
         if (Stats.ContainsKey(type))
         {
-            Debug.Log($"Stat already initialized: {type}");
+            Log.Game($"Stat already initialized: {type}");
 
             return;
         }
         else
         {
-            Debug.Log($"Initializing stat: {type} with base value: {baseValue}");
+            Log.Game($"Initializing stat: {type} with base value: {baseValue}");
 
             Stats[type] = new CharacterStat { BaseValue = baseValue };
         }
@@ -117,7 +117,7 @@ public class PlayerStats : MonoBehaviour
             }
             catch (ArgumentNullException e)
             {
-                Debug.Log($"Key is {data.statType}. {e.Message}");
+                Log.Game($"Key is {data.statType}. {e.Message}");
             }
 
             // List를 사용 방법
