@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 8798762900144935006}
   - component: {fileID: 1980310751281526607}
   - component: {fileID: 8817699002000533811}
+  - component: {fileID: -6916530042021823895}
   - component: {fileID: 7954531953052307942}
   - component: {fileID: 1507574028032101960}
   m_Layer: 6
@@ -203,6 +204,21 @@ MonoBehaviour:
   pullSpeed: 0.5
   pickupDistance: 0.5
   acceleration: 3
+--- !u!114 &-6916530042021823895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9092897504113586402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934adba6afe0b284194291c77545d5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FloatingResource
+  startPos: {x: 0, y: 0, z: 0}
+  speed: 0.5
+  amount: 0.1
 --- !u!58 &7954531953052307942
 CircleCollider2D:
   m_ObjectHideFlags: 0
