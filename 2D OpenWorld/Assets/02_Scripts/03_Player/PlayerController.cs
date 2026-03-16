@@ -20,6 +20,7 @@ using UnityEngine.InputSystem;
  *      ├─ PlayerController    // (구현) 입력 & 상태 조율 (두뇌)
  *      ├─ PlayerMovement      // (구현) 이동
  *      ├─ PlayerLook          // (구현) 회전
+ *      ├─ PlayerSetting       // 세팅
  *      ├─ PlayerInteraction   // 상호작용
  *      ├─ PlayerEquipment     // 장비 시스템
  *      ├─ PlayerCombat        // 전투 시스템
