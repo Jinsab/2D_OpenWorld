@@ -554,6 +554,313 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &35482748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 35482749}
+  - component: {fileID: 35482751}
+  - component: {fileID: 35482750}
+  m_Layer: 5
+  m_Name: Skill Top
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &35482749
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35482748}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2041597751}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 44, y: -132}
+  m_SizeDelta: {x: 88, y: 88}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &35482750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35482748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 743134167}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7044285566318344818, guid: 95b20b13e976a6446a8836c866f2a413, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 0
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 0
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &35482751
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35482748}
+  m_CullTransparentMesh: 1
 --- !u!1001 &39423203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1563,8 +1870,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -2}
+  m_SizeDelta: {x: 0, y: -4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &101539988
 MonoBehaviour:
@@ -1976,6 +2283,313 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &113266799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 113266800}
+  - component: {fileID: 113266802}
+  - component: {fileID: 113266801}
+  m_Layer: 5
+  m_Name: Skill Top
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &113266800
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113266799}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1718118624}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 88, y: 88}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &113266801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113266799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 743134167}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7044285566318344818, guid: 95b20b13e976a6446a8836c866f2a413, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 0
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 0.65882355, g: 0.65882355, b: 0.65882355, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 255
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &113266802
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113266799}
+  m_CullTransparentMesh: 1
 --- !u!1 &117643451
 GameObject:
   m_ObjectHideFlags: 0
@@ -5214,6 +5828,313 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
   m_Library: []
   m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: d100b5f8e8d190949a0244ffbf8ec5bd, type: 3}
+--- !u!1 &224422910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224422911}
+  - component: {fileID: 224422913}
+  - component: {fileID: 224422912}
+  m_Layer: 5
+  m_Name: Compendium Top
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224422911
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224422910}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2041597751}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 44, y: -220}
+  m_SizeDelta: {x: 88, y: 88}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &224422912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224422910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 743134167}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7044285566318344818, guid: 95b20b13e976a6446a8836c866f2a413, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 0
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 0
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &224422913
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224422910}
+  m_CullTransparentMesh: 1
 --- !u!1001 &232936477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31952,8 +32873,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2006725730}
+  - {fileID: 1718118624}
   - {fileID: 101539986}
   - {fileID: 106173003}
+  - {fileID: 2041597751}
   - {fileID: 167031640}
   - {fileID: 136188831}
   m_Father: {fileID: 592219358}
@@ -36868,6 +37791,314 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133133257}
+  m_CullTransparentMesh: 1
+--- !u!1 &1159244521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1159244522}
+  - component: {fileID: 1159244524}
+  - component: {fileID: 1159244523}
+  m_Layer: 5
+  m_Name: Equipment Top
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1159244522
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159244521}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1630849145}
+  m_Father: {fileID: 1718118624}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 88, y: 88}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1159244523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159244521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 743134167}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7044285566318344818, guid: 95b20b13e976a6446a8836c866f2a413, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 0
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 0.65882355, g: 0.65882355, b: 0.65882355, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 255
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &1159244524
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159244521}
   m_CullTransparentMesh: 1
 --- !u!1 &1167145747
 GameObject:
@@ -44426,6 +45657,313 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5709174388807102234, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
   m_PrefabInstance: {fileID: 1546367985}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1549611997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1549611998}
+  - component: {fileID: 1549612000}
+  - component: {fileID: 1549611999}
+  m_Layer: 5
+  m_Name: Compendium Top
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1549611998
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549611997}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1718118624}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 88, y: 88}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1549611999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549611997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 743134167}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7044285566318344818, guid: 95b20b13e976a6446a8836c866f2a413, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 0
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 0.65882355, g: 0.65882355, b: 0.65882355, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 255
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &1549612000
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549611997}
+  m_CullTransparentMesh: 1
 --- !u!1 &1555805734
 GameObject:
   m_ObjectHideFlags: 0
@@ -47703,6 +49241,313 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629580811}
   m_CullTransparentMesh: 1
+--- !u!1 &1630849144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1630849145}
+  - component: {fileID: 1630849147}
+  - component: {fileID: 1630849146}
+  m_Layer: 5
+  m_Name: FlexibleImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1630849145
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630849144}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1159244522}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 24, y: 66}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1630849146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630849144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 743134167}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 5681967267464321869, guid: 2e4f66b2eb40e674c83b9ae5bc391500, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 1
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 255
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &1630849147
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630849144}
+  m_CullTransparentMesh: 1
 --- !u!1 &1630925720
 GameObject:
   m_ObjectHideFlags: 0
@@ -49857,6 +51702,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710794573}
   m_CullTransparentMesh: 1
+--- !u!1 &1718118623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1718118624}
+  - component: {fileID: 1718118625}
+  m_Layer: 5
+  m_Name: Equipment Tab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1718118624
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718118623}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1159244522}
+  - {fileID: 113266800}
+  - {fileID: 1549611998}
+  m_Father: {fileID: 896424465}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -77, y: 300}
+  m_SizeDelta: {x: 77, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &1718118625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718118623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.VerticalLayoutGroup
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1725029146
 GameObject:
   m_ObjectHideFlags: 0
@@ -51952,6 +53862,313 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857454788}
+  m_CullTransparentMesh: 1
+--- !u!1 &1867154659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1867154660}
+  - component: {fileID: 1867154662}
+  - component: {fileID: 1867154661}
+  m_Layer: 5
+  m_Name: Tap 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1867154660
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867154659}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2041597751}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 44, y: -44}
+  m_SizeDelta: {x: 88, y: 88}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1867154661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867154659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 743134167}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7044285566318344818, guid: 95b20b13e976a6446a8836c866f2a413, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 0
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 255
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &1867154662
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867154659}
   m_CullTransparentMesh: 1
 --- !u!1 &1870250402
 GameObject:
@@ -55735,6 +57952,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038488907}
   m_CullTransparentMesh: 1
+--- !u!1 &2041597750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2041597751}
+  - component: {fileID: 2041597752}
+  m_Layer: 5
+  m_Name: Off Equipment Tab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2041597751
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041597750}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1867154660}
+  - {fileID: 35482749}
+  - {fileID: 224422911}
+  m_Father: {fileID: 896424465}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -77, y: 300}
+  m_SizeDelta: {x: 77, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &2041597752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041597750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.VerticalLayoutGroup
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &2049868264
 GameObject:
   m_ObjectHideFlags: 0
