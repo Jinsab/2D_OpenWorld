@@ -9,7 +9,7 @@ using UnityEngine.UI;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.15 오후 21:06
- *  마지막 수정 일자 : 26.02.17 오후 22:13
+ *  마지막 수정 일자 : 26.03.17 오후 16:51
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 UI 관리
@@ -42,6 +42,7 @@ public class InventoryUI : MonoBehaviour
     public GameObject dropZone;
 
     [Header("# Slot Parent")]
+    public RectTransform playerInventory;
     public RectTransform slotTopPanel;
     public RectTransform slotParent;
 
@@ -50,10 +51,6 @@ public class InventoryUI : MonoBehaviour
 
     private void Awake()
     {
-        // 플레이어 인벤토리라면 쓰레기통 기능을 활성화함
-        if (isPlayer)
-            dropZone.SetActive(true);
-
         layoutGroup = slotParent.GetComponent<GridLayoutGroup>();
     }
 
@@ -69,8 +66,8 @@ public class InventoryUI : MonoBehaviour
         int line = Mathf.CeilToInt((float)inventory.inventoryData.maxSlots / lineCount);
         int currentSlotCount = 0;
 
-        // Width(가로)와 Height(세로) 계산하기
-        // 1. 슬롯 1개의 크기는 100x100임
+        // Width(가로)와 Height(세로) 계산 예시
+        // 1. 슬롯 1개의 크기는 100x100이라고 가정하자.
         // 2. 왼쪽/오른쪽/하단에 Border 수치는 각 20임
         // 3. 상단 Border 및 각 슬롯의 Spacing은 10임
         // 4. Width의 값은 (1줄의 슬롯 개수 * 100) + ((1줄의 슬롯 개수 - 1) * 10 + 40이 됨
@@ -108,6 +105,8 @@ public class InventoryUI : MonoBehaviour
             slotUI.Initialize(this, i);
             slotUIs.Add(slotUI);
         }
+
+        playerInventory.sizeDelta = new Vector2(slotParent.sizeDelta.x, slotParent.sizeDelta.y + slotTopPanel.sizeDelta.y);
     }
 
     [ContextMenu("# Inventory Refresh Test")]
@@ -121,7 +120,7 @@ public class InventoryUI : MonoBehaviour
                 slotUIs[i].Clear();
         }
 
-        Debug.Log("Refresh!");
+        Log.UI("Refresh!");
     }
 
     public void DropToTrash()
