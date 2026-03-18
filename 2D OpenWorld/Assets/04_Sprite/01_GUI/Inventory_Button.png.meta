@@ -152,7 +152,7 @@ TextureImporter:
         height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 2, y: 2, z: 2, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -174,7 +174,7 @@ TextureImporter:
         height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 2, y: 2, z: 2, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -196,7 +196,7 @@ TextureImporter:
         height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 2, y: 2, z: 2, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -218,7 +218,7 @@ TextureImporter:
         height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 2, y: 2, z: 2, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -240,7 +240,7 @@ TextureImporter:
         height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 2, y: 2, z: 2, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -372,7 +372,7 @@ TextureImporter:
         height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 2, y: 2, z: 2, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -394,7 +394,7 @@ TextureImporter:
         height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 2, y: 2, z: 2, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -416,7 +416,7 @@ TextureImporter:
         height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 2, y: 2, z: 2, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -432,8 +432,8 @@ TextureImporter:
       name: Inventory_Button_13
       rect:
         serializedVersion: 2
-        x: 1
-        y: 68
+        x: 70
+        y: 91
         width: 22
         height: 22
       alignment: 7
@@ -454,8 +454,8 @@ TextureImporter:
       name: Inventory_Button_14
       rect:
         serializedVersion: 2
-        x: 24
-        y: 68
+        x: 93
+        y: 91
         width: 22
         height: 22
       alignment: 7
@@ -476,7 +476,7 @@ TextureImporter:
       name: Inventory_Button_15
       rect:
         serializedVersion: 2
-        x: 47
+        x: 1
         y: 68
         width: 22
         height: 22
@@ -490,6 +490,116 @@ TextureImporter:
       bones: []
       spriteID: 37a39694c25491a408581c067b38620f
       internalID: -713083900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Button_16
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 68
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39731a867a412fb47a0ba697382751e2
+      internalID: -2094591160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Button_17
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 68
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564213d1f02cd0d4a8edcbae0ca54c37
+      internalID: 1007753580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Button_18
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 68
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61b1cfebedc3a9418e622548d5564e6
+      internalID: -1338841495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Button_19
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 68
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886c65a3b12f18948b6f6da922fd1372
+      internalID: 945090305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Button_20
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 68
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce8bc24d87ca99438e8cf01cba92237
+      internalID: -569264549
       vertices: []
       indices: 
       edges: []
@@ -518,7 +628,12 @@ TextureImporter:
       Inventory_Button_13: 1490388523
       Inventory_Button_14: 1956726904
       Inventory_Button_15: -713083900
+      Inventory_Button_16: -2094591160
+      Inventory_Button_17: 1007753580
+      Inventory_Button_18: -1338841495
+      Inventory_Button_19: 945090305
       Inventory_Button_2: -1390623009
+      Inventory_Button_20: -569264549
       Inventory_Button_3: -1952206258
       Inventory_Button_4: 963242224
       Inventory_Button_5: 556068969
