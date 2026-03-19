@@ -8,7 +8,7 @@ using UnityEngine.UI;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.17 오후 22:14
- *  마지막 수정 일자 : 26.02.17 오후 22:14
+ *  마지막 수정 일자 : 26.03.20 오전 01:39
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 호버 UI 관리
@@ -37,12 +37,12 @@ public class SlotUIInteraction : MonoBehaviour, IPointerEnterHandler, IPointerEx
     public void OnPointerEnter(PointerEventData eventData)
     {
         interactImage.enabled = true;
-        Debug.Log("마우스가 UI 위에 들어옴");
+        // Log.UI("마우스가 UI 위에 들어옴");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         interactImage.enabled = false;
-        Debug.Log("마우스가 UI 위에서 나감");
+        // Log.UI("마우스가 UI 위에서 나감");
     }
 }
