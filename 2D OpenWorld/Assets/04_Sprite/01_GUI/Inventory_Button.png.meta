@@ -789,7 +789,7 @@ TextureImporter:
         width: 22
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 1, y: 1, z: 1, w: 1}
       customData: 
       outline: []
@@ -798,6 +798,28 @@ TextureImporter:
       bones: []
       spriteID: 76698242d7927b64c97cb8df3da0aaa3
       internalID: -1719920455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Button_30
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 45
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 2, y: 0, z: 0, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ff0962faf03d641a1c56acf7d4d7f8
+      internalID: 1447995317
       vertices: []
       indices: 
       edges: []
@@ -842,6 +864,7 @@ TextureImporter:
       Inventory_Button_28: 2060962203
       Inventory_Button_29: -1719920455
       Inventory_Button_3: -1952206258
+      Inventory_Button_30: 1447995317
       Inventory_Button_4: 963242224
       Inventory_Button_5: 556068969
       Inventory_Button_6: 1020546127
