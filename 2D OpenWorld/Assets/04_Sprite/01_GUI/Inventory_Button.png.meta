@@ -714,6 +714,94 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Inventory_Button_26
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 45
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 3, z: 3, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8b85c293f9c474294780b8f2787252
+      internalID: 1933269367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Button_27
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 45
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 2, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e810dc63fae3986418d55e0809178965
+      internalID: -830799516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Button_28
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 68
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 1, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2867f9bd1c0b540868d6516fc7eaea
+      internalID: 2060962203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory_Button_29
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 68
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 1, y: 1, z: 1, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76698242d7927b64c97cb8df3da0aaa3
+      internalID: -1719920455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -749,6 +837,10 @@ TextureImporter:
       Inventory_Button_23: 1799649756
       Inventory_Button_24: 1755274081
       Inventory_Button_25: -1174856502
+      Inventory_Button_26: 1933269367
+      Inventory_Button_27: -830799516
+      Inventory_Button_28: 2060962203
+      Inventory_Button_29: -1719920455
       Inventory_Button_3: -1952206258
       Inventory_Button_4: 963242224
       Inventory_Button_5: 556068969

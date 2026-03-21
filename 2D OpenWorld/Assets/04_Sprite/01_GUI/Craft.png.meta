@@ -866,13 +866,13 @@ TextureImporter:
       name: Craft_24
       rect:
         serializedVersion: 2
-        x: 576
-        y: 48
-        width: 16
-        height: 16
+        x: 577
+        y: 49
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 1, z: 1, w: 1}
       customData: 
       outline: []
       physicsShape: []
@@ -888,10 +888,10 @@ TextureImporter:
       name: Craft_25
       rect:
         serializedVersion: 2
-        x: 592
-        y: 48
-        width: 16
-        height: 16
+        x: 593
+        y: 49
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -910,10 +910,10 @@ TextureImporter:
       name: Craft_26
       rect:
         serializedVersion: 2
-        x: 607
-        y: 31
-        width: 17
-        height: 18
+        x: 608
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -932,10 +932,10 @@ TextureImporter:
       name: Craft_27
       rect:
         serializedVersion: 2
-        x: 608
-        y: 48
-        width: 16
-        height: 16
+        x: 609
+        y: 49
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
