@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.12 오후 20:47
- *  마지막 수정 일자 : 26.02.20 오전 01:38
+ *  마지막 수정 일자 : 26.03.22 오후 19:33
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 이동 스크립트
@@ -21,6 +21,7 @@ using UnityEngine.InputSystem;
  *      ├─ PlayerMovement      // (구현) 이동
  *      ├─ PlayerLook          // (구현) 회전
  *      ├─ PlayerSetting       // 세팅
+ *      ├─ PlayerUI            // UI 시스템
  *      ├─ PlayerInteraction   // 상호작용
  *      ├─ PlayerEquipment     // 장비 시스템
  *      ├─ PlayerCombat        // 전투 시스템
@@ -52,6 +53,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("# Player Data")]
     [field: SerializeField] public PlayerMovement PlayerMovement { get; private set; }
+    [field: SerializeField] public PlayerUI PlayerUI { get; private set; }
     [field: SerializeField] public PlayerStats PlayerStats { get; private set; }
     [field: SerializeField] public PlayerCombatController PlayerCombatController { get; private set; }
     [field: SerializeField] public PlayerLook PlayerLook { get; private set; }
@@ -85,6 +87,7 @@ public class PlayerController : MonoBehaviour
         StateMachine = GetComponent<PlayerStateMachine>();
 
         PlayerMovement.Initialize();
+        PlayerUI.Initialize();
         PlayerCombatController.Initialize();
         StateMachine.Initialize();
     }
