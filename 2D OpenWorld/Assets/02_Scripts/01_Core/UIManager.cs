@@ -55,6 +55,12 @@ public class UIManager : MonoBehaviour
     // --- 핵심 함수: 상태 전환 ---
     public void ChangeState(UIState newState)
     {
+        // 0. 현재 상태가 설정(ESC)라면 다른 상태는 간섭하면 안됨(간섭 방지)
+        if (currentState == UIState.Settings && newState != UIState.Settings)
+        {
+            return;
+        }
+
         // 1. 현재 상태와 같으면 닫기 (토글 기능)
         if (currentState == newState)
         {
