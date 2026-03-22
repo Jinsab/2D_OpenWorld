@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1019,6 +1019,158 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &29306189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 29306190}
+  - component: {fileID: 29306193}
+  - component: {fileID: 29306192}
+  - component: {fileID: 29306191}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &29306190
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29306189}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2083138857}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 95.994995, y: -15}
+  m_SizeDelta: {x: 87.99, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &29306191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29306189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &29306192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29306189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC124\uC815"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
+  m_sharedMaterial: {fileID: 5731025436253080797, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4291282887
+  m_fontColor: {r: 0.7803922, g: 0.7803922, b: 0.7803922, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 48
+  m_fontSizeBase: 48
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &29306193
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29306189}
+  m_CullTransparentMesh: 1
 --- !u!1 &35482748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,7 +1220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1651,7 +1803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1960,7 +2112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2235,7 +2387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &64155817
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2276,7 +2428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2575,7 +2727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -3019,7 +3171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -3773,7 +3925,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &85494238
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3790,8 +3942,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1020}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: -780.00006}
+  m_SizeDelta: {x: 251.98, y: 48.01}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &85494239
 MonoBehaviour:
@@ -4238,7 +4390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -4770,7 +4922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -5206,7 +5358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -5571,7 +5723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -5997,7 +6149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -6304,7 +6456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -6636,7 +6788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -7907,7 +8059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -8275,7 +8427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -9020,7 +9172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -9703,7 +9855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -10002,7 +10154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -10446,7 +10598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -10753,7 +10905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -11325,7 +11477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -11902,7 +12054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -12211,7 +12363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -13047,7 +13199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -13507,7 +13659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -13765,6 +13917,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222046930}
   m_CullTransparentMesh: 1
+--- !u!21 &223719608
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DefaultProceduralBlurredImage
+  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _DstBlend: 10
+    - _SrcBlend: 5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &224085470
 GameObject:
   m_ObjectHideFlags: 0
@@ -13814,7 +14007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -14121,7 +14314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -14846,7 +15039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -15534,7 +15727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -16745,7 +16938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -17054,7 +17247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -17483,7 +17676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -18295,7 +18488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -18605,7 +18798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -18962,7 +19155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -19668,7 +19861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -20042,7 +20235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -20351,7 +20544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -20658,7 +20851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -21073,7 +21266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &382356084
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21090,8 +21283,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -940}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: -701.99005}
+  m_SizeDelta: {x: 87.99, y: 48.01}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &382356085
 MonoBehaviour:
@@ -21361,7 +21554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -22232,7 +22425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -22613,7 +22806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -22920,7 +23113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -23211,11 +23404,15 @@ RectTransform:
   - {fileID: 1730564228}
   - {fileID: 382356084}
   - {fileID: 85494238}
+  - {fileID: 633970409}
+  - {fileID: 474140718}
+  - {fileID: 2083138857}
+  - {fileID: 1423788626}
   m_Father: {fileID: 64155817}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 60, y: 30}
+  m_AnchoredPosition: {x: 40, y: 30}
   m_SizeDelta: {x: 0, y: -60}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &430863575
@@ -23236,7 +23433,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 6
-  m_Spacing: 30
+  m_Spacing: 50
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -28190,7 +28387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -28497,7 +28694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -28804,7 +29001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -29269,7 +29466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -29576,7 +29773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -29886,7 +30083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -30195,7 +30392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -30576,6 +30773,170 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!1 &474140717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 474140718}
+  - component: {fileID: 474140722}
+  - component: {fileID: 474140721}
+  - component: {fileID: 474140720}
+  - component: {fileID: 474140719}
+  m_Layer: 5
+  m_Name: Bug&Feedback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &474140718
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474140717}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 611781095}
+  - {fileID: 1549439590}
+  m_Father: {fileID: 430863574}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &474140719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474140717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 611781096}
+          m_TargetAssemblyTypeName: JeffGrawAssets.FlexibleUI.FlexibleImage, JeffGrawAssets.FlexibleUI.Runtime
+          m_MethodName: set_sprite
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: -2653506176444920285, guid: 2e4f66b2eb40e674c83b9ae5bc391500, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 611781096}
+          m_TargetAssemblyTypeName: JeffGrawAssets.FlexibleUI.FlexibleImage, JeffGrawAssets.FlexibleUI.Runtime
+          m_MethodName: set_sprite
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 6136726090811837194, guid: 2e4f66b2eb40e674c83b9ae5bc391500, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &474140720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474140717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 3
+  m_Spacing: 20
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &474140721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474140717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.69411767, b: 0.2784314, a: 1}
+    m_PressedColor: {r: 1, g: 0.57254905, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0.57254905, b: 0, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1549439592}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!222 &474140722
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474140717}
+  m_CullTransparentMesh: 1
 --- !u!1 &474613714
 GameObject:
   m_ObjectHideFlags: 0
@@ -30957,7 +31318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -31327,7 +31688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -31784,7 +32145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -32166,7 +32527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -32751,7 +33112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -33058,7 +33419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -33585,7 +33946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -33958,47 +34319,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521124926}
   m_CullTransparentMesh: 1
---- !u!21 &521313164
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: DefaultProceduralBlurredImage
-  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _DstBlend: 10
-    - _SrcBlend: 5
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &528376911
 GameObject:
   m_ObjectHideFlags: 0
@@ -34658,7 +34978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -35058,7 +35378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -35884,7 +36204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -36191,7 +36511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -36498,7 +36818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -37170,7 +37490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -37526,7 +37846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -39276,7 +39596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -44837,7 +45157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -45461,7 +45781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -45877,6 +46197,313 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603806282}
   m_CullTransparentMesh: 1
+--- !u!1 &611781094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 611781095}
+  - component: {fileID: 611781097}
+  - component: {fileID: 611781096}
+  m_Layer: 5
+  m_Name: Indicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &611781095
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611781094}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 474140718}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 32, y: 32}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &611781096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611781094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 223719608}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 6136726090811837194, guid: 2e4f66b2eb40e674c83b9ae5bc391500, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 1
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 255
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &611781097
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611781094}
+  m_CullTransparentMesh: 1
 --- !u!1 &612053991
 GameObject:
   m_ObjectHideFlags: 0
@@ -45926,7 +46553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -46233,7 +46860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -46540,7 +47167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -46931,7 +47558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -48104,6 +48731,170 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5709174388807102234, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
   m_PrefabInstance: {fileID: 633631953}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &633970408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 633970409}
+  - component: {fileID: 633970413}
+  - component: {fileID: 633970412}
+  - component: {fileID: 633970411}
+  - component: {fileID: 633970410}
+  m_Layer: 5
+  m_Name: Continue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &633970409
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633970408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 971872267}
+  - {fileID: 833420769}
+  m_Father: {fileID: 430863574}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &633970410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633970408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 971872268}
+          m_TargetAssemblyTypeName: JeffGrawAssets.FlexibleUI.FlexibleImage, JeffGrawAssets.FlexibleUI.Runtime
+          m_MethodName: set_sprite
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: -2653506176444920285, guid: 2e4f66b2eb40e674c83b9ae5bc391500, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 971872268}
+          m_TargetAssemblyTypeName: JeffGrawAssets.FlexibleUI.FlexibleImage, JeffGrawAssets.FlexibleUI.Runtime
+          m_MethodName: set_sprite
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 6136726090811837194, guid: 2e4f66b2eb40e674c83b9ae5bc391500, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &633970411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633970408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 3
+  m_Spacing: 20
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &633970412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633970408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.69411767, b: 0.2784314, a: 1}
+    m_PressedColor: {r: 1, g: 0.57254905, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0.57254905, b: 0, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 833420771}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!222 &633970413
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633970408}
+  m_CullTransparentMesh: 1
 --- !u!1 &637613162
 GameObject:
   m_ObjectHideFlags: 0
@@ -48410,7 +49201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -49135,7 +49926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -49841,7 +50632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -50518,7 +51309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -50874,7 +51665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -51429,7 +52220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -51736,7 +52527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -52453,7 +53244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -52837,7 +53628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -55972,7 +56763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -56552,7 +57343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -57175,7 +57966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -57483,7 +58274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -57927,7 +58718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -59137,7 +59928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -59583,7 +60374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -60565,7 +61356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -60823,6 +61614,158 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821737277}
   m_CullTransparentMesh: 1
+--- !u!1 &833420768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 833420769}
+  - component: {fileID: 833420772}
+  - component: {fileID: 833420771}
+  - component: {fileID: 833420770}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &833420769
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833420768}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 633970409}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 98, y: -15}
+  m_SizeDelta: {x: 92, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &833420770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833420768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &833420771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833420768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uACC4\uC18D"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
+  m_sharedMaterial: {fileID: 5731025436253080797, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4291282887
+  m_fontColor: {r: 0.7803922, g: 0.7803922, b: 0.7803922, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 48
+  m_fontSizeBase: 48
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &833420772
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833420768}
+  m_CullTransparentMesh: 1
 --- !u!1 &835868692
 GameObject:
   m_ObjectHideFlags: 0
@@ -60872,7 +61815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -61408,7 +62351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -61715,7 +62658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -62022,7 +62965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -63706,7 +64649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -64397,7 +65340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -65119,7 +66062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -65497,7 +66440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -65863,7 +66806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -66162,7 +67105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -67284,7 +68227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -67594,7 +68537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -68038,7 +68981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -68345,7 +69288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -69369,7 +70312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -69627,6 +70570,313 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971493124}
   m_CullTransparentMesh: 1
+--- !u!1 &971872266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 971872267}
+  - component: {fileID: 971872269}
+  - component: {fileID: 971872268}
+  m_Layer: 5
+  m_Name: Indicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &971872267
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971872266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 633970409}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 32, y: 32}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &971872268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971872266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 223719608}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 6136726090811837194, guid: 2e4f66b2eb40e674c83b9ae5bc391500, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 1
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 255
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &971872269
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971872266}
+  m_CullTransparentMesh: 1
 --- !u!1 &977081908
 GameObject:
   m_ObjectHideFlags: 0
@@ -69874,7 +71124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -70347,7 +71597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -70709,7 +71959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -71586,7 +72836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -72229,7 +73479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -72536,7 +73786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -73892,7 +75142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -74321,7 +75571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -74628,7 +75878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -75194,7 +76444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -75919,7 +77169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -76384,7 +77634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -76691,7 +77941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -77196,7 +78446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -77503,7 +78753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -78007,7 +79257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -79789,7 +81039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -80624,7 +81874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -81633,7 +82883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -82021,7 +83271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -82466,7 +83716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -83119,7 +84369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -83817,7 +85067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -84157,7 +85407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -84890,7 +86140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -85198,7 +86448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -86085,7 +87335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -86614,7 +87864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -87044,7 +88294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -89688,7 +90938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -90414,7 +91664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -90829,6 +92079,313 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402835612}
+  m_CullTransparentMesh: 1
+--- !u!1 &1405970437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1405970438}
+  - component: {fileID: 1405970440}
+  - component: {fileID: 1405970439}
+  m_Layer: 5
+  m_Name: Indicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1405970438
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405970437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2083138857}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 32, y: 32}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1405970439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405970437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 223719608}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 6136726090811837194, guid: 2e4f66b2eb40e674c83b9ae5bc391500, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 1
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 255
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &1405970440
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405970437}
   m_CullTransparentMesh: 1
 --- !u!1001 &1408853166
 PrefabInstance:
@@ -91288,7 +92845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -91656,7 +93213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -91914,6 +93471,170 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422571190}
   m_CullTransparentMesh: 1
+--- !u!1 &1423788625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1423788626}
+  - component: {fileID: 1423788630}
+  - component: {fileID: 1423788628}
+  - component: {fileID: 1423788627}
+  - component: {fileID: 1423788631}
+  m_Layer: 5
+  m_Name: Save Exit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1423788626
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423788625}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2131108127}
+  - {fileID: 1867230888}
+  m_Father: {fileID: 430863574}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1423788627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423788625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 3
+  m_Spacing: 20
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &1423788628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423788625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.69411767, b: 0.2784314, a: 1}
+    m_PressedColor: {r: 1, g: 0.57254905, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0.57254905, b: 0, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1867230890}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!222 &1423788630
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423788625}
+  m_CullTransparentMesh: 1
+--- !u!114 &1423788631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423788625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2131108128}
+          m_TargetAssemblyTypeName: JeffGrawAssets.FlexibleUI.FlexibleImage, JeffGrawAssets.FlexibleUI.Runtime
+          m_MethodName: set_sprite
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: -2653506176444920285, guid: 2e4f66b2eb40e674c83b9ae5bc391500, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2131108128}
+          m_TargetAssemblyTypeName: JeffGrawAssets.FlexibleUI.FlexibleImage, JeffGrawAssets.FlexibleUI.Runtime
+          m_MethodName: set_sprite
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 6136726090811837194, guid: 2e4f66b2eb40e674c83b9ae5bc391500, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1425943469
 GameObject:
   m_ObjectHideFlags: 0
@@ -92009,7 +93730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -92453,7 +94174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -92813,7 +94534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -93120,7 +94841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -93590,7 +95311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -93971,7 +95692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -94436,7 +96157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -95116,7 +96837,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1488537727
 RectTransform:
   m_ObjectHideFlags: 0
@@ -95133,8 +96854,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -780}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: -545.97003}
+  m_SizeDelta: {x: 92, y: 48.01}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1488537728
 MonoBehaviour:
@@ -95280,13 +97001,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1430115214}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1430115215}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: HandleESC
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -95355,7 +97076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -96112,7 +97833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -97480,7 +99201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -97790,7 +99511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -98186,6 +99907,158 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5709174388807102234, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
   m_PrefabInstance: {fileID: 1546367985}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1549439589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1549439590}
+  - component: {fileID: 1549439593}
+  - component: {fileID: 1549439592}
+  - component: {fileID: 1549439591}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1549439590
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549439589}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 474140718}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 227.985, y: -15}
+  m_SizeDelta: {x: 351.97, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1549439591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549439589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &1549439592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549439589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uBC84\uADF8/\uD53C\uB4DC\uBC31 \uBCF4\uACE0"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
+  m_sharedMaterial: {fileID: 5731025436253080797, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4291282887
+  m_fontColor: {r: 0.7803922, g: 0.7803922, b: 0.7803922, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 48
+  m_fontSizeBase: 48
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1549439593
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549439589}
+  m_CullTransparentMesh: 1
 --- !u!1 &1549611997
 GameObject:
   m_ObjectHideFlags: 0
@@ -98236,7 +100109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -98723,7 +100596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -99031,7 +100904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -99340,7 +101213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -101931,7 +103804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -102361,7 +104234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -103103,7 +104976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -103909,7 +105782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -104218,7 +106091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -105176,7 +107049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -105829,7 +107702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -106136,7 +108009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -106443,7 +108316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -107218,7 +109091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -107799,7 +109672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -108244,7 +110117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -109047,7 +110920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -109807,7 +111680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1730564228
 RectTransform:
   m_ObjectHideFlags: 0
@@ -109824,8 +111697,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -860}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: -623.98004}
+  m_SizeDelta: {x: 351.97, y: 48.01}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1730564229
 MonoBehaviour:
@@ -110034,7 +111907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -110378,7 +112251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -110853,7 +112726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -111162,7 +113035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -111627,7 +113500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -112185,7 +114058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -112887,7 +114760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -113763,7 +115636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -114070,7 +115943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -114381,7 +116254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -115526,7 +117399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -115783,6 +117656,158 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867154659}
+  m_CullTransparentMesh: 1
+--- !u!1 &1867230887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1867230888}
+  - component: {fileID: 1867230891}
+  - component: {fileID: 1867230890}
+  - component: {fileID: 1867230889}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1867230888
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867230887}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1423788626}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 177.98999, y: -15}
+  m_SizeDelta: {x: 251.98, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1867230889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867230887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &1867230890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867230887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC800\uC7A5 \uD6C4 \uC885\uB8CC"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
+  m_sharedMaterial: {fileID: 5731025436253080797, guid: 8e0dd6b3c37c4dc4cb3748cba6f74368, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4291282887
+  m_fontColor: {r: 0.7803922, g: 0.7803922, b: 0.7803922, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 48
+  m_fontSizeBase: 48
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1867230891
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867230887}
   m_CullTransparentMesh: 1
 --- !u!1 &1870250402
 GameObject:
@@ -116078,7 +118103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -116531,7 +118556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -116830,7 +118855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -117827,7 +119852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -118136,7 +120161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -118443,7 +120468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -119011,7 +121036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -119446,7 +121471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -120550,7 +122575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -121154,7 +123179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -121463,7 +123488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -121842,7 +123867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -122854,7 +124879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -123161,7 +125186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -123468,7 +125493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -123887,7 +125912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -124316,7 +126341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -124623,7 +126648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -125052,7 +127077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -127629,7 +129654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -127879,6 +129904,170 @@ MonoBehaviour:
   animationMode: 0
   selectable: {fileID: 0}
   scriptDrivenAnimationState: 0
+--- !u!1 &2083138856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2083138857}
+  - component: {fileID: 2083138861}
+  - component: {fileID: 2083138860}
+  - component: {fileID: 2083138859}
+  - component: {fileID: 2083138858}
+  m_Layer: 5
+  m_Name: Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2083138857
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083138856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1405970438}
+  - {fileID: 29306190}
+  m_Father: {fileID: 430863574}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2083138858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083138856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1405970439}
+          m_TargetAssemblyTypeName: JeffGrawAssets.FlexibleUI.FlexibleImage, JeffGrawAssets.FlexibleUI.Runtime
+          m_MethodName: set_sprite
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: -2653506176444920285, guid: 2e4f66b2eb40e674c83b9ae5bc391500, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1405970439}
+          m_TargetAssemblyTypeName: JeffGrawAssets.FlexibleUI.FlexibleImage, JeffGrawAssets.FlexibleUI.Runtime
+          m_MethodName: set_sprite
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 6136726090811837194, guid: 2e4f66b2eb40e674c83b9ae5bc391500, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &2083138859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083138856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 3
+  m_Spacing: 20
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &2083138860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083138856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.69411767, b: 0.2784314, a: 1}
+    m_PressedColor: {r: 1, g: 0.57254905, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0.57254905, b: 0, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 29306192}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!222 &2083138861
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083138856}
+  m_CullTransparentMesh: 1
 --- !u!1 &2085070213
 GameObject:
   m_ObjectHideFlags: 0
@@ -128087,7 +130276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -128518,7 +130707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -129314,7 +131503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -130149,7 +132338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -130662,7 +132851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -130969,7 +133158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -131227,6 +133416,313 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130523378}
   m_CullTransparentMesh: 1
+--- !u!1 &2131108126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2131108127}
+  - component: {fileID: 2131108129}
+  - component: {fileID: 2131108128}
+  m_Layer: 5
+  m_Name: Indicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2131108127
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131108126}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1423788626}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 32, y: 32}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2131108128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131108126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
+  m_Material: {fileID: 223719608}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 6136726090811837194, guid: 2e4f66b2eb40e674c83b9ae5bc391500, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+  _blurEnabled: 0
+  _alphaBlend: 255
+  _sourceImageFade: 0
+  additionalBlurPadding: 0
+  tryBatchWithSimilar: 0
+  fillEntireRenderTexture: 0
+  _common:
+    cameraReference: {fileID: 0}
+    blurStrength: 1
+    unrankedLayer: 0
+    priority: 0
+    blurPreset: {fileID: 0}
+    blurInstanceSettings:
+      downscaleSections:
+      - algorithmIdx: 3
+        iterations: 2
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      blurSections:
+      - algorithmIdx: 2
+        iterations: 4
+        horizontalSamplesPerSide: 2
+        verticalSamplesPerSide: 2
+        sampleDistance: 1.5
+      referenceResolution: 1080
+      hqResample: 0
+      blurAdditionalDistancePerIteration: 1
+      ditherStrength: 0.25
+      brightness: 0
+      contrast: 0
+      vibrancy: 0
+      tint: {r: 0, g: 0, b: 0, a: 0}
+  _normalRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _mobileRaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  _useAdvancedRaycast: 0
+  _advancedRaycastFlags: 131
+  _dataMode: 0
+  quadDataPreset: {fileID: 0}
+  _quadDataContainer:
+    editorSelectedQuadIdx: 0
+    _quadDataList:
+    - editorSelectedAnimationState: 0
+      editorSelectedAnimationSubState: 0
+      name: Quad0
+      _anchorMin: {x: 0, y: 0}
+      _anchorMax: {x: 1, y: 1}
+      _anchoredPosition: {x: 0, y: 0}
+      _sizeDelta: {x: 0, y: 0}
+      _pivot: {x: 0.5, y: 0.5}
+      highlightedFix: 1
+      proceduralAnimationStates:
+      - proceduralProperties:
+        - interpolationType: 0
+          duration: 0.1
+          uvRect: {x: 0, y: 0, z: 1, w: 1}
+          offset: {x: 0, y: 0}
+          stroke: 0
+          sizeModifier: {x: 0, y: 0}
+          softness: 1
+          rotation: 0
+          cutout: {x: 0, y: 0, z: 0, w: 0}
+          cornerChamfer: {x: 0, y: 0, z: 0, w: 0}
+          cornerConcavity: {x: 0, y: 0, z: 0, w: 0}
+          collapsedCornerChamfer: 0
+          collapsedCornerConcavity: 0
+          collapseEdgeAmount: 0
+          collapseEdgeAmountAbsolute: 0
+          collapseEdgePosition: 0
+          primaryColors:
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          - {r: 1, g: 1, b: 1, a: 1}
+          outlineColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          proceduralGradientColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          patternColors:
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          - {r: 0, g: 0, b: 0, a: 1}
+          primaryColorOffset: {x: 0, y: 0}
+          outlineColorOffset: {x: 0, y: 0}
+          proceduralGradientColorOffset: {x: 0, y: 0}
+          patternColorOffset: {x: 0, y: 0}
+          primaryColorRotation: 0
+          outlineColorRotation: 0
+          proceduralGradientColorRotation: 0
+          patternColorRotation: 0
+          primaryColorScale: {x: 1, y: 1}
+          outlineColorScale: {x: 1, y: 1}
+          proceduralGradientColorScale: {x: 1, y: 1}
+          patternColorScale: {x: 1, y: 1}
+          primaryColorFade: 255
+          outlineWidth: 0
+          proceduralGradientPosition: {x: 0.5, y: 0.5}
+          radialGradientSize: {x: 0.5, y: 0.5}
+          radialGradientStrength: 0.5
+          angleGradientStrength: {x: 0.5, y: 0.5}
+          proceduralGradientAngle: 0
+          sdfGradientInnerDistance: 0
+          sdfGradientOuterDistance: 0
+          sdfGradientInnerReach: 0
+          sdfGradientOuterReach: 0
+          proceduralGradientPointerStrength: 0.5
+          conicalGradientCurvature: 0
+          conicalGradientTailStrength: 0.5
+          noiseSeed: 0
+          noiseScale: 0.5
+          noiseEdge: 0.5
+          noiseStrength: 0.5
+          patternDensity: 0
+          patternSpeed: 0
+          patternCellParam: 0.5
+          patternLineThickness: 127
+          patternSpriteRotation: 0
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      - proceduralProperties: []
+        playbackType: 0
+        loopStartIdx: 0
+        unwindToIdx: -1
+        unwindRate: 1
+      _enabled: 1
+      _advancedQuadSettings: 0
+      _colorPreset: {fileID: 0}
+      _primaryColorWrapModeX: 0
+      _primaryColorWrapModeY: 0
+      _outlineColorWrapModeX: 0
+      _outlineColorWrapModeY: 0
+      _proceduralGradientColorWrapModeX: 0
+      _proceduralGradientColorWrapModeY: 0
+      _patternColorWrapModeX: 0
+      _patternColorWrapModeY: 0
+      _sizeModifierAspectCorrection: 0
+      _fitRotatedImageWithinBounds: 0
+      _cutoutEnabled: 00000000
+      _primaryColorDimensions: {x: 1, y: 1}
+      _outlineColorDimensions: {x: 1, y: 1}
+      _proceduralGradientColorDimensions: {x: 1, y: 1}
+      _patternColorDimensions: {x: 1, y: 1}
+      _outlineFadeTowardsPerimeter: 0
+      _outlineAdjustsChamfer: 0
+      _primaryColorPresetMix: 1
+      _outlineColorPresetMix: 1
+      _proceduralGradientColorPresetMix: 1
+      _patternColorPresetMix: 1
+      _proceduralGradientType: 0
+      _proceduralGradientAlphaIsBlend: 0
+      _patternColorAlphaIsBlend: 0
+      _proceduralGradientAspectCorrection: 0
+      _proceduralGradientAffectsInterior: 1
+      _proceduralGradientAffectsOutline: 0
+      _patternAffectsInterior: 1
+      _patternAffectsOutline: 0
+      _proceduralGradientPositionFromPointer: 0
+      _noiseGradientAlternateMode: 0
+      _screenSpaceProceduralGradient: 0
+      _screenSpacePattern: 0
+      _softPattern: 0
+      _spritePatternRotationMode: 0
+      _spritePatternOffsetDirectionDegrees: 0
+      _pattern: 3
+      _patternOriginPos: 0
+      _scanlinePatternSpeedIsStaticOffset: 0
+      _softnessFeatherMode: 2
+      _strokeOrigin: 0
+      _normalizeChamfer: 1
+      _concavityIsSmoothing: 0
+      _collapsedEdge: 0
+      _collapseIntoParallelogram: 0
+      _mirrorCollapse: 0
+      _edgeCollapseAmountIsAbsolute: 0
+      _proceduralGradientInvert: 0
+      _outlineAlphaIsBlend: 0
+      _addInteriorOutline: 0
+      _outlineExpandsOutward: 0
+      _outlineAccommodatesCollapsedEdge: 0
+      _cutoutOnlyAffectsOutline: 0
+      _invertCutout: 0
+      _cutoutRule: 0
+      _meshSubdivisions: 2
+      _meshTopology: 0
+    primaryQuadIdx: 0
+  animationMode: 0
+  selectable: {fileID: 0}
+  scriptDrivenAnimationState: 0
+--- !u!222 &2131108129
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131108126}
+  m_CullTransparentMesh: 1
 --- !u!1 &2132594223
 GameObject:
   m_ObjectHideFlags: 0
@@ -131276,7 +133772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -131981,7 +134477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -132251,7 +134747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 521313164}
+  m_Material: {fileID: 223719608}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
