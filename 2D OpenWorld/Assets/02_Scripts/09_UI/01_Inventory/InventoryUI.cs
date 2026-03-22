@@ -112,6 +112,7 @@ public class InventoryUI : MonoBehaviour
     [ContextMenu("# Inventory Refresh Test")]
     public void Refresh()
     {
+        Log.UI($"UI Count: {slotUIs.Count}");
         for (int i = 0; i < slotUIs.Count; i++)
         {
             if (i < inventory.inventoryData.slots.Count)

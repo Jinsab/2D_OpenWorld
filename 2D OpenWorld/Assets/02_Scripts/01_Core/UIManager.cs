@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,7 +7,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.16 오후 16:50
- *  마지막 수정 일자 : 26.03.16 오후 18:57
+ *  마지막 수정 일자 : 26.03.22 오후 18:44
  *  
  *  [스크립트 목적 및 내용]
  *  1. UI 매니저 스크립트
@@ -21,106 +20,130 @@ using UnityEngine.InputSystem;
 
 public class UIManager : MonoBehaviour
 {
+    public enum UIState
+    {
+        None,           // 평상시 (HUD만 노출)
+        CharacterInfo,  // Tab: 인벤토리 + 장비 + 능력치 + 기본제작
+        Chest,          // E(상자): 인벤토리 + 상자 내용물
+        WorkBench,      // E(작업대): 인벤토리 + 특정 제작 레시피
+        Settings        // ESC: 환경설정
+    }
+
     public static UIManager Instance;
+    private UIState currentState = UIState.None;
+    public UIState CurrentState => currentState;
 
     [Header("UI References")]
-    [SerializeField] private GameObject inventoryHotbarWindow;
-    [SerializeField] private GameObject inventoryWindow;
-    [SerializeField] private GameObject storageWindow;
-    [SerializeField] private GameObject statWindow;
-    [SerializeField] private GameObject craftingWindow;
-    [SerializeField] private GameObject settingsWindow;
+    [SerializeField] private GameObject inventoryPanel;
+    [SerializeField] private GameObject storagePanel;
+    [SerializeField] private GameObject storageButtonPanel;
+    [SerializeField] private GameObject informationPanel;
+    [SerializeField] private GameObject baseCraftingPanel;
+    [SerializeField] private GameObject settingsPanel;
 
     [Header("Input System")]
     [SerializeField] private PlayerInput playerInput;
-
-    // 현재 열려 있는 UI들을 관리하는 스택
-    private Stack<GameObject> uiStack = new Stack<GameObject>();
 
     private void Awake()
     {
         Instance = this;
 
         // 시작 시 모든 UI 비활성화
-        CloseAll();
+        ForceCloseAll();
     }
 
-    // --- 핵심 로직: UI 토글 ---
-    public void ToggleInventory() => ToggleWindow(inventoryWindow);
-    public void ToggleSettings() => ToggleWindow(settingsWindow);
-
-    private void ToggleWindow(GameObject window)
+    // --- 핵심 함수: 상태 전환 ---
+    public void ChangeState(UIState newState)
     {
-        if (window.activeSelf)
+        // 1. 현재 상태와 같으면 닫기 (토글 기능)
+        if (currentState == newState)
         {
-            CloseWindow(window);
+            ForceCloseAll();
+            return;
         }
-        else
+
+        // 2. 기존 패널 모두 비활성화
+        DisableAllPanels();
+
+        // 3. 새 상태에 따른 패널 그룹 활성화
+        currentState = newState;
+        ApplyStateLayout(newState);
+
+        // 4. 입력 맵 및 커서 상태 업데이트
+        UpdateInputAndCursor();
+    }
+
+    private void ApplyStateLayout(UIState state)
+    {
+        switch (state)
         {
-            OpenWindow(window);
+            case UIState.CharacterInfo:
+                inventoryPanel.SetActive(true);
+                informationPanel.SetActive(true);
+                baseCraftingPanel.SetActive(true);
+                break;
+
+            case UIState.Chest:
+                inventoryPanel.SetActive(true);
+                storageButtonPanel.SetActive(true);
+                storagePanel.SetActive(true);
+                break;
+
+            case UIState.WorkBench:
+                inventoryPanel.SetActive(true);
+                // workbenchPanel.SetActive(true); // 확장 가능
+                break;
+
+            case UIState.Settings:
+                settingsPanel.SetActive(true);
+                break;
+
+            case UIState.None:
+                // HUD 외 모두 비활성 유지
+                break;
         }
     }
 
-    public void OpenWindow(GameObject window)
+    // --- 유틸리티 함수 ---
+    private void UpdateInputAndCursor()
     {
-        window.SetActive(true);
-        if (!uiStack.Contains(window))
-        {
-            uiStack.Push(window);
-        }
-
-        UpdateInputState();
-    }
-
-    public void CloseWindow(GameObject window)
-    {
-        window.SetActive(false);
-
-        // 스택에서 해당 윈도우 제거 (중간에 있는 창을 닫을 경우 대비)
-        // 실제 스택은 중간 제거가 안 되므로 리스트를 쓰거나 팝업 순서 정립 필요
-        UpdateInputState();
-    }
-
-    // --- 입력 상태 관리 ---
-    private void UpdateInputState()
-    {
-        // 스택에 UI가 하나라도 있으면 UI 모드, 없으면 Player 모드
-        if (uiStack.Count > 0)
-        {
-            playerInput.SwitchCurrentActionMap("UI");
-            //Cursor.lockState = CursorLockMode.None;
-            //Cursor.visible = true;
-        }
-        else
+        if (currentState == UIState.None)
         {
             playerInput.SwitchCurrentActionMap("Player");
             //Cursor.lockState = CursorLockMode.Locked;
             //Cursor.visible = false;
         }
-    }
-
-    public void OnESCPressed()
-    {
-        // 1. 열린 UI가 있다면 가장 최근 것부터 닫음
-        if (uiStack.Count > 0)
-        {
-            GameObject top = uiStack.Pop();
-            top.SetActive(false);
-            UpdateInputState();
-        }
-        // 2. 열린 UI가 없다면 설정창을 엶
         else
         {
-            ToggleSettings();
+            playerInput.SwitchCurrentActionMap("UI");
+            //Cursor.lockState = CursorLockMode.None;
+            //Cursor.visible = true;
         }
     }
 
-    private void CloseAll()
+    public void ForceCloseAll()
     {
-        inventoryWindow.SetActive(false);
-        storageWindow.SetActive(false);
-        // ... 모든 참조 UI 비활성화
-        uiStack.Clear();
-        UpdateInputState();
+        currentState = UIState.None;
+        DisableAllPanels();
+        UpdateInputAndCursor();
+    }
+
+    private void DisableAllPanels()
+    {
+        inventoryPanel.SetActive(false);
+        informationPanel.SetActive(false);
+        baseCraftingPanel.SetActive(false);
+        storagePanel.SetActive(false);
+        storageButtonPanel.SetActive(false);
+        settingsPanel.SetActive(false);
+    }
+
+    // --- ESC 키 전용 로직 ---
+    public void HandleESC()
+    {
+        if (currentState == UIState.None)
+            ChangeState(UIState.Settings);
+        else
+            ForceCloseAll();
     }
 }

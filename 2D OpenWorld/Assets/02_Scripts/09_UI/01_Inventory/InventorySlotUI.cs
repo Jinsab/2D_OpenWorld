@@ -66,12 +66,19 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
 
     public void Set(InventorySlot slot)
     {
-        slotData = slot;
-        icon.sprite = ItemDatabase.Instance.GetItem(slot.itemId).Icon;
-        icon.enabled = true;
-        amountText.text = slot.amount > 1 ? slot.amount.ToString() : "";
+        if (slot == null)
+            return;
 
-        Debug.Log($"아이템 아이디: {slotData.itemId}, 아이템 개수: {slotData.amount}");
+        // amount가 0이라는 것은 해당 슬롯에 아이템이 없다는 것과 동일함
+        if (slot.amount != 0)
+        {
+            slotData = slot;
+            icon.sprite = ItemDatabase.Instance.GetItem(slot.itemId).Icon;
+            icon.enabled = true;
+            amountText.text = slot.amount > 1 ? slot.amount.ToString() : "";
+
+            Log.DB($"아이템 아이디: {slotData.itemId}, 아이템 개수: {slotData.amount}");
+        }
     }
 
     public void Clear()
