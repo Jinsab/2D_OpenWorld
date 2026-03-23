@@ -109,7 +109,7 @@ public class ItemDrop : MonoBehaviour
         if (other.TryGetComponent<Inventory>(out Inventory inv))
         {
             // 인벤토리에 추가할 수 없다면 수집하지 않음
-            if (!inv.CanAdd(item, amount))
+            if (!(inv.GetAvailableSpace(item) >= amount))
                 return;
 
             Log.Game("아이템 수집");

@@ -7,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.06 오후 14:10
- *  마지막 수정 일자 : 26.03.06 오후 14:40
+ *  마지막 수정 일자 : 26.03.23 오후 16:57
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리의 순수한 값 (데이터)
@@ -36,6 +36,9 @@ public class InventorySlot
     public int itemId;
     public int amount;
 
+    // 슬롯이 비어있는지 확인하는 읽기 전용 속성
+    public bool IsEmpty => itemId <= 0 || amount <= 0;
+
     public InventorySlot()
     {
         // 빈 슬롯을 나타내기 위해 itemId를 0으로 설정 (0은 아이템 없음)
@@ -47,6 +50,12 @@ public class InventorySlot
     {
         itemId = item.itemId;
         this.amount = amount;
+    }
+
+    public void Clear()
+    {
+        itemId = 0;
+        amount = 0;
     }
 }
 
