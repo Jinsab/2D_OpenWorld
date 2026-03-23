@@ -10,7 +10,7 @@ using System;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.15 오후 21:06
- *  마지막 수정 일자 : 26.03.17 오후 16:51
+ *  마지막 수정 일자 : 26.03.23 오후 18:22
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 UI 관리
@@ -47,7 +47,7 @@ public class InventoryUI : MonoBehaviour
     public RectTransform slotTopPanel;
     public RectTransform slotParent;
 
-    private List<InventorySlotUI> slotUIs = new List<InventorySlotUI>();
+    private List<InventorySlotUI> uiSlots = new List<InventorySlotUI>();
     private GridLayoutGroup layoutGroup;
 
     private void Awake()
@@ -55,10 +55,24 @@ public class InventoryUI : MonoBehaviour
         layoutGroup = slotParent.GetComponent<GridLayoutGroup>();
     }
 
+    private void OnEnable()
+    {
+        // 중요: 인벤토리의 이벤트에 내 함수(RefreshSlot)를 연결(구독)
+        Log.UI("인벤토리 창 오픈");
+        AllDataRefresh();
+        inventory.OnSlotChanged += RefreshSlot;
+    }
+
+    private void OnDisable()
+    {
+        Log.UI("인벤토리 창 클로즈");
+        // 메모리 누수 방지를 위해 오브젝트가 꺼질 때 구독 해제
+        inventory.OnSlotChanged -= RefreshSlot;
+    }
+
     private void Start()
     {
         CreateSlots();
-        Refresh();
     }
 
     private void CreateSlots()
@@ -89,11 +103,11 @@ public class InventoryUI : MonoBehaviour
             for (int i = 0; i < lineCount; i++)
             {
                 GameObject obj = Instantiate(slotPrefab, slotParent);
-                InventorySlotUI slotUI = obj.GetComponent<InventorySlotUI>();
-                slotUI.isToggle = true;
-                slotUI.toggleText.text = $"{(i + 1) % 10}";
-                slotUI.Initialize(this, i);
-                slotUIs.Add(slotUI);
+                InventorySlotUI uiSlot = obj.GetComponent<InventorySlotUI>();
+                uiSlot.isToggle = true;
+                uiSlot.toggleText.text = $"{(i + 1) % 10}";
+                uiSlot.Initialize(this, i);
+                uiSlots.Add(uiSlot);
             }
 
             currentSlotCount += lineCount;
@@ -102,27 +116,44 @@ public class InventoryUI : MonoBehaviour
         for (int i = currentSlotCount; i < inventory.inventoryData.maxSlots; i++)
         {
             GameObject obj = Instantiate(slotPrefab, slotParent);
-            InventorySlotUI slotUI = obj.GetComponent<InventorySlotUI>();
-            slotUI.Initialize(this, i);
-            slotUIs.Add(slotUI);
+            InventorySlotUI uiSlot = obj.GetComponent<InventorySlotUI>();
+            uiSlot.Initialize(this, i);
+            uiSlots.Add(uiSlot);
         }
 
         playerInventory.sizeDelta = new Vector2(slotParent.sizeDelta.x, slotParent.sizeDelta.y + slotTopPanel.sizeDelta.y);
+
+        AllDataRefresh();
     }
 
     [ContextMenu("# Inventory Refresh Test")]
-    public void Refresh()
+    public void AllDataRefresh()
     {
-        Log.UI($"UI Count: {slotUIs.Count}");
-        for (int i = 0; i < slotUIs.Count; i++)
+        Log.UI($"UI Count: {uiSlots.Count}");
+
+        for (int i = 0; i < uiSlots.Count; i++)
         {
-            if (i < inventory.inventoryData.slots.Count)
-                slotUIs[i].Set(inventory.inventoryData.slots[i]);
-            else
-                slotUIs[i].Clear();
+            uiSlots[i].UpdateVisual(inventory.inventoryData.slots[i]);
         }
 
         Log.UI("Refresh!");
+    }
+
+    // 이벤트가 발생하면 실행될 함수
+    private void RefreshSlot(int index)
+    {
+        // 1. 인덱스 유효성 검사 (음수 방지 및 범위 체크)
+        if (index < 0 || index >= uiSlots.Count || index >= inventory.inventoryData.slots.Count)
+        {
+            Log.Error("UI", $"Invalid Slot Index: {index}");
+            return;
+        }
+
+        // 2. 해당 인덱스의 데이터와 UI 연결
+        var data = inventory.inventoryData.slots[index];
+        uiSlots[index].UpdateVisual(data);
+
+        // Debug.Log($"{index}번 UI 슬롯 갱신 완료 (ID: {data.itemId}, Qty: {data.amount})");
     }
 
     public void DropToTrash()

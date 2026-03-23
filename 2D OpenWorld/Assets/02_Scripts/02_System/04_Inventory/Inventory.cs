@@ -9,7 +9,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.14 오후 21:15
- *  마지막 수정 일자 : 26.03.23 오후 17:34
+ *  마지막 수정 일자 : 226.03.23 오후 18:22
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 슬롯 단위 인벤토리
@@ -71,12 +71,17 @@ public class Inventory : MonoBehaviour
         // 가변적 Add/Remove 대신, 항상 고정된 Count를 유지합니다.
         while (inventoryData.slots.Count < inventoryData.maxSlots)
         {
-            inventoryData.slots.Add(new InventorySlot()); // 기본 생성자는 ID 0, Amount 0
+            // Log.Game("InventoryData Slots Less than MaxSlots! Adding Missing Slots.");
+
+            // 기본 생성자는 ID 0, Amount 0
+            inventoryData.slots.Add(new InventorySlot());
         }
 
         // 3. 초과된 슬롯이 있다면 제거 (데이터 정합성)
         if (inventoryData.slots.Count > inventoryData.maxSlots)
         {
+            Log.Game("InventoryData Slots More than MaxSlots! Removing Extra Slots.");
+
             inventoryData.slots.RemoveRange(inventoryData.maxSlots, inventoryData.slots.Count - inventoryData.maxSlots);
         }
     }

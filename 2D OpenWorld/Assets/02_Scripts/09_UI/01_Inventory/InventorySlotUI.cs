@@ -10,7 +10,7 @@ using System;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.17 오후 16:05
- *  마지막 수정 일자 : 26.02.17 오후 22:13
+ *  마지막 수정 일자 : 26.03.23 오후 18:22
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 UI 관리
@@ -31,7 +31,7 @@ using System;
  */
 
 [Serializable]
-public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
+public class InventorySlotUI : MonoBehaviour//, IPointerClickHandler
 {
     [Header("# Slot Info")]
     public Image panelImage;
@@ -43,7 +43,7 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
     public bool isToggle = false;
     public Sprite togglePanel;
     public Sprite slotPanel;
-    [SerializeField] private InventorySlot slotData;
+    // [SerializeField] private InventorySlot slotData;
 
     private InventoryUI inventoryUI;
     private int index;
@@ -64,12 +64,10 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    public void Set(InventorySlot slot)
+    public void UpdateVisual(InventorySlot slot)
     {
         if (slot == null)
             return;
-
-        slotData = slot;
 
         // itemId가 0이라는 것은 해당 슬롯에 아이템이 없다는 것과 동일함
         if (slot.itemId == 0)
@@ -79,96 +77,88 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
         }
         else
         {
-            Item item = ItemDatabase.Instance.GetItem(slotData.itemId);
+            Item item = ItemDatabase.Instance.GetItem(slot.itemId);
             icon.sprite = item.Icon;
             icon.enabled = true;
-            amountText.SetText(item.maxStack == 1 ? slot.amount.ToString() : "");
+            amountText.SetText(item.maxStack != 1 ? slot.amount.ToString() : "");
 
-            Log.DB($"아이템 아이디: {slotData.itemId}, 아이템 개수: {slotData.amount}");
+            Log.DB($"아이템 아이디: {slot.itemId}, 아이템 개수: {slot.amount}");
         }
     }
 
-    public void Clear()
-    {
-        slotData.itemId = 0;
-        slotData.amount = 0;
-        icon.enabled = false;
-        amountText.SetText("");
-    }
+    //public void OnPointerClick(PointerEventData eventData)
+    //{
+    //    if (slotData == null)
+    //        return;
 
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        if (slotData == null)
-            return;
+    //    if (IsShift())
+    //    {
+    //        QuickMove();
+    //        return;
+    //    }
 
-        if (IsShift())
-        {
-            QuickMove();
-            return;
-        }
+    //    // 왼쪽 클릭
+    //    if (eventData.button == PointerEventData.InputButton.Left)
+    //    {
+    //        HandleLeftClick();
+    //    }
+    //    // 오른쪽 클릭
+    //    else if (eventData.button == PointerEventData.InputButton.Right)
+    //    {
+    //        HandleRightClick();
+    //    }
 
-        // 왼쪽 클릭
-        if (eventData.button == PointerEventData.InputButton.Left)
-        {
-            HandleLeftClick();
-        }
-        // 오른쪽 클릭
-        else if (eventData.button == PointerEventData.InputButton.Right)
-        {
-            HandleRightClick();
-        }
+    //    inventoryUI.Refresh();
+    //}
 
-        inventoryUI.Refresh();
-    }
+    //void HandleLeftClick()
+    //{
+    //    if (!DragController.Instance.IsDragging())
+    //    {
+    //        // 전체 들기
+    //        DragController.Instance.StartDrag(ItemDatabase.Instance.GetItem(slotData.itemId), slotData.amount);
+    //        slotData.amount = 0;
+    //    }
+    //    else
+    //    {
+    //        // 전체 놓기
+    //        inventoryUI.inventory.AddItem(
+    //            DragController.Instance.draggedItem,
+    //            DragController.Instance.draggedAmount
+    //        );
 
-    void HandleLeftClick()
-    {
-        if (!DragController.Instance.IsDragging())
-        {
-            // 전체 들기
-            DragController.Instance.StartDrag(ItemDatabase.Instance.GetItem(slotData.itemId), slotData.amount);
-            slotData.amount = 0;
-        }
-        else
-        {
-            // 전체 놓기
-            inventoryUI.inventory.AddItem(
-                DragController.Instance.draggedItem,
-                DragController.Instance.draggedAmount
-            );
+    //        DragController.Instance.Clear();
+    //    }
+    //}
 
-            DragController.Instance.Clear();
-        }
-    }
+    //void HandleRightClick()
+    //{
+    //    if (!DragController.Instance.IsDragging())
+    //    {
+    //        // 절반 들기
+    //        int half = slotData.amount / 2;
+    //        DragController.Instance.StartDrag(ItemDatabase.Instance.GetItem(slotData.itemId), half);
+    //        slotData.amount -= half;
+    //    }
+    //    else
+    //    {
+    //        // 1개 놓기
+    //        inventoryUI.inventory.AddItem(
+    //            DragController.Instance.draggedItem,
+    //            1
+    //        );
 
-    void HandleRightClick()
-    {
-        if (!DragController.Instance.IsDragging())
-        {
-            // 절반 들기
-            int half = slotData.amount / 2;
-            DragController.Instance.StartDrag(ItemDatabase.Instance.GetItem(slotData.itemId), half);
-            slotData.amount -= half;
-        }
-        else
-        {
-            // 1개 놓기
-            inventoryUI.inventory.AddItem(
-                DragController.Instance.draggedItem,
-                1
-            );
+    //        DragController.Instance.draggedAmount--;
 
-            DragController.Instance.draggedAmount--;
+    //        if (DragController.Instance.draggedAmount <= 0)
+    //            DragController.Instance.Clear();
+    //    }
+    //}
 
-            if (DragController.Instance.draggedAmount <= 0)
-                DragController.Instance.Clear();
-        }
-    }
-
-    bool IsShift()
-    {
-        return Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
-    }
+    //bool IsShift()
+    //{
+    //    return Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
+    //}
 
     private void QuickMove()
     {

@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -714,10 +714,10 @@ MonoBehaviour:
   idleSpeed: 1
   idleAmount: 0.01
   walkSpeed: 6
-  walkAmount: 0.05
+  walkAmount: 0.02
   runSpeed: 12
-  runAmount: 0.1
-  stretchAmount: 0.05
+  runAmount: 0.04
+  stretchAmount: 0.02
   dustParticle: {fileID: 432900438}
   particleCount: 3
 --- !u!1 &26538027
@@ -1220,7 +1220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1489,15 +1489,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -1589,7 +1589,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1627,15 +1627,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -1727,7 +1727,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1803,7 +1803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2112,7 +2112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2428,7 +2428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2727,7 +2727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -3171,7 +3171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -4390,7 +4390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -4922,7 +4922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -5358,7 +5358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -5723,7 +5723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -6149,7 +6149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -6456,7 +6456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -6788,7 +6788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -7556,15 +7556,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -7656,7 +7656,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -7725,15 +7725,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -7825,7 +7825,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -8059,7 +8059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -8427,7 +8427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -9172,7 +9172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -9855,7 +9855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -10154,7 +10154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -10598,7 +10598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -10905,7 +10905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -11477,7 +11477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -11738,15 +11738,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -11838,7 +11838,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -11876,15 +11876,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -11976,7 +11976,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -12054,7 +12054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -12363,7 +12363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -12773,15 +12773,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -12873,7 +12873,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -13199,7 +13199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -13659,7 +13659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -13966,7 +13966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -14273,7 +14273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -14542,15 +14542,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -14642,7 +14642,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -14998,7 +14998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -15686,7 +15686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -16257,15 +16257,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -16357,7 +16357,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -16897,7 +16897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -17206,7 +17206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -17635,7 +17635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -18270,15 +18270,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -18370,7 +18370,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -18447,7 +18447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -18757,7 +18757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -19114,7 +19114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -19635,15 +19635,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -19735,7 +19735,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -19820,7 +19820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -20194,7 +20194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -20503,7 +20503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -20810,7 +20810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -21513,7 +21513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -22384,7 +22384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -22765,7 +22765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -23072,7 +23072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -28346,7 +28346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -28653,7 +28653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -28960,7 +28960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -29425,7 +29425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -29732,7 +29732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -30042,7 +30042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -30351,7 +30351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -31101,15 +31101,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -31201,7 +31201,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -31277,7 +31277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -31647,7 +31647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -32104,7 +32104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -32486,7 +32486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -33071,7 +33071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -33378,7 +33378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -33905,7 +33905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -34724,15 +34724,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -34824,7 +34824,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -34937,7 +34937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -35337,7 +35337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -35743,15 +35743,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -35843,7 +35843,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -36163,7 +36163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -36470,7 +36470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -36777,7 +36777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -37449,7 +37449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -37805,7 +37805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -39555,7 +39555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -45116,7 +45116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -45740,7 +45740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -46205,7 +46205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -46512,7 +46512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -46819,7 +46819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -47126,7 +47126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -47517,7 +47517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -48563,15 +48563,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -48663,7 +48663,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -49160,7 +49160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -49885,7 +49885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -50591,7 +50591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -51268,7 +51268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -51624,7 +51624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -52179,7 +52179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -52486,7 +52486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -52869,15 +52869,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -52969,7 +52969,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -53203,7 +53203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -53587,7 +53587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -56722,7 +56722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -57124,15 +57124,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -57224,7 +57224,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -57302,7 +57302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -57925,7 +57925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -58233,7 +58233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -58677,7 +58677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -59328,15 +59328,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -59428,7 +59428,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -59887,7 +59887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -60333,7 +60333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -60760,15 +60760,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -60860,7 +60860,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -61315,7 +61315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -61774,7 +61774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -62310,7 +62310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -62617,7 +62617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -62924,7 +62924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -64432,15 +64432,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -64532,7 +64532,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -64608,7 +64608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -65299,7 +65299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -66021,7 +66021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -66399,7 +66399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -66765,7 +66765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -67064,7 +67064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -68186,7 +68186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -68496,7 +68496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -68940,7 +68940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -69247,7 +69247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -69861,6 +69861,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!21 &961723333
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DefaultProceduralBlurredImage
+  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _DstBlend: 10
+    - _SrcBlend: 5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &962672830
 GameObject:
   m_ObjectHideFlags: 0
@@ -70271,7 +70312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -70578,7 +70619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -71083,7 +71124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -71556,7 +71597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -71918,7 +71959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -72619,15 +72660,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -72719,7 +72760,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -72795,7 +72836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -73438,7 +73479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -73745,7 +73786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -74568,15 +74609,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -74668,7 +74709,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -75101,7 +75142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -75530,7 +75571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -75837,7 +75878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -76403,7 +76444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -77128,7 +77169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -77593,7 +77634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -77900,7 +77941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -78405,7 +78446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -78712,7 +78753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -78981,15 +79022,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -79081,7 +79122,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -79216,7 +79257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -80109,47 +80150,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173060846}
   m_CullTransparentMesh: 1
---- !u!21 &1174412414
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: DefaultProceduralBlurredImage
-  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _DstBlend: 10
-    - _SrcBlend: 5
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &1180098976
 GameObject:
   m_ObjectHideFlags: 0
@@ -80998,7 +80998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -81833,7 +81833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -82353,15 +82353,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -82453,7 +82453,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -82628,15 +82628,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -82728,7 +82728,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -82842,7 +82842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -83230,7 +83230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -83499,15 +83499,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -83599,7 +83599,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -83675,7 +83675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -84328,7 +84328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -84597,15 +84597,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -84697,7 +84697,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -85026,7 +85026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -85366,7 +85366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -86099,7 +86099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -86407,7 +86407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -86676,15 +86676,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -86776,7 +86776,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -87051,15 +87051,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -87151,7 +87151,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -87294,7 +87294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -87823,7 +87823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -88253,7 +88253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -88955,15 +88955,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -89055,7 +89055,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -89546,15 +89546,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -89646,7 +89646,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -90563,15 +90563,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -90663,7 +90663,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -90897,7 +90897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -91623,7 +91623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -92088,7 +92088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -92804,7 +92804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -93172,7 +93172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -93689,7 +93689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -94133,7 +94133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -94493,7 +94493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -94800,7 +94800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -95270,7 +95270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -95651,7 +95651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -96116,7 +96116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -97035,7 +97035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -97399,47 +97399,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponController
   weaponHolder: {fileID: 1329835949}
---- !u!21 &1495505724
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: DefaultProceduralBlurredImage
-  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _DstBlend: 10
-    - _SrcBlend: 5
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1497782695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97451,15 +97410,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -97551,7 +97510,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -97833,7 +97792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -99201,7 +99160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -99511,7 +99470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -99780,15 +99739,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -99880,7 +99839,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -100109,7 +100068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -100596,7 +100555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -100904,7 +100863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -101213,7 +101172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -103628,15 +103587,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -103728,7 +103687,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -103804,7 +103763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -104234,7 +104193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -104976,7 +104935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -105410,15 +105369,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -105510,7 +105469,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -105784,7 +105743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -106093,7 +106052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -106866,15 +106825,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -106966,7 +106925,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -107051,7 +107010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -107704,7 +107663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -108011,7 +107970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -108318,7 +108277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -109093,7 +109052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -109674,7 +109633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -110119,7 +110078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -110873,6 +110832,97 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710794573}
   m_CullTransparentMesh: 1
+--- !u!1 &1713712409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1713712410}
+  - component: {fileID: 1713712411}
+  m_Layer: 6
+  m_Name: Shadow
+  m_TagString: DropItem
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1713712410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713712409}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2141813165}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1713712411
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713712409}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: -698825783
+  m_SortingLayer: 3
+  m_SortingOrder: -1
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: f3692a0348cf58747acacc07e89069b9, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &1717762611
 GameObject:
   m_ObjectHideFlags: 0
@@ -110922,7 +110972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -111909,7 +111959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -112253,7 +112303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -112728,7 +112778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -113037,7 +113087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -113502,7 +113552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -114060,7 +114110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -114762,7 +114812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -115638,7 +115688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -115945,7 +115995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -116256,7 +116306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -117401,7 +117451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -118105,7 +118155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -118558,7 +118608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -118857,7 +118907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -119126,15 +119176,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -119226,7 +119276,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -119548,6 +119598,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890932045}
   m_CullTransparentMesh: 1
+--- !u!21 &1896482110
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DefaultProceduralBlurredImage
+  m_Shader: {fileID: 4800000, guid: 7bcbcdd914cb088429f2913c88c7bdff, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _DstBlend: 10
+    - _SrcBlend: 5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &1898845924
 GameObject:
   m_ObjectHideFlags: 0
@@ -119617,15 +119708,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -119717,7 +119808,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -119854,7 +119945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -120163,7 +120254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -120470,7 +120561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -121038,7 +121129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -121473,7 +121564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -121742,15 +121833,15 @@ PrefabInstance:
     - target: {fileID: 890495565756760879, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 964744662236005785, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 2570697653991813659, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 4816144809123808373, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Type
       value: 1
@@ -121842,7 +121933,7 @@ PrefabInstance:
     - target: {fileID: 6905855274922562277, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1174412414}
+      objectReference: {fileID: 1896482110}
     - target: {fileID: 7073985363157343225, guid: d55220c1c2e77f544912b89b60fe2357, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -122577,7 +122668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -123181,7 +123272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -123490,7 +123581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -123869,7 +123960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -124881,7 +124972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -125188,7 +125279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -125495,7 +125586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -125798,6 +125889,7 @@ Transform:
   - {fileID: 737989572}
   - {fileID: 2061858933}
   - {fileID: 1624583362}
+  - {fileID: 2141813165}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2006725729
@@ -125914,7 +126006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -126343,7 +126435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -126650,7 +126742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -127079,7 +127171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -129656,7 +129748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -130278,7 +130370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -130709,7 +130801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -131505,7 +131597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -132340,7 +132432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -132853,7 +132945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -133160,7 +133252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -133467,7 +133559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -133774,7 +133866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -134200,6 +134292,171 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137367106}
   m_CullTransparentMesh: 1
+--- !u!1 &2141813164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2141813165}
+  - component: {fileID: 2141813169}
+  - component: {fileID: 2141813168}
+  - component: {fileID: 2141813167}
+  - component: {fileID: 2141813166}
+  m_Layer: 6
+  m_Name: Wood Log (1)
+  m_TagString: DropItem
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2141813165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141813164}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.99, y: 2.5, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1713712410}
+  m_Father: {fileID: 2004727042}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &2141813166
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141813164}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 2
+--- !u!114 &2141813167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141813164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934adba6afe0b284194291c77545d5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FloatingResource
+  startPos: {x: 0, y: 0, z: 0}
+  speed: 0.5
+  amount: 0.1
+  floatingEnable: 0
+--- !u!114 &2141813168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141813164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e76964140e202479f292f4e25e8b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDrop
+  item: {fileID: 11400000, guid: 76d34c757c56b2b488f0140bb4f44301, type: 2}
+  amount: 1
+  floating: {fileID: 2141813167}
+  pullSpeed: 0.5
+  pickupDistance: 0.5
+  acceleration: 3
+--- !u!212 &2141813169
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141813164}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: -698825783
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: f3692a0348cf58747acacc07e89069b9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &2144830107
 GameObject:
   m_ObjectHideFlags: 0
@@ -134479,7 +134736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -134749,7 +135006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a59bc799b067784ca9e98acde554c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
-  m_Material: {fileID: 1495505724}
+  m_Material: {fileID: 961723333}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}

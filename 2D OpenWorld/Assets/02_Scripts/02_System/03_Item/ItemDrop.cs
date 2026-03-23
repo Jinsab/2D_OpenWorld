@@ -6,7 +6,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.14 오후 18:20
- *  마지막 수정 일자 : 26.03.22 오후 23:43
+ *  마지막 수정 일자 : 26.03.23 오후 18:22
  *  
  *  [스크립트 목적 및 내용]
  *  1. 아이템 시스템 - 아이템 드롭
@@ -136,7 +136,7 @@ public class ItemDrop : MonoBehaviour
             // 인벤토리에 추가할 수 있으므로 수집함
             amount -= inv.AddItem(item, amount);
 
-            Debug.Log($"아이템 수집 완료: {item.itemName} {amount}개 남음");
+            Log.Game($"아이템 수집 완료: {item.itemName} {amount}개 남음");
             // 남은 아이템이 있는가?
             if (amount > 0)
             {
