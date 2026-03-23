@@ -50,6 +50,9 @@ TagManager:
   - name: Shadow
     uniqueID: 3368283945
     locked: 0
+  - name: Object
+    uniqueID: 1470445087
+    locked: 0
   - name: World
     uniqueID: 3596141513
     locked: 0

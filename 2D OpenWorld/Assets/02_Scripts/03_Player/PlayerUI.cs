@@ -46,24 +46,24 @@ public class PlayerUI : MonoBehaviour
         // [Tab] 인벤토리 이벤트
         playerTabAction.performed += ctx =>
         {
-            Log.UI("Player Tab Key: 인벤토리 키 입력");
+            //Log.UI("Player Tab Key: 인벤토리 키 입력");
             UIManager.Instance.ChangeState(UIManager.UIState.CharacterInfo);
         };
         uiTabAction.performed += ctx =>
         {
-            Log.UI("UI Tab Key: 인벤토리 키 입력");
+            //Log.UI("UI Tab Key: 인벤토리 키 입력");
             UIManager.Instance.ChangeState(UIManager.UIState.CharacterInfo);
         };
 
         // [ESC] 설정 이벤트
         playerEscAction.performed += ctx =>
         {
-            Log.UI("Player Esc Key: 설정 키 입력");
+            //Log.UI("Player Esc Key: 설정 키 입력");
             UIManager.Instance.HandleESC();
         };
         uiEscAction.performed += ctx =>
         {
-            Log.UI("UI Esc Key: 설정 키 입력");
+            //Log.UI("UI Esc Key: 설정 키 입력");
             UIManager.Instance.HandleESC();
         };
 

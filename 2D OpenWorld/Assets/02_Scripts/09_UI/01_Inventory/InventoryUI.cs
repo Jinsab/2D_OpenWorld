@@ -10,7 +10,7 @@ using System;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.15 오후 21:06
- *  마지막 수정 일자 : 26.03.23 오후 18:22
+ *  마지막 수정 일자 : 26.03.23 오후 21:08
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 UI 관리
@@ -25,7 +25,11 @@ using System;
  *         ├─ DragIconUI (아이템 드래그 시 아이콘 표시)
  *         ├─ TooltipUI (아이템 설명 표시)
  *         └─ SlotUIInteraction (마우스 호버 시 툴팁 표시 및 하이라이트 효과)
- *      
+ *  
+ *  3. 추후 고려 사항
+ *    3-1. 슬롯이 비어있을 때 단순히 아이콘을 끄는 게 아니라, 약간 투명한 배경 칸이나 빈 슬롯 전용 가이드 이미지를 보여주기도 합니다.
+ *    3-2. 슬롯 UI에 아이템의 내구도 바(Bar)나 쿨타임 표시 기능을 추가하고 싶음
+ *    
  *  [스크립트 작성 도움 출처]
  *  1. 
  */
@@ -106,7 +110,7 @@ public class InventoryUI : MonoBehaviour
                 InventorySlotUI uiSlot = obj.GetComponent<InventorySlotUI>();
                 uiSlot.isToggle = true;
                 uiSlot.toggleText.text = $"{(i + 1) % 10}";
-                uiSlot.Initialize(this, i);
+                uiSlot.Initialize(this.inventory, i);
                 uiSlots.Add(uiSlot);
             }
 
@@ -117,7 +121,7 @@ public class InventoryUI : MonoBehaviour
         {
             GameObject obj = Instantiate(slotPrefab, slotParent);
             InventorySlotUI uiSlot = obj.GetComponent<InventorySlotUI>();
-            uiSlot.Initialize(this, i);
+            uiSlot.Initialize(this.inventory, i);
             uiSlots.Add(uiSlot);
         }
 
@@ -153,7 +157,7 @@ public class InventoryUI : MonoBehaviour
         var data = inventory.inventoryData.slots[index];
         uiSlots[index].UpdateVisual(data);
 
-        // Debug.Log($"{index}번 UI 슬롯 갱신 완료 (ID: {data.itemId}, Qty: {data.amount})");
+        Log.UI($"{index}번 UI 슬롯 갱신 완료 (ID: {data.itemId}, Qty: {data.amount})");
     }
 
     public void DropToTrash()

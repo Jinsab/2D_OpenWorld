@@ -228,5 +228,7 @@ public class Inventory : MonoBehaviour
             OnSlotChanged?.Invoke(i);
         }
     }
+
+    public void NotifyChanged(int idx) => OnSlotChanged?.Invoke(idx);
     #endregion
 }

@@ -68,7 +68,7 @@ public class ItemDrop : MonoBehaviour
         }
         else
         {
-            Debug.Log("아이템 정보가 비어있습니다!");
+            Log.Game("아이템 정보가 비어있습니다!");
         }
     }
 
@@ -112,7 +112,6 @@ public class ItemDrop : MonoBehaviour
             if (!(inv.GetAvailableSpace(item) >= amount))
                 return;
 
-            Log.Game("아이템 수집");
             target = other.transform;
             floating.floatingEnable = true;
 
