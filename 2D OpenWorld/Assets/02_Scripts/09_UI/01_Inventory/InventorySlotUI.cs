@@ -69,13 +69,20 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
         if (slot == null)
             return;
 
-        // amount가 0이라는 것은 해당 슬롯에 아이템이 없다는 것과 동일함
-        if (slot.amount != 0)
+        slotData = slot;
+
+        // itemId가 0이라는 것은 해당 슬롯에 아이템이 없다는 것과 동일함
+        if (slot.itemId == 0)
         {
-            slotData = slot;
-            icon.sprite = ItemDatabase.Instance.GetItem(slot.itemId).Icon;
+            icon.enabled = false;
+            amountText.SetText("");
+        }
+        else
+        {
+            Item item = ItemDatabase.Instance.GetItem(slotData.itemId);
+            icon.sprite = item.Icon;
             icon.enabled = true;
-            amountText.text = slot.amount > 1 ? slot.amount.ToString() : "";
+            amountText.SetText(item.maxStack == 1 ? slot.amount.ToString() : "");
 
             Log.DB($"아이템 아이디: {slotData.itemId}, 아이템 개수: {slotData.amount}");
         }
@@ -83,9 +90,10 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
 
     public void Clear()
     {
-        slotData = null;
+        slotData.itemId = 0;
+        slotData.amount = 0;
         icon.enabled = false;
-        amountText.text = "";
+        amountText.SetText("");
     }
 
     public void OnPointerClick(PointerEventData eventData)

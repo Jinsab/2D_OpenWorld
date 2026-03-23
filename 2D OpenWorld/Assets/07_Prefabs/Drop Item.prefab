@@ -201,6 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemDrop
   item: {fileID: 0}
   amount: 1
+  floating: {fileID: -6916530042021823895}
   pullSpeed: 0.5
   pickupDistance: 0.5
   acceleration: 3
@@ -219,6 +220,7 @@ MonoBehaviour:
   startPos: {x: 0, y: 0, z: 0}
   speed: 0.5
   amount: 0.1
+  floatingEnable: 1
 --- !u!58 &7954531953052307942
 CircleCollider2D:
   m_ObjectHideFlags: 0

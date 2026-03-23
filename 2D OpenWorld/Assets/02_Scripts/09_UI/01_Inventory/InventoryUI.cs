@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 /*  
  *  [프로젝트 제목]
@@ -60,7 +61,7 @@ public class InventoryUI : MonoBehaviour
         Refresh();
     }
 
-    void CreateSlots()
+    private void CreateSlots()
     {
         // 한 줄이 n인 인벤토리가 있다면, 최대 슬롯 / n칸 만큼의 줄 수가 필요함
         int line = Mathf.CeilToInt((float)inventory.inventoryData.maxSlots / lineCount);

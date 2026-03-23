@@ -6,7 +6,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.14 오후 18:20
- *  마지막 수정 일자 : 26.02.16 오전 02:04
+ *  마지막 수정 일자 : 26.03.22 오후 23:43
  *  
  *  [스크립트 목적 및 내용]
  *  1. 아이템 시스템 - 아이템 드롭
@@ -38,17 +38,18 @@ public class ItemDrop : MonoBehaviour
     [Header("# Resource Value")]
     public Item item;      // 아이템
     public int amount = 1; // 아이템 수량
+    public FloatingResource floating;
     [Tooltip("아이템이 끌려오는 속도")]
     public float pullSpeed = 0.5f;
     [Tooltip("아이템이 수집되는 거리")]
     public float pickupDistance = 0.5f;
     public float acceleration = 3f; // 끌려오는 속도의 가속도
-
+    
     private SpriteRenderer itemSprite;
     private SpriteRenderer shadowSprite;
     private Collider2D coli;
     private Transform target; // 플레이어
-    private bool isPulling = false; // 아이템이 끌려오는 중인지 여부
+    // private bool isPulling = false; // 아이템이 끌려오는 중인지 여부
 
     private void Awake()
     {
@@ -73,7 +74,7 @@ public class ItemDrop : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!isPulling || target == null || item == null)
+        if (!floating.floatingEnable || target == null || item == null)
             return;
 
         transform.position = Vector3.MoveTowards(
@@ -102,7 +103,7 @@ public class ItemDrop : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Player") || isPulling)
+        if (!other.CompareTag("Player") || floating.floatingEnable)
             return;
 
         if (other.TryGetComponent<Inventory>(out Inventory inv))
@@ -111,8 +112,9 @@ public class ItemDrop : MonoBehaviour
             if (!inv.CanAdd(item, amount))
                 return;
 
+            Log.Game("아이템 수집");
             target = other.transform;
-            isPulling = true;
+            floating.floatingEnable = true;
 
             coli.enabled = false;
         }
@@ -139,7 +141,7 @@ public class ItemDrop : MonoBehaviour
             if (amount > 0)
             {
                 // 아이템의 Amount를 깎고 나머지 수치를 정상화
-                isPulling = false;
+                floating.floatingEnable = false;
                 coli.enabled = true;
             }
             else

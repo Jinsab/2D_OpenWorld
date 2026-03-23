@@ -252,7 +252,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 56}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 126
+  controlID: 70
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -273,15 +273,15 @@ MonoBehaviour:
     y: 0
     width: 852
     height: 541.3333
-  m_MinSize: {x: 231, y: 276}
-  m_MaxSize: {x: 10001, y: 10026}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 101, y: 126}
+  m_MaxSize: {x: 4001, y: 4026}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 20}
   - {fileID: 21}
   - {fileID: 22}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1344,17 +1344,19 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
+      - m_Data: -68804
+      - m_Data: -68744
+      - m_Data: -68692
+      - m_Data: -62694
+      - m_Data: -24040
+      - m_Data: -19998
+      - m_Data: -7060
+      - m_Data: -6532
       - m_Data: -1324
-      - m_Data: 96410
-      - m_Data: 96476
-      - m_Data: 96742
       - m_Data: 96992
-      - m_Data: 98220
-      - m_Data: 98508
-      - m_Data: 98742
-      - m_Data: 99172
-      - m_Data: 99624
-      - m_Data: 100246
+      - m_Data: 99622
+      - m_Data: 100244
+      - m_Data: 100354
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1624,8 +1626,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 24
+    x: 1.3333334
+    y: 877.3334
     width: 851
     height: 515.3333
   m_SerializedDataModeController:
@@ -1652,7 +1654,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/04_Sprite/01_GUI
+    - Assets/07_Prefabs
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1662,30 +1664,30 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/04_Sprite/01_GUI
+  - Assets/07_Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Unity\Unity Project\Mini_Project_Heaven\2D OpenWorld
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 364.6667}
+    scrollPos: {x: 0, y: 64.66669}
     m_SelectedIDs:
-    - m_Data: 101868
+    - m_Data: 101918
     m_LastClickedID:
-      m_Data: 101868
+      m_Data: 101918
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 101712
-    - m_Data: 101714
-    - m_Data: 101716
-    - m_Data: 101718
-    - m_Data: 101720
-    - m_Data: 101722
-    - m_Data: 101724
-    - m_Data: 101726
-    - m_Data: 101728
-    - m_Data: 101730
+    - m_Data: 101912
+    - m_Data: 101914
+    - m_Data: 101916
+    - m_Data: 101918
+    - m_Data: 101920
+    - m_Data: 101922
+    - m_Data: 101924
+    - m_Data: 101926
+    - m_Data: 101928
+    - m_Data: 101930
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1718,16 +1720,16 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 101712
-    - m_Data: 101714
-    - m_Data: 101716
-    - m_Data: 101718
-    - m_Data: 101720
-    - m_Data: 101722
-    - m_Data: 101724
-    - m_Data: 101726
-    - m_Data: 101728
-    - m_Data: 101730
+    - m_Data: 101912
+    - m_Data: 101914
+    - m_Data: 101916
+    - m_Data: 101918
+    - m_Data: 101920
+    - m_Data: 101922
+    - m_Data: 101924
+    - m_Data: 101926
+    - m_Data: 101928
+    - m_Data: 101930
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1754,11 +1756,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs:
-    - m_Data: 96368
-    - m_Data: 100158
-    m_LastClickedInstanceID: 96368
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: []
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 100726
     - m_Data: 100742
@@ -1782,6 +1782,8 @@ MonoBehaviour:
     - m_Data: 101554
     - m_Data: 101572
     - m_Data: 101594
+    - m_Data: 101310
+    - m_Data: 101334
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1832,8 +1834,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Console\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1.3333334
-    y: 877.3334
+    x: 0
+    y: 24
     width: 851
     height: 515.3333
   m_SerializedDataModeController:

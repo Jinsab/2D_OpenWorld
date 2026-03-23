@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 /*  
@@ -6,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.16 오후 15:00
- *  마지막 수정 일자 : 26.03.16 오후 15:03
+ *  마지막 수정 일자 : 26.03.22 오후 23:41
  *  
  *  [스크립트 목적 및 내용]
  *  1. 아이템 부유 효과
@@ -20,9 +21,13 @@ using UnityEngine;
 public class FloatingResource : MonoBehaviour
 {
     // 부유 효과를 부여할 오브젝트 정보
+    [Header(" # Floating Value")]
     public Vector3 startPos;
     public float speed = 1.0f;  // 움직이는 속도
     public float amount = 0.5f; // 위아래 움직임 폭 (최대 높이)
+
+    [Header(" # Floating Enable")]
+    public bool floatingEnable = false;
 
     private void Awake()
     {
@@ -31,6 +36,9 @@ public class FloatingResource : MonoBehaviour
 
     private void Update()
     {
+        if (floatingEnable)
+            return;
+
         // 사인 함수를 이용해 -amount ~ +amount 사이의 값을 반복하여 Y축에 더함
         float newY = startPos.y + Mathf.Sin(Time.time * speed) * amount;
         transform.position = new Vector3(startPos.x, newY, startPos.z);

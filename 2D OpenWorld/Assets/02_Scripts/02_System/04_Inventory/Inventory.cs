@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,6 +34,7 @@ public class Inventory : MonoBehaviour
 {
     [Header("# Inventory Connection Data")]
     public InventoryData inventoryData;
+    public event Action<int> OnSlotChanged; // 데이터 변경 시 실행 이벤트
 
     private void Start()
     {
@@ -89,17 +91,19 @@ public class Inventory : MonoBehaviour
                 slots = new List<InventorySlot>(inventoryData.maxSlots)
             };
         }
-
     }
 
     #region Add
     public int AddItem(Item item, int amount)
     {
         int remaining = amount;
+        int index = 0;
 
         // 1️. 기존 스택에 먼저 채우기
         foreach (var slot in inventoryData.slots)
         {
+            index++;
+
             if (slot.itemId != item.itemId)
                 continue;
 
@@ -111,6 +115,8 @@ public class Inventory : MonoBehaviour
 
             slot.amount += add;
             remaining -= add;
+
+            OnSlotChanged?.Invoke(index);
 
             if (remaining <= 0)
                 return amount;
@@ -176,9 +182,13 @@ public class Inventory : MonoBehaviour
         }
 
         // 빈 슬롯 공간
+        Log.Game("최대 공간: " + inventoryData.maxSlots);
+        Log.Game("사용 중인 공간: " + inventoryData.slots.Count);
+
         int emptySlots = inventoryData.maxSlots - inventoryData.slots.Count;
         space += emptySlots * item.maxStack;
 
+        Log.Game("남은 공간: " + space);
         return space;
     }
 
