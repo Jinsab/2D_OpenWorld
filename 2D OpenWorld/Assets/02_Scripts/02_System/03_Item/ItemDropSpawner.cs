@@ -30,18 +30,18 @@ public class ItemDropSpawner : MonoBehaviour
     }
 
     // Item 기반으로 월드에 아이템 오브젝트 소환 (프리팹 풀링 추천)
-    public void Spawn(Item item, int amount, Vector3 position)
+    public void Spawn(Item item, int amount, Vector3 position, bool isPickUp)
     {
         GameObject obj = Instantiate(itemDropPrefab, position, Quaternion.identity);
         ItemDrop drop = obj.GetComponent<ItemDrop>();
-        drop.Initialize(item, amount);
+        drop.Initialize(item, amount, isPickUp);
     }
 
     // ID 기반으로 월드에 아이템 오브젝트 소환 (프리팹 풀링 추천)
-    public void Spawn(int id, int amount, Vector3 position)
+    public void Spawn(int id, int amount, Vector3 position, bool isPickUp)
     {
         GameObject obj = Instantiate(itemDropPrefab, position, Quaternion.identity);
         ItemDrop drop = obj.GetComponent<ItemDrop>();
-        drop.Initialize(ItemDatabase.Instance.GetItem(id), amount);
+        drop.Initialize(ItemDatabase.Instance.GetItem(id), amount, isPickUp);
     }
 }

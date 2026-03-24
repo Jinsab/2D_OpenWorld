@@ -50,7 +50,8 @@ public class DropTable : ScriptableObject
                 ItemDropSpawner.Instance.Spawn(
                     drop.item,
                     amount,
-                    position
+                    position,
+                    true
                 );
             }
         }

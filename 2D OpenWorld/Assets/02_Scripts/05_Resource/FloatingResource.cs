@@ -1,3 +1,4 @@
+using NatureBackgroundsPixelArt;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.16 오후 15:00
- *  마지막 수정 일자 : 26.03.22 오후 23:41
+ *  마지막 수정 일자 : 26.03.24 오후 18:28
  *  
  *  [스크립트 목적 및 내용]
  *  1. 아이템 부유 효과
@@ -27,16 +28,16 @@ public class FloatingResource : MonoBehaviour
     public float amount = 0.5f; // 위아래 움직임 폭 (최대 높이)
 
     [Header(" # Floating Enable")]
-    public bool floatingEnable = false;
+    public bool floatingEnable = true;
 
-    private void Awake()
+    private void Start()
     {
         startPos = transform.position;
     }
 
     private void Update()
     {
-        if (floatingEnable)
+        if (!floatingEnable)
             return;
 
         // 사인 함수를 이용해 -amount ~ +amount 사이의 값을 반복하여 Y축에 더함

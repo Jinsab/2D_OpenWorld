@@ -132,10 +132,11 @@ public class InventoryManager : MonoBehaviour
             return;
 
         // 플레이어 앞 위치 계산
-        // Vector3 dropPos = playerTransform.position + playerTransform.forward * 1.5f;
+        Vector3 dropPos = GameManager.Instance.Player.transform.position + GameManager.Instance.Player.transform.forward * 1.5f;
+        dropPos.z = 0f;
 
         // 월드에 아이템 오브젝트 소환 (프리팹 풀링 추천)
-        // ItemDropSpawner.Instance.Spawn(held.itemId, held.amount, dropPos);
+        ItemDropSpawner.Instance.Spawn(held.itemId, held.amount, dropPos, false);
 
         // 마우스 슬롯 비우기
         held.Clear();

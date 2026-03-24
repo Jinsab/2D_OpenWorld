@@ -6,7 +6,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.14 오후 18:20
- *  마지막 수정 일자 : 26.03.23 오후 18:22
+ *  마지막 수정 일자 : 26.03.24 오후 18:20
  *  
  *  [스크립트 목적 및 내용]
  *  1. 아이템 시스템 - 아이템 드롭
@@ -44,12 +44,13 @@ public class ItemDrop : MonoBehaviour
     [Tooltip("아이템이 수집되는 거리")]
     public float pickupDistance = 0.5f;
     public float acceleration = 3f; // 끌려오는 속도의 가속도
-    
+    public bool canPickUp = false; // 아이템이 끌려오는 중인지 여부
+
     private SpriteRenderer itemSprite;
     private SpriteRenderer shadowSprite;
     private Collider2D coli;
     private Transform target; // 플레이어
-    // private bool isPulling = false; // 아이템이 끌려오는 중인지 여부
+    private float timer = 0f;
 
     private void Awake()
     {
@@ -72,9 +73,26 @@ public class ItemDrop : MonoBehaviour
         }
     }
 
+    // 버린 아이템을 즉시 다시 줍는 것을 방지하기 위함
+    // 수집 가능 상태 변수를 조정하는 역할을 함
+    private void Update()
+    {
+        if (canPickUp || item == null)
+            return;
+
+        timer += Time.deltaTime;
+
+        // 1.5초가 지나면 습득
+        if (timer > 1.5f)
+        {
+            canPickUp = true;
+        }
+    }
+
+    // OnTrigger를 통해서 아이템 수집이 가능하다고 이야기가 전환됨
     private void FixedUpdate()
     {
-        if (!floating.floatingEnable || target == null || item == null)
+        if (floating.floatingEnable || target == null || item == null)
             return;
 
         transform.position = Vector3.MoveTowards(
@@ -101,9 +119,11 @@ public class ItemDrop : MonoBehaviour
         }
     }
 
+    // 일정 거리에 가까워지면 아이템 수집 범위에 들어왔다고 알림
+    // 다만, 이 때 아이템 수집이 불가능한지를 확인해주는 로직만 사용
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Player") || floating.floatingEnable)
+        if (!other.CompareTag("Player") || !canPickUp)
             return;
 
         if (other.TryGetComponent<Inventory>(out Inventory inv))
@@ -113,16 +133,20 @@ public class ItemDrop : MonoBehaviour
                 return;
 
             target = other.transform;
-            floating.floatingEnable = true;
-
+            floating.floatingEnable = false;
             coli.enabled = false;
         }
     }
 
-    public void Initialize(Item itemData, int amt)
+    // 픽업 아이템의 경우 즉시 수집이 되어야 하고,
+    // 플레이어가 버린 아이템의 경우에는 업데이트 문의 canPickUp 로직을 확인해야 함
+    // isPickUp true = 즉시 수집 가능 (필드 드롭, 몬스터 드롭 아이템 등)
+    // isPickUp false = 즉시 수집 가능 (플레이어 버린 아이템, 인벤토리 초과 아이템 등)
+    public void Initialize(Item itemData, int amt, bool isPickUp)
     {
         item = itemData;
         amount = amt;
+        canPickUp = isPickUp;
 
         gameObject.SetActive(true);
     }
@@ -140,7 +164,9 @@ public class ItemDrop : MonoBehaviour
             if (amount > 0)
             {
                 // 아이템의 Amount를 깎고 나머지 수치를 정상화
-                floating.floatingEnable = false;
+                floating.floatingEnable = true;
+                canPickUp = false;
+                timer = 0f;
                 coli.enabled = true;
             }
             else
