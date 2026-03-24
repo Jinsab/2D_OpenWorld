@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 /*  
  *  [프로젝트 제목]
@@ -40,7 +41,8 @@ public class ItemDrop : MonoBehaviour
     public Item item;      // 아이템
     public int amount = 1; // 아이템 수량
     public FloatingResource floating;
-    public TextMeshProUGUI amountText;
+    public TextMeshPro amountText;
+    public SortingGroup amountTextSortingGroup;
     [Tooltip("아이템이 끌려오는 속도")]
     public float pullSpeed = 0.5f;
     [Tooltip("아이템이 수집되는 거리")]
@@ -69,11 +71,14 @@ public class ItemDrop : MonoBehaviour
             itemSprite.sprite = item.Icon;
             shadowSprite.sprite = item.Icon;
 
-            if (amountText != null)
-            {
-                amountText.text = amount > 1 ? amount.ToString() : "";
-                amountText.enabled = true;
-            }
+            itemSprite.sortingOrder = SortingOrderUtility.UpdateSortingY(transform);
+            shadowSprite.sortingOrder = itemSprite.sortingOrder - 1;
+            amountTextSortingGroup.sortingOrder = itemSprite.sortingOrder + 1;
+
+            transform.position = new Vector3(transform.position.x, transform.position.y, SortingOrderUtility.UpdateSortingZ(transform));
+
+            amountText.text = amount > 1 ? amount.ToString() : "";
+            amountText.enabled = true;
         }
         else
         {

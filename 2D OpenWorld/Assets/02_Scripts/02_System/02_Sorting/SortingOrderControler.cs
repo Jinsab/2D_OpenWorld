@@ -20,7 +20,6 @@ using UnityEngine;
 public class SortingOrderControler : MonoBehaviour
 {
     private SpriteRenderer sr;
-    [SerializeField] private SpriteRenderer sd;
         
     private void Awake()
     {
@@ -31,10 +30,5 @@ public class SortingOrderControler : MonoBehaviour
     {
         sr.sortingOrder = SortingOrderUtility.UpdateSortingY(transform);
         transform.position = new Vector3(transform.position.x, transform.position.y, SortingOrderUtility.UpdateSortingZ(transform));
-    
-        if (sd != null)
-        {
-            sd.sortingOrder = sr.sortingOrder - 1;
-        }
     }
 }
