@@ -82,8 +82,8 @@ public class ItemDrop : MonoBehaviour
 
         timer += Time.deltaTime;
 
-        // 1.5초가 지나면 습득
-        if (timer > 1.5f)
+        // 0.2초가 지나면 습득
+        if (timer > 0.1f)
         {
             canPickUp = true;
         }

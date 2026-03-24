@@ -1,5 +1,5 @@
-using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 /*  
  *  [프로젝트 제목]
@@ -7,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.23 오후 20:41
- *  마지막 수정 일자 : 26.03.24 오후 19:40
+ *  마지막 수정 일자 : 26.03.24 오후 23:12
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 매니저
@@ -131,14 +131,24 @@ public class InventoryManager : MonoBehaviour
         if (held.itemId == 0)
             return;
 
-        // 플레이어 앞 위치 계산
-        Vector3 dropPos = GameManager.Instance.Player.transform.position + GameManager.Instance.Player.transform.forward * 1.5f;
+        // 1. 현재 마우스 위치 (클릭한 위치 가져오기)
+        Vector3 mousePos = Mouse.current.position.ReadValue();
+
+        // 2. 정규화 (0 ~ 1 범위로 반올림하여 반환)
+        Vector2 normalizedPos =
+            new Vector2((mousePos.x / Screen.width) - 0.5f, (mousePos.y / Screen.height) - 0.5f);
+
+        // 3. 플레이어의 위치에서 마우스 위치에 아이템 던져주기
+        Vector3 dropPos = GameManager.Instance.Player.transform.position;
+
+        dropPos.x += normalizedPos.x;
+        dropPos.y += normalizedPos.y;
         dropPos.z = 0f;
 
-        // 월드에 아이템 오브젝트 소환 (프리팹 풀링 추천)
+        // 4. 월드에 아이템 오브젝트 소환 (프리팹 풀링 추천)
         ItemDropSpawner.Instance.Spawn(held.itemId, held.amount, dropPos, false);
 
-        // 마우스 슬롯 비우기
+        // 5. 마우스 슬롯 비우기
         held.Clear();
     }
 }
