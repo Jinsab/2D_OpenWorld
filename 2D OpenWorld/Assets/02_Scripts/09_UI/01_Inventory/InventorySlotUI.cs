@@ -106,7 +106,7 @@ public class InventorySlotUI : MonoBehaviour, IPointerDownHandler
         Sequence mySequence = DOTween.Sequence();
 
         mySequence.Append(icon.transform.DOScale(targetScale, duration)) // 1.5배로
-                   .Append(icon.transform.DOScale(1f, duration));         // 1f(원래)로
+                   .Append(icon.transform.DOScale(1f, duration));        // 1f(원래)로
 
         scaleFlag = true;
     }
