@@ -6,7 +6,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.26 오후 15:03
- *  마지막 수정 일자 : 26.03.26 오후 16:59
+ *  마지막 수정 일자 : 26.03.26 오후 18:24
  *  
  *  [스크립트 목적 및 내용]
  *  1. 쓰레기통 기능
@@ -51,6 +51,7 @@ public class TrashManager : MonoBehaviour
 
         // 2. 해당 인덱스의 데이터와 UI 연결
         var data = trashCan.inventoryData.slots[index];
+        trashSlotUI.scaleFlag = false;
         trashSlotUI.UpdateVisual(data);
 
         Log.UI($"{index}번 UI 슬롯 갱신 완료 (ID: {data.itemId}, Qty: {data.amount})");

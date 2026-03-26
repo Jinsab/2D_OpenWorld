@@ -144,6 +144,7 @@ public class InventoryUI : MonoBehaviour
 
         // 2. 해당 인덱스의 데이터와 UI 연결
         var data = inventory.inventoryData.slots[index];
+        uiSlots[index].scaleFlag = false;
         uiSlots[index].UpdateVisual(data);
 
         Log.UI($"{index}번 UI 슬롯 갱신 완료 (ID: {data.itemId}, Qty: {data.amount})");

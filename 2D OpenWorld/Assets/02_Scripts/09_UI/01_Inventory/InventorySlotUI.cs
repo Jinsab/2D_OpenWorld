@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using TMPro;
-using System;
 using UnityEngine.InputSystem;
+using TMPro;
+using DG.Tweening;
 
 /*  
  *  [프로젝트 제목]
@@ -11,7 +12,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.17 오후 16:05
- *  마지막 수정 일자 : 26.03.26 오후 16:52
+ *  마지막 수정 일자 : 26.03.26 오후 18:17
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 UI 관리
@@ -45,9 +46,10 @@ public class InventorySlotUI : MonoBehaviour, IPointerDownHandler
     public Sprite togglePanel;
     public Sprite slotPanel;
     [SerializeField] private Inventory inv;
+    public bool scaleFlag;
 
     private int slotIndex;
-
+    
     public void Initialize(Inventory inventory, int idx)
     {
         inv = inventory;
@@ -79,6 +81,7 @@ public class InventorySlotUI : MonoBehaviour, IPointerDownHandler
             Item item = ItemDatabase.Instance.GetItem(slot.itemId);
             icon.sprite = item.Icon;
             icon.enabled = true;
+            ItemDropEffect();
             amountText.SetText(item.maxStack > 1 ? slot.amount.ToString() : "");
 
             Log.DB($"아이템 아이디: {slot.itemId}, 아이템 개수: {slot.amount}");
@@ -92,9 +95,20 @@ public class InventorySlotUI : MonoBehaviour, IPointerDownHandler
     }
 
     // 아이템 드롭 시 크기를 잠깐 키웠다 줄임
-    private void ItemDropEffect(Image image)
+    public void ItemDropEffect()
     {
+        if (scaleFlag)
+            return;
 
+        float targetScale = 1.5f; // 커질 크기
+        float duration = 0.12f;    // 애니메이션 시간
+
+        Sequence mySequence = DOTween.Sequence();
+
+        mySequence.Append(icon.transform.DOScale(targetScale, duration)) // 1.5배로
+                   .Append(icon.transform.DOScale(1f, duration));         // 1f(원래)로
+
+        scaleFlag = true;
     }
 
     public void OnPointerDown(PointerEventData eventData)
