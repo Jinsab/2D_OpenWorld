@@ -1,6 +1,7 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
+using TMPro;
+using DG.Tweening;
 
 /*  
  *  [프로젝트 제목]
@@ -8,7 +9,7 @@ using UnityEngine.Rendering;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.14 오후 18:20
- *  마지막 수정 일자 : 26.03.24 오후 18:20
+ *  마지막 수정 일자 : 26.03.26 오후 18:36
  *  
  *  [스크립트 목적 및 내용]
  *  1. 아이템 시스템 - 아이템 드롭
@@ -32,7 +33,7 @@ using UnityEngine.Rendering;
  *      └─ DropData
  *      
  *  [스크립트 작성 도움 출처]
- *  1. 
+ *  1. https://paparoni-story.tistory.com/130
  */
 
 public class ItemDrop : MonoBehaviour
@@ -63,8 +64,8 @@ public class ItemDrop : MonoBehaviour
 
     private void OnEnable()
     {
-        itemSprite = GetComponent<SpriteRenderer>();
-        shadowSprite = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        itemSprite = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        shadowSprite = transform.GetChild(1).GetComponent<SpriteRenderer>();
 
         if (item != null)
         {
@@ -96,7 +97,7 @@ public class ItemDrop : MonoBehaviour
         timer += Time.deltaTime;
 
         // 0.2초가 지나면 습득
-        if (timer > 0.1f)
+        if (timer > 0.2f)
         {
             canPickUp = true;
         }

@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 160786193568233968}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0.0001}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -286,7 +286,7 @@ SortingGroup:
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
---- !u!1 &9092897504113586402
+--- !u!1 &818898266083224865
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -294,44 +294,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8798762900144935006}
-  - component: {fileID: 1980310751281526607}
-  - component: {fileID: 8817699002000533811}
-  - component: {fileID: -6916530042021823895}
-  - component: {fileID: 7954531953052307942}
-  - component: {fileID: 1507574028032101960}
+  - component: {fileID: 3030930569039439831}
+  - component: {fileID: 2573402997689883350}
+  - component: {fileID: 9203409809608307673}
   m_Layer: 6
-  m_Name: Drop Item
+  m_Name: Visual
   m_TagString: DropItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &8798762900144935006
+  m_IsActive: 1
+--- !u!4 &3030930569039439831
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9092897504113586402}
+  m_GameObject: {fileID: 818898266083224865}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4260293270665397261}
-  - {fileID: 1137124801551155798}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 8798762900144935006}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1980310751281526607
+--- !u!212 &2573402997689883350
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9092897504113586402}
+  m_GameObject: {fileID: 818898266083224865}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -383,6 +378,59 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
+--- !u!114 &9203409809608307673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818898266083224865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934adba6afe0b284194291c77545d5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FloatingResource
+  startPos: {x: 0, y: 0, z: 0}
+  speed: 0.25
+  amount: 0.4
+  floatingEnable: 1
+--- !u!1 &9092897504113586402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8798762900144935006}
+  - component: {fileID: 8817699002000533811}
+  - component: {fileID: 7954531953052307942}
+  - component: {fileID: 1507574028032101960}
+  m_Layer: 6
+  m_Name: Drop Item
+  m_TagString: DropItem
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8798762900144935006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9092897504113586402}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3030930569039439831}
+  - {fileID: 4260293270665397261}
+  - {fileID: 1137124801551155798}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8817699002000533811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,29 +445,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemDrop
   item: {fileID: 0}
   amount: 1
-  floating: {fileID: -6916530042021823895}
+  floating: {fileID: 9203409809608307673}
   amountText: {fileID: 5765035625987303012}
   amountTextSortingGroup: {fileID: 7650405300669714870}
   pullSpeed: 0.5
   pickupDistance: 0.5
   acceleration: 3
   canPickUp: 0
---- !u!114 &-6916530042021823895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9092897504113586402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 934adba6afe0b284194291c77545d5ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FloatingResource
-  startPos: {x: 0, y: 0, z: 0}
-  speed: 0.5
-  amount: 0.1
-  floatingEnable: 1
 --- !u!58 &7954531953052307942
 CircleCollider2D:
   m_ObjectHideFlags: 0
