@@ -72,8 +72,7 @@ public class InventorySlotUI : MonoBehaviour, IPointerDownHandler
         // itemId가 0이라는 것은 해당 슬롯에 아이템이 없다는 것과 동일함
         if (slot.itemId == 0)
         {
-            icon.enabled = false;
-            amountText.SetText("");
+            ClearVisual();
         }
         else
         {
@@ -84,6 +83,17 @@ public class InventorySlotUI : MonoBehaviour, IPointerDownHandler
 
             Log.DB($"아이템 아이디: {slot.itemId}, 아이템 개수: {slot.amount}");
         }
+    }
+
+    public void ClearVisual()
+    {
+        icon.enabled = false;
+        amountText.SetText("");
+    }
+
+    private void ItemDropEffect(InventorySlot slot)
+    {
+
     }
 
     public void OnPointerDown(PointerEventData eventData)
