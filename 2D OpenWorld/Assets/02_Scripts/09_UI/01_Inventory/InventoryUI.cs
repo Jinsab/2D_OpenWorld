@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
-using System;
 
 /*  
  *  [프로젝트 제목]
@@ -10,7 +9,7 @@ using System;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.15 오후 21:06
- *  마지막 수정 일자 : 26.03.23 오후 21:34
+ *  마지막 수정 일자 : 26.03.26 오후 16:52
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 UI 관리
@@ -59,8 +58,8 @@ public class InventoryUI : MonoBehaviour
 
     private void OnDisable()
     {
-        Log.UI("인벤토리 창 클로즈");
         // 메모리 누수 방지를 위해 오브젝트가 꺼질 때 구독 해제
+        Log.UI("인벤토리 창 클로즈");
         inventory.OnSlotChanged -= RefreshSlot;
     }
 
@@ -148,13 +147,5 @@ public class InventoryUI : MonoBehaviour
         uiSlots[index].UpdateVisual(data);
 
         Log.UI($"{index}번 UI 슬롯 갱신 완료 (ID: {data.itemId}, Qty: {data.amount})");
-    }
-
-    public void DropToTrash()
-    {
-        if (!DragController.Instance.IsDragging())
-            return;
-
-        DragController.Instance.Clear();
     }
 }
