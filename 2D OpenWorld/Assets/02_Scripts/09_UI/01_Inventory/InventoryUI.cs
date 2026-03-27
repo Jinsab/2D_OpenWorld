@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
+using DG.Tweening;
 
 /*  
  *  [프로젝트 제목]
@@ -146,6 +147,7 @@ public class InventoryUI : MonoBehaviour
         var data = inventory.inventoryData.slots[index];
         uiSlots[index].scaleFlag = false;
         uiSlots[index].UpdateVisual(data);
+        AudioManager.Instance.Play(SND.UI_Item_Drop);
 
         Log.UI($"{index}번 UI 슬롯 갱신 완료 (ID: {data.itemId}, Qty: {data.amount})");
     }

@@ -58,17 +58,17 @@ public class AudioManager : MonoBehaviour
     }
 
     // 이제 string 대신 SND enum을 사용하여 오타 방지!
-    //public void Play(SND soundID, Vector3? position = null)
-    //{
-    //    if (soundID == SND.None) return;
+    public void Play(SND soundID, Vector3? position = null)
+    {
+        if (soundID == SND.None) return;
 
-    //    var data = db.soundEntries.Find(s => s.soundID == soundID.ToString());
-    //    if (data == null) return;
+        var data = db.soundEntries.Find(s => s.soundID == soundID.ToString());
+        if (data == null) return;
 
-    //    AudioClip clip = data.GetRandomClip();
-    //    if (clip == null) return;
+        AudioClip clip = data.GetRandomClip();
+        if (clip == null) return;
 
-    //    SoundObject so = pool.Find(s => !s.IsUsing) ?? AddToPool();
-    //    so.Play(clip, data, position);
-    //}
+        SoundObject so = pool.Find(s => !s.IsUsing) ?? AddToPool();
+        so.Play(clip, data, position);
+    }
 }

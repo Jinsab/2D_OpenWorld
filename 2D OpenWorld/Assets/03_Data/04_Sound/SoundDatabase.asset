@@ -13,9 +13,17 @@ MonoBehaviour:
   m_Name: SoundDatabase
   m_EditorClassIdentifier: Assembly-CSharp::SoundDatabase
   soundEntries:
-  - soundID: Item_Pickup
+  - soundID: UI_Item_Pickup
     category: 0
-    clips: []
-    volume: 0
+    clips:
+    - {fileID: 8300000, guid: 2190efe653c340741a15e66ca218d368, type: 3}
+    volume: 0.1
     pitch: 0
+    loop: 0
+  - soundID: UI_Item_Drop
+    category: 0
+    clips:
+    - {fileID: 8300000, guid: 8ca0f482126f8e447bf97daa2bf62595, type: 3}
+    volume: 0.1
+    pitch: 0.5
     loop: 0
