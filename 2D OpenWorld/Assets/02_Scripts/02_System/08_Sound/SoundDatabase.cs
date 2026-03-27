@@ -47,15 +47,15 @@ public class SoundDatabase : ScriptableObject
     [System.Serializable]
     public class SoundData
     {
-        public string soundID;       // "Player_Hit", "UI_Button_Click" 등 고유 키
+        public string soundID; // 이 문자열이 Enum의 이름이 됩니다.
         public SoundCategory category;
-        public AudioClip[] clips;    // 랜덤 재생을 위한 배열
+        public AudioClip[] clips;
         [Range(0, 1)] public float volume = 1f;
         [Range(0.5f, 1.5f)] public float pitch = 1f;
-        public bool loop;            // 환경음/배경음용
+        public bool loop;
+
+        public AudioClip GetRandomClip() => clips.Length > 0 ? clips[Random.Range(0, clips.Length)] : null;
     }
 
-    public List<SoundData> soundEntries;
-
-    public SoundData GetSound(string id) => soundEntries.Find(s => s.soundID == id);
+    public List<SoundData> soundEntries = new List<SoundData>();
 }
