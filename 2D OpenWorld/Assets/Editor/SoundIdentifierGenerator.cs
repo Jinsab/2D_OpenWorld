@@ -26,7 +26,7 @@ public class SoundIdentifierGenerator
     public static void Generate()
     {
         // 1. 데이터베이스 로드 (경로에 맞게 수정)
-        SoundDatabase db = AssetDatabase.LoadAssetAtPath<SoundDatabase>("Assets/Data/SoundDatabase.asset");
+        SoundDatabase db = AssetDatabase.LoadAssetAtPath<SoundDatabase>("Assets/03_Data/04_Sound/SoundDatabase.asset");
         if (db == null) { Debug.LogError("SoundDatabase를 찾을 수 없습니다!"); return; }
 
         string filePath = Path.Combine(Application.dataPath, "Scripts/Audio/SND.cs");
