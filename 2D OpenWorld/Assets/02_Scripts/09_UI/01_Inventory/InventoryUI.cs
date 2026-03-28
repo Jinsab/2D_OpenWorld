@@ -41,7 +41,8 @@ public class InventoryUI : MonoBehaviour
     public RectTransform slotTopPanel;
     public RectTransform slotParent;
 
-    private List<InventorySlotUI> uiSlots = new List<InventorySlotUI>();
+    [Header("# Slot Data")]
+    public List<InventorySlotUI> uiSlots = new List<InventorySlotUI>();
     private GridLayoutGroup layoutGroup;
 
     private void Awake()

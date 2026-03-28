@@ -11,6 +11,8 @@ using UnityEngine;
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 핫바(퀵슬롯) UI
  *    1-1. 현재 인벤토리 UI의 슬롯 데이터에 따라 아이템을 핫바에서 표기
+ *    1-2. 인벤토리 UI에 이미 슬롯 데이터가 존재하므로, 해당 데이터를 가공하여 사용
+ *    1-3. 핫바의 1줄은 10칸을 의미함.
  *      
  *  [스크립트 작성 도움 출처]
  *  1. 
@@ -18,15 +20,13 @@ using UnityEngine;
 
 public class InventoryHotbar : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [Header(" # Player Inventory UI")]
+    public InventoryUI inventory;
 
-    // Update is called once per frame
-    void Update()
+    private int slotLineCount = 0; 
+
+    private void SetCount(InventoryUI inventoryUI)
     {
-        
+        slotLineCount = inventoryUI.uiSlots.Count / inventoryUI.lineCount;
     }
 }
