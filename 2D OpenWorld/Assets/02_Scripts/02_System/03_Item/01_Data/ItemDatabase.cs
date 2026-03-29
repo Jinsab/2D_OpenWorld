@@ -7,11 +7,12 @@ using System.Collections.Generic;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.13 오후 20:46
- *  마지막 수정 일자 : 26.02.14 오후 21:21
+ *  마지막 수정 일자 : 26.03.30 오전 03:54
  *  
  *  [스크립트 목적 및 내용]
  *  1. 아이템 스크립트 - 아이템 데이터베이스
- *    1-1. ItemID로 Item을 찾기 위한 스크립트
+ *    1-1. ItemID로 Item을 찾는 기능 제공
+ *    1-2. Item으로 ItemSet을 찾는 기능 제공
  *    
  *  2. 큰 그림
  *    - Item (ScriptableObject)
@@ -61,8 +62,10 @@ public class ItemDatabase : MonoBehaviour
     }
 
     // 특정 아이템 ID나 이름으로 세트를 찾는 기능 등을 추가할 수 있습니다.
-    public ItemSet FindSetByItem(Item item)
+    public bool TryFindSetByItem(Item item, out ItemSet itemSet)
     {
-        return allSets.Find(s => s.requiredItems.Contains(item));
+        itemSet = allSets.Find(s => s.requiredItems.Contains(item));
+
+        return itemSet != null;
     }
 }
