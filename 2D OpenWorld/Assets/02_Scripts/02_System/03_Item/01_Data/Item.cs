@@ -6,7 +6,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.13 오후 20:46
- *  마지막 수정 일자 : 26.02.19 오후 17:06
+ *  마지막 수정 일자 : 26.03.30 오전 03:39
  *  
  *  [스크립트 목적 및 내용]
  *  1. 아이템 스크립트
@@ -73,6 +73,18 @@ public abstract class Item : ScriptableObject
         Quest,        // 퀘스트 전용
     }
 
+    public enum ItemRarity
+    {
+        Poor,       // 쓰레기
+        Common,     // 일반
+        Uncommon,   // 고급
+        Rare,       // 희귀
+        Epic,       // 서사
+        Unique,     // 유일
+        Legendary,  // 전설
+        Mystic      // 신화
+    }
+
     [Header("# Item Info")]
     public string itemName;             // 아이템 이름
     public int itemId;                  // 아이템 고유 아이디 (중복될 수 없음)
@@ -80,6 +92,8 @@ public abstract class Item : ScriptableObject
     public Sprite Icon;                 // 아이템 아이콘
 
     public ItemType itemType;           // 아이템 타입
+    public ItemRarity rarity;           // 아이템 희귀도 (0~5, 0 == 일반, 5 == 전설)
+    public int itemLevel;               // 아이템 레벨 (0렙 = 미사용, 레벨이 높을수록 좋은 아이템)
 
     [Header("# Item Stack")]
     public int maxStack = 1;            // 최대 스택 갯수 (1 == 비스택)
