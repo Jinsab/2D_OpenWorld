@@ -7,7 +7,7 @@ using System.Collections.Generic;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.20 오전 01:37
- *  마지막 수정 일자 : 26.02.20 오전 02:01
+ *  마지막 수정 일자 : 26.03.30 오전 04:53
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 장비 시스템
@@ -24,15 +24,15 @@ public class PlayerEquipment : MonoBehaviour
     // 각 슬롯별 현재 장착된 아이템 저장
     private Dictionary<EquipmentSlot, EquipmentItem> currentEquipments = new Dictionary<EquipmentSlot, EquipmentItem>();
 
-    private PlayerStats _stats;
-    private CharacterVisuals _visuals;
-    private WeaponController _weaponController;
+    private PlayerStats stats;
+    private CharacterVisuals visuals;
+    private WeaponController weaponController;
 
     private void Awake()
     {
-        _stats = GetComponent<PlayerStats>();
-        _visuals = GetComponent<CharacterVisuals>();
-        _weaponController = GetComponent<WeaponController>();
+        stats = GetComponent<PlayerStats>();
+        visuals = GetComponent<CharacterVisuals>();
+        weaponController = GetComponent<WeaponController>();
     }
 
     public void Equip(EquipmentItem newItem)
@@ -47,15 +47,15 @@ public class PlayerEquipment : MonoBehaviour
         currentEquipments[newItem.slotType] = newItem;
 
         // 3. 능력치 적용 (PlayerStats 이용)
-        _stats.EquipItemModifiers(newItem.modifiers, newItem);
+        stats.EquipItemModifiers(newItem.modifiers, newItem);
 
         // 4. 외형 업데이트
-        _visuals.UpdateVisual(newItem.slotType, newItem.equipmentSprite);
+        visuals.UpdateVisual(newItem.slotType, newItem.equipmentSprite);
 
         // 5. 무기일 경우 무기 컨트롤러에 알림
         if (newItem is WeaponItem weaponItem)
         {
-            _weaponController.EquipWeapon(weaponItem);
+            weaponController.EquipWeapon(weaponItem);
         }
 
         Debug.Log($"{newItem.itemName} 장착 완료");
@@ -66,15 +66,15 @@ public class PlayerEquipment : MonoBehaviour
         if (!currentEquipments.TryGetValue(slot, out EquipmentItem item)) return;
 
         // 1. 능력치 제거
-        _stats.UnequipItemModifiers(item);
+        stats.UnequipItemModifiers(item);
 
         // 2. 외형 제거
-        _visuals.ClearVisual(slot);
+        visuals.ClearVisual(slot);
 
         // 3. 무기 전용 해제 로직
         if (slot == EquipmentSlot.Weapon)
         {
-            _weaponController.UnEquipWeapon();
+            weaponController.UnEquipWeapon();
         }
 
         // 4. 데이터 제거

@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -51,25 +54,16 @@ using UnityEngine.UI;
  *      6-03. 퀘스트 제목
  *      6-04. 퀘스트 내용
  *    
- *    아이템 등급 별 색상
- *     - 0~4Lv:      Common      일반      하얀색     #FFFFFF
- *     - 5~8Lv:      Uncommon    고급      초록색     #96FF96
- *     - 9~12Lv:     Rare        희귀      파란색     #9696FF
- *     - 13~16Lv:    Epic        서사      보라색     #B428FF
- *     - 17~20Lv:    Unique      유일      주황색     #FFC896
- *     - 21~24Lv:    Legendary   전설      노란색     #FFFF0A
- *     - 25Lv~:      Mystic      신화      붉은색     #FF2864
- *
- * 3. 큰 그림
- *    - Inventory System
- *      ├─ Inventory (인벤토리 데이터 로직)
- *      └─ Inventory UI (전체 UI 관리)
- *         ├─ InventorySlotUI (슬롯 단위 UI)
- *         ├─ DragController (마우스 드래그 전담)
- *         ├─ DragIconUI (아이템 드래그 시 아이콘 표시)
- *         ├─ TooltipUI (아이템 설명 표시)
- *         └─ SlotUIInteraction (마우스 호버 시 툴팁 표시 및 하이라이트 효과)
- *      
+ *    7. 아이템 레어도 별 색상
+ *     - Poor        쓰레기    회색       #969696
+ *     - Common      일반      하얀색     #FFFFFF
+ *     - Uncommon    고급      초록색     #96FF96
+ *     - Rare        희귀      파란색     #9696FF
+ *     - Epic        서사      보라색     #AE4DE3
+ *     - Unique      유일      주황색     #FFC896
+ *     - Legendary   전설      노란색     #E5E748
+ *     - Mystic      신화      붉은색     #D63E68
+ *      D3BD93
  *  [스크립트 작성 도움 출처]
  *  1. 
  */
@@ -82,11 +76,8 @@ public class TooltipUI : MonoBehaviour
     public RectTransform tooltipRectTransform;
     public TMP_Text HeaderText;     // 아이템 이름
     public TMP_Text ItemTypeText;   // 아이템 타입
-    public TMP_Text ItemLevelText;  // 아이템 레벨
-    public TMP_Text ItemStatusText; // 아이템 효과
-    public TMP_Text SetEffectText;  // 세트 효과
-    public TMP_Text SetItemText;    // 세트 아이템 목록
-    public TMP_Text durabilityText; // 내구도
+    public TMP_Text ItemStatusText; // 아이템 상태 (레벨 + 효과)
+    public TMP_Text SetEffectText;  // 세트 아이템 (효과 + 목록)
     public TMP_Text desciptionText; // 아이템 설명
 
     private void Awake()
@@ -95,22 +86,110 @@ public class TooltipUI : MonoBehaviour
         Hide();
     }
 
-    public void SetUp(Item item)
+    public void DisplayItemInfo(Item item)
     {
+        // 1. 아이템 이름과 타입은 모든 아이템에 공통적으로 존재하는 정보이므로, 먼저 표기합니다.
+        string colorHex = GetColorByRarity(item.rarity);
+        HeaderText.text = $"<color={colorHex}>{item.itemName}</color>";
+        ItemTypeText.text = $"<color=#E6E6E6>{item.itemType}</color>";
 
+        // 2. 아이템 타입이 장비 아이템일 경우 아이템 상태(레벨, 효과)를 표기합니다.
+        StringBuilder sb = new StringBuilder();
 
-        // 데이터가 있을 때에만 오브젝트를 활성화함
-        // 나머지는 Layout Group으로 알아서 가려주기 때문임
-        // HeaderText.text = item.itemName;
-        // ItemTypeText.text = item.itemType.ToString();
-        // ...
-        // desciptionText.text = item.itemDesc;
-        // panel.SetActive(true);
+        if (item.itemType == Item.ItemType.Equipment)
+        {
+            // 2-1. 아이템 레벨
+            sb.AppendLine($"<color={colorHex}>아이템 레벨 {item.itemLevel}</color>");
+
+            // 2-2. 아이템 효과
+            EquipmentItem equipmentItem = item as EquipmentItem;
+            
+            foreach (var modifier in equipmentItem.modifiers)
+            {
+                // 현재 아이템 효과 색상은 회색으로 고정되어 있지만,
+                // 향후 아이템 효과에 따라 색상을 다르게 할지 고민하기
+                sb.AppendLine($"<color=#E6E6E6>{modifier.statType} +{modifier.value}{(modifier.type == StatModType.Flat ? "" : "%")}</color>");
+            }
+
+            ItemStatusText.text = sb.ToString();
+            sb.Clear();
+            ItemStatusText.gameObject.SetActive(true);
+
+            // 2-3. 아이템 세트 효과
+            if (ItemDatabase.Instance.TryFindSetByItem(item, out ItemSet itemSet))
+            {
+                // 1. PlayerEquipment - Dictionary<EquipmentSlot, EquipmentItem>
+                //    위와 같이 장착 아이템 정보가 Dict로 저장되어있음
+
+                // 2. 위의 데이터를 비교하기 위한 List로 추출해야 함
+                //    - EquipmentItem이 null이 아닌 것
+
+                // 3. 이후, List의 Intersect 메서드를 활용하여,
+                // itemSet.requiredItems와 비교하여, 일치하는 아이템을 확인함
+
+                // 4. 일치하는 아이템이 있다면, 해당 아이템의 장착을 표기
+
+                // 5. 또한, 일치하는 아이템의 개수에 따라 세트 효과 활성화 여부를 표기
+
+                // 6. 이후, 세트 효과의 내용을 표기
+
+                // var duplicates = itemSet.requiredItems.Intersect().ToList();
+
+                // HashSet<Item> equippedItems =
+
+                SetEffectText.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            ItemStatusText.gameObject.SetActive(false);
+            SetEffectText.gameObject.SetActive(false);
+        }
+
+        sb.AppendLine($"<color=#7E7E7E>{item.itemDesc}</color>");
+        desciptionText.text = sb.ToString();
+
+        panel.SetActive(true);
+    }
+
+    // 아이템 레어도에 따른 색상 반환
+    private string GetColorByRarity(Item.ItemRarity rarity)
+    {
+        switch (rarity)
+        {
+            case Item.ItemRarity.Poor:
+                return "#969696"; // 하얀색
+
+            case Item.ItemRarity.Common:
+                return "#FFFFFF"; // 하얀색
+
+            case Item.ItemRarity.Uncommon:
+                return "#96FF96"; // 초록색
+
+            case Item.ItemRarity.Rare:
+                return "#9696FF"; // 파란색
+
+            case Item.ItemRarity.Epic:
+                return "#B428FF"; // 보라색
+
+            case Item.ItemRarity.Unique:
+                return "#FFC896"; // 주황색
+
+            case Item.ItemRarity.Legendary:
+                return "#FFFF0A"; // 노란색
+
+            case Item.ItemRarity.Mystic:
+                return "#FF2864"; // 붉은색
+
+            // 그 외 모든 경우에 하얀색을 반환
+            default:
+                return "#FFFFFF"; // 하얀색
+        }
     }
 
     public void Show(Item item)
     {
-        SetUp(item);
+        DisplayItemInfo(item);
         LayoutRebuilder.ForceRebuildLayoutImmediate(tooltipRectTransform);
     }
 
