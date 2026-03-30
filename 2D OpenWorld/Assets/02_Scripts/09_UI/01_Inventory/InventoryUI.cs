@@ -63,6 +63,7 @@ public class InventoryUI : MonoBehaviour
         // 메모리 누수 방지를 위해 오브젝트가 꺼질 때 구독 해제
         Log.UI("인벤토리 창 클로즈");
         inventory.OnSlotChanged -= RefreshSlot;
+        TooltipUI.Instance.HideTooltip();
     }
 
     private void Start()

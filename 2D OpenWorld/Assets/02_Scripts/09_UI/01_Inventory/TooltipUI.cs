@@ -14,7 +14,7 @@ using UnityEngine.UI;
  *  마지막 수정 일자 : 26.03.30 오후 16:37
  *  
  *  [스크립트 목적 및 내용]
- *  1. 인벤토리 시스템 - 툴팁 UI 관리
+ *  1. 툴팁 UI 관리
  *    1-1. 마우스가 본인(슬롯) UI 위에 올라왔을 때 툴팁 표기
  *    1-2. 툴팁은 글자 길이에 따라 처리되야하고, 그에 따라 패널 크기가 확장되어야 함
  *  1. TooltipUI 표기 시 아이템 별로 다르게 출력되어야 함
@@ -63,7 +63,6 @@ using UnityEngine.UI;
  *     - Unique      유일      주황색     #FFC896
  *     - Legendary   전설      노란색     #E5E748
  *     - Mystic      신화      붉은색     #D63E68
- *      D3BD93
  *  [스크립트 작성 도움 출처]
  *  1. 
  */
@@ -73,7 +72,6 @@ public class TooltipUI : MonoBehaviour
     public static TooltipUI Instance;
 
     public GameObject panel;
-    public RectTransform tooltipRectTransform;
     public TMP_Text HeaderText;     // 아이템 이름
     public TMP_Text ItemTypeText;   // 아이템 타입
     public TMP_Text ItemStatusText; // 아이템 상태 (레벨 + 효과)
@@ -204,7 +202,6 @@ public class TooltipUI : MonoBehaviour
     public void ShowTooltip(Item item)
     {
         DisplayItemInfo(item);
-        LayoutRebuilder.ForceRebuildLayoutImmediate(tooltipRectTransform);
         panel.SetActive(true);
     }
 
