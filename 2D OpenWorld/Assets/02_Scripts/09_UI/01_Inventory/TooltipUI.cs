@@ -11,7 +11,7 @@ using UnityEngine.UI;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.17 오후 22:22
- *  마지막 수정 일자 : 26.02.19 오전 03:01
+ *  마지막 수정 일자 : 26.03.30 오후 16:37
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 툴팁 UI 관리
@@ -83,15 +83,15 @@ public class TooltipUI : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        Hide();
+        HideTooltip();
     }
 
     public void DisplayItemInfo(Item item)
     {
         // 1. 아이템 이름과 타입은 모든 아이템에 공통적으로 존재하는 정보이므로, 먼저 표기합니다.
         string colorHex = GetColorByRarity(item.rarity);
-        HeaderText.text = $"<color={colorHex}>{item.itemName}</color>";
-        ItemTypeText.text = $"<color=#E6E6E6>{item.itemType}</color>";
+        HeaderText.SetText($"<color={colorHex}>{item.itemName}</color>");
+        ItemTypeText.SetText($"<color=#E6E6E6>{item.itemType}</color>");
 
         // 2. 아이템 타입이 장비 아이템일 경우 아이템 상태(레벨, 효과)를 표기합니다.
         StringBuilder sb = new StringBuilder();
@@ -111,9 +111,9 @@ public class TooltipUI : MonoBehaviour
                 sb.AppendLine($"<color=#E6E6E6>{modifier.statType} +{modifier.value}{(modifier.type == StatModType.Flat ? "" : "%")}</color>");
             }
 
-            ItemStatusText.text = sb.ToString();
-            sb.Clear();
+            ItemStatusText.SetText(sb.ToString());
             ItemStatusText.gameObject.SetActive(true);
+            sb.Clear();
 
             // 2-3. 아이템 세트 효과
             if (ItemDatabase.Instance.TryFindSetByItem(item, out ItemSet itemSet))
@@ -137,7 +137,23 @@ public class TooltipUI : MonoBehaviour
 
                 // HashSet<Item> equippedItems =
 
+                SetEffectText.SetText(sb.ToString());
                 SetEffectText.gameObject.SetActive(true);
+                sb.Clear();
+            }
+
+            // 2-4. 아이템 내구도 표기 (0이 아닌 경우에만)
+            if (equipmentItem.maxDurability != 0)
+            {
+                // 0인 경우 붉은색 표기, 그 외에는 하얀색 표기
+                if (equipmentItem.currentDurability == 0)
+                {
+                    sb.AppendLine($"<color=#E73131>내구도 : {equipmentItem.currentDurability}/{equipmentItem.maxDurability}</color>");
+                }
+                else
+                {
+                    sb.AppendLine($"<color=#FFFFFF>내구도 : {equipmentItem.currentDurability}/{equipmentItem.maxDurability}</color>");
+                }
             }
         }
         else
@@ -148,17 +164,15 @@ public class TooltipUI : MonoBehaviour
 
         sb.AppendLine($"<color=#7E7E7E>{item.itemDesc}</color>");
         desciptionText.text = sb.ToString();
-
-        panel.SetActive(true);
     }
 
-    // 아이템 레어도에 따른 색상 반환
+    // 아이템 희귀도에 따른 색상 반환
     private string GetColorByRarity(Item.ItemRarity rarity)
     {
         switch (rarity)
         {
             case Item.ItemRarity.Poor:
-                return "#969696"; // 하얀색
+                return "#969696"; // 회색
 
             case Item.ItemRarity.Common:
                 return "#FFFFFF"; // 하얀색
@@ -187,13 +201,14 @@ public class TooltipUI : MonoBehaviour
         }
     }
 
-    public void Show(Item item)
+    public void ShowTooltip(Item item)
     {
         DisplayItemInfo(item);
         LayoutRebuilder.ForceRebuildLayoutImmediate(tooltipRectTransform);
+        panel.SetActive(true);
     }
 
-    public void Hide()
+    public void HideTooltip()
     {
         panel.SetActive(false);
     }

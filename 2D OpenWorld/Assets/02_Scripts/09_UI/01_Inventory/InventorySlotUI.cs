@@ -12,7 +12,7 @@ using DG.Tweening;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.17 오후 16:05
- *  마지막 수정 일자 : 26.03.26 오후 18:17
+ *  마지막 수정 일자 : 26.03.30 오후 16:37
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 UI 관리
@@ -64,6 +64,11 @@ public class InventorySlotUI : MonoBehaviour, IPointerDownHandler
         {
             panelImage.sprite = slotPanel;
         }
+    }
+
+    public int GetSlotItemId()
+    {
+        return inv.inventoryData.slots[slotIndex].itemId;
     }
 
     public void UpdateVisual(InventorySlot slot)

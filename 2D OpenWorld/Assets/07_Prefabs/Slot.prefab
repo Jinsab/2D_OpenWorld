@@ -59,7 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -366,7 +366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -810,7 +810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: JeffGrawAssets.FlexibleUI.Runtime::JeffGrawAssets.FlexibleUI.FlexibleImage
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1391,9 +1391,8 @@ MonoBehaviour:
   isToggle: 0
   togglePanel: {fileID: -1332180839, guid: 95b20b13e976a6446a8836c866f2a413, type: 3}
   slotPanel: {fileID: 1100395662, guid: 95b20b13e976a6446a8836c866f2a413, type: 3}
-  slotData:
-    itemId: 0
-    amount: 0
+  inv: {fileID: 0}
+  scaleFlag: 0
 --- !u!114 &9135892402283916434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1406,6 +1405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8840ef02772e2bb4db1011a4462b759a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SlotUIInteraction
+  slotUI: {fileID: 6993290901878721467}
   interactImage: {fileID: 6905855274922562277}
 --- !u!1 &9002801388632233641
 GameObject:
@@ -1466,7 +1466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

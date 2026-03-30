@@ -7,7 +7,7 @@ using System.Collections.Generic;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.13 오후 20:46
- *  마지막 수정 일자 : 26.03.30 오전 03:54
+ *  마지막 수정 일자 : 26.03.30 오후 16:38
  *  
  *  [스크립트 목적 및 내용]
  *  1. 아이템 스크립트 - 아이템 데이터베이스
@@ -59,6 +59,16 @@ public class ItemDatabase : MonoBehaviour
             return item;
 
         return null;
+    }
+
+    public bool TryGetItem(int id, out Item result)
+    {
+        if (itemDict.TryGetValue(id, out Item item))
+            result = item;
+        else
+            result = null;
+
+        return result != null;
     }
 
     // 특정 아이템 ID나 이름으로 세트를 찾는 기능 등을 추가할 수 있습니다.
