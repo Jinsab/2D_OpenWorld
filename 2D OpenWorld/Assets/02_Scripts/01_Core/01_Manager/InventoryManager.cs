@@ -116,6 +116,19 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+    // [기능 4] 빠른 보관 (Shift + Left Click)
+    public void QuickMove(int slotIndex, Inventory inv)
+    {
+        //Inventory target = InventoryManager.Instance.GetOtherInventory(inventoryUI.inventory);
+        //Inventory target = new Inventory();
+
+        //if (target == null)
+        //    return;
+
+        //int moved = target.AddItem(slotData.item, slotData.amount);
+        //inventoryUI.inventory.RemoveItem(slotData.itemId, moved);
+    }
+
     // [기능 5] 절반 줍기 (Shift + Right Click)
     public void PickUpHalf(int slotIndex, Inventory inv)
     {
@@ -153,5 +166,38 @@ public class InventoryManager : MonoBehaviour
 
         // 5. 마우스 슬롯 비우기
         held.Clear();
+    }
+
+    // [기능 7] 장비 슬롯에 장착하기 (장비 슬롯 클릭 시)
+    public void TryEquipFromMouse(EquipmentSlot type, int index, EquipmentInventory equipmentInv)
+    {
+        var mouseSlot = MouseSlotUI.Instance.heldSlot;
+
+        if (mouseSlot.itemId == 0)
+            return;
+
+        // 장비 인벤토리에 장착 요청
+        if (equipmentInv.EquipItem(type, index, mouseSlot))
+        {
+            AudioManager.Instance.Play(SND.UI_Item_Pickup);
+            // UI 전체 갱신 호출
+        }
+    }
+
+    // [기능 8] 장비 슬롯에서 일반 인벤토리로 옮기기 (장비 슬롯 클릭 시)
+    public void TryUnequipToInventory(EquipmentSlot type, int index, EquipmentInventory equipmentInv, Inventory mainInv)
+    {
+        // 1. 장비 데이터 가져오기
+        var itemSlot = equipmentInv.GetItemSlot(type, index);
+        Item item = ItemDatabase.Instance.GetItem(itemSlot.itemId);
+
+        // 2. 일반 인벤토리에 빈 공간이 있는지 확인 후 추가
+        if (mainInv.CanAdd(item, itemSlot.amount))
+        {
+            mainInv.AddItem(item, itemSlot.amount);
+            itemSlot.Clear();
+            equipmentInv.NotifyChange();
+            AudioManager.Instance.Play(SND.UI_Item_Drop);
+        }
     }
 }

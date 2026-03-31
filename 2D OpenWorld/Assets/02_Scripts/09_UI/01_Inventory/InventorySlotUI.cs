@@ -45,7 +45,7 @@ public class InventorySlotUI : MonoBehaviour, IPointerDownHandler
     public bool isToggle = false;
     public Sprite togglePanel;
     public Sprite slotPanel;
-    [SerializeField] private Inventory inv;
+    public Inventory inv;
     public bool scaleFlag;
 
     private int slotIndex;
@@ -161,19 +161,5 @@ public class InventorySlotUI : MonoBehaviour, IPointerDownHandler
 
             AudioManager.Instance.Play(SND.UI_Item_Pickup);
         }
-    }
-
-    private void QuickMove()
-    {
-        // 추후 구현할 내용
-
-        // Inventory target = InventoryManager.Instance.GetOtherInventory(inventoryUI.inventory);
-        //Inventory target = new Inventory();
-
-        //if (target == null)
-        //    return;
-
-        //int moved = target.AddItem(slotData.item, slotData.amount);
-        //inventoryUI.inventory.RemoveItem(slotData.itemId, moved);
     }
 }

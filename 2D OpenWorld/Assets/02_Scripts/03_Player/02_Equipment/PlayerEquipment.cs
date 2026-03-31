@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using AYellowpaper.SerializedCollections;
 
 /*  
  *  [프로젝트 제목]
@@ -19,11 +20,14 @@ using System.Collections.Generic;
  *  1. 
  */
 
+[RequireComponent(typeof(PlayerStats))]
+[RequireComponent(typeof(CharacterVisuals))]
+[RequireComponent(typeof(WeaponController))]
 public class PlayerEquipment : MonoBehaviour
 {
     // 각 슬롯별 현재 장착된 아이템 저장
-    private Dictionary<EquipmentSlot, EquipmentItem> currentEquipments = new Dictionary<EquipmentSlot, EquipmentItem>();
-
+    // private Dictionary<EquipmentSlot, EquipmentItem> currentEquipments = new Dictionary<EquipmentSlot, EquipmentItem>();
+    private SerializedDictionary<EquipmentSlot, EquipmentItem> currentEquipments = new();
     private PlayerStats stats;
     private CharacterVisuals visuals;
     private WeaponController weaponController;
@@ -58,12 +62,13 @@ public class PlayerEquipment : MonoBehaviour
             weaponController.EquipWeapon(weaponItem);
         }
 
-        Debug.Log($"{newItem.itemName} 장착 완료");
+        Log.Game($"{newItem.itemName} 장착 완료");
     }
 
     public void Unequip(EquipmentSlot slot)
     {
-        if (!currentEquipments.TryGetValue(slot, out EquipmentItem item)) return;
+        if (!currentEquipments.TryGetValue(slot, out EquipmentItem item))
+            return;
 
         // 1. 능력치 제거
         stats.UnequipItemModifiers(item);
@@ -80,6 +85,6 @@ public class PlayerEquipment : MonoBehaviour
         // 4. 데이터 제거
         currentEquipments.Remove(slot);
 
-        Debug.Log($"{item.itemName} 해제 완료");
+        Log.Game($"{item.itemName} 해제 완료");
     }
 }
