@@ -201,11 +201,19 @@ public class TooltipUI : MonoBehaviour
 
     public void ShowTooltip(Item item)
     {
-        DisplayItemInfo(item);
-        panel.SetActive(true);
+        if (item != null)
+        {
+            DisplayItemInfo(item);
+            panel.SetActive(true);
+        }
+        else
+        {
+            HideTooltip();
+        }
+
     }
 
-    public void TryShowTooltip(int itemId)
+    public void ShowTooltip(int itemId)
     {
         if (ItemDatabase.Instance.TryGetItem(itemId, out Item item))
         {

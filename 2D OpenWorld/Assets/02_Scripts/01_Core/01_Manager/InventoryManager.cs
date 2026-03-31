@@ -83,7 +83,7 @@ public class InventoryManager : MonoBehaviour
         }
 
         inv.NotifyChanged(slotIndex); // UI 갱신 호출
-        TooltipUI.Instance.TryShowTooltip(slot.itemId);
+        TooltipUI.Instance.ShowTooltip(slot.itemId);
     }
 
     // [기능 2 & 3] 특정 수량만큼 줍기 (Right Click / Ctrl + Right Click)
@@ -112,6 +112,7 @@ public class InventoryManager : MonoBehaviour
 
             if (slot.amount <= 0) slot.Clear();
             inv.NotifyChanged(slotIndex);
+            TooltipUI.Instance.ShowTooltip(item);
         }
     }
 

@@ -8,7 +8,7 @@ using UnityEngine.UI;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.30 오후 16:14
- *  마지막 수정 일자 : 26.03.30 오후 17:25
+ *  마지막 수정 일자 : 26.03.31 오후 17:47
  *  
  *  [스크립트 목적 및 내용]
  *  1. 툴팁 위치 제어
@@ -45,14 +45,15 @@ public class TooltipManager : MonoBehaviour
 
         // 2. 마우스가 우측에 있으면 피벗을 1(오른쪽 끝)로, 좌측이면 0(왼쪽 끝)으로 설정
         // 상단/하단도 동일하게 적용하여 마우스 반대 방향으로 패널이 펼쳐지게 함
-        float finalPivotX = pivotX > 0.5f ? 1.1f : -0.1f; // 마우스와 약간의 간격을 위해 0.1 여유
+        // 마우스와 약간의 간격을 위해 0.1 여유
+        float finalPivotX = pivotX > 0.5f ? 1.1f : -0.1f;
         float finalPivotY = pivotY > 0.5f ? 1.1f : -0.1f;
-
-        tooltipRectTransform.pivot = new Vector2(pivotX > 0.5f ? 1 : 0, pivotY > 0.5f ? 1 : 0);
-
+        
+        // 3. 피벗 적용 및 레이아웃 갱신
+        tooltipRectTransform.pivot = new Vector2(finalPivotX, finalPivotY);
         LayoutRebuilder.ForceRebuildLayoutImmediate(tooltipRectTransform);
 
-        // 3. 위치 적용
+        // 4. 위치 적용
         tooltipRectTransform.position = mousePos;
     }
 }
