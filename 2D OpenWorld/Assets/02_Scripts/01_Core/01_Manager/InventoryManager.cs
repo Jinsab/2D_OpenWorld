@@ -66,7 +66,8 @@ public class InventoryManager : MonoBehaviour
             slot.amount += add;
             held.amount -= add;
 
-            if (held.amount <= 0) held.Clear();
+            if (held.amount <= 0)
+                held.Clear();
         }
         // 3. 커서에 아이템이 있고, 슬롯과 다른 아이템이면 Swap
         else
@@ -82,6 +83,7 @@ public class InventoryManager : MonoBehaviour
         }
 
         inv.NotifyChanged(slotIndex); // UI 갱신 호출
+        TooltipUI.Instance.TryShowTooltip(slot.itemId);
     }
 
     // [기능 2 & 3] 특정 수량만큼 줍기 (Right Click / Ctrl + Right Click)

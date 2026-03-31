@@ -11,7 +11,7 @@ using UnityEngine.UI;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.17 오후 22:22
- *  마지막 수정 일자 : 26.03.30 오후 16:37
+ *  마지막 수정 일자 : 26.03.31 오후 17:12
  *  
  *  [스크립트 목적 및 내용]
  *  1. 툴팁 UI 관리
@@ -203,6 +203,19 @@ public class TooltipUI : MonoBehaviour
     {
         DisplayItemInfo(item);
         panel.SetActive(true);
+    }
+
+    public void TryShowTooltip(int itemId)
+    {
+        if (ItemDatabase.Instance.TryGetItem(itemId, out Item item))
+        {
+            DisplayItemInfo(item);
+            panel.SetActive(true);
+        }
+        else
+        {
+            HideTooltip();
+        }
     }
 
     public void HideTooltip()
