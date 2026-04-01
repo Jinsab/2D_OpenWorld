@@ -1,10 +1,7 @@
 using DG.Tweening;
-using NUnit;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
 
 /*  
@@ -13,7 +10,7 @@ using UnityEngine.UI;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.31 오후 21:02
- *  마지막 수정 일자 : 26.03.31 오후 21:02
+ *  마지막 수정 일자 : 26.04.01 오후 17:33
  *  
  *  [스크립트 목적 및 내용]
  *  1. 
@@ -36,37 +33,40 @@ public class EquipmentSlotUI : MonoBehaviour, IPointerDownHandler, IDropHandler 
     [SerializeField] private EquipmentInventory equipmentInv;
     [SerializeField] private Inventory inv;
 
-    //private void OnEnable()
-    //{
-    //    // 중요: 인벤토리의 이벤트에 내 함수(RefreshSlot)를 연결(구독)
-    //    // AllDataRefresh();
-    //    equipmentInv.OnEquipmentChanged += RefreshSlot;
-    //}
+    private void OnEnable()
+    {
+        // 중요: 인벤토리의 이벤트에 내 함수(RefreshSlot)를 연결(구독)
+        // AllDataRefresh();
+        equipmentInv.OnEquipmentChanged += RefreshSlot;
+    }
 
-    //private void OnDisable()
-    //{
-    //    // 메모리 누수 방지를 위해 오브젝트가 꺼질 때 구독 해제
-    //    equipmentInv.OnEquipmentChanged -= RefreshSlot;
-    //}
+    private void OnDisable()
+    {
+        // 메모리 누수 방지를 위해 오브젝트가 꺼질 때 구독 해제
+        equipmentInv.OnEquipmentChanged -= RefreshSlot;
+    }
 
-    //// 이벤트가 발생하면 실행될 함수
-    //private void RefreshSlot(int index)
-    //{
-    //    // 1. 인덱스 유효성 검사 (음수 방지 및 범위 체크)
-    //    if (index < 0 || index >= uiSlots.Count || index >= inventory.inventoryData.slots.Count)
-    //    {
-    //        Log.Error("UI", $"Invalid Slot Index: {index}");
-    //        return;
-    //    }
-
-    //    // 2. 해당 인덱스의 데이터와 UI 연결
-    //    var data = inventory.inventoryData.slots[index];
-    //    uiSlots[index].scaleFlag = false;
-    //    uiSlots[index].UpdateVisual(data);
-    //    AudioManager.Instance.Play(SND.UI_Item_Drop);
-
-    //    Log.UI($"{index}번 UI 슬롯 갱신 완료 (ID: {data.itemId}, Qty: {data.amount})");
-    //}
+    // 이벤트가 발생하면 실행될 함수
+    private void RefreshSlot(EquipmentSlot type, int index)
+    {
+        // 1. 자신의 slotType과 subIndex가 일치하는지 확인
+        if (type == slotType && index == subIndex)
+        {
+            // 2. 해당 인덱스의 데이터와 UI 연결
+            if (equipmentInv.GetItemSlot(type, index, out InventorySlot slot))
+            {
+                scaleFlag = false;
+                UpdateVisual(slot);
+                AudioManager.Instance.Play(SND.UI_Item_Drop);
+                Log.UI($"{index}번 UI 슬롯 갱신 완료 (ID: {slot.itemId}, Qty: {slot.amount})");
+            }
+            // 3. 만약 다른 타입의 아이템이거나, 장착 실패로 인해 데이터가 갱신되지 않았다면, 장착 실패 효과 실행
+            else
+            {
+                FailVisual();
+            }
+        }
+    }
 
     public void UpdateVisual(InventorySlot slot)
     {

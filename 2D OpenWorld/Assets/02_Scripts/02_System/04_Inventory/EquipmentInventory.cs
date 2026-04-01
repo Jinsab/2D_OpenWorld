@@ -9,11 +9,15 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.31 오후 18:14
- *  마지막 수정 일자 : 26.03.31 오후 18:14
+ *  마지막 수정 일자 : 26.04.01 오후 17:17
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 장착된 장비 전문 관리 인벤토리
  *    1-1. 오직 플레이어의 장비만을 관리
+ *    1-2. 장비 데이터 관리 (Dictionary <-> List 변환 로직)
+ *         - 게임 실행 시: 저장된 InventoryData (List)를 읽어 Dictionary로 변환(Load).
+ *         - 플레이 중: 모든 장착/해제는 Dictionary에서만 수행 (매우 빠름).
+ *         - 게임 저장 시: Dictionary의 내용을 InventoryData (List)로 덮어쓰기(Save).
  *      
  *  [스크립트 작성 도움 출처]
  *  1. 
@@ -23,7 +27,7 @@ public class EquipmentInventory : MonoBehaviour
 {
     [Header("# Equipment Connection Data")]
     public InventoryData equipmentData;
-    public event Action OnEquipmentChanged; // 장비 변경 시 호출 (세트 효과 및 스탯 갱신용)
+    public event Action<EquipmentSlot, int> OnEquipmentChanged; // 장비 변경 시 호출 (세트 효과 및 스탯 갱신용)
     // 런타임 효율 및 로직용 (Dictionary)
     [SerializeField] private SerializedDictionary<EquipmentSlot, List<InventorySlot>> equipDict = new();
 
@@ -53,9 +57,19 @@ public class EquipmentInventory : MonoBehaviour
         }
     }
 
-    public InventorySlot GetItemSlot(EquipmentSlot type, int index)
+    public bool GetItemSlot(EquipmentSlot type, int index, out InventorySlot slot)
     {
-        return equipDict[type][index];
+        if (equipDict.TryGetValue(type, out var slots))
+        {
+            if (index >= 0 && index < slots.Count)
+            {
+                slot = slots[index];
+                return true;
+            }
+        }
+
+        slot = new InventorySlot();
+        return false;
     }
 
     // 장착 로직
@@ -71,37 +85,9 @@ public class EquipmentInventory : MonoBehaviour
         (target.itemId, incomingSlot.itemId) = (incomingSlot.itemId, target.itemId);
         (target.amount, incomingSlot.amount) = (incomingSlot.amount, target.amount);
 
-        NotifyChange();
+        NotifyChange(type, index);
         return true;
     }
 
-    // 장착 시도 (부위와 리스트 인덱스 전달)
-    public bool Equip(EquipmentSlot type, int subIndex, InventorySlot mouseSlot)
-    {
-        if (!equipDict.ContainsKey(type) || subIndex >= equipDict[type].Count)
-            return false;
-
-        EquipmentItem item = ItemDatabase.Instance.GetItem(mouseSlot.itemId) as EquipmentItem;
-
-        if (item.slotType != type)
-            return false;
-
-        // 데이터 스왑 (Swap)
-        var targetSlot = equipDict[type][subIndex];
-
-        int tempId = targetSlot.itemId;
-        int tempAmt = targetSlot.amount;
-
-        targetSlot.itemId = mouseSlot.itemId;
-        targetSlot.amount = mouseSlot.amount;
-
-        mouseSlot.itemId = tempId;
-        mouseSlot.amount = tempAmt;
-
-        // 세트 효과 및 스탯 갱신 알림
-        // UpdateEquipmentStats();
-        return true;
-    }
-
-    public void NotifyChange() => OnEquipmentChanged?.Invoke();
+    public void NotifyChange(EquipmentSlot type, int idx) => OnEquipmentChanged?.Invoke(type, idx);
 }

@@ -188,16 +188,18 @@ public class InventoryManager : MonoBehaviour
     public void TryUnequipToInventory(EquipmentSlot type, int index, EquipmentInventory equipmentInv, Inventory mainInv)
     {
         // 1. 장비 데이터 가져오기
-        var itemSlot = equipmentInv.GetItemSlot(type, index);
-        Item item = ItemDatabase.Instance.GetItem(itemSlot.itemId);
-
-        // 2. 일반 인벤토리에 빈 공간이 있는지 확인 후 추가
-        if (mainInv.CanAdd(item, itemSlot.amount))
+        if (equipmentInv.GetItemSlot(type, index, out InventorySlot itemSlot))
         {
-            mainInv.AddItem(item, itemSlot.amount);
-            itemSlot.Clear();
-            equipmentInv.NotifyChange();
-            AudioManager.Instance.Play(SND.UI_Item_Drop);
+            Item item = ItemDatabase.Instance.GetItem(itemSlot.itemId);
+
+            // 2. 일반 인벤토리에 빈 공간이 있는지 확인 후 추가
+            if (mainInv.CanAdd(item, itemSlot.amount))
+            {
+                mainInv.AddItem(item, itemSlot.amount);
+                itemSlot.Clear();
+                equipmentInv.NotifyChange(type, index);
+                AudioManager.Instance.Play(SND.UI_Item_Drop);
+            }
         }
     }
 }
