@@ -10,7 +10,7 @@ using UnityEngine.UI;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.31 오후 21:02
- *  마지막 수정 일자 : 26.04.02 오전 01:44
+ *  마지막 수정 일자 : 26.04.02 오전 01:54
  *  
  *  [스크립트 목적 및 내용]
  *  1. 
@@ -68,6 +68,13 @@ public class EquipmentSlotUI : MonoBehaviour, IPointerDownHandler, IDropHandler 
         }
     }
 
+    public int GetSlotItemId()
+    {
+        equipmentInv.GetItemSlot(slotType, subIndex, out InventorySlot slot);
+
+        return slot.itemId;
+    }
+
     public void UpdateVisual(InventorySlot slot)
     {
         if (slot == null)
@@ -101,6 +108,8 @@ public class EquipmentSlotUI : MonoBehaviour, IPointerDownHandler, IDropHandler 
 
 
         // 장착 실패 사운드 재생
+
+
     }
 
     // 아이템 드롭 시 크기를 잠깐 키웠다 줄임
@@ -144,11 +153,11 @@ public class EquipmentSlotUI : MonoBehaviour, IPointerDownHandler, IDropHandler 
                 return true;
         }
 
-        // 2-1. 검증1: 장비 아이템인가?
+        // 2-1. 검증: 장비 아이템인가?
         if (ItemDatabase.Instance.GetItem(held.itemId) is not EquipmentItem item)
             return false;
 
-        // 2-2. 검증2: 부위가 일치하는가?
+        // 2-2. 검증: 부위가 일치하는가?
         if (item.slotType != this.slotType)
             return false;
 

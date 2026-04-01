@@ -73,7 +73,7 @@ public class EquipmentInventory : MonoBehaviour
     }
 
     // 장비 교체 로직 (장착, 해제, 교체 모두 이 함수로 처리 가능)
-    public bool EquipItem(EquipmentSlot type, int index, InventorySlot incomingSlot)
+    public void EquipItem(EquipmentSlot type, int index, InventorySlot incomingSlot)
     {
         // 1. 데이터 교체 (Swap)
         var target = equipDict[type][index];
@@ -82,7 +82,6 @@ public class EquipmentInventory : MonoBehaviour
 
         // 2. 변경 알림 (세트 효과 및 스탯 갱신용)
         NotifyChange(type, index);
-        return true;
     }
 
     public void NotifyChange(EquipmentSlot type, int idx) => OnEquipmentChanged?.Invoke(type, idx);

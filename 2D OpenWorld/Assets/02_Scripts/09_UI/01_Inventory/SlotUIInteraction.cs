@@ -8,7 +8,7 @@ using UnityEngine.UI;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.17 오후 22:14
- *  마지막 수정 일자 : 26.03.31 오후 23:06
+ *  마지막 수정 일자 : 26.04.02 오전 01:54
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 호버 UI 관리
@@ -42,7 +42,10 @@ public class SlotUIInteraction : MonoBehaviour, IPointerEnterHandler, IPointerEx
         }
         else if (equipSlotUI != null)
         {
-
+            if (ItemDatabase.Instance.TryGetItem(equipSlotUI.GetSlotItemId(), out Item item))
+            {
+                TooltipUI.Instance.ShowTooltip(item);
+            }
         }
     }
 

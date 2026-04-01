@@ -136,7 +136,6 @@ public class InventorySlotUI : MonoBehaviour, IPointerDownHandler
             {
                 // [기능 1] 좌클릭: 전체 줍기 / 슬롯 교체 (Swap)
                 InventoryManager.Instance.PickUpAll(slotIndex, inv);
-
                 AudioManager.Instance.Play(SND.UI_Item_Pickup);
             }
         }
