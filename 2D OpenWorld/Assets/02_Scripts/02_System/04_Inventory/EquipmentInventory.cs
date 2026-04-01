@@ -89,5 +89,13 @@ public class EquipmentInventory : MonoBehaviour
         return true;
     }
 
+    // 해체 로직
+    public void UnEquipItem(EquipmentSlot type, int index)
+    {
+        // Inventory Manager에서 함수 호출 시, 해당 슬롯에 아이템이 있는지 검사
+
+        // 이후, 
+    }
+
     public void NotifyChange(EquipmentSlot type, int idx) => OnEquipmentChanged?.Invoke(type, idx);
 }

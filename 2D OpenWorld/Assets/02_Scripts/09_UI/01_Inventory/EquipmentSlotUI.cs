@@ -120,31 +120,68 @@ public class EquipmentSlotUI : MonoBehaviour, IPointerDownHandler, IDropHandler 
         scaleFlag = true;
     }
 
-    public bool CheckItem()
+    public int CheckItem()
     {
-        // 1. 마우스가 들고 있는 아이템 확인
+        // 체크해야 될 사항은 총 2가지임
+        // 1. 해당 슬롯에 장착하려는 아이템 (마우스에 올려진 아이템)
+        // 2. 해당 슬롯에 장착되어 있는 아이템 (장착된 아이템)
+
+        // 4가지 경우의 수가 나옴
+        // 1. 마우스에 아이템이 없고, 슬롯에도 아이템이 없는 경우 (빈 슬롯 클릭)
+        // 2. 마우스에 아이템이 없고, 슬롯에는 아이템이 있는 경우 (장착된 아이템 클릭)
+        // 3. 마우스에 아이템이 있고, 슬롯에는 아이템이 없는 경우 (빈 슬롯에 장착 시도)
+        // 4. 마우스에 아이템이 있고, 슬롯에도 아이템이 있는 경우 (장착된 아이템과 교체 시도)
+
+        // 마우스에 아이템이 없다면 0점, 있다면 1점을 부과
+        // 슬롯에 아이템이 없다면 0점, 있다면 2점을 부과
+
+        // 1번(0점)의 경우 실행 불가로 False 반환
+        // 2번(2점)의 경우 해제 로직
+        // 3번(1점)의 경우 장착 로직
+        // 4번(3점)의 경우 교체 로직
+
+        int result = 0;
+        
         var held = MouseSlotUI.Instance.heldSlot;
         EquipmentItem item = ItemDatabase.Instance.GetItem(held.itemId) as EquipmentItem;
 
-        // 2. 부위가 맞는지 검사
-        if (item != null && item.slotType == slotType)
+        if (item != null)
         {
-            // 장착 로직 실행 가능으로 True 반환 (Swap 등)
-            return true;
+            result += 1; // 마우스에 아이템이 있음
+
+            if (item.slotType == slotType)
+            {
+                result += 2; // 부위도 맞음
+            }
         }
-        else
-        {
-            // 장착 로직 실행 불가로 False 반환, 장착 실패 효과 실행
-            Log.UI("이 부위에는 장착할 수 없는 아이템입니다.");
-            // FailVisual();
-            return false;
-        }
+
+        return result;
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         bool isShift =
             Keyboard.current.leftShiftKey.isPressed || Keyboard.current.rightShiftKey.isPressed;
+
+        switch (CheckItem())
+        {
+            // 마우스에 아이템이 있고, 슬롯에는 아이템이 없는 경우(빈 슬롯에 장착 시도)
+            case 1:
+                break;
+
+            // 마우스에 아이템이 없고, 슬롯에는 아이템이 있는 경우 (장착된 아이템 클릭)
+            case 2:
+                break;
+
+            // 마우스에 아이템이 있고, 슬롯에도 아이템이 있는 경우 (장착된 아이템과 교체 시도)
+            case 3:
+                break;
+
+            // 그 외의 경우 이므로, 장착 불가능으로 간주하여 함수 종료
+            default:
+                FailVisual();
+                return;
+        }
 
         if (CheckItem())
         {
