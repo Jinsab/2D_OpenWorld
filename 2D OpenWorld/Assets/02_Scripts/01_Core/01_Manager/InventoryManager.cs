@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.23 오후 20:41
- *  마지막 수정 일자 : 26.03.24 오후 23:12
+ *  마지막 수정 일자 : 26.04.02 오전 01:45
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 매니저
@@ -168,14 +168,12 @@ public class InventoryManager : MonoBehaviour
         held.Clear();
     }
 
-    // [기능 7] 장비 슬롯에 장착하기 (장비 슬롯 클릭 시)
+    // [기능 7] 장비 슬롯에 장착 및 교체하기 (장비 슬롯 클릭 시)
     public void TryEquipFromMouse(EquipmentSlot type, int index, EquipmentInventory equipmentInv)
     {
         var mouseSlot = MouseSlotUI.Instance.heldSlot;
 
-        if (mouseSlot.itemId == 0)
-            return;
-
+        Log.Game("Check 5");
         // 장비 인벤토리에 장착 요청
         if (equipmentInv.EquipItem(type, index, mouseSlot))
         {
@@ -184,7 +182,7 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    // [기능 8] 장비 슬롯에서 일반 인벤토리로 옮기기 (장비 슬롯 클릭 시)
+    // [기능 8] 장비 슬롯에서 일반 인벤토리로 옮기기 (즉시 이동)
     public void TryUnequipToInventory(EquipmentSlot type, int index, EquipmentInventory equipmentInv, Inventory mainInv)
     {
         // 1. 장비 데이터 가져오기

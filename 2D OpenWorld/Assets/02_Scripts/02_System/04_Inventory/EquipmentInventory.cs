@@ -9,7 +9,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.31 오후 18:14
- *  마지막 수정 일자 : 26.04.01 오후 17:17
+ *  마지막 수정 일자 : 26.04.02 오전 01:45
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 장착된 장비 전문 관리 인벤토리
@@ -72,29 +72,17 @@ public class EquipmentInventory : MonoBehaviour
         return false;
     }
 
-    // 장착 로직
+    // 장비 교체 로직 (장착, 해제, 교체 모두 이 함수로 처리 가능)
     public bool EquipItem(EquipmentSlot type, int index, InventorySlot incomingSlot)
     {
-        EquipmentItem item = ItemDatabase.Instance.GetItem(incomingSlot.itemId) as EquipmentItem;
-
-        // 검증: 부위가 일치하는가?
-        if (item.slotType != type) return false;
-
-        // 데이터 교체 (Swap)
+        // 1. 데이터 교체 (Swap)
         var target = equipDict[type][index];
         (target.itemId, incomingSlot.itemId) = (incomingSlot.itemId, target.itemId);
         (target.amount, incomingSlot.amount) = (incomingSlot.amount, target.amount);
 
+        // 2. 변경 알림 (세트 효과 및 스탯 갱신용)
         NotifyChange(type, index);
         return true;
-    }
-
-    // 해체 로직
-    public void UnEquipItem(EquipmentSlot type, int index)
-    {
-        // Inventory Manager에서 함수 호출 시, 해당 슬롯에 아이템이 있는지 검사
-
-        // 이후, 
     }
 
     public void NotifyChange(EquipmentSlot type, int idx) => OnEquipmentChanged?.Invoke(type, idx);
