@@ -6,7 +6,7 @@ using System.Collections.Generic;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.03 오후 16:25
- *  마지막 수정 일자 : 26.04.03 오후 16:25
+ *  마지막 수정 일자 : 26.04.03 오후 17:16
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 장비 인벤토리의 순수한 값 (데이터)
@@ -17,16 +17,24 @@ using System.Collections.Generic;
  */
 
 [System.Serializable]
-public class EquipmentSaveData : InventorySlot
+public class EquipmentInventorySlot : InventorySlot
 {
     public EquipmentSlot slotType; // 부위 (Head, Ring 등)
-    public int subIndex;          // 부위 내 인덱스 (0, 1 등)
+    public int subIndex;           // 부위 내 인덱스 (0, 1 등)
 
     // 생성자
-    public EquipmentSaveData(int id, int amt, EquipmentSlot type, int idx)
+    public EquipmentInventorySlot(int id, int amt, EquipmentSlot type, int idx)
     {
         this.itemId = id;
         this.amount = amt;
+        this.slotType = type;
+        this.subIndex = idx;
+    }
+
+    public EquipmentInventorySlot(EquipmentSlot type, int idx)
+    {
+        this.itemId = 0;
+        this.amount = 0;
         this.slotType = type;
         this.subIndex = idx;
     }
@@ -36,5 +44,5 @@ public class EquipmentSaveData : InventorySlot
 public class EquipmentInventoryData
 {
     // JSON 등으로 저장될 실제 리스트
-    public List<EquipmentSaveData> savedSlots = new List<EquipmentSaveData>();
+    public List<EquipmentInventorySlot> slots = new List<EquipmentInventorySlot>();
 }

@@ -9,7 +9,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.31 오후 18:14
- *  마지막 수정 일자 : 26.04.02 오전 01:45
+ *  마지막 수정 일자 : 26.04.03 오후 17:14
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 장착된 장비 전문 관리 인벤토리
@@ -26,10 +26,10 @@ using UnityEngine;
 public class EquipmentInventory : MonoBehaviour
 {
     [Header("# Equipment Connection Data")]
-    public InventoryData equipmentData;
+    public EquipmentInventoryData equipmentData;
     public event Action<EquipmentSlot, int> OnEquipmentChanged; // 장비 변경 시 호출 (세트 효과 및 스탯 갱신용)
     // 런타임 효율 및 로직용 (Dictionary)
-    [SerializeField] private SerializedDictionary<EquipmentSlot, List<InventorySlot>> equipDict = new();
+    [SerializeField] private SerializedDictionary<EquipmentSlot, List<EquipmentInventorySlot>> equipDict = new();
 
     private void Awake()
     {
@@ -48,11 +48,11 @@ public class EquipmentInventory : MonoBehaviour
             // 기본적으로 1개, 반지는 2개, 장신구는 N개 등 설정 가능
             int capacity = (slotType == EquipmentSlot.Ring) ? 2 : 1;
 
-            equipDict[slotType] = new List<InventorySlot>(capacity);
+            equipDict[slotType] = new List<EquipmentInventorySlot>(capacity);
 
             for (int i = 0; i < capacity; i++)
             {
-                equipDict[slotType].Add(new InventorySlot());
+                equipDict[slotType].Add(new EquipmentInventorySlot(slotType, i));
             }
         }
     }
@@ -84,19 +84,47 @@ public class EquipmentInventory : MonoBehaviour
         NotifyChange(type, index);
     }
 
+    // 특정 부위 변경 알림 (세트 효과 및 스탯 갱신용)
     public void NotifyChange(EquipmentSlot type, int idx) => OnEquipmentChanged?.Invoke(type, idx);
 
-    public void LoadFromData()
+    public EquipmentInventoryData SaveToData()
     {
-        // 저장된 List 데이터를 Dictionary로 변환하여 로드
+        var data = new EquipmentInventoryData();
+
+        // 1. Dictionary의 내용을 List로 변환하여 저장
+        foreach (var kvp in equipDict)
+        {
+            foreach (var slot in kvp.Value)
+            {
+                // 빈 슬롯도 위치 정보를 위해 저장
+                data.slots.Add(slot);
+            }
+        }
+
+        return data;
+    }
+
+    public void LoadFromData(EquipmentInventoryData equipmentData)
+    {
+        // 1. 먼저 Dictionary 구조를 초기 상태(빈 슬롯)로 세팅
+        InitDictionary();
+
+        // 2. 저장된 데이터를 순회하며 해당 위치에 삽입
         foreach (var entry in equipmentData.slots)
         {
+            // 2-1. 데이터 유효성 검사 (slotType, subIndex 범위 체크)
             if (equipDict.TryGetValue(entry.slotType, out var slots))
             {
-                if (entry.index >= 0 && entry.index < slots.Count)
+                // 2-2. 안전하게 subIndex 범위 체크 후 데이터 삽입
+                if (entry.subIndex >= 0 && entry.subIndex < slots.Count)
                 {
-                    slots[entry.index] = new InventorySlot { itemId = entry.itemId, amount = entry.amount };
+                    slots[entry.subIndex] =
+                        new EquipmentInventorySlot(entry.slotType, entry.subIndex)
+                        { itemId = entry.itemId, amount = entry.amount };
                 }
+
+                // 3. UI 및 스탯 갱신 알림
+                NotifyChange(entry.slotType, entry.subIndex);
             }
         }
     }
