@@ -85,4 +85,20 @@ public class EquipmentInventory : MonoBehaviour
     }
 
     public void NotifyChange(EquipmentSlot type, int idx) => OnEquipmentChanged?.Invoke(type, idx);
+
+    public void LoadFromData()
+    {
+        // 저장된 List 데이터를 Dictionary로 변환하여 로드
+        foreach (var entry in equipmentData.slots)
+        {
+            if (equipDict.TryGetValue(entry.slotType, out var slots))
+            {
+                if (entry.index >= 0 && entry.index < slots.Count)
+                {
+                    slots[entry.index] = new InventorySlot { itemId = entry.itemId, amount = entry.amount };
+                }
+            }
+        }
+    }
+
 }
