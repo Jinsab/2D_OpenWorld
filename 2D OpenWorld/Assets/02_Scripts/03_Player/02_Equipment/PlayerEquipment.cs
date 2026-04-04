@@ -27,6 +27,7 @@ public class PlayerEquipment : MonoBehaviour
 {
     // 각 슬롯별 현재 장착된 아이템 저장
     // private Dictionary<EquipmentSlot, EquipmentItem> currentEquipments = new Dictionary<EquipmentSlot, EquipmentItem>();
+    [SerializeField]
     private SerializedDictionary<EquipmentSlot, EquipmentItem> currentEquipments = new();
     private PlayerStats stats;
     private CharacterVisuals visuals;

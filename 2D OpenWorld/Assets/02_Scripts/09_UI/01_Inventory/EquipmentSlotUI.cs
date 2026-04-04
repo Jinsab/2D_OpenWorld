@@ -35,6 +35,12 @@ public class EquipmentSlotUI : MonoBehaviour, IPointerDownHandler, IDropHandler 
 
     private void OnEnable()
     {
+        if (equipmentInv == null)
+            equipmentInv = GameManager.Instance.EquipmentInventory;
+
+        if (inv == null)
+            inv = GameManager.Instance.Inventory;
+
         // 중요: 인벤토리의 이벤트에 내 함수(RefreshSlot)를 연결(구독)
         // AllDataRefresh();
         equipmentInv.OnEquipmentChanged += RefreshSlot;
