@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 using System.Linq;
+using AYellowpaper.SerializedCollections;
 
 /*  
  *  [프로젝트 제목]
@@ -31,7 +32,7 @@ public class PlayerStats : MonoBehaviour
     public PlayerStatData statData;
 
     // Dictionary를 사용하여 StatType으로 개별 Stat에 접근
-    public Dictionary<StatType, CharacterStat> Stats = new Dictionary<StatType, CharacterStat>();
+    public SerializedDictionary<StatType, CharacterStat> Stats = new();
 
     private void Awake()
     {
@@ -51,7 +52,7 @@ public class PlayerStats : MonoBehaviour
         if (statData != null)
         {
             // 직렬화된 List에서 Dictionary로 변환
-            Stats = statData.Stats.ToDictionary(entry => entry.statType, entry => entry.stat);
+            Stats.ToDictionary(entry => statData.Stats.ToDictionary(entry => entry.statType, entry => entry.stat).Keys);
 
             // 초기화 예시 (실제로는 데이터 시트나 ScriptableObject에서 불러올 수 있음)
             InitStat(StatType.MaxHealth, 100f);
@@ -87,17 +88,6 @@ public class PlayerStats : MonoBehaviour
 
             Stats[type] = new CharacterStat { BaseValue = baseValue };
         }
-
-        // List를 사용한 방법
-        // 해당 요소를 가지고 있는지 확인 
-        //if (statData.Stats.Exists(e => e.statType == type))
-        //{
-        //    Debug.Log($"Stat already exists: {type}");
-        //}
-        //else
-        //{
-        //    statData.Stats.Add(new StatEntry(type, new CharacterStat { BaseValue = baseValue }));
-        //}
     }
 
     // 외부(장착 시스템)에서 호출할 함수
@@ -119,16 +109,6 @@ public class PlayerStats : MonoBehaviour
             {
                 Log.Game($"Key is {data.statType}. {e.Message}");
             }
-
-            // List를 사용 방법
-            //try
-            //{
-            //    statData.Stats.FirstOrDefault(entry => entry.statType == data.statType).stat.AddModifier(newMod);
-            //}
-            //catch (IndexOutOfRangeException e)
-            //{
-            //    Debug.Log($"EquipItemModifiers Processing failed: {e.Message}");
-            //}
         }
     }
 

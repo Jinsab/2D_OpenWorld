@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
     [field: SerializeField] public PlayerCombatController PlayerCombatController { get; private set; }
     [field: SerializeField] public PlayerLook PlayerLook { get; private set; }
     [field: SerializeField] public PlayerStateMachine StateMachine { get; private set; }
+    [field: SerializeField] public PlayerEquipment PlayerEquipment { get; private set; }
 
     [Header("# Animations")]
     [field: SerializeField] public PlayerAnimation AnimationData { get; private set; }
@@ -83,8 +84,11 @@ public class PlayerController : MonoBehaviour
         Rigidbody = GetComponent<Rigidbody2D>();
         Animator = GetComponentInChildren<Animator>();
         PlayerMovement = GetComponent<PlayerMovement>();
+        PlayerUI = GetComponent<PlayerUI>();
+        PlayerStats = GetComponent<PlayerStats>();
         PlayerCombatController = GetComponent<PlayerCombatController>();
         StateMachine = GetComponent<PlayerStateMachine>();
+        PlayerEquipment = GetComponent<PlayerEquipment>();
 
         PlayerMovement.Initialize();
         PlayerUI.Initialize();

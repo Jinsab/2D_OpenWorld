@@ -1488,23 +1488,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 859
-      height: 750.3333
-    m_Scale: {x: 0.67109376, y: 0.67109376}
-    m_Translation: {x: 429.5, y: 375.16666}
+      width: 688.3334
+      height: 379
+    m_Scale: {x: 0.5263889, y: 0.5263889}
+    m_Translation: {x: 344.1667, y: 189.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -640
-      y: -559.0376
-      width: 1280
-      height: 1118.0752
+      x: -653.8259
+      y: -360
+      width: 1307.6519
+      height: 720
     m_MinimalGUI: 1
-  m_defaultScale: 0.67109376
-  m_LastWindowPixelSize: {x: 859, y: 771.3333}
+  m_defaultScale: 0.5263889
+  m_LastWindowPixelSize: {x: 688.3334, y: 400}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1704,8 +1704,22 @@ MonoBehaviour:
       m_Data: 102536
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 95328
-    - m_Data: 1000000000
+    - m_Data: 122378
+    - m_Data: 122380
+    - m_Data: 122382
+    - m_Data: 122384
+    - m_Data: 122386
+    - m_Data: 122388
+    - m_Data: 122390
+    - m_Data: 122392
+    - m_Data: 122394
+    - m_Data: 122396
+    - m_Data: 122398
+    - m_Data: 122400
+    - m_Data: 122402
+    - m_Data: 122404
+    - m_Data: 122406
+    - m_Data: 122408
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1738,8 +1752,22 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 95328
-    - m_Data: 1000000000
+    - m_Data: 122378
+    - m_Data: 122380
+    - m_Data: 122382
+    - m_Data: 122384
+    - m_Data: 122386
+    - m_Data: 122388
+    - m_Data: 122390
+    - m_Data: 122392
+    - m_Data: 122394
+    - m_Data: 122396
+    - m_Data: 122398
+    - m_Data: 122400
+    - m_Data: 122402
+    - m_Data: 122404
+    - m_Data: 122406
+    - m_Data: 122408
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

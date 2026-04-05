@@ -1,6 +1,7 @@
 using AYellowpaper.SerializedCollections;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 /*  
@@ -57,14 +58,15 @@ public class PlayerEquipment : MonoBehaviour
     {
         // 1. Dictionary 초기화 (부위별 슬롯 개수 설정)
         currentEquipments.Clear();
-        currentEquipments = dict;
+        string json = JsonUtility.ToJson(dict);
+        currentEquipments = JsonUtility.FromJson<SerializedDictionary<EquipmentSlot, List<EquipmentInventorySlot>>>(json);
     }
 
     private void UpdatePlayerState(EquipmentSlot slot, int index)
     {
         // 1. 능력치 초기화 및 재계산
-        Equip(slot, index);
-        //UpdateStats();
+        // Equip(slot, index);
+        UpdateStats(slot, index);
 
         //// 2. 외형 업데이트
         //UpdateAppearance();
@@ -76,8 +78,20 @@ public class PlayerEquipment : MonoBehaviour
         //SetEffectManager.Instance.CheckSetEffects(equipmentInv.GetAllEquippedItems());
     }
 
-    public void UpdateStats() // EquipmentItem newItem
+    public void UpdateStats(EquipmentSlot slot, int subIndex)
     {
+        int itemId = equipmentInv.GetEquipmentItem(slot, subIndex).itemId;
+        EquipmentItem equipmentItem = ItemDatabase.Instance.GetItem(itemId) as EquipmentItem;
+
+        if (itemId == 0)
+        {
+            Unequip(slot, subIndex, equipmentItem);
+        }
+        else
+        {
+            Equip(slot, subIndex, equipmentItem);
+        }
+
         //// 1. 이미 같은 슬롯에 장비가 있다면 먼저 해제
         //if (currentEquipments.ContainsKey(newItem.slotType))
         //{
@@ -102,7 +116,7 @@ public class PlayerEquipment : MonoBehaviour
         //Log.Game($"{newItem.itemName} 장착 완료");
     }
 
-    public void Equip(EquipmentSlot slot, int subIndex)
+    public void Equip(EquipmentSlot slot, int subIndex, EquipmentItem newItem)
     {
         // 혹시 모를 NullReference 방지 위해 TryGetValue 사용
         if (!currentEquipments.TryGetValue(slot, out var item))
@@ -111,13 +125,18 @@ public class PlayerEquipment : MonoBehaviour
         // 1. 이미 같은 슬롯에 장비가 있다면 먼저 해제
         // currentDictionary의 경우 기본 값으로 초기화가 되어있기 때문에
         // itemId가 0이 아닌 경우 장착된 아이템이 존재한다고 판단할 수 있다.
-        if (item[subIndex].itemId != 0)
-            Unequip(slot, subIndex);
+        //if (item[subIndex].itemId != 0)
+        //    Unequip(slot, subIndex);
 
         // 2. 데이터 등록
-        currentEquipments[slot][subIndex] = equipmentInv.GetEquipmentItem(slot, subIndex);
-        EquipmentItem newItem = ItemDatabase.Instance.GetItem(currentEquipments[slot][subIndex].itemId) as EquipmentItem;
-        
+        //currentEquipments[slot][subIndex] = equipmentInv.GetEquipmentItem(slot, subIndex);
+        //EquipmentItem newItem = ItemDatabase.Instance.GetItem(currentEquipments[slot][subIndex].itemId) as EquipmentItem;
+
+        //if (newItem == null)
+        //    return;
+
+        Log.Game("Equipment Item Id: " + equipmentInv.GetEquipmentItem(slot, subIndex).itemId);
+
         // 3. 능력치 적용 (PlayerStats 이용)
         stats.EquipItemModifiers(newItem.modifiers, newItem);
 
@@ -130,21 +149,22 @@ public class PlayerEquipment : MonoBehaviour
             weaponController.EquipWeapon(weaponItem);
         }
 
-        Log.Game($"{newItem.itemName} 장착 완료");
+        Log.Game($"Current Stats after equipping {newItem.itemName}: " +
+            $"MaxHealth: {stats.Stats[StatType.MaxHealth].Value}, " +
+            $"AttackDamage: {stats.Stats[StatType.AttackDamage].Value}, " +
+            $"MoveSpeed: {stats.Stats[StatType.MoveSpeed].Value}");
     }
 
     // 장비 해제 로직 (장착된 아이템이 있을 때만 호출)
-    public void Unequip(EquipmentSlot slot, int subIndex)
+    public void Unequip(EquipmentSlot slot, int subIndex, EquipmentItem equipmentItem)
     {
         // 혹시 모를 NullReference 방지 위해 TryGetValue 사용
-        if (!currentEquipments.TryGetValue(slot, out var item))
-            return;
+        //if (!currentEquipments.TryGetValue(slot, out var item))
+        //    return;
 
-        // itemId가 0이라면 해당 슬롯에 장착된 아이템이 없다는 뜻이므로 해제할 필요가 없음
-        if (item[subIndex].itemId == 0)
-            return;
-
-        EquipmentItem equipmentItem = ItemDatabase.Instance.GetItem(item[subIndex].itemId) as EquipmentItem;
+        //// itemId가 0이라면 해당 슬롯에 장착된 아이템이 없다는 뜻이므로 해제할 필요가 없음
+        //if (item[subIndex].itemId == 0)
+        //    return;
 
         // 1. 능력치 제거
         stats.UnequipItemModifiers(equipmentItem);
@@ -159,8 +179,8 @@ public class PlayerEquipment : MonoBehaviour
         }
 
         // 4. 데이터 제거
-        currentEquipments[slot][subIndex].Clear();
+        // currentEquipments[slot][subIndex].Clear();
 
-        Log.Game($"{equipmentItem.itemName} 해제 완료");
+        // Log.Game($"{equipmentItem.itemName} 해제 완료");
     }
 }

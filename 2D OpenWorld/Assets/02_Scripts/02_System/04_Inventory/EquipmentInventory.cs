@@ -42,8 +42,8 @@ public class EquipmentInventory : MonoBehaviour
         foreach (EquipmentSlot slotType in Enum.GetValues(typeof(EquipmentSlot)))
         {
             // 무기는 제외 (퀵슬롯 관리용)
-            if (slotType == EquipmentSlot.Weapon)
-                continue;
+            //if (slotType == EquipmentSlot.Weapon)
+            //    continue;
 
             // 기본적으로 1개, 반지는 2개, 장신구는 N개 등 설정 가능
             int capacity = (slotType == EquipmentSlot.Ring) ? 2 : 1;
@@ -56,7 +56,8 @@ public class EquipmentInventory : MonoBehaviour
             }
         }
 
-        
+        Log.Game("장비 인벤토리 초기화 완료");
+        GameManager.Instance.Player.GetComponent<PlayerController>().PlayerEquipment.CopyDictionary(equipDict);
     }
 
     public bool GetItemSlot(EquipmentSlot type, int index, out InventorySlot slot)
