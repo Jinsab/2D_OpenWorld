@@ -9,7 +9,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.31 오후 18:14
- *  마지막 수정 일자 : 26.04.03 오후 17:14
+ *  마지막 수정 일자 : 26.04.05 오후 19:04
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 장착된 장비 전문 관리 인벤토리
@@ -31,7 +31,7 @@ public class EquipmentInventory : MonoBehaviour
     // 런타임 효율 및 로직용 (Dictionary)
     [SerializeField] private SerializedDictionary<EquipmentSlot, List<EquipmentInventorySlot>> equipDict = new();
 
-    private void Awake()
+    private void Start()
     {
         InitDictionary();
     }
@@ -55,6 +55,8 @@ public class EquipmentInventory : MonoBehaviour
                 equipDict[slotType].Add(new EquipmentInventorySlot(slotType, i));
             }
         }
+
+        
     }
 
     public bool GetItemSlot(EquipmentSlot type, int index, out InventorySlot slot)
@@ -70,6 +72,13 @@ public class EquipmentInventory : MonoBehaviour
 
         slot = new InventorySlot();
         return false;
+    }
+
+    public EquipmentInventorySlot GetEquipmentItem(EquipmentSlot type, int index)
+    {
+        return equipDict.TryGetValue(type, out var slots) && index >= 0 && index < slots.Count
+            ? slots[index]
+            : new EquipmentInventorySlot(type, index); // 유효하지 않은 요청에 대해 빈 슬롯 반환d
     }
 
     // 장비 교체 로직 (장착, 해제, 교체 모두 이 함수로 처리 가능)

@@ -9,7 +9,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.20 오전 01:37
- *  마지막 수정 일자 : 26.04.05 오후 17:19
+ *  마지막 수정 일자 : 26.04.05 오후 19:04
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 장비 시스템
@@ -59,7 +59,6 @@ public class PlayerEquipment : MonoBehaviour
         currentEquipments.Clear();
         currentEquipments = dict;
     }
-
 
     private void UpdatePlayerState(EquipmentSlot slot, int index)
     {
@@ -116,9 +115,9 @@ public class PlayerEquipment : MonoBehaviour
             Unequip(slot, subIndex);
 
         // 2. 데이터 등록
-        currentEquipments[slot][subIndex] = item[subIndex];
-        EquipmentItem newItem = ItemDatabase.Instance.GetItem(item[subIndex].itemId) as EquipmentItem;
-
+        currentEquipments[slot][subIndex] = equipmentInv.GetEquipmentItem(slot, subIndex);
+        EquipmentItem newItem = ItemDatabase.Instance.GetItem(currentEquipments[slot][subIndex].itemId) as EquipmentItem;
+        
         // 3. 능력치 적용 (PlayerStats 이용)
         stats.EquipItemModifiers(newItem.modifiers, newItem);
 
