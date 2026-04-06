@@ -40,12 +40,14 @@ public enum StatModType
 [System.Serializable]
 public class StatModifier
 {
+    public StatType StatName;   // 어떤 능력치에 적용되는가? (공격력, 이동속도 등)
     public float Value;         // 수치
     public StatModType Type;    // 스탯 타입
     public object Source;       // 객체 (아이템 객체, 스킬 객체)
 
-    public StatModifier(float value, StatModType type, object source)
+    public StatModifier(StatType name, float value, StatModType type, object source)
     {
+        StatName = name;
         Value = value;
         Type = type;
         Source = source;

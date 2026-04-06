@@ -55,9 +55,6 @@ public class EquipmentInventory : MonoBehaviour
                 equipDict[slotType].Add(new EquipmentInventorySlot(slotType, i));
             }
         }
-
-        Log.Game("장비 인벤토리 초기화 완료");
-        GameManager.Instance.Player.GetComponent<PlayerController>().PlayerEquipment.CopyDictionary(equipDict);
     }
 
     public bool GetItemSlot(EquipmentSlot type, int index, out InventorySlot slot)
@@ -139,4 +136,31 @@ public class EquipmentInventory : MonoBehaviour
         }
     }
 
+    // 장착된 모든 아이템의 모든 스탯 모디파이어를 수집하여 반환
+    public List<StatModifier> GetAllEquipmentModifiers()
+    {
+        List<StatModifier> allModifiers = new List<StatModifier>();
+
+        foreach (var pair in equipDict)
+        {
+            foreach (var slot in pair.Value)
+            {
+                if (slot.itemId == 0)
+                    continue;
+
+                EquipmentItem item = ItemDatabase.Instance.GetItem(slot.itemId) as EquipmentItem;
+                
+                if (item == null)
+                    continue;
+
+                // 저장용 Data를 실행용 Modifier 객체로 변환
+                foreach (var data in item.modifiers)
+                {
+                    // Source에 item을 넣어 "누가 준 스탯인지" 기록
+                    allModifiers.Add(new StatModifier(data.statType, data.value, data.type, this));
+                }
+            }
+        }
+        return allModifiers;
+    }
 }

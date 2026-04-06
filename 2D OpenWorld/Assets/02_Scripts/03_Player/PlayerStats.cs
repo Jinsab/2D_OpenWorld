@@ -91,23 +91,32 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    // 장비 변경 시 호출될 함수
-    //public void UpdateEquipmentStats(List<StatModifier> newModifiers, object source)
-    //{
-    //    // 1. 해당 소스(장비창 등)에서 온 기존 모디파이어 제거
-    //    Attack.RemoveAllModifiersFromSource(source);
-    //    Defense.RemoveAllModifiersFromSource(source);
+    // 2. 외부(장비/버프)에서 모디파이어 리스트가 들어왔을 때 처리
+    public void UpdateModifiers(List<StatModifier> newModifiers, object source)
+    {
+        // 모든 능력치에서 해당 소스의 모디파이어를 일단 제거
+        foreach (var stat in Stats.Values)
+        {
+            stat.RemoveAllModifiersFromSource(source);
+        }
 
-    //    // 2. 새로운 모디파이어들 추가
-    //    foreach (var mod in newModifiers)
-    //    {
-    //        // 실제 구현 시에는 Mod가 어떤 스탯용인지 구분하는 로직 필요
-    //        // 예: if (mod.StatName == "Attack") Attack.AddModifier(mod);
-    //    }
+        // 전달받은 모디파이어들을 각자의 타입에 맞게 배분
+        foreach (var mod in newModifiers)
+        {
+            if (Stats.ContainsKey(mod.StatName))
+            {
+                Stats[mod.StatName].AddModifier(mod);
+            }
+        }
 
-    //    // 3. UI 갱신 이벤트 호출
-    //    //OnStatsChanged?.Invoke();
-    //}
+        // OnStatsChanged?.Invoke();
+    }
+
+    // 특정 능력치의 최종값 가져오기
+    public float GetStatValue(StatType type)
+    {
+        return Stats.ContainsKey(type) ? Stats[type].Value : 0;
+    }
 
     // 외부(장착 시스템)에서 호출할 함수
     public void EquipItemModifiers(List<StatModifierData> modifierDatas, object source)
@@ -115,7 +124,7 @@ public class PlayerStats : MonoBehaviour
         foreach (var data in modifierDatas)
         {
             // Data(데이터 구조체)를 실제 Modifier(계산용 객체)로 변환
-            StatModifier newMod = new StatModifier(data.value, data.type, source);
+            StatModifier newMod = new StatModifier(data.statType, data.value, data.type, source);
 
             try
             {
