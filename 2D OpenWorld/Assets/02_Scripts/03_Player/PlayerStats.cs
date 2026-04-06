@@ -1,8 +1,9 @@
-using UnityEngine;
-using System.Collections.Generic;
-using System;
-using System.Linq;
 using AYellowpaper.SerializedCollections;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 /*  
  *  [프로젝트 제목]
@@ -86,9 +87,27 @@ public class PlayerStats : MonoBehaviour
         {
             Log.Game($"Initializing stat: {type} with base value: {baseValue}");
 
-            Stats[type] = new CharacterStat { BaseValue = baseValue };
+            Stats[type] = new CharacterStat(baseValue);
         }
     }
+
+    // 장비 변경 시 호출될 함수
+    //public void UpdateEquipmentStats(List<StatModifier> newModifiers, object source)
+    //{
+    //    // 1. 해당 소스(장비창 등)에서 온 기존 모디파이어 제거
+    //    Attack.RemoveAllModifiersFromSource(source);
+    //    Defense.RemoveAllModifiersFromSource(source);
+
+    //    // 2. 새로운 모디파이어들 추가
+    //    foreach (var mod in newModifiers)
+    //    {
+    //        // 실제 구현 시에는 Mod가 어떤 스탯용인지 구분하는 로직 필요
+    //        // 예: if (mod.StatName == "Attack") Attack.AddModifier(mod);
+    //    }
+
+    //    // 3. UI 갱신 이벤트 호출
+    //    //OnStatsChanged?.Invoke();
+    //}
 
     // 외부(장착 시스템)에서 호출할 함수
     public void EquipItemModifiers(List<StatModifierData> modifierDatas, object source)

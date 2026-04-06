@@ -2,6 +2,7 @@ using AYellowpaper.SerializedCollections;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 
 /*  
@@ -80,40 +81,10 @@ public class PlayerEquipment : MonoBehaviour
 
     public void UpdateStats(EquipmentSlot slot, int subIndex)
     {
-        int itemId = equipmentInv.GetEquipmentItem(slot, subIndex).itemId;
+        int itemId = currentEquipments[slot][subIndex].itemId;
+
         EquipmentItem equipmentItem = ItemDatabase.Instance.GetItem(itemId) as EquipmentItem;
-
-        if (itemId == 0)
-        {
-            Unequip(slot, subIndex, equipmentItem);
-        }
-        else
-        {
-            Equip(slot, subIndex, equipmentItem);
-        }
-
-        //// 1. 이미 같은 슬롯에 장비가 있다면 먼저 해제
-        //if (currentEquipments.ContainsKey(newItem.slotType))
-        //{
-        //    Unequip(newItem.slotType);
-        //}
-
-        //// 2. 데이터 등록
-        //currentEquipments[newItem.slotType] = newItem;
-
-        //// 3. 능력치 적용 (PlayerStats 이용)
-        //stats.EquipItemModifiers(newItem.modifiers, newItem);
-
-        //// 4. 외형 업데이트
-        //visuals.UpdateVisual(newItem.slotType, newItem.equipmentSprite);
-
-        //// 5. 무기일 경우 무기 컨트롤러에 알림
-        //if (newItem is WeaponItem weaponItem)
-        //{
-        //    weaponController.EquipWeapon(weaponItem);
-        //}
-
-        //Log.Game($"{newItem.itemName} 장착 완료");
+        Equip(slot, subIndex, equipmentItem);
     }
 
     public void Equip(EquipmentSlot slot, int subIndex, EquipmentItem newItem)
@@ -122,65 +93,92 @@ public class PlayerEquipment : MonoBehaviour
         if (!currentEquipments.TryGetValue(slot, out var item))
             return;
 
-        // 1. 이미 같은 슬롯에 장비가 있다면 먼저 해제
-        // currentDictionary의 경우 기본 값으로 초기화가 되어있기 때문에
-        // itemId가 0이 아닌 경우 장착된 아이템이 존재한다고 판단할 수 있다.
-        //if (item[subIndex].itemId != 0)
+
+
+        //// 1. 이미 같은 슬롯에 장비가 있다면 먼저 해제
+        //// currentDictionary의 경우 기본 값으로 초기화가 되어있기 때문에
+        //// itemId가 0이 아닌 경우 장착된 아이템이 존재한다고 판단할 수 있다.
+        //if (currentEquipments[slot][subIndex].itemId != 0)
+        //{
         //    Unequip(slot, subIndex);
 
-        // 2. 데이터 등록
-        //currentEquipments[slot][subIndex] = equipmentInv.GetEquipmentItem(slot, subIndex);
-        //EquipmentItem newItem = ItemDatabase.Instance.GetItem(currentEquipments[slot][subIndex].itemId) as EquipmentItem;
+        //    if (newItem.itemId == 0)
+        //    {
+        //        return;
+        //    }
+        //}
 
-        //if (newItem == null)
+        //// 2. 데이터 등록
+        //currentEquipments[slot][subIndex] = equipmentInv.GetEquipmentItem(slot, subIndex);
+
+        //if (currentEquipments[slot][subIndex] == null)
         //    return;
 
-        Log.Game("Equipment Item Id: " + equipmentInv.GetEquipmentItem(slot, subIndex).itemId);
+        //Log.Game("Equipment Item Id: " + currentEquipments[slot][subIndex].itemId);
 
-        // 3. 능력치 적용 (PlayerStats 이용)
-        stats.EquipItemModifiers(newItem.modifiers, newItem);
+        //// 3. 능력치 적용 (PlayerStats 이용)
+        //stats.EquipItemModifiers(newItem.modifiers, newItem);
 
-        // 4. 외형 업데이트
-        visuals.UpdateVisual(newItem.slotType, newItem.equipmentSprite);
+        //// 4. 외형 업데이트
+        //// 외형의 경우 모자, 상의, 하의, 무기만 변경
+        //if (newItem.slotType == EquipmentSlot.Weapon ||
+        //    newItem.slotType == EquipmentSlot.Head ||
+        //    newItem.slotType == EquipmentSlot.Chest ||
+        //    newItem.slotType == EquipmentSlot.Pants)
+        //    visuals.UpdateVisual(newItem.slotType, newItem.equipmentSprite);
 
-        // 5. 무기일 경우 무기 컨트롤러에 알림
-        if (newItem is WeaponItem weaponItem)
-        {
-            weaponController.EquipWeapon(weaponItem);
-        }
+        //// 5. 무기일 경우 무기 컨트롤러에 알림
+        //if (newItem is WeaponItem weaponItem)
+        //{
+        //    weaponController.EquipWeapon(weaponItem);
+        //}
 
-        Log.Game($"Current Stats after equipping {newItem.itemName}: " +
-            $"MaxHealth: {stats.Stats[StatType.MaxHealth].Value}, " +
-            $"AttackDamage: {stats.Stats[StatType.AttackDamage].Value}, " +
-            $"MoveSpeed: {stats.Stats[StatType.MoveSpeed].Value}");
+        //Log.Game($"Current Stats after equipping {newItem.itemName}: " +
+        //    $"MaxHealth: {stats.Stats[StatType.MaxHealth].Value}, " +
+        //    $"AttackDamage: {stats.Stats[StatType.AttackDamage].Value}, " +
+        //    $"MoveSpeed: {stats.Stats[StatType.MoveSpeed].Value}");
     }
 
     // 장비 해제 로직 (장착된 아이템이 있을 때만 호출)
-    public void Unequip(EquipmentSlot slot, int subIndex, EquipmentItem equipmentItem)
+    public void Unequip(EquipmentSlot slot, int subIndex)
     {
         // 혹시 모를 NullReference 방지 위해 TryGetValue 사용
-        //if (!currentEquipments.TryGetValue(slot, out var item))
+        if (!currentEquipments.TryGetValue(slot, out var item))
+            return;
+
+        ////// itemId가 0이라면 해당 슬롯에 장착된 아이템이 없다는 뜻이므로 해제할 필요가 없음
+        ////if (currentEquipments[slot][subIndex])
+        ////    return;
+
+        //Log.Game("현재 장착 아이템 Id: " + currentEquipments[slot][subIndex].itemId);
+        //if (currentEquipments[slot][subIndex].itemId == 0)
         //    return;
 
-        //// itemId가 0이라면 해당 슬롯에 장착된 아이템이 없다는 뜻이므로 해제할 필요가 없음
-        //if (item[subIndex].itemId == 0)
-        //    return;
+        //EquipmentItem equipmentItem = ItemDatabase.Instance.GetItem(currentEquipments[slot][subIndex].itemId) as EquipmentItem;
 
-        // 1. 능력치 제거
-        stats.UnequipItemModifiers(equipmentItem);
+        //Log.Game("장착 해제하려는 아이템: " + equipmentItem.itemName);
 
-        // 2. 외형 제거
-        visuals.ClearVisual(slot);
 
-        // 3. 무기 전용 해제 로직
-        if (slot == EquipmentSlot.Weapon)
-        {
-            weaponController.UnEquipWeapon();
-        }
+        //// 1. 능력치 제거
+        //stats.UnequipItemModifiers(equipmentItem);
 
-        // 4. 데이터 제거
-        // currentEquipments[slot][subIndex].Clear();
+        //// 2. 외형 제거
+        //// 외형의 경우 모자, 상의, 하의, 무기만 변경
+        //if (equipmentItem.slotType == EquipmentSlot.Weapon ||
+        //    equipmentItem.slotType == EquipmentSlot.Head ||
+        //    equipmentItem.slotType == EquipmentSlot.Chest ||
+        //    equipmentItem.slotType == EquipmentSlot.Pants)
+        //    visuals.ClearVisual(slot);
 
-        // Log.Game($"{equipmentItem.itemName} 해제 완료");
+        //// 3. 무기 전용 해제 로직
+        //if (slot == EquipmentSlot.Weapon)
+        //{
+        //    weaponController.UnEquipWeapon();
+        //}
+
+        //// 4. 데이터 제거
+        //currentEquipments[slot][subIndex].Clear();
+
+        //Log.Game($"{equipmentItem.itemName} 해제 완료");
     }
 }

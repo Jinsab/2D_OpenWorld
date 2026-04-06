@@ -41,9 +41,6 @@ public class CharacterStat
     private readonly List<StatModifier> statModifiers = new List<StatModifier>();
     public IReadOnlyList<StatModifier> StatModifiers => statModifiers.AsReadOnly();
 
-    private bool isDirty = true; // 값이 변경되었는지 확인용
-    private float lastValue;     // 캐싱된 최종값
-
     // 최종 값 (계산된 값, 읽기 전용)
     public float Value
     {
@@ -56,6 +53,14 @@ public class CharacterStat
             }
             return lastValue;
         }
+    }
+
+    private bool isDirty = true; // 값이 변경되었는지 확인용
+    private float lastValue;     // 캐싱된 최종값
+
+    public CharacterStat(float baseValue)
+    {
+        BaseValue = baseValue;
     }
 
     public void AddModifier(StatModifier mod)
