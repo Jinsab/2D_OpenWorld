@@ -34,6 +34,7 @@ public class PlayerStats : MonoBehaviour
 
     // Dictionary를 사용하여 StatType으로 개별 Stat에 접근
     public SerializedDictionary<StatType, CharacterStat> Stats = new();
+    public event Action OnStatsChanged;
 
     private void Awake()
     {
@@ -109,7 +110,7 @@ public class PlayerStats : MonoBehaviour
             }
         }
 
-        // OnStatsChanged?.Invoke();
+        OnStatsChanged?.Invoke();
     }
 
     // 특정 능력치의 최종값 가져오기

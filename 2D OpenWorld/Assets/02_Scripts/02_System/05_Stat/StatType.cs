@@ -25,14 +25,34 @@
 
 public enum StatType
 {
+    // Basic Stats (기본 스탯)
+    None,           // 스탯 없음 (기본값)
     MaxHealth,      // 최대 체력 (플레이어, 몬스터 등 모든 캐릭터에 적용)
+    HealthRegen,    // 체력 회복 속도 (플레이어에게만 적용)
     MaxMana,        // 최대 마나 (플레이어에게만 적용)
-    MoveSpeed,      // 이동 속도 (플레이어, 몬스터 등 모든 캐릭터에 적용)
-    AttackDamage,   // 공격력 (플레이어, 몬스터 등 모든 캐릭터에 적용)
-    AttackSpeed,    // 공격 속도 (플레이어, 몬스터 등 모든 캐릭터에 적용)
-    MiningSpeed,    // 채광 속도 (플레이어에게만 적용)
+    ManaRegen,      // 마나 회복 속도 (플레이어에게만 적용)
+    
+    // Defense Stats (방어 스탯)
     Armor,          // 방어력 (플레이어, 몬스터 등 모든 캐릭터에 적용)
-    CritChance,     // 치명타 확률 (플레이어에게만 적용)
-    CritDamage,     // 치명타 배율 (플레이어에게만 적용)
+    Avoidance,      // 회피율 (플레이어에게만 적용)
+    Resistance,     // 저항력 (플레이어에게만 적용)
+                    // 추가로 보호막, 상태 이상 저항, 원소 저항 등 세분화 가능
+
+    // Attack Stats (공격 스탯)
+    MeleeAttackDamage,          // 근접 공격력 (플레이어, 몬스터 등 모든 캐릭터에 적용)
+    RangedAttackDamage,         // 원거리 공격력 (플레이어, 몬스터 등 모든 캐릭터에 적용)
+    MagicMeleeAttackDamage,     // 마법 근접 공격력 (플레이어, 몬스터 등 모든 캐릭터에 적용)
+    MagicRangedAttackDamage,    // 마법 원거리 공격력 (플레이어, 몬스터 등 모든 캐릭터에 적용)
+    MeleeAttackSpeed,           // 근접 공격 속도 (플레이어, 몬스터 등 모든 캐릭터에 적용)
+    RangedAttackSpeed,          // 원거리 공격 속도 (플레이어, 몬스터 등 모든 캐릭터에 적용)
+    CritChance,                 // 치명타 확률 (플레이어에게만 적용)
+    CritDamage,                 // 치명타 배율 (플레이어에게만 적용)
+    
+    // Survival Stats (생존 스탯)
+    MoveSpeed,      // 이동 속도 (플레이어, 몬스터 등 모든 캐릭터에 적용)
+    HarvestDamage,  // 채집 공격력 (플레이어에게만 적용)
+    HarvestSpeed,   // 채집 속도 (플레이어에게만 적용)
+    HarvestYield,   // 채집 수확량 (플레이어에게만 적용)
+    HarvestLuck,    // 채집 행운 (플레이어에게만 적용)
     LightRadius     // 발광 범위 (플레이어, 몬스터, 오브젝트 등 모든 요소에 적용)
 }
