@@ -7,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.07 오후 18:14
- *  마지막 수정 일자 : 26.04.07 오후 18:14
+ *  마지막 수정 일자 : 26.04.07 오후 21:57
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어의 스탯을 보여주는 스탯 UI 매니저
@@ -30,7 +30,7 @@ public class StatsUIManager : MonoBehaviour
     [SerializeField] private GameObject statRowPrefab;     // 스탯 이름/수치가 담긴 프리팹
 
     // 생성된 UI 요소들을 관리하기 위한 딕셔너리
-    private Dictionary<StatType, StatRowUI> statUIEntries = new Dictionary<StatRowUI>();
+    private Dictionary<StatType, StatRowUI> statUIEntries = new();
 
     private void Start()
     {
@@ -76,7 +76,8 @@ public class StatsUIManager : MonoBehaviour
 
             // 타입에 따라 퍼센트(%) 기호를 붙일지 결정
             string formattedValue = FormatStatValue(type, value);
-            ui.SetValueText(formattedValue);
+            ui.SetValue(formattedValue);
+            ui.SetStatText(); // 라벨과 값이 모두 설정된 후 텍스트 업데이트
         }
     }
 
@@ -87,9 +88,25 @@ public class StatsUIManager : MonoBehaviour
         {
             StatType.MaxHealth => "최대 체력",
             StatType.MaxMana => "최대 마나",
-            StatType.HpRegen => "체력 재생",
-            StatType.Defense => "방어력",
-            StatType.Evasion => "회피 확률",
+            StatType.HealthRegen => "체력 재생",
+            StatType.ManaRegen => "마나 재생",
+            StatType.Armor => "방어력",
+            StatType.Avoidance => "회피 확률",
+            StatType.Resistance => "저항력",
+            StatType.MeleeAttackDamage => "근접 공격력",
+            StatType.RangedAttackDamage => "원거리 공격력",
+            StatType.MagicMeleeAttackDamage => "마법 근접 공격력",
+            StatType.MagicRangedAttackDamage => "마법 원거리 공격력",
+            StatType.MeleeAttackSpeed => "근접 공격 속도",
+            StatType.RangedAttackSpeed => "원거리 공격 속도",
+            StatType.CritChance => "치명타 확률",
+            StatType.CritDamage => "치명타 공격력",
+            StatType.MoveSpeed => "이동속도",
+            StatType.HarvestDamage => "채집 공격력",
+            StatType.HarvestSpeed => "채집 속도",
+            StatType.HarvestYield => "채집 수확량",
+            StatType.HarvestLuck => "채집 행운",
+            StatType.LightRadius => "발광 범위",
             _ => type.ToString()
         };
     }

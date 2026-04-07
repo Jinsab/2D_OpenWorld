@@ -1,6 +1,5 @@
 using AYellowpaper.SerializedCollections;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -11,7 +10,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.20 오전 01:37
- *  마지막 수정 일자 : 26.03.06 오후 17:48
+ *  마지막 수정 일자 : 26.04.07 오후 21:14
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 스탯 - 플레이어의 전체 능력치를 관리하는 클래스
