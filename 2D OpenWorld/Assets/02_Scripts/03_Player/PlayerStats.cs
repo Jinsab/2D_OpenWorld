@@ -164,10 +164,10 @@ public class PlayerStats : MonoBehaviour
             StatType.RangedAttackSpeed => 1f,
             StatType.CritChance => 0,
             StatType.CritDamage => 0,
-            StatType.MoveSpeed => 0,
+            StatType.MoveSpeed => 1f,
             StatType.HarvestDamage => 0,
             StatType.HarvestSpeed => 1f,
-            StatType.HarvestYield => 0,
+            StatType.HarvestYield => 1f,
             StatType.HarvestLuck => 0,
             StatType.LightRadius => 0,
             _ => 0

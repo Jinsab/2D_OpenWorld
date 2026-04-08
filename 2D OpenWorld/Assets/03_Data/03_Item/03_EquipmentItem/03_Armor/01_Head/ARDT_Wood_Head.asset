@@ -29,7 +29,7 @@ MonoBehaviour:
   maxDurability: 100
   equipmentSprite: {fileID: 0}
   modifiers:
-  - statType: 0
+  - statType: 1
     type: 100
     value: 5
   - statType: 6

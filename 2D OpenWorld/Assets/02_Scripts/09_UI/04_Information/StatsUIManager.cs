@@ -87,6 +87,7 @@ public class StatsUIManager : MonoBehaviour
     // 2. 전체 스탯 수치 갱신
     public void RefreshAllStats()
     {
+        Log.Game("스탯 갱신");
         foreach (var pair in statUIEntries)
         {
             StatType type = pair.Key;
@@ -97,6 +98,8 @@ public class StatsUIManager : MonoBehaviour
             // 타입에 따라 퍼센트(%) 기호를 붙일지 결정
             string formattedValue = FormatStatValue(type, value);
             ui.SetValue(formattedValue);
+
+            if (ui)
             ui.SetStatText(); // 라벨과 값이 모두 설정된 후 텍스트 업데이트
         }
     }

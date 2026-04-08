@@ -7,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.07 오후 20:15
- *  마지막 수정 일자 : 26.04.07 오후 21:15
+ *  마지막 수정 일자 : 26.04.08 오후 19:49
  *  
  *  [스크립트 목적 및 내용]
  *  1. 스탯 UI 프리팹
@@ -22,6 +22,9 @@ public class StatRowUI : MonoBehaviour
     [SerializeField] private string label;
     [SerializeField] private string value;
 
+    public bool IsZeroValue => int.Parse(value) == 0;
+
+    public void SetView(bool active) => statText.enabled = active;
     public void SetLabel(string text) => label = text;
     public void SetValue(string text) => value = text;
     public void SetStatText() => statText.text = $"{label} {value}";

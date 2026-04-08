@@ -29,9 +29,12 @@ MonoBehaviour:
   maxDurability: 100
   equipmentSprite: {fileID: -2082710374031993758, guid: 2e4f66b2eb40e674c83b9ae5bc391500, type: 3}
   modifiers:
-  - statType: 3
+  - statType: 10
     type: 100
     value: 5
+  - statType: 14
+    type: 100
+    value: 1
   attackDamage: 5
   attackDelay: 1
   staminaCost: 0
