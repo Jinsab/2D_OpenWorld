@@ -99,8 +99,15 @@ public class StatsUIManager : MonoBehaviour
             string formattedValue = FormatStatValue(type, value);
             ui.SetValue(formattedValue);
 
-            if (ui)
-            ui.SetStatText(); // 라벨과 값이 모두 설정된 후 텍스트 업데이트
+            if (ui.IsZeroValue)
+            {
+                ui.SetView(false); // 값이 0이면 UI 숨김
+            }
+            else
+            {
+                ui.SetStatText(); // 라벨과 값이 모두 설정된 후 텍스트 업데이트
+                ui.SetView(true); // 값이 0이 아니면 UI 보임
+            }
         }
     }
 
