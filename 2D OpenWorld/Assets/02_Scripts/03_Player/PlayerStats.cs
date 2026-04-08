@@ -10,7 +10,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.20 오전 01:37
- *  마지막 수정 일자 : 26.04.07 오후 21:14
+ *  마지막 수정 일자 : 26.04.08 오후 16:37
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 스탯 - 플레이어의 전체 능력치를 관리하는 클래스
@@ -50,22 +50,18 @@ public class PlayerStats : MonoBehaviour
     // Load 시 직렬화된 List에서 Dictionary로 변환하여 사용
     public void OnAfterDeserialize()
     {
+        // 1. Enum을 순회하며 모든 능력치 자동 초기화
+        foreach (StatType type in Enum.GetValues(typeof(StatType)))
+        {
+            float defaultValue = GetDefaultValueForType(type);
+            InitStat(type, defaultValue);
+        }
+
+        // 2. 직렬화된 List에서 Dictionary로 변환하여 초기화
         if (statData != null)
         {
             // 직렬화된 List에서 Dictionary로 변환
             Stats.ToDictionary(entry => statData.Stats.ToDictionary(entry => entry.statType, entry => entry.stat).Keys);
-
-            // 초기화 예시 (실제로는 데이터 시트나 ScriptableObject에서 불러올 수 있음)
-            InitStat(StatType.MaxHealth, 100f);
-            InitStat(StatType.MaxMana, 100f);
-            InitStat(StatType.MoveSpeed, 5f);
-            InitStat(StatType.AttackDamage, 10f);
-            InitStat(StatType.AttackSpeed, 1f);
-            InitStat(StatType.MiningSpeed, 1f);
-            InitStat(StatType.Armor, 10f);
-            InitStat(StatType.CritChance, 0f);
-            InitStat(StatType.CritDamage, 0f);
-            InitStat(StatType.LightRadius, 0f);
         }
         else
         {
@@ -146,5 +142,35 @@ public class PlayerStats : MonoBehaviour
         {
             stat.RemoveAllModifiersFromSource(source);
         }
+    }
+
+    public float GetDefaultValueForType(StatType type)
+    {
+        // 여기서 Enum의 기본 수치를 반환
+        return type switch
+        {
+            StatType.MaxHealth => 100f,
+            StatType.MaxMana => 100f,
+            StatType.HealthRegen => 0,
+            StatType.ManaRegen => 0,
+            StatType.Armor => 0,
+            StatType.Avoidance => 0,
+            StatType.Resistance => 0,
+            StatType.MeleeAttackDamage => 5f,
+            StatType.RangedAttackDamage => 0,
+            StatType.MagicMeleeAttackDamage => 0,
+            StatType.MagicRangedAttackDamage => 0,
+            StatType.MeleeAttackSpeed => 1f,
+            StatType.RangedAttackSpeed => 1f,
+            StatType.CritChance => 0,
+            StatType.CritDamage => 0,
+            StatType.MoveSpeed => 0,
+            StatType.HarvestDamage => 0,
+            StatType.HarvestSpeed => 1f,
+            StatType.HarvestYield => 0,
+            StatType.HarvestLuck => 0,
+            StatType.LightRadius => 0,
+            _ => 0
+        };
     }
 }

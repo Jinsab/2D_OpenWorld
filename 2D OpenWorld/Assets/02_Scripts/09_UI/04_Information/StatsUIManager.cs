@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 /*  
@@ -7,7 +8,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.07 오후 18:14
- *  마지막 수정 일자 : 26.04.07 오후 21:57
+ *  마지막 수정 일자 : 26.04.08 오후 17:41
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어의 스탯을 보여주는 스탯 UI 매니저
@@ -26,8 +27,12 @@ public class StatsUIManager : MonoBehaviour
 {
     [Header("# References")]
     [SerializeField] private PlayerStats playerStats;
-    [SerializeField] private Transform statsContentParent; // 스크롤 뷰의 Content
-    [SerializeField] private GameObject statRowPrefab;     // 스탯 이름/수치가 담긴 프리팹
+    [SerializeField] private Transform statsContentParent;    // 스크롤 뷰의 Content
+    [SerializeField] private GameObject categoryPrefab;       // 카테고리 레이아웃 관리용 프리팹
+    [SerializeField] private GameObject headerPrefab;         // 헤더 레이아웃 관리용 프리팹
+    [SerializeField] private GameObject categoryHeaderPrefab; // 카테고리 제목 (예: "기본 능력치")
+    [SerializeField] private GameObject categoryDividePrefab; // 카테고리 구분선 프리팹
+    [SerializeField] private GameObject statRowPrefab;        // 실제 스탯 줄 (이름 : 수치)
 
     // 생성된 UI 요소들을 관리하기 위한 딕셔너리
     private Dictionary<StatType, StatRowUI> statUIEntries = new();
@@ -43,25 +48,40 @@ public class StatsUIManager : MonoBehaviour
         RefreshAllStats();
     }
 
-    // 1. 초기 UI 레이아웃 생성
     private void InitializeStatUI()
     {
-        // 기존에 생성된 게 있다면 제거
         foreach (Transform child in statsContentParent) Destroy(child.gameObject);
 
-        // 모든 StatType에 대해 UI 프리팹 생성
         foreach (StatType type in System.Enum.GetValues(typeof(StatType)))
         {
-            // 무기 전용 등 UI에 표시하지 않을 스탯은 여기서 제외(filter) 가능
-            if (type == StatType.None) continue;
+            // 1. 카테고리 시작점인지 확인
+            if (type.ToString().EndsWith("_Category_Start"))
+            {
+                CreateCategoryHeader(type);
+                continue; // 더미 값이므로 실제 스탯 줄은 생성하지 않음
+            }
 
-            GameObject go = Instantiate(statRowPrefab, statsContentParent);
-            StatRowUI row = go.GetComponent<StatRowUI>();
-
-            // 이름 설정 (Enum 이름을 문자열로 변환하거나, 별도의 딕셔너리로 한글화)
-            row.SetLabel(GetStatDisplayName(type));
-            statUIEntries.Add(type, row);
+            // 2. 실제 스탯 줄 생성
+            CreateStatRow(type);
         }
+    }
+
+    private void CreateCategoryHeader(StatType type)
+    {
+        GameObject headerGo = Instantiate(categoryHeaderPrefab, statsContentParent);
+        TMP_Text headerText = headerGo.GetComponentInChildren<TMP_Text>();
+
+        // Enum 이름을 예쁘게 변환 (예: "Combat_Def_Category_Start" -> "전투 능력치(방어)")
+        headerText.text = GetCategoryDisplayName(type);
+    }
+
+    private void CreateStatRow(StatType type)
+    {
+        GameObject rowGo = Instantiate(statRowPrefab, statsContentParent);
+        StatRowUI row = rowGo.GetComponent<StatRowUI>();
+
+        row.SetLabel(GetStatDisplayName(type));
+        statUIEntries.Add(type, row);
     }
 
     // 2. 전체 스탯 수치 갱신
@@ -108,6 +128,18 @@ public class StatsUIManager : MonoBehaviour
             StatType.HarvestLuck => "채집 행운",
             StatType.LightRadius => "발광 범위",
             _ => type.ToString()
+        };
+    }
+
+    private string GetCategoryDisplayName(StatType type)
+    {
+        return type switch
+        {
+            StatType.Base_Category_Start => "기본 능력치",
+            StatType.Combat_Def_Category_Start => "전투 능력치 (방어)",
+            StatType.Combat_Atk_Category_Start => "전투 능력치 (공격)",
+            StatType.Combat_Surv_Category_Start => "전투 능력치 (생존)",
+            _ => "기타"
         };
     }
 
