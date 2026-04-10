@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 /*  
@@ -10,7 +9,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.07 오후 18:14
- *  마지막 수정 일자 : 26.04.08 오후 17:41
+ *  마지막 수정 일자 : 26.04.10 오후 17:00
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어의 스탯을 보여주는 스탯 UI 매니저
@@ -151,6 +150,11 @@ public class StatsUIManager : MonoBehaviour
         // 기본 필터: 특정 상황에서 무조건 숨겨야 하는 경우 (예: 마나 없는 직업 등)
         //if (!BaseFilter(type))
         //    return false;
+
+        // 기본 능력치 예외 처리
+        // 체력과 방어력은 0이라도 일단 보여줘야 함
+        if (type == StatType.MaxHealth || type == StatType.Armor)
+            return true;
 
         // 0 숨기기 옵션이 켜져 있을 때 수치가 0(또는 매우 작은 값)이면 숨김
         if (hideZeroStats && Mathf.Approximately(value, 0f))
