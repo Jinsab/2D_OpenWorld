@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 /*  
@@ -25,6 +27,9 @@ using UnityEngine;
 
 public class StatsUIManager : MonoBehaviour
 {
+    [Header("# Options")]
+    [SerializeField] private bool hideZeroStats = true; // 0인 스탯 숨기기 옵션
+
     [Header("# References")]
     [SerializeField] private PlayerStats playerStats;
     [SerializeField] private Transform statsContentParent;    // 스크롤 뷰의 Content
@@ -36,7 +41,10 @@ public class StatsUIManager : MonoBehaviour
 
     // 생성된 UI 요소들을 관리하기 위한 딕셔너리
     private Dictionary<StatType, StatRowUI> statUIEntries = new();
-    private Transform categoryParent = null;
+    
+    // 카테고리별로 생성된 스탯 UI들을 담아두는 리스트
+    private Dictionary<string, List<StatRowUI>> categoryGroups = new();
+    private Dictionary<string, GameObject> headerObjects = new();
 
     private void Start()
     {
@@ -54,24 +62,25 @@ public class StatsUIManager : MonoBehaviour
         foreach (Transform child in statsContentParent)
             Destroy(child.gameObject);
 
-        int index = -1;
+        string currentCategory = "";
 
         foreach (StatType type in System.Enum.GetValues(typeof(StatType)))
         {
             // 1. 카테고리 시작점인지 확인
             if (type.ToString().EndsWith("_Category_Start"))
             {
-                CreateCategoryHeader(type);
-                index++;
+                currentCategory = type.ToString();
+                CreateCategoryHeader(type, currentCategory);
+                categoryGroups[currentCategory] = new List<StatRowUI>();
                 continue; // 더미 값이므로 실제 스탯 줄은 생성하지 않음
             }
 
             // 2. 실제 스탯 줄 생성
-            CreateStatRow(type);
+            CreateStatRow(type, currentCategory);
         }
     }
 
-    private void CreateCategoryHeader(StatType type)
+    private void CreateCategoryHeader(StatType type, string currentCategory)
     {
         GameObject categoryGo = Instantiate(categoryPrefab, statsContentParent);
         GameObject headerGo = Instantiate(headerPrefab, categoryGo.transform);
@@ -82,15 +91,16 @@ public class StatsUIManager : MonoBehaviour
 
         // Enum 이름을 예쁘게 변환 (예: "Combat_Def_Category_Start" -> "전투 능력치(방어)")
         headerText.text = GetCategoryDisplayName(type);
-        categoryParent = categoryGo.transform; // 현재 카테고리 부모로 설정
+        headerObjects[currentCategory] = categoryGo; // 카테고리 헤더 객체 저장
     }
 
-    private void CreateStatRow(StatType type)
+    private void CreateStatRow(StatType type, string currentCategory)
     {
-        GameObject rowGo = Instantiate(statRowPrefab, categoryParent);
+        GameObject rowGo = Instantiate(statRowPrefab, headerObjects[currentCategory].transform);
         StatRowUI row = rowGo.GetComponent<StatRowUI>();
 
         row.SetLabel(GetStatDisplayName(type));
+        categoryGroups[currentCategory].Add(row);
         statUIEntries.Add(type, row);
     }
 
@@ -103,22 +113,52 @@ public class StatsUIManager : MonoBehaviour
             StatType type = pair.Key;
             StatRowUI ui = pair.Value;
 
-            float value = playerStats.GetStatValue(type);
+            // 1. 현재 스탯 값 가져오기
+            float currentValue = playerStats.GetStatValue(type);
 
-            // 타입에 따라 퍼센트(%) 기호를 붙일지 결정
-            string formattedValue = FormatStatValue(type, value);
-            ui.SetValue(formattedValue);
+            // 2. 활성화 여부 결정 (기존 필터 + 0 체크)
+            bool isVisible = CheckIfStatShouldBeVisible(type, currentValue);
 
-            if (ui.IsZeroValue)
+            ui.gameObject.SetActive(isVisible);
+
+            if (isVisible)
             {
-                ui.SetView(false); // 값이 0이면 UI 숨김
+                ui.SetValue(FormatStatValue(type, currentValue));
+                ui.SetStatText();
             }
-            else
+
+            UpdateCategoryHeaders();
+        }
+    }
+
+    private void UpdateCategoryHeaders()
+    {
+        foreach (var category in categoryGroups)
+        {
+            // 해당 카테고리에 속한 스탯 중 하나라도 활성화(Active) 되어 있는지 체크
+            bool hasActiveStat = category.Value.Any(row => row.gameObject.activeSelf);
+
+            // 헤더 오브젝트의 활성화 상태 조절
+            if (headerObjects.ContainsKey(category.Key))
             {
-                ui.SetStatText(); // 라벨과 값이 모두 설정된 후 텍스트 업데이트
-                ui.SetView(true); // 값이 0이 아니면 UI 보임
+                headerObjects[category.Key].SetActive(hasActiveStat);
             }
         }
+    }
+
+    private bool CheckIfStatShouldBeVisible(StatType type, float value)
+    {
+        // 기본 필터: 특정 상황에서 무조건 숨겨야 하는 경우 (예: 마나 없는 직업 등)
+        //if (!BaseFilter(type))
+        //    return false;
+
+        // 0 숨기기 옵션이 켜져 있을 때 수치가 0(또는 매우 작은 값)이면 숨김
+        if (hideZeroStats && Mathf.Approximately(value, 0f))
+        {
+            return false;
+        }
+
+        return true;
     }
 
     private string GetStatDisplayName(StatType type)
@@ -170,5 +210,12 @@ public class StatsUIManager : MonoBehaviour
             return $"{value:F1}%"; // 소수점 한자리까지
 
         return ((int)value).ToString(); // 일반 수치는 정수형
+    }
+
+    // UI 토글 이벤트 등에 연결하여 사용
+    public void SetHideZeroOptions(bool isOn)
+    {
+        hideZeroStats = isOn;
+        RefreshAllStats(); // 즉시 UI 갱신
     }
 }

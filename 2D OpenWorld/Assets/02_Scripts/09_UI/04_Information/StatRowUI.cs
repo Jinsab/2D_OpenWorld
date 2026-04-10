@@ -22,8 +22,6 @@ public class StatRowUI : MonoBehaviour
     [SerializeField] private string label;
     [SerializeField] private string value;
 
-    public bool IsZeroValue => value == "0%" || value == "0";
-    public void SetView(bool active) => this.gameObject.SetActive(active);
     public void SetLabel(string text) => label = text;
     public void SetValue(string text) => value = text;
     public void SetStatText() => statText.text = $"{label} {value}";
