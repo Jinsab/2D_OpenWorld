@@ -301,8 +301,8 @@ MonoBehaviour:
     y: 0
     width: 424.6667
     height: 534.6666
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -329,8 +329,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "UnityEditor.MainToolbarWindow\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1.3333334
-    y: 50
+    x: 0
+    y: 0
     width: 1277.3334
     height: 36
   m_SerializedDataModeController:
@@ -595,8 +595,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Console\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1.3333334
-    y: 884
+    x: 0
+    y: 24
     width: 851.6667
     height: 508.66663
   m_SerializedDataModeController:
@@ -633,8 +633,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1.3333334
-    y: 86
+    x: 0
+    y: 24
     width: 416.33334
     height: 772
   m_SerializedDataModeController:
@@ -652,9 +652,8 @@ MonoBehaviour:
     m_DynamicPanelBehavior: 0
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 240}
-      m_SelectedIDs:
-      - m_Data: 72000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: []
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
@@ -680,8 +679,8 @@ MonoBehaviour:
       - m_Data: 101072
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Header
-        m_OriginalName: Header
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
@@ -689,10 +688,10 @@ MonoBehaviour:
           width: 0
           height: 0
         m_UserData:
-          m_Data: -23708
+          m_Data: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 4
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 8}
@@ -1449,8 +1448,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 418.6667
-    y: 86
+    x: 418.33334
+    y: 24
     width: 859
     height: 772
   m_SerializedDataModeController:
@@ -1510,7 +1509,7 @@ MonoBehaviour:
       y: 21
       width: 859
       height: 751
-    m_Scale: {x: 0.67109376, y: 0.6710937}
+    m_Scale: {x: 0.67109376, y: 0.67109376}
     m_Translation: {x: 429.5, y: 375.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -1524,7 +1523,7 @@ MonoBehaviour:
       height: 1119.0687
     m_MinimalGUI: 1
   m_defaultScale: 0.67109376
-  m_LastWindowPixelSize: {x: 1288.5, y: 1158}
+  m_LastWindowPixelSize: {x: 859, y: 772}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1724,16 +1723,14 @@ MonoBehaviour:
       m_Data: 166268
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 95336
-    - m_Data: 95338
-    - m_Data: 95342
-    - m_Data: 95358
-    - m_Data: 95360
-    - m_Data: 95362
-    - m_Data: 95364
-    - m_Data: 95366
-    - m_Data: 95376
-    - m_Data: 1000000000
+    - m_Data: 102420
+    - m_Data: 102422
+    - m_Data: 102424
+    - m_Data: 102426
+    - m_Data: 102428
+    - m_Data: 102430
+    - m_Data: 102432
+    - m_Data: 102434
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1766,8 +1763,14 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 95336
-    - m_Data: 1000000000
+    - m_Data: 102420
+    - m_Data: 102422
+    - m_Data: 102424
+    - m_Data: 102426
+    - m_Data: 102428
+    - m_Data: 102430
+    - m_Data: 102432
+    - m_Data: 102434
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2039,8 +2042,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 854
-    y: 884
+    x: 853.6667
+    y: 24
     width: 423.6667
     height: 508.66663
   m_SerializedDataModeController:

@@ -36,6 +36,7 @@ public class StatsUIManager : MonoBehaviour
 
     // 생성된 UI 요소들을 관리하기 위한 딕셔너리
     private Dictionary<StatType, StatRowUI> statUIEntries = new();
+    private Transform categoryParent = null;
 
     private void Start()
     {
@@ -50,7 +51,10 @@ public class StatsUIManager : MonoBehaviour
 
     private void InitializeStatUI()
     {
-        foreach (Transform child in statsContentParent) Destroy(child.gameObject);
+        foreach (Transform child in statsContentParent)
+            Destroy(child.gameObject);
+
+        int index = -1;
 
         foreach (StatType type in System.Enum.GetValues(typeof(StatType)))
         {
@@ -58,6 +62,7 @@ public class StatsUIManager : MonoBehaviour
             if (type.ToString().EndsWith("_Category_Start"))
             {
                 CreateCategoryHeader(type);
+                index++;
                 continue; // 더미 값이므로 실제 스탯 줄은 생성하지 않음
             }
 
@@ -68,16 +73,21 @@ public class StatsUIManager : MonoBehaviour
 
     private void CreateCategoryHeader(StatType type)
     {
-        GameObject headerGo = Instantiate(categoryHeaderPrefab, statsContentParent);
+        GameObject categoryGo = Instantiate(categoryPrefab, statsContentParent);
+        GameObject headerGo = Instantiate(headerPrefab, categoryGo.transform);
+        GameObject categoryHeaderGo = Instantiate(categoryHeaderPrefab, headerGo.transform);
+        GameObject categoryDivideGo = Instantiate(categoryDividePrefab, headerGo.transform);
+        
         TMP_Text headerText = headerGo.GetComponentInChildren<TMP_Text>();
 
         // Enum 이름을 예쁘게 변환 (예: "Combat_Def_Category_Start" -> "전투 능력치(방어)")
         headerText.text = GetCategoryDisplayName(type);
+        categoryParent = categoryGo.transform; // 현재 카테고리 부모로 설정
     }
 
     private void CreateStatRow(StatType type)
     {
-        GameObject rowGo = Instantiate(statRowPrefab, statsContentParent);
+        GameObject rowGo = Instantiate(statRowPrefab, categoryParent);
         StatRowUI row = rowGo.GetComponent<StatRowUI>();
 
         row.SetLabel(GetStatDisplayName(type));
