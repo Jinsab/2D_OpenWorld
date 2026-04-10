@@ -1,4 +1,8 @@
+using NatureBackgroundsPixelArt;
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 /*  
  *  [프로젝트 제목]
@@ -6,7 +10,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.26 오후 16:58
- *  마지막 수정 일자 : 26.03.26 오후 16:59
+ *  마지막 수정 일자 : 26.04.10 오후 17:42
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 핫바(퀵슬롯) UI
@@ -23,66 +27,76 @@ using UnityEngine;
 
 public class InventoryHotbar : MonoBehaviour
 {
-    [Header(" # Player Inventory Data")]
-    public Inventory inventory;
-    public InventoryUI inventoryUI; // inventoryUI.lineCount == 라인 별 슬롯 수
-    public InventorySlotUI[] hotbarSlots; // 핫바 슬롯 배열 (1줄 10칸)
+    [Header("# References")]
+    [SerializeField] private Inventory playerInventory;
+    private InputAction playerQuickSlot; // 1~0: 퀵슬롯 이동
+    // [SerializeField] private QuickSlotUI quickSlotUI; // UI 표현 담당
 
-    // 핫바는 항상 1줄이므로,
-    // inventoryUI.lineCount로 슬롯 라인 수를 계산하여
-    // 해당 라인에 있는 슬롯만 핫바에 표기하면 됨
-    private int slotLineCount = 0;
+    [Header("# Settings")]
+    private int currentSelectedIndex = 0;
+    private const int SLOT_COUNT = 10;
 
-    private void SlotUpdate()
+    public event Action<int> OnSlotSelected; // 선택된 인덱스가 바뀔 때 발생
+
+    private void Start()
     {
-        // inventoryUI의 슬롯 데이터 중,
-        // slotLineCount에 해당하는 라인에 있는 슬롯만 핫바에 표기
+        PlayerController player = GameManager.Instance.Player.GetComponent<PlayerController>();
+        
+        playerQuickSlot = player.Input.actions.FindAction("Player/QuickSlot");
+        playerQuickSlot.performed += ctx =>
+        {
+            int.TryParse(ctx.control.name, out int number);
 
-        // 예시)
-        // slotLineCount가 0이면, inventoryUI의 0~9번 슬롯이 핫바에 표기
-        // slotLineCount가 1이면, inventoryUI의 10~19번 슬롯이 핫바에 표기
+            if (number == 0)
+            {
+                number = 10; // 0 키는 10번 슬롯으로 간주
+            }
 
-        // 고려해야 할 사항
-        // 1. 슬롯 라인 수 계산 (슬롯 라인 수는 inventoryUI.lineCount로 계산 가능)
-        // 2. 슬롯 라인 수에 따른 슬롯 인덱스 계산
-        //    - 이 때, 딱 떨어지는 경우가 아닐 수도 있음
-        // 3. 슬롯 데이터에 따른 아이템 표기
-
+            Log.UI($"Player Quick Slot Key: {number} 키 입력");
+        };
     }
 
-    // 슬롯 번호 1~0번을 눌렀을 때, 해당 슬롯으로 이동하는 함수
-    public void SlotMove(int slotIndex)
+    private void Update()
     {
-        // slotIndex는 0~9번으로 입력받음
-        // slotLineCount에 따른 슬롯 인덱스 계산
-        // 예시: slotLineCount가 0이면, slotIndex는 0~9번 슬롯을 의미
-        //      slotLineCount가 1이면, slotIndex는 10~19번 슬롯을 의미
-        // 고려해야 할 사항
-        // 1. 슬롯 라인 수 계산 (슬롯 라인 수는 inventoryUI.lineCount로 계산 가능)
-        // 2. 슬롯 라인 수에 따른 슬롯 인덱스 계산
-        //    - 이 때, 딱 떨어지는 경우가 아닐 수도 있음
-        // 3. 슬롯 데이터에 따른 아이템 표기
+        HandleWheelInput();
+        HandleNumberInput();
     }
 
-    // 퀵슬롯 목록을 다음 라인으로 이동하는 함수
-    private void SlotLineUp()
+    private void HandleWheelInput()
     {
-        int line = SetLineCount();
-        slotLineCount = (slotLineCount + 1) > line ? 0 : slotLineCount++;
+        float wheel = Mouse.current.scroll.ReadValue().y;
+
+        if (wheel == 0f)
+            return;
+
+        // 휠 방향에 따라 인덱스 변경 (순환 구조)
+        if (wheel > 0f) currentSelectedIndex--;
+        else currentSelectedIndex++;
+
+        if (currentSelectedIndex < 0) currentSelectedIndex = SLOT_COUNT - 1;
+        if (currentSelectedIndex >= SLOT_COUNT) currentSelectedIndex = 0;
+
+        OnSlotSelected?.Invoke(currentSelectedIndex);
     }
 
-    // 퀵슬롯 목록을 이전 라인으로 이동하는 함수
-    private void SlotLineDown()
+    private void HandleNumberInput()
     {
-        int line = SetLineCount();
-        slotLineCount = (slotLineCount - 1) < 0 ? line : slotLineCount--;
+        // 숫자키 1~9는 0~8 인덱스, 0은 9번 인덱스
+        for (int i = 0; i < SLOT_COUNT; i++)
+        {
+            KeyCode key = (i == 9) ? KeyCode.Alpha0 : KeyCode.Alpha1 + i;
+            if (Input.GetKeyDown(key))
+            {
+                currentSelectedIndex = i;
+                OnSlotSelected?.Invoke(currentSelectedIndex);
+                break;
+            }
+        }
     }
 
-    private int SetLineCount()
+    public InventorySlot GetSelectedSlot()
     {
-        // 예시: 20 / 10 = 2줄 (사용하는 데이터는 2줄이라면 0, 1번의 슬롯이 필요로 2줄)
-        // 슬롯 라인 수는 최대 슬롯 수 / 라인 별 슬롯 수로 계산할 수 있음
-        // 이 때, 딱 떨어지는 경우가 아닐 수도 있으므로, 올림으로 계산해야 함
-        return Mathf.CeilToInt(inventory.inventoryData.maxSlots / inventoryUI.lineCount);
+        // 인벤토리의 0~9번 슬롯 데이터를 직접 참조
+        return playerInventory.inventoryData.slots[currentSelectedIndex];
     }
 }
