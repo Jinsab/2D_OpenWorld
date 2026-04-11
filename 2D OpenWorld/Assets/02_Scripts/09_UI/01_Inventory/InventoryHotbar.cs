@@ -29,8 +29,8 @@ public class InventoryHotbar : MonoBehaviour
 {
     [Header("# References")]
     [SerializeField] private Inventory playerInventory;
+    [SerializeField] private QuickSlotUI quickSlotUI; // UI 표현 담당
     private InputAction playerQuickSlot; // 1~0: 퀵슬롯 이동
-    // [SerializeField] private QuickSlotUI quickSlotUI; // UI 표현 담당
 
     [Header("# Settings")]
     private int currentSelectedIndex = 0;
@@ -40,8 +40,13 @@ public class InventoryHotbar : MonoBehaviour
 
     private void Start()
     {
+        Initialize();
+    }
+
+    public void Initialize()
+    {
         PlayerController player = GameManager.Instance.Player.GetComponent<PlayerController>();
-        
+
         playerQuickSlot = player.Input.actions.FindAction("Player/QuickSlot");
         playerQuickSlot.performed += ctx =>
         {
@@ -52,6 +57,8 @@ public class InventoryHotbar : MonoBehaviour
                 number = 10; // 0 키는 10번 슬롯으로 간주
             }
 
+            currentSelectedIndex = number - 1;
+            OnSlotSelected?.Invoke(currentSelectedIndex);
             Log.UI($"Player Quick Slot Key: {number} 키 입력");
         };
     }
@@ -59,7 +66,6 @@ public class InventoryHotbar : MonoBehaviour
     private void Update()
     {
         HandleWheelInput();
-        HandleNumberInput();
     }
 
     private void HandleWheelInput()
@@ -77,21 +83,7 @@ public class InventoryHotbar : MonoBehaviour
         if (currentSelectedIndex >= SLOT_COUNT) currentSelectedIndex = 0;
 
         OnSlotSelected?.Invoke(currentSelectedIndex);
-    }
-
-    private void HandleNumberInput()
-    {
-        // 숫자키 1~9는 0~8 인덱스, 0은 9번 인덱스
-        for (int i = 0; i < SLOT_COUNT; i++)
-        {
-            KeyCode key = (i == 9) ? KeyCode.Alpha0 : KeyCode.Alpha1 + i;
-            if (Input.GetKeyDown(key))
-            {
-                currentSelectedIndex = i;
-                OnSlotSelected?.Invoke(currentSelectedIndex);
-                break;
-            }
-        }
+        Log.UI($"Player Quick Slot Key: {currentSelectedIndex + 1} 키로 휠 이동");
     }
 
     public InventorySlot GetSelectedSlot()

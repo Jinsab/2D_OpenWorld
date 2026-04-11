@@ -10,7 +10,7 @@ using DG.Tweening;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.15 오후 21:06
- *  마지막 수정 일자 : 26.03.26 오후 16:52
+ *  마지막 수정 일자 : 26.04.11 오후 20:50
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 UI 관리
@@ -153,4 +153,21 @@ public class InventoryUI : MonoBehaviour
 
         Log.UI($"{index}번 UI 슬롯 갱신 완료 (ID: {data.itemId}, Qty: {data.amount})");
     }
+
+    // 슬롯 위에 마우스가 올라가 있는 동안 호출됨
+    //public void OnSlotHoverUpdate(int hoveredIndex)
+    //{
+    //    if (!isInventoryOpen) return;
+
+    //    for (int i = 0; i < 10; i++)
+    //    {
+    //        KeyCode key = (i == 9) ? KeyCode.Alpha0 : KeyCode.Alpha1 + i;
+    //        if (Input.GetKeyDown(key))
+    //        {
+    //            // hoveredIndex에 있는 아이템과 인벤토리의 i번 슬롯(퀵슬롯) 아이템을 스왑
+    //            playerInventory.SwapSlots(hoveredIndex, i);
+    //            break;
+    //        }
+    //    }
+    //}
 }
