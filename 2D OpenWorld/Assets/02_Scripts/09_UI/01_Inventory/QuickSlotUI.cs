@@ -45,6 +45,7 @@ public class QuickSlotUI : MonoBehaviour
     /// </summary>
     public void UpdateSelectionFrame(int index, bool immediate = false)
     {
+        Log.UI("퀵슬롯 변경 로직 수행: " + index);
         currentIdx = index;
         Vector3 targetPos = slotRects[index].localPosition;
 

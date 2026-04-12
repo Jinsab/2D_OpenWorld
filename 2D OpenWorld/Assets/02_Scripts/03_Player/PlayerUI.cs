@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.22 오후 19:20
- *  마지막 수정 일자 : 26.03.22 오후 21:51
+ *  마지막 수정 일자 : 26.04.12 오후 18:23
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 UI 관리 스크립트
@@ -18,6 +18,7 @@ using UnityEngine.InputSystem;
  *  1. 
  */
 
+[RequireComponent(typeof(PlayerController))]
 public class PlayerUI : MonoBehaviour
 {
     // Player Controller
