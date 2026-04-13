@@ -7,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.11 오후 20:50
- *  마지막 수정 일자 : 26.04.11 오후 20:50
+ *  마지막 수정 일자 : 26.04.13 오후 22:39
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 UI 관리 스크립트
@@ -28,13 +28,23 @@ public class QuickSlotUI : MonoBehaviour
     private List<RectTransform> slotRects = new List<RectTransform>();
     private int currentIdx = 0;
 
-    private void Start()
+    private System.Collections.IEnumerator Start()
     {
+        // Canvas.ForceUpdateCanvases();
+
         // 1. 자식 슬롯들의 RectTransform을 리스트에 담아 위치 추적 준비
         foreach (Transform child in slotParent)
         {
             slotRects.Add(child as RectTransform);
         }
+
+        yield return new WaitForEndOfFrame(); // 레이아웃이 완전히 잡힐 때까지 대기
+        InitializeUI();
+    }
+
+    private void InitializeUI()
+    {
+
 
         // 초기 위치 설정
         UpdateSelectionFrame(0, true);
