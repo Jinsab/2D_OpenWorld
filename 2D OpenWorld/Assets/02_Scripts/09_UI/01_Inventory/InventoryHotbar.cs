@@ -33,7 +33,7 @@ public class InventoryHotbar : MonoBehaviour
     private InputAction playerQuickSlot; // 1~0: 퀵슬롯 이동
 
     [Header("# Settings")]
-    private int currentSelectedIndex = 0;
+    [SerializeField] private int currentSelectedIndex = 0;
     private const int SLOT_COUNT = 10;
 
     public event Action<int> OnSlotSelected; // 선택된 인덱스가 바뀔 때 발생
@@ -60,7 +60,7 @@ public class InventoryHotbar : MonoBehaviour
             currentSelectedIndex = number - 1;
             SelectSlot(currentSelectedIndex);
             OnSlotSelected?.Invoke(currentSelectedIndex);
-            Log.UI($"Player Quick Slot Key: {currentSelectedIndex + 1} 키 입력");
+            // Log.UI($"Player Quick Slot Key: {currentSelectedIndex + 1} 키 입력");
         };
     }
 
@@ -85,7 +85,7 @@ public class InventoryHotbar : MonoBehaviour
 
         SelectSlot(currentSelectedIndex);
         OnSlotSelected?.Invoke(currentSelectedIndex);
-        Log.UI($"Player Quick Slot Key: {currentSelectedIndex + 1} 키로 휠 이동");
+        // Log.UI($"Player Quick Slot Key: {currentSelectedIndex + 1} 키로 휠 이동");
     }
 
     public InventorySlot GetSelectedSlot()
@@ -96,13 +96,12 @@ public class InventoryHotbar : MonoBehaviour
 
     private void SelectSlot(int index)
     {
-        if (currentSelectedIndex == index) return;
+        // if (currentSelectedIndex == index) return;
 
         currentSelectedIndex = index;
 
         // UI에 알림
-        quickSlotUI.UpdateSelectionFrame(currentSelectedIndex, true);
-
+        quickSlotUI.UpdateSelectionFrame(currentSelectedIndex);
         // 아이템 소리 재생이나 손에 든 물건 교체 로직 호출
         // RefreshHandItem();
     }

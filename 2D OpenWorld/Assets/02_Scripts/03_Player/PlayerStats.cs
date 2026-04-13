@@ -81,7 +81,7 @@ public class PlayerStats : MonoBehaviour
         }
         else
         {
-            Log.Game($"Initializing stat: {type} with base value: {baseValue}");
+            // Log.Game($"Initializing stat: {type} with base value: {baseValue}");
 
             Stats[type] = new CharacterStat(baseValue);
         }
