@@ -7,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.11 오후 20:50
- *  마지막 수정 일자 : 26.04.13 오후 22:39
+ *  마지막 수정 일자 : 26.04.14 오후 16:14
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 UI 관리 스크립트
@@ -44,8 +44,6 @@ public class QuickSlotUI : MonoBehaviour
 
     private void InitializeUI()
     {
-
-
         // 초기 위치 설정
         UpdateSelectionFrame(0, true);
     }
@@ -57,11 +55,11 @@ public class QuickSlotUI : MonoBehaviour
     {
         Log.UI("퀵슬롯 변경 로직 수행: " + index);
         currentIdx = index;
-        Vector3 targetPos = slotRects[index].localPosition;
+        Vector3 targetPos = slotRects[index].anchoredPosition;
         Log.UI("목표 위치: " + targetPos);
         if (immediate)
         {
-            selectionFrame.localPosition = targetPos;
+            selectionFrame.anchoredPosition = targetPos;
         }
         else
         {
@@ -75,14 +73,14 @@ public class QuickSlotUI : MonoBehaviour
     {
         float duration = 0.1f; // 이동 시간
         float elapsed = 0f;
-        Vector3 startPos = selectionFrame.localPosition;
+        Vector3 startPos = selectionFrame.anchoredPosition;
 
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
-            selectionFrame.localPosition = Vector3.Lerp(startPos, target, elapsed / duration);
+            selectionFrame.anchoredPosition = Vector3.Lerp(startPos, target, elapsed / duration);
             yield return null;
         }
-        selectionFrame.localPosition = target;
+        selectionFrame.anchoredPosition = target;
     }
 }

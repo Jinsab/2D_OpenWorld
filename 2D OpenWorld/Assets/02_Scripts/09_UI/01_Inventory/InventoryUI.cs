@@ -1,8 +1,9 @@
-using UnityEngine;
+using DG.Tweening;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using DG.Tweening;
 
 /*  
  *  [프로젝트 제목]
@@ -155,19 +156,24 @@ public class InventoryUI : MonoBehaviour
     }
 
     // 슬롯 위에 마우스가 올라가 있는 동안 호출됨
-    //public void OnSlotHoverUpdate(int hoveredIndex)
-    //{
-    //    if (!isInventoryOpen) return;
+    public void OnSlotHoverUpdate(int hoveredIndex)
+    {
+        if (!gameObject.activeSelf)
+            return;
+        
+        //for (int i = 0; i < 10; i++)
+        //{
+        //    // Keyboard.current.digit0Key
+        //    KeyCode key = (i == 9) ? Keyboard.current.digit0Key : 
+        //    KeyCode key = (i == 9) ? KeyCode.Alpha0 : KeyCode.Alpha1 + i;
 
-    //    for (int i = 0; i < 10; i++)
-    //    {
-    //        KeyCode key = (i == 9) ? KeyCode.Alpha0 : KeyCode.Alpha1 + i;
-    //        if (Input.GetKeyDown(key))
-    //        {
-    //            // hoveredIndex에 있는 아이템과 인벤토리의 i번 슬롯(퀵슬롯) 아이템을 스왑
-    //            playerInventory.SwapSlots(hoveredIndex, i);
-    //            break;
-    //        }
-    //    }
-    //}
+        //    if (Keyboard.current.)
+        //    if (Input.GetKeyDown(key))
+        //    {
+        //        // hoveredIndex에 있는 아이템과 인벤토리의 i번 슬롯(퀵슬롯) 아이템을 스왑
+        //        playerInventory.SwapSlots(hoveredIndex, i);
+        //        break;
+        //    }
+        //}
+    }
 }
