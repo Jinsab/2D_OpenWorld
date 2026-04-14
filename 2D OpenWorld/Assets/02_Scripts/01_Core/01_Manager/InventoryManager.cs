@@ -198,4 +198,34 @@ public class InventoryManager : MonoBehaviour
             }
         }
     }
+    
+    // [기능 9] 같은 인벤토리에서 슬롯 간 아이템 스왑
+    public void SwapSlots(Inventory invA, int indexA, int indexB)
+    {
+        var slotA = invA.inventoryData.slots[indexA];
+        var slotB = invA.inventoryData.slots[indexB];
+        int tempId = slotA.itemId;
+        int tempAmount = slotA.amount;
+        slotA.itemId = slotB.itemId;
+        slotA.amount = slotB.amount;
+        slotB.itemId = tempId;
+        slotB.amount = tempAmount;
+        invA.NotifyChanged(indexA);
+        invA.NotifyChanged(indexB);
+    }
+
+    // [기능 9.5] 서로 다른 인벤토리에서 슬롯 간 아이템 스왑
+    public void SwapSlots(Inventory invA, Inventory invB, int indexA, int indexB)
+    {
+        var slotA = invA.inventoryData.slots[indexA];
+        var slotB = invB.inventoryData.slots[indexB];
+        int tempId = slotA.itemId;
+        int tempAmount = slotA.amount;
+        slotA.itemId = slotB.itemId;
+        slotA.amount = slotB.amount;
+        slotB.itemId = tempId;
+        slotB.amount = tempAmount;
+        invA.NotifyChanged(indexA);
+        invB.NotifyChanged(indexB);
+    }
 }

@@ -29,7 +29,8 @@ public class MouseSlotUI : MonoBehaviour
     public TextMeshProUGUI amountText;
 
     // 현재 마우스가 들고 있는 실제 데이터
-    public InventorySlot heldSlot = new InventorySlot();
+    public InventorySlot heldSlot = new();
+    public Inventory hoveredInventory = null;
     public int hoveredIndex = -1;
 
     private void Awake()

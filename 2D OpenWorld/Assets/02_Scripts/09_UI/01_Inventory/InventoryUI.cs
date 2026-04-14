@@ -133,6 +133,11 @@ public class InventoryUI : MonoBehaviour
         uiQuickSlot = player.Input.actions.FindAction("UI/QuickSlot");
         uiQuickSlot.performed += ctx =>
         {
+            int hoveredIndex = MouseSlotUI.Instance.hoveredIndex;
+
+            if (hoveredIndex == -1)
+                return;
+
             int.TryParse(ctx.control.name, out int number);
 
             if (number == 0)
@@ -141,7 +146,7 @@ public class InventoryUI : MonoBehaviour
             }
 
             Log.UI($"UI Quick Slot Key: {number} 키 입력");
-            OnSlotHoverUpdate(number - 1);
+            OnSlotHoverUpdate(number - 1, hoveredIndex);
         };
     }
 
@@ -178,15 +183,15 @@ public class InventoryUI : MonoBehaviour
     }
 
     // 슬롯 위에 마우스가 올라가 있는 동안 호출됨
-    public void OnSlotHoverUpdate(int index)
+    public void OnSlotHoverUpdate(int index, int hoveredIndex)
     {
-        if (!gameObject.activeSelf)
+        if (!gameObject.activeSelf || hoveredIndex == index)
             return;
 
-        Log.UI($"Hovered Slot Index: {MouseSlotUI.Instance.hoveredIndex}");
+        Log.UI($"Hovered Slot Index: {hoveredIndex}");
         Log.UI($"Input Quick Slot Index: {index}");
 
-        // InventoryManager.Instance.PickUpAll(index, inventory);
+        InventoryManager.Instance.SwapSlots(inventory, MouseSlotUI.Instance.hoveredInventory, index, hoveredIndex);
         // playerInventory.SwapSlots(hoveredIndex, i);
 
         //for (int i = 0; i < 10; i++)

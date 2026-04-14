@@ -36,6 +36,7 @@ public class SlotUIInteraction : MonoBehaviour, IPointerEnterHandler, IPointerEx
         if (slotUI != null)
         {
             MouseSlotUI.Instance.hoveredIndex = slotUI.GetSlotIndex();
+            MouseSlotUI.Instance.hoveredInventory = slotUI.inv;
 
             if (ItemDatabase.Instance.TryGetItem(slotUI.GetSlotItemId(), out Item item))
             {
@@ -55,6 +56,7 @@ public class SlotUIInteraction : MonoBehaviour, IPointerEnterHandler, IPointerEx
     {
         interactImage.enabled = false;
         MouseSlotUI.Instance.hoveredIndex = -1;
+        MouseSlotUI.Instance.hoveredInventory = null;
 
         // Log.UI("마우스가 UI 위에서 나감");
         TooltipUI.Instance.HideTooltip();
