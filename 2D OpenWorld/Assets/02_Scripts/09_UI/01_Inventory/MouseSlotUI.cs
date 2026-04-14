@@ -9,7 +9,7 @@ using UnityEngine.UI;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.23 오후 20:41
- *  마지막 수정 일자 : 26.03.23 오후 21:34
+ *  마지막 수정 일자 : 26.04.14 오후 17:32
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 드래그 앤 드롭 시각화
@@ -30,6 +30,7 @@ public class MouseSlotUI : MonoBehaviour
 
     // 현재 마우스가 들고 있는 실제 데이터
     public InventorySlot heldSlot = new InventorySlot();
+    public int hoveredIndex = -1;
 
     private void Awake()
     {

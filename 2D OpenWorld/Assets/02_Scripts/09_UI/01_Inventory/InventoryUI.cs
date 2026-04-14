@@ -11,7 +11,7 @@ using UnityEngine.UI;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.15 오후 21:06
- *  마지막 수정 일자 : 26.04.11 오후 20:50
+ *  마지막 수정 일자 : 26.04.14 오후 16:26
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 UI 관리
@@ -46,6 +46,8 @@ public class InventoryUI : MonoBehaviour
     public List<InventorySlotUI> uiSlots = new List<InventorySlotUI>();
     private GridLayoutGroup layoutGroup;
 
+    private InputAction uiQuickSlot; // 1~0: 퀵슬롯 이동
+
     private void Awake()
     {
         layoutGroup = slotParent.GetComponent<GridLayoutGroup>();
@@ -70,6 +72,7 @@ public class InventoryUI : MonoBehaviour
     private void Start()
     {
         CreateSlots();
+        Initialize();
     }
 
     private void CreateSlots()
@@ -123,6 +126,25 @@ public class InventoryUI : MonoBehaviour
         AllDataRefresh();
     }
 
+    private void Initialize()
+    {
+        PlayerController player = GameManager.Instance.Player.GetComponent<PlayerController>();
+
+        uiQuickSlot = player.Input.actions.FindAction("UI/QuickSlot");
+        uiQuickSlot.performed += ctx =>
+        {
+            int.TryParse(ctx.control.name, out int number);
+
+            if (number == 0)
+            {
+                number = 10; // 0 키는 10번 슬롯으로 간주
+            }
+
+            Log.UI($"UI Quick Slot Key: {number} 키 입력");
+            OnSlotHoverUpdate(number - 1);
+        };
+    }
+
     [ContextMenu("# Inventory Refresh Test")]
     public void AllDataRefresh()
     {
@@ -156,11 +178,17 @@ public class InventoryUI : MonoBehaviour
     }
 
     // 슬롯 위에 마우스가 올라가 있는 동안 호출됨
-    public void OnSlotHoverUpdate(int hoveredIndex)
+    public void OnSlotHoverUpdate(int index)
     {
         if (!gameObject.activeSelf)
             return;
-        
+
+        Log.UI($"Hovered Slot Index: {MouseSlotUI.Instance.hoveredIndex}");
+        Log.UI($"Input Quick Slot Index: {index}");
+
+        // InventoryManager.Instance.PickUpAll(index, inventory);
+        // playerInventory.SwapSlots(hoveredIndex, i);
+
         //for (int i = 0; i < 10; i++)
         //{
         //    // Keyboard.current.digit0Key

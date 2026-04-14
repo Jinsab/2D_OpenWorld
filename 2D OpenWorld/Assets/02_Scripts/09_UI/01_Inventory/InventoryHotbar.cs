@@ -1,6 +1,4 @@
-using NatureBackgroundsPixelArt;
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,7 +8,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.26 오후 16:58
- *  마지막 수정 일자 : 26.04.13 오후 22:30
+ *  마지막 수정 일자 : 26.04.14 오후 16:26
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 핫바(퀵슬롯) UI
@@ -66,6 +64,9 @@ public class InventoryHotbar : MonoBehaviour
 
     private void Update()
     {
+        if (UIManager.Instance.CurrentState != UIManager.UIState.None)
+            return; // UI가 열려 있을 때는 휠 입력 무시
+
         HandleWheelInput();
     }
 

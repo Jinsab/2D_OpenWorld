@@ -8,7 +8,7 @@ using UnityEngine.UI;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.17 오후 22:14
- *  마지막 수정 일자 : 26.04.11 오후 20:50
+ *  마지막 수정 일자 : 26.04.14 오후 17:40
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 호버 UI 관리
@@ -35,6 +35,8 @@ public class SlotUIInteraction : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
         if (slotUI != null)
         {
+            MouseSlotUI.Instance.hoveredIndex = slotUI.GetSlotIndex();
+
             if (ItemDatabase.Instance.TryGetItem(slotUI.GetSlotItemId(), out Item item))
             {
                 TooltipUI.Instance.ShowTooltip(item);
@@ -52,6 +54,8 @@ public class SlotUIInteraction : MonoBehaviour, IPointerEnterHandler, IPointerEx
     public void OnPointerExit(PointerEventData eventData)
     {
         interactImage.enabled = false;
+        MouseSlotUI.Instance.hoveredIndex = -1;
+
         // Log.UI("마우스가 UI 위에서 나감");
         TooltipUI.Instance.HideTooltip();
     }
