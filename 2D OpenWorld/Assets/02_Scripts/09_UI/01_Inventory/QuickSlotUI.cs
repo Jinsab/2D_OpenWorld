@@ -1,3 +1,4 @@
+using AYellowpaper.SerializedCollections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.11 오후 20:50
- *  마지막 수정 일자 : 26.04.14 오후 16:14
+ *  마지막 수정 일자 : 26.04.15 오후 17:53
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 UI 관리 스크립트
@@ -26,7 +27,13 @@ public class QuickSlotUI : MonoBehaviour
     [SerializeField] private Transform slotParent;        // 슬롯들이 담긴 부모
 
     private List<RectTransform> slotRects = new List<RectTransform>();
+    [SerializeField] private SerializedDictionary<int, InventorySlotUI> quickSlotUIs = new();
     private int currentIdx = 0;
+
+    private void OnEnable()
+    {
+        playerInventory.OnSlotChanged += UpdateSlotIcon;
+    }
 
     private System.Collections.IEnumerator Start()
     {
@@ -46,6 +53,25 @@ public class QuickSlotUI : MonoBehaviour
     {
         // 초기 위치 설정
         UpdateSelectionFrame(0, true);
+    }
+
+    private void UpdateSlotIcon(int index)
+    {
+        // 퀵슬롯 범위(0~9) 내의 아이템이 바뀐 경우에만 UI 갱신
+        if (index >= 0 && index < 10)
+        {
+            var data = playerInventory.inventoryData.slots[index];
+
+            if (!quickSlotUIs.ContainsKey(index))
+            {
+                quickSlotUIs[index] = slotRects[index].GetComponent<InventorySlotUI>();
+            }
+
+            quickSlotUIs[index].scaleFlag = false;
+            quickSlotUIs[index].UpdateVisual(data);
+            AudioManager.Instance.Play(SND.UI_Item_Drop);
+            Log.UI($"{index}번 퀵슬롯 갱신 완료 (ID: {data.itemId}, Qty: {data.amount})");
+        }
     }
 
     /// <summary>
