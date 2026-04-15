@@ -23,7 +23,7 @@ using UnityEngine.InputSystem;
  *  1. 
  */
 
-public class InventoryHotbar : MonoBehaviour
+public class QuickSlotManager : MonoBehaviour
 {
     [Header("# References")]
     [SerializeField] private Inventory playerInventory;

@@ -70,7 +70,7 @@ public class QuickSlotUI : MonoBehaviour
             quickSlotUIs[index].scaleFlag = false;
             quickSlotUIs[index].UpdateVisual(data);
             AudioManager.Instance.Play(SND.UI_Item_Drop);
-            Log.UI($"{index}번 퀵슬롯 갱신 완료 (ID: {data.itemId}, Qty: {data.amount})");
+            // Log.UI($"{index}번 퀵슬롯 갱신 완료 (ID: {data.itemId}, Qty: {data.amount})");
         }
     }
 
@@ -79,10 +79,10 @@ public class QuickSlotUI : MonoBehaviour
     /// </summary>
     public void UpdateSelectionFrame(int index, bool immediate = false)
     {
-        Log.UI("퀵슬롯 변경 로직 수행: " + index);
+        // Log.UI("퀵슬롯 변경 로직 수행: " + index);
         currentIdx = index;
         Vector3 targetPos = slotRects[index].anchoredPosition;
-        Log.UI("목표 위치: " + targetPos);
+        // Log.UI("목표 위치: " + targetPos);
         if (immediate)
         {
             selectionFrame.anchoredPosition = targetPos;
