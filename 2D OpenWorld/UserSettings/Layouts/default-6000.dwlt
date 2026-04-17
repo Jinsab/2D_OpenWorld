@@ -217,8 +217,8 @@ MonoBehaviour:
     y: 0
     width: 860
     height: 797.3333
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 226}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
@@ -329,8 +329,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "UnityEditor.MainToolbarWindow\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1.3333334
-    y: 50
+    x: 0
+    y: 0
     width: 1277.3334
     height: 36
   m_SerializedDataModeController:
@@ -595,8 +595,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Console\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1.3333334
-    y: 883.3334
+    x: 0
+    y: 24
     width: 846.3333
     height: 509.3333
   m_SerializedDataModeController:
@@ -633,8 +633,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1.3333334
-    y: 86
+    x: 0
+    y: 24
     width: 416.33334
     height: 771.3333
   m_SerializedDataModeController:
@@ -653,10 +653,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: 99384
+      m_SelectedIDs: []
       m_LastClickedID:
-        m_Data: 99384
+        m_Data: 0
       m_ExpandedIDs:
       - m_Data: -1324
       - m_Data: 98042
@@ -665,8 +664,8 @@ MonoBehaviour:
       - m_Data: 100500
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Hand
-        m_OriginalName: Hand
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
@@ -674,10 +673,10 @@ MonoBehaviour:
           width: 0
           height: 0
         m_UserData:
-          m_Data: 98952
+          m_Data: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 8}
@@ -1434,8 +1433,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 418.6667
-    y: 86
+    x: 418.33334
+    y: 24
     width: 859
     height: 771.3333
   m_SerializedDataModeController:
@@ -1509,7 +1508,7 @@ MonoBehaviour:
       height: 1118.0752
     m_MinimalGUI: 1
   m_defaultScale: 0.67109376
-  m_LastWindowPixelSize: {x: 1288.5, y: 1157}
+  m_LastWindowPixelSize: {x: 859, y: 771.3333}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1709,7 +1708,6 @@ MonoBehaviour:
       m_Data: 102676
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 102520
     - m_Data: 102522
     - m_Data: 102524
     - m_Data: 102526
@@ -1717,7 +1715,7 @@ MonoBehaviour:
     - m_Data: 102530
     - m_Data: 102532
     - m_Data: 102534
-    - m_Data: 1000000000
+    - m_Data: 102536
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1750,7 +1748,6 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 102520
     - m_Data: 102522
     - m_Data: 102524
     - m_Data: 102526
@@ -1758,6 +1755,7 @@ MonoBehaviour:
     - m_Data: 102530
     - m_Data: 102532
     - m_Data: 102534
+    - m_Data: 102536
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2031,8 +2029,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 848.6667
-    y: 883.3334
+    x: 848.3333
+    y: 24
     width: 429.00006
     height: 509.3333
   m_SerializedDataModeController:

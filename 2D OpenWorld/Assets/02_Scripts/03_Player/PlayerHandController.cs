@@ -41,11 +41,14 @@ public class PlayerHandController : MonoBehaviour
     [SerializeField] private QuickSlotManager quickSlotManager;
     [SerializeField] private Inventory playerInventory; // 인벤토리 직접 참조 추가
     [SerializeField] private Transform handAnchor; // 아이템이 붙을 위치
+    [SerializeField] private PlayerLook playerLook;
 
     [Header("# Current State")]
     [SerializeField] private SpriteRenderer handItemSprite; // 아이템 스프라이트
+    // private Vector2 itemHandOffset; // 아이템 별 오프셋
     private int currentItemId = -1;
     private int currentSelectedIndex = 0;
+    private LookDirection lastLookDirection = LookDirection.Down;
 
     private void OnEnable()
     {
@@ -58,6 +61,45 @@ public class PlayerHandController : MonoBehaviour
     {
         quickSlotManager.OnSlotSelected -= HandleSlotSelected;
         playerInventory.OnSlotChanged -= HandleItemChanged;
+    }
+
+    private void Update()
+    {
+        if (lastLookDirection == playerLook.CurrentLookDirection)
+            return;
+
+        lastLookDirection = playerLook.CurrentLookDirection;
+
+        switch (lastLookDirection)
+        {
+            case LookDirection.Left:
+                handAnchor.transform.localPosition =
+                    new Vector3(0.15f, handAnchor.transform.localPosition.y, 0f);
+                handAnchor.transform.localScale =
+                    new Vector3(handAnchor.transform.localScale.x, handAnchor.transform.localScale.y, handAnchor.transform.localScale.z);
+                break;
+            
+            case LookDirection.Right:
+                handAnchor.transform.localPosition =
+                    new Vector3(-0.15f, handAnchor.transform.localPosition.y, 0f);
+                handAnchor.transform.localScale =
+                    new Vector3(-handAnchor.transform.localScale.x, handAnchor.transform.localScale.y, handAnchor.transform.localScale.z);
+                break;
+            
+            case LookDirection.Up:
+                handAnchor.transform.localPosition =
+                    new Vector3(-0.25f, handAnchor.transform.localPosition.y, 0f);
+                handAnchor.transform.localScale =
+                    new Vector3(-handAnchor.transform.localScale.x, handAnchor.transform.localScale.y, handAnchor.transform.localScale.z);
+                break;
+            
+            case LookDirection.Down:
+                handAnchor.transform.localPosition =
+                    new Vector3(0.25f, handAnchor.transform.localPosition.y, 0f);
+                handAnchor.transform.localScale =
+                    new Vector3(handAnchor.transform.localScale.x, handAnchor.transform.localScale.y, handAnchor.transform.localScale.z);
+                break;
+        }
     }
 
     // 슬롯 선택 번호가 바뀔 때 호출
