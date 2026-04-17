@@ -7,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.15 오후 22:58
- *  마지막 수정 일자 : 26.04.17 오후 18:53
+ *  마지막 수정 일자 : 26.04.18 오전 01:24
  *  
  *  [스크립트 목적 및 내용]
  *  1. 손에 든 아이템 시스템 - 플레이어가 손에 든 아이템을 관리하는 스크립트
@@ -63,7 +63,7 @@ public class PlayerHandController : MonoBehaviour
         playerInventory.OnSlotChanged -= HandleItemChanged;
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (lastLookDirection == playerLook.CurrentLookDirection)
             return;
@@ -74,30 +74,42 @@ public class PlayerHandController : MonoBehaviour
         {
             case LookDirection.Left:
                 handAnchor.transform.localPosition =
-                    new Vector3(0.15f, handAnchor.transform.localPosition.y, 0f);
+                    new Vector3(0.2f, 0.35f, 0f);
                 handAnchor.transform.localScale =
-                    new Vector3(handAnchor.transform.localScale.x, handAnchor.transform.localScale.y, handAnchor.transform.localScale.z);
+                    new Vector3(
+                        -Mathf.Abs(handAnchor.transform.localScale.x),
+                        handAnchor.transform.localScale.y,
+                        handAnchor.transform.localScale.z);
                 break;
             
             case LookDirection.Right:
                 handAnchor.transform.localPosition =
-                    new Vector3(-0.15f, handAnchor.transform.localPosition.y, 0f);
+                    new Vector3(-0.2f, 0.35f, 0f);
                 handAnchor.transform.localScale =
-                    new Vector3(-handAnchor.transform.localScale.x, handAnchor.transform.localScale.y, handAnchor.transform.localScale.z);
+                    new Vector3(
+                        Mathf.Abs(handAnchor.transform.localScale.x),
+                        handAnchor.transform.localScale.y,
+                        handAnchor.transform.localScale.z);
                 break;
             
             case LookDirection.Up:
                 handAnchor.transform.localPosition =
-                    new Vector3(-0.25f, handAnchor.transform.localPosition.y, 0f);
+                    new Vector3(0.3f, 0.45f, 0f);
                 handAnchor.transform.localScale =
-                    new Vector3(-handAnchor.transform.localScale.x, handAnchor.transform.localScale.y, handAnchor.transform.localScale.z);
+                    new Vector3(
+                        -Mathf.Abs(handAnchor.transform.localScale.x),
+                        handAnchor.transform.localScale.y,
+                        handAnchor.transform.localScale.z);
                 break;
             
             case LookDirection.Down:
                 handAnchor.transform.localPosition =
-                    new Vector3(0.25f, handAnchor.transform.localPosition.y, 0f);
+                    new Vector3(-0.25f, 0.35f, 0f);
                 handAnchor.transform.localScale =
-                    new Vector3(handAnchor.transform.localScale.x, handAnchor.transform.localScale.y, handAnchor.transform.localScale.z);
+                    new Vector3(
+                        Mathf.Abs(handAnchor.transform.localScale.x),
+                        handAnchor.transform.localScale.y,
+                        handAnchor.transform.localScale.z);
                 break;
         }
     }
