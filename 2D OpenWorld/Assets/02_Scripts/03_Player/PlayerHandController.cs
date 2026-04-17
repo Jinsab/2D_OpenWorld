@@ -6,7 +6,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.15 오후 22:58
- *  마지막 수정 일자 : 26.04.15 오후 23:04
+ *  마지막 수정 일자 : 26.04.17 오후 18:53
  *  
  *  [스크립트 목적 및 내용]
  *  1. 손에 든 아이템 시스템 - 플레이어가 손에 든 아이템을 관리하는 스크립트
@@ -41,7 +41,7 @@ public class PlayerHandController : MonoBehaviour
     [SerializeField] private Transform handAnchor; // 아이템이 붙을 위치
 
     [Header("# Current State")]
-    private GameObject currentHandItem;
+    [SerializeField] private SpriteRenderer handItemSprite; // 아이템 스프라이트
     private int currentItemId = -1;
 
     private void OnEnable()
@@ -64,10 +64,9 @@ public class PlayerHandController : MonoBehaviour
         if (currentItemId == slot.itemId) return;
 
         // 3. 기존에 들고 있던 오브젝트 파괴
-        if (currentHandItem != null)
+        if (handItemSprite.sprite != null)
         {
-            Destroy(currentHandItem);
-            currentHandItem = null;
+            handItemSprite.sprite = null;
         }
 
         currentItemId = slot.itemId;
@@ -77,13 +76,16 @@ public class PlayerHandController : MonoBehaviour
 
         // 5. 아이템 데이터로부터 프리팹(외형) 생성
         Item itemData = ItemDatabase.Instance.GetItem(currentItemId);
-        //if (itemData != null && itemData.itemPrefab != null)
-        //{
-        //    currentHandItem = Instantiate(itemData.itemPrefab, handAnchor);
 
-        //    // 픽셀 아트 게임이라면 로컬 좌표 초기화가 중요합니다.
-        //    currentHandItem.transform.localPosition = Vector3.zero;
-        //    currentHandItem.transform.localRotation = Quaternion.identity;
-        //}
+        Log.Game("퀵슬롯 아이템: " + itemData.itemName);
+
+        if (itemData != null && itemData.Icon != null)
+        {
+            handItemSprite.sprite = itemData.Icon;
+
+            // 픽셀 아트 게임이라면 로컬 좌표 초기화가 중요합니다.
+            handItemSprite.transform.localPosition = Vector3.zero;
+            handItemSprite.transform.localRotation = Quaternion.identity;
+        }
     }
 }
