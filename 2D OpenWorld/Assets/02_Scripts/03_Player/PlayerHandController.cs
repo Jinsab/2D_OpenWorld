@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 /*  
@@ -38,21 +39,64 @@ public class PlayerHandController : MonoBehaviour
 {
     [Header("# References")]
     [SerializeField] private QuickSlotManager quickSlotManager;
+    [SerializeField] private Inventory playerInventory; // 인벤토리 직접 참조 추가
     [SerializeField] private Transform handAnchor; // 아이템이 붙을 위치
 
     [Header("# Current State")]
     [SerializeField] private SpriteRenderer handItemSprite; // 아이템 스프라이트
     private int currentItemId = -1;
+    private int currentSelectedIndex = 0;
 
     private void OnEnable()
     {
         // 퀵슬롯 선택 변경 이벤트 구독
-        quickSlotManager.OnSlotSelected += RefreshHand;
+        quickSlotManager.OnSlotSelected += HandleSlotSelected;
+        playerInventory.OnSlotChanged += HandleItemChanged;
     }
 
     private void OnDisable()
     {
-        quickSlotManager.OnSlotSelected -= RefreshHand;
+        quickSlotManager.OnSlotSelected -= HandleSlotSelected;
+        playerInventory.OnSlotChanged -= HandleItemChanged;
+    }
+
+    // 슬롯 선택 번호가 바뀔 때 호출
+    private void HandleSlotSelected(int index)
+    {
+        currentSelectedIndex = index;
+        RefreshHand();
+    }
+
+    // 인벤토리의 특정 슬롯 내용이 바뀔 때 호출
+    private void HandleItemChanged(int index)
+    {
+        // 핵심 로직: "방금 바뀐 슬롯이 내가 지금 손에 들고 있는 번호인가?"
+        if (index == currentSelectedIndex)
+        {
+            RefreshHand();
+        }
+    }
+
+    public void RefreshHand()
+    {
+        // 현재 선택된 슬롯의 아이템 데이터 가져오기
+        InventorySlot slot = playerInventory.inventoryData.slots[currentSelectedIndex];
+
+        if (slot.itemId <= 0)
+        {
+            handItemSprite.sprite = null;
+            return;
+        }
+
+        Item itemData = ItemDatabase.Instance.GetItem(slot.itemId);
+        if (itemData != null)
+        {
+            // 프리팹 대신 아이템의 아이콘 스프라이트를 직접 적용
+            handItemSprite.sprite = itemData.Icon;
+
+            // 필요 시 아이템 종류에 따라 크기나 각도 조절 로직 추가 가능
+            // AdjustHandTransform(itemData);
+        }
     }
 
     public void RefreshHand(int selectedIndex)
