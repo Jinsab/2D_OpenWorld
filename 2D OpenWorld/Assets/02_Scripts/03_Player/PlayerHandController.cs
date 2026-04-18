@@ -7,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.15 오후 22:58
- *  마지막 수정 일자 : 26.04.18 오전 01:24
+ *  마지막 수정 일자 : 26.04.18 오후 17:17
  *  
  *  [스크립트 목적 및 내용]
  *  1. 손에 든 아이템 시스템 - 플레이어가 손에 든 아이템을 관리하는 스크립트
@@ -41,13 +41,15 @@ public class PlayerHandController : MonoBehaviour
     [SerializeField] private QuickSlotManager quickSlotManager;
     [SerializeField] private Inventory playerInventory; // 인벤토리 직접 참조 추가
     [SerializeField] private Transform handAnchor; // 아이템이 붙을 위치
-    [SerializeField] private PlayerLook playerLook;
+    [SerializeField] private PlayerLook playerLook; // 플레이어 방향 참조 용
+    [SerializeField] private SpriteRenderer playerRenderer; // 플레이어 sortingOrder 참조 용
 
     [Header("# Current State")]
     [SerializeField] private SpriteRenderer handItemSprite; // 아이템 스프라이트
     // private Vector2 itemHandOffset; // 아이템 별 오프셋
     private int currentItemId = -1;
     private int currentSelectedIndex = 0;
+    private int currentSortingOrder = 0;
     private LookDirection lastLookDirection = LookDirection.Down;
 
     private void OnEnable()
@@ -65,11 +67,51 @@ public class PlayerHandController : MonoBehaviour
 
     private void LateUpdate()
     {
+        HandSpritePosition();
+        HandSpriteSortingOrder();
+    }
+
+    private void HandSpriteSortingOrder()
+    {
+        switch (lastLookDirection)
+        {
+            // 플레이어 앞에 표시해야 하는 경우이므로
+            // player SortingOrder의 +6로 비교하면 됨 (파츠 5개의 앞에 표시 [5 + 1 = 6])
+            case LookDirection.Left:
+            case LookDirection.Right:
+            case LookDirection.Down:
+                if (currentSortingOrder + 6 != playerRenderer.sortingOrder)
+                {
+                    handItemSprite.sortingOrder = playerRenderer.sortingOrder + 6;
+                }
+                break;
+            // 플레이어 뒤에 표시해야하는 경우이므로
+            // player SortingOrder의 -1로 비교하면 됨 (파츠 뒤에 표시 [0 - 1 = -1])
+            case LookDirection.Up:
+                if (currentSortingOrder - 1 != playerRenderer.sortingOrder)
+                {
+                    handItemSprite.sortingOrder = playerRenderer.sortingOrder - 1;
+                }
+                break;
+
+        }
+
+    }
+
+    private void HandSpritePosition()
+    {
         if (lastLookDirection == playerLook.CurrentLookDirection)
             return;
 
         lastLookDirection = playerLook.CurrentLookDirection;
 
+        // 추후에
+        // 스프라이트 오프셋: Item 스크립트에 Vector2 handOffset 같은 변수를 추가해두면,
+        // 칼은 손잡이 쪽이 손에 붙고, 방패는 중앙이 손에 붙도록 미세 조정이 가능
+
+        // Left, Right, Down일 때에는 플레이어 앞에 있는 판정이고 (아이템이 플레이어 앞),
+        // Up의 경우에는 플레이어 뒤에 있는 판정이 되어야 함 (플레이어가 아이템 앞)
+        // 그러므로, sortingOrder를 적절히 조절해야 함
         switch (lastLookDirection)
         {
             case LookDirection.Left:
@@ -81,7 +123,7 @@ public class PlayerHandController : MonoBehaviour
                         handAnchor.transform.localScale.y,
                         handAnchor.transform.localScale.z);
                 break;
-            
+
             case LookDirection.Right:
                 handAnchor.transform.localPosition =
                     new Vector3(-0.2f, 0.35f, 0f);
@@ -91,7 +133,7 @@ public class PlayerHandController : MonoBehaviour
                         handAnchor.transform.localScale.y,
                         handAnchor.transform.localScale.z);
                 break;
-            
+
             case LookDirection.Up:
                 handAnchor.transform.localPosition =
                     new Vector3(0.3f, 0.45f, 0f);
@@ -101,7 +143,7 @@ public class PlayerHandController : MonoBehaviour
                         handAnchor.transform.localScale.y,
                         handAnchor.transform.localScale.z);
                 break;
-            
+
             case LookDirection.Down:
                 handAnchor.transform.localPosition =
                     new Vector3(-0.25f, 0.35f, 0f);

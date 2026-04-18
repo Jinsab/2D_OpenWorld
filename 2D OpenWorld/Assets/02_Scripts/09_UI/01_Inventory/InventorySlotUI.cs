@@ -12,7 +12,7 @@ using DG.Tweening;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.17 오후 16:05
- *  마지막 수정 일자 : 26.04.14 오후 17:29
+ *  마지막 수정 일자 : 26.04.18 오전 02:00
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 인벤토리 UI 관리
@@ -48,7 +48,7 @@ public class InventorySlotUI : MonoBehaviour, IPointerDownHandler
     public Inventory inv;
     public bool scaleFlag;
 
-    private int slotIndex;
+    [SerializeField] private int slotIndex;
     
     public void Initialize(Inventory inventory, int idx)
     {
