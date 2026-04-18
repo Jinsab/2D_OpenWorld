@@ -112,6 +112,7 @@ public class PlayerHandController : MonoBehaviour
         // Left, Right, Down일 때에는 플레이어 앞에 있는 판정이고 (아이템이 플레이어 앞),
         // Up의 경우에는 플레이어 뒤에 있는 판정이 되어야 함 (플레이어가 아이템 앞)
         // 그러므로, sortingOrder를 적절히 조절해야 함
+        /*
         switch (lastLookDirection)
         {
             case LookDirection.Left:
@@ -154,6 +155,7 @@ public class PlayerHandController : MonoBehaviour
                         handAnchor.transform.localScale.z);
                 break;
         }
+        */
     }
 
     // 슬롯 선택 번호가 바뀔 때 호출
