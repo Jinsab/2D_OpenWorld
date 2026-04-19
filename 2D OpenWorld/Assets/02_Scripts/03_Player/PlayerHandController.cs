@@ -1,5 +1,7 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 /*  
  *  [프로젝트 제목]
@@ -50,7 +52,10 @@ public class PlayerHandController : MonoBehaviour
     private int currentItemId = -1;
     private int currentSelectedIndex = 0;
     private int currentSortingOrder = 0;
+    private Vector3 originalPos;
     private LookDirection lastLookDirection = LookDirection.Down;
+
+    [SerializeField] private bool isActing = false;
 
     private void OnEnable()
     {
@@ -63,6 +68,47 @@ public class PlayerHandController : MonoBehaviour
     {
         quickSlotManager.OnSlotSelected -= HandleSlotSelected;
         playerInventory.OnSlotChanged -= HandleItemChanged;
+    }
+
+    private void Update()
+    {
+        if (Mouse.current.leftButton.wasPressedThisFrame && !isActing)
+        {
+            StartCoroutine(PerformAction());
+        }
+    }
+
+    private IEnumerator PerformAction()
+    {
+        isActing = true;
+
+        // 1. 마우스 방향 구하기 (아이템을 휘두를 방향)
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.value);
+        Vector3 dir = (mousePos - transform.position).normalized;
+
+        // 2. 공격 방향으로 손 내밀기 (Punch 효과)
+        Vector3 punchPos = originalPos + (dir * 0.3f);
+        float elapsed = 0f;
+        float duration = 0.1f;
+
+        while (elapsed < duration)
+        {
+            handAnchor.localPosition = Vector3.Lerp(originalPos, punchPos, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        // 3. 다시 원래 위치로 복귀
+        elapsed = 0f;
+        while (elapsed < duration)
+        {
+            handAnchor.localPosition = Vector3.Lerp(punchPos, originalPos, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        handAnchor.localPosition = originalPos;
+        isActing = false;
     }
 
     private void LateUpdate()
@@ -93,9 +139,7 @@ public class PlayerHandController : MonoBehaviour
                     handItemSprite.sortingOrder = playerRenderer.sortingOrder - 1;
                 }
                 break;
-
         }
-
     }
 
     private void HandSpritePosition()
@@ -104,7 +148,6 @@ public class PlayerHandController : MonoBehaviour
             return;
 
         lastLookDirection = playerLook.CurrentLookDirection;
-
         // 추후에
         // 스프라이트 오프셋: Item 스크립트에 Vector2 handOffset 같은 변수를 추가해두면,
         // 칼은 손잡이 쪽이 손에 붙고, 방패는 중앙이 손에 붙도록 미세 조정이 가능
@@ -112,22 +155,22 @@ public class PlayerHandController : MonoBehaviour
         // Left, Right, Down일 때에는 플레이어 앞에 있는 판정이고 (아이템이 플레이어 앞),
         // Up의 경우에는 플레이어 뒤에 있는 판정이 되어야 함 (플레이어가 아이템 앞)
         // 그러므로, sortingOrder를 적절히 조절해야 함
-        /*
+        
         switch (lastLookDirection)
         {
             case LookDirection.Left:
                 handAnchor.transform.localPosition =
-                    new Vector3(0.2f, 0.35f, 0f);
+                    new Vector3(-0.25f, 0.35f, 0f);
                 handAnchor.transform.localScale =
                     new Vector3(
-                        -Mathf.Abs(handAnchor.transform.localScale.x),
+                        Mathf.Abs(handAnchor.transform.localScale.x),
                         handAnchor.transform.localScale.y,
                         handAnchor.transform.localScale.z);
                 break;
 
             case LookDirection.Right:
                 handAnchor.transform.localPosition =
-                    new Vector3(-0.2f, 0.35f, 0f);
+                    new Vector3(-0.25f, 0.35f, 0f);
                 handAnchor.transform.localScale =
                     new Vector3(
                         Mathf.Abs(handAnchor.transform.localScale.x),
@@ -147,7 +190,7 @@ public class PlayerHandController : MonoBehaviour
 
             case LookDirection.Down:
                 handAnchor.transform.localPosition =
-                    new Vector3(-0.25f, 0.35f, 0f);
+                    new Vector3(-0.3f, 0.35f, 0f);
                 handAnchor.transform.localScale =
                     new Vector3(
                         Mathf.Abs(handAnchor.transform.localScale.x),
@@ -155,7 +198,8 @@ public class PlayerHandController : MonoBehaviour
                         handAnchor.transform.localScale.z);
                 break;
         }
-        */
+
+        originalPos = handAnchor.localPosition;
     }
 
     // 슬롯 선택 번호가 바뀔 때 호출

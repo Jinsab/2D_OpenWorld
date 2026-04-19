@@ -103,4 +103,8 @@ public abstract class Item : ScriptableObject
 
     public int buyPrice;                // 상점 시스템
     public int sellPrice;               // 상점 시스템
+
+    [Header("# Item In Game View")]
+    public Vector2 handOffset;          // 짧게 잡고 길게 잡는 등의 개별 설정 용도
+    public float handRotation;          // 아이템마다 들고 있는 각도가 다를 수 있음
 }
