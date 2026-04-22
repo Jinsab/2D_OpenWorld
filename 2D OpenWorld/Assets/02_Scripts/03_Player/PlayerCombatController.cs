@@ -61,4 +61,9 @@ public class PlayerCombatController : MonoBehaviour
             Player.Animator.SetTrigger(Player.AnimationData.AttackParameterHash);
         //weaponController.HandleAttack();
     }
+
+    public void OnAttackAnimationFinished()
+    {
+        Log.Game("이벤트로 확인한 공격 애니메이션 종료");
+    }
 }

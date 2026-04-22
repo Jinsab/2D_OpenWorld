@@ -17,9 +17,19 @@ MonoBehaviour:
   itemDesc: "\uAC00\uACF5\uB418\uC9C0 \uC54A\uC740 \uD1B5\uB098\uBB34 \uC785\uB2C8\uB2E4."
   Icon: {fileID: 21300000, guid: f3692a0348cf58747acacc07e89069b9, type: 3}
   itemType: 0
+  rarity: 0
+  itemLevel: 0
+  actionType: 2
   maxStack: 999
   isDroppable: 1
   isDestroyable: 1
   buyPrice: 0
   sellPrice: 0
+  handOffset: {x: 0, y: 0}
+  handRotation: 0
+  actionDuration: 0.2
+  actionRange: 0.5
+  startDownOffset: {x: -0.1, y: 0.05}
+  startSideOffset: {x: -0.5, y: 0.6}
+  startUpOffset: {x: 0.25, y: 0.75}
   resourceType: 0

@@ -19,11 +19,19 @@ MonoBehaviour:
   itemType: 2
   rarity: 1
   itemLevel: 1
+  actionType: 2
   maxStack: 1
   isDroppable: 1
   isDestroyable: 1
   buyPrice: 0
   sellPrice: 0
+  handOffset: {x: 0, y: 0}
+  handRotation: 0
+  actionDuration: 0.2
+  actionRange: 0.5
+  startDownOffset: {x: -0.1, y: 0.05}
+  startSideOffset: {x: -0.5, y: 0.6}
+  startUpOffset: {x: 0.25, y: 0.75}
   slotType: 1
   currentDurability: 100
   maxDurability: 100

@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,7 +8,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.15 오후 22:58
- *  마지막 수정 일자 : 26.04.18 오후 17:17
+ *  마지막 수정 일자 : 26.04.22 오후 20:58
  *  
  *  [스크립트 목적 및 내용]
  *  1. 손에 든 아이템 시스템 - 플레이어가 손에 든 아이템을 관리하는 스크립트
@@ -66,51 +65,21 @@ public class PlayerHandController : MonoBehaviour
 
     private void OnDisable()
     {
+        // 퀵슬롯 선택 변경 이벤트 해제
         quickSlotManager.OnSlotSelected -= HandleSlotSelected;
         playerInventory.OnSlotChanged -= HandleItemChanged;
     }
 
     private void Update()
     {
+        if (UIManager.Instance.CurrentState != UIManager.UIState.None)
+            return;
+
         if (Mouse.current.leftButton.wasPressedThisFrame && !isActing)
         {
             StartCoroutine(PerformAction());
         }
     }
-
-    private IEnumerator PerformAction()
-    {
-        isActing = true;
-
-        // 1. 마우스 방향 구하기 (아이템을 휘두를 방향)
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.value);
-        Vector3 dir = (mousePos - transform.position).normalized;
-
-        // 2. 공격 방향으로 손 내밀기 (Punch 효과)
-        Vector3 punchPos = originalPos + (dir * 0.3f);
-        float elapsed = 0f;
-        float duration = 0.1f;
-
-        while (elapsed < duration)
-        {
-            handAnchor.localPosition = Vector3.Lerp(originalPos, punchPos, elapsed / duration);
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        // 3. 다시 원래 위치로 복귀
-        elapsed = 0f;
-        while (elapsed < duration)
-        {
-            handAnchor.localPosition = Vector3.Lerp(punchPos, originalPos, elapsed / duration);
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        handAnchor.localPosition = originalPos;
-        isActing = false;
-    }
-
     private void LateUpdate()
     {
         HandSpritePosition();
@@ -202,6 +171,128 @@ public class PlayerHandController : MonoBehaviour
         originalPos = handAnchor.localPosition;
     }
 
+    private IEnumerator PerformAction()
+    {
+        isActing = true;
+
+        Log.Game("Action 판정, 애니메이션 시작");
+        Log.Game("현재 아이템 코드: " + currentItemId);
+        if (ItemDatabase.Instance.TryGetItem(currentItemId, out Item data))
+        {
+            // 1. 시작 위치 설정 (원래 위치 + 아이템 고유의 시작 오프셋)
+            Vector3 startPos = originalPos;
+            switch (lastLookDirection)
+            {
+                case LookDirection.Left:
+                case LookDirection.Right:
+                    startPos = (Vector3)data.startSideOffset;
+                    break;
+                case LookDirection.Down:
+                    startPos = (Vector3)data.startDownOffset;
+                    break;
+                case LookDirection.Up:
+                    startPos = (Vector3)data.startUpOffset;
+                    break;
+            }
+            handAnchor.localPosition = startPos;
+
+            // 2. 마우스 방향 계산
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.value);
+            Vector3 dir = (mousePos - transform.position).normalized;
+
+            Log.Game("ActionType에 따른 분기 처리");
+            // 3. ActionType에 따른 분기 처리
+            switch (data.actionType)
+            {
+                case Item.UseActionType.Swing:
+                    yield return StartCoroutine(SwingRoutine(startPos, dir, data));
+                    break;
+                case Item.UseActionType.Stab:
+                    yield return StartCoroutine(StabRoutine(startPos, dir, data));
+                    break;
+                case Item.UseActionType.Consume:
+                    yield return StartCoroutine(ConsumeRoutine(data));
+                    break;
+            }
+        }
+
+        // 4. 복귀
+        handAnchor.localPosition = originalPos;
+        isActing = false;
+        //isActing = true;
+
+        //// 1. 마우스 방향 구하기 (아이템을 휘두를 방향)
+        //Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.value);
+        //Vector3 dir = (mousePos - transform.position).normalized;
+
+        //// 2. 공격 방향으로 손 내밀기 (Punch 효과)
+        //Vector3 punchPos = originalPos + (dir * 0.3f);
+        //float elapsed = 0f;
+        //float duration = 0.1f;
+
+        //while (elapsed < duration)
+        //{
+        //    handAnchor.localPosition = Vector3.Lerp(originalPos, punchPos, elapsed / duration);
+        //    elapsed += Time.deltaTime;
+        //    yield return null;
+        //}
+
+        //// 3. 다시 원래 위치로 복귀
+        //elapsed = 0f;
+        //while (elapsed < duration)
+        //{
+        //    handAnchor.localPosition = Vector3.Lerp(punchPos, originalPos, elapsed / duration);
+        //    elapsed += Time.deltaTime;
+        //    yield return null;
+        //}
+
+        //handAnchor.localPosition = originalPos;
+        //isActing = false;
+    }
+
+    private IEnumerator StabRoutine(Vector3 start, Vector3 dir, Item data)
+    {
+        Vector3 targetPos = start + (dir * data.actionRange);
+
+        // 전진 (빠르게)
+        float t = 0;
+        while (t < 1)
+        {
+            t += Time.deltaTime / (data.actionDuration * 0.3f);
+            handAnchor.localPosition = Vector3.Lerp(start, targetPos, t);
+            yield return null;
+        }
+        // 후퇴 (느리게)
+        t = 0;
+        while (t < 1)
+        {
+            t += Time.deltaTime / (data.actionDuration * 0.7f);
+            handAnchor.localPosition = Vector3.Lerp(targetPos, start, t);
+            yield return null;
+        }
+    }
+
+    private IEnumerator SwingRoutine(Vector3 start, Vector3 dir, Item data)
+    {
+        float baseAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        float startAngle = baseAngle + 45f; // 45도 뒤에서 시작
+        float endAngle = baseAngle - 45f;   // 45도 앞까지 휘두름
+
+        float t = 0;
+        while (t < 1)
+        {
+            t += Time.deltaTime / data.actionDuration;
+            float currAngle = Mathf.Lerp(startAngle, endAngle, t);
+            handAnchor.localRotation = Quaternion.Euler(0, 0, currAngle);
+            yield return null;
+        }
+    }
+
+    private IEnumerator ConsumeRoutine(Item data)
+    {
+        yield return null;
+    }
+
     // 슬롯 선택 번호가 바뀔 때 호출
     private void HandleSlotSelected(int index)
     {
@@ -222,15 +313,15 @@ public class PlayerHandController : MonoBehaviour
     public void RefreshHand()
     {
         // 현재 선택된 슬롯의 아이템 데이터 가져오기
-        InventorySlot slot = playerInventory.inventoryData.slots[currentSelectedIndex];
+        currentItemId = playerInventory.inventoryData.slots[currentSelectedIndex].itemId;
 
-        if (slot.itemId <= 0)
+        if (currentItemId <= 0)
         {
             handItemSprite.sprite = null;
             return;
         }
 
-        Item itemData = ItemDatabase.Instance.GetItem(slot.itemId);
+        Item itemData = ItemDatabase.Instance.GetItem(currentItemId);
         if (itemData != null)
         {
             // 프리팹 대신 아이템의 아이콘 스프라이트를 직접 적용

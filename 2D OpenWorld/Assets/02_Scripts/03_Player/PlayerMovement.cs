@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.12 오후 20:48
- *  마지막 수정 일자 : 26.03.22 오후 19:28
+ *  마지막 수정 일자 : 26.04.22 오후 20:47
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 이동 스크립트
@@ -77,6 +77,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (UIManager.Instance.CurrentState != UIManager.UIState.None)
+            return;
+
         if (Player.StateMachine.CurrentState == PlayerState.Idle ||
             Player.StateMachine.CurrentState == PlayerState.Attack ||
             Player.StateMachine.CurrentState == PlayerState.Stun)
@@ -94,14 +97,13 @@ public class PlayerMovement : MonoBehaviour
         move = Player.Rigidbody.position + move * currentSpeed * Time.fixedDeltaTime;
 
         sortingZ = SortingOrderUtility.UpdateSortingZ(transform) + 1f;
-        // Debug.Log(sortingZ);
         Player.Rigidbody.MovePosition(new Vector3(move.x, move.y, sortingZ));
         transform.position = new Vector3(transform.position.x, transform.position.y, sortingZ);
     }
 
     private void LateUpdate()
     {
-        if (MoveInput != Vector2.zero)
+        if (UIManager.Instance.CurrentState != UIManager.UIState.None || MoveInput != Vector2.zero)
         {
             sortingY = SortingOrderUtility.UpdateSortingY(transform);
 
