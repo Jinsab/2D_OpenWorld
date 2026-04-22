@@ -75,7 +75,7 @@ public class PlayerHandController : MonoBehaviour
         if (UIManager.Instance.CurrentState != UIManager.UIState.None)
             return;
 
-        if (Mouse.current.leftButton.wasPressedThisFrame && !isActing)
+        if (Mouse.current.leftButton.isPressed && !isActing)
         {
             StartCoroutine(PerformAction());
         }
@@ -214,10 +214,12 @@ public class PlayerHandController : MonoBehaviour
                     yield return StartCoroutine(ConsumeRoutine(data));
                     break;
             }
+
+            // 4. 복귀
+            handAnchor.localPosition = originalPos;
+            handAnchor.localRotation = Quaternion.Euler(0f, 0f, data.handRotation);
         }
 
-        // 4. 복귀
-        handAnchor.localPosition = originalPos;
         isActing = false;
         //isActing = true;
 
@@ -279,6 +281,7 @@ public class PlayerHandController : MonoBehaviour
         float endAngle = baseAngle - 45f;   // 45도 앞까지 휘두름
 
         float t = 0;
+        
         while (t < 1)
         {
             t += Time.deltaTime / data.actionDuration;

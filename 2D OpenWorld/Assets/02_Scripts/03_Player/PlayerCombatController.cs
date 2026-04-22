@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.20 오전 02:09
- *  마지막 수정 일자 : 26.02.20 오전 02:09
+ *  마지막 수정 일자 : 26.04.22 오후 21:30
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 공격 스크립트
@@ -37,33 +37,36 @@ public class PlayerCombatController : MonoBehaviour
         specialAction = Player.Input.actions["SpecialAttack"];
 
         // 일반 공격 이벤트
-        attackAction.performed += ctx =>
-        {
-            isAttack = true;
-        };
-        attackAction.canceled += ctx =>
-        {
-            isAttack = false;
-        };
-    }
+        //attackAction.performed += ctx =>
+        //{
 
-    private void Start()
-    {
-        //weaponController.EquipWeapon(testWeapon);
+        //};
     }
 
     private void Update()
     {
+        if (attackAction.IsPressed())
+            AttackAnimation();
+
+        //weaponController.HandleAttack();
+    }
+
+    public void AttackAnimation()
+    {
         if (weaponController == null)
             return;
 
-        if (isAttack)
+        if (!isAttack)
+        {
+            isAttack = true;
             Player.Animator.SetTrigger(Player.AnimationData.AttackParameterHash);
-        //weaponController.HandleAttack();
+        }
     }
 
     public void OnAttackAnimationFinished()
     {
+        isAttack = false;
+
         Log.Game("이벤트로 확인한 공격 애니메이션 종료");
     }
 }
