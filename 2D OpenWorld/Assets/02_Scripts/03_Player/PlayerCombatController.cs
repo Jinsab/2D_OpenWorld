@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.20 오전 02:09
- *  마지막 수정 일자 : 26.04.22 오후 21:30
+ *  마지막 수정 일자 : 26.04.23 오후 17:30
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 공격 스크립트
@@ -17,6 +17,7 @@ using UnityEngine.InputSystem;
  *  1. 
  */
 
+[RequireComponent(typeof(PlayerController))]
 public class PlayerCombatController : MonoBehaviour
 {
     [Header("# Combat Data")]

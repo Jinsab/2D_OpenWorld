@@ -73,7 +73,7 @@ public class PlayerEquipment : MonoBehaviour
         // 5. (선택 사항) 외형 및 무기 로직 업데이트
         UpdateVisuals();
 
-        Debug.Log("[PlayerEquipment] 모든 장비 스탯이 갱신되었습니다.");
+        Log.Game("[PlayerEquipment] 모든 장비 스탯이 갱신되었습니다.");
     }
 
     private void UpdateVisuals()

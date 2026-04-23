@@ -7,7 +7,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.12 오후 20:52
- *  마지막 수정 일자 : 26.02.12 오후 20:52
+ *  마지막 수정 일자 : 26.04.23 오후 17:29
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 애니메이션
@@ -46,6 +46,7 @@ public class PlayerAnimation : MonoBehaviour
     [Header("# Parameter")]
     [SerializeField] private string stateParameterName = "State";
     [SerializeField] private string directionParameterName = "Direction";
+    [SerializeField] private string attackSpeedParameterName = "AttackSpeed";
 
     [Header("# Ground")]
     [SerializeField] private string idleParameterName = "Idle";
@@ -57,6 +58,7 @@ public class PlayerAnimation : MonoBehaviour
 
     public int StateParameterHash { get; private set; }
     public int DirectionParameterHash { get; private set; }
+    public int AttackSpeedParameterHash { get; private set; }
 
     public int IdleParameterHash { get; private set; }
     public int WalkParameterHash { get; private set; }
@@ -80,6 +82,7 @@ public class PlayerAnimation : MonoBehaviour
     {
         StateParameterHash = Animator.StringToHash(stateParameterName);
         DirectionParameterHash = Animator.StringToHash(directionParameterName);
+        AttackSpeedParameterHash = Animator.StringToHash(attackSpeedParameterName);
 
         IdleParameterHash = Animator.StringToHash(idleParameterName);
         WalkParameterHash = Animator.StringToHash(walkParameterName);
@@ -88,5 +91,10 @@ public class PlayerAnimation : MonoBehaviour
         DodgeParameterHash = Animator.StringToHash(dodgeParameterName);
 
         AttackParameterHash = Animator.StringToHash(attackParameterName);
+    }
+
+    public void SetAttackSpeed(float attackSpeed)
+    {
+        Player.Animator.SetFloat(AttackSpeedParameterHash, attackSpeed);
     }
 }

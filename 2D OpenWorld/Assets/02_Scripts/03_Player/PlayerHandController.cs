@@ -8,7 +8,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.15 오후 22:58
- *  마지막 수정 일자 : 26.04.22 오후 20:58
+ *  마지막 수정 일자 : 26.04.23 오후 16:59
  *  
  *  [스크립트 목적 및 내용]
  *  1. 손에 든 아이템 시스템 - 플레이어가 손에 든 아이템을 관리하는 스크립트
@@ -221,35 +221,6 @@ public class PlayerHandController : MonoBehaviour
         }
 
         isActing = false;
-        //isActing = true;
-
-        //// 1. 마우스 방향 구하기 (아이템을 휘두를 방향)
-        //Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.value);
-        //Vector3 dir = (mousePos - transform.position).normalized;
-
-        //// 2. 공격 방향으로 손 내밀기 (Punch 효과)
-        //Vector3 punchPos = originalPos + (dir * 0.3f);
-        //float elapsed = 0f;
-        //float duration = 0.1f;
-
-        //while (elapsed < duration)
-        //{
-        //    handAnchor.localPosition = Vector3.Lerp(originalPos, punchPos, elapsed / duration);
-        //    elapsed += Time.deltaTime;
-        //    yield return null;
-        //}
-
-        //// 3. 다시 원래 위치로 복귀
-        //elapsed = 0f;
-        //while (elapsed < duration)
-        //{
-        //    handAnchor.localPosition = Vector3.Lerp(punchPos, originalPos, elapsed / duration);
-        //    elapsed += Time.deltaTime;
-        //    yield return null;
-        //}
-
-        //handAnchor.localPosition = originalPos;
-        //isActing = false;
     }
 
     private IEnumerator StabRoutine(Vector3 start, Vector3 dir, Item data)
@@ -277,15 +248,15 @@ public class PlayerHandController : MonoBehaviour
     private IEnumerator SwingRoutine(Vector3 start, Vector3 dir, Item data)
     {
         float baseAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        float startAngle = baseAngle + 45f; // 45도 뒤에서 시작
-        float endAngle = baseAngle - 45f;   // 45도 앞까지 휘두름
+        // float startAngle = baseAngle + 90f; // 각도 값 뒤에서 시작
+        float endAngle = baseAngle - 90f;   // 각도 값 앞까지 휘두름
 
         float t = 0;
         
         while (t < 1)
         {
             t += Time.deltaTime / data.actionDuration;
-            float currAngle = Mathf.Lerp(startAngle, endAngle, t);
+            float currAngle = Mathf.Lerp(baseAngle, endAngle, t);
             handAnchor.localRotation = Quaternion.Euler(0, 0, currAngle);
             yield return null;
         }
