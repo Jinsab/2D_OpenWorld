@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,7 +9,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.15 오후 22:58
- *  마지막 수정 일자 : 26.04.23 오후 16:59
+ *  마지막 수정 일자 : 26.04.24 오후 18:04
  *  
  *  [스크립트 목적 및 내용]
  *  1. 손에 든 아이템 시스템 - 플레이어가 손에 든 아이템을 관리하는 스크립트
@@ -44,6 +45,7 @@ public class PlayerHandController : MonoBehaviour
     [SerializeField] private Transform handAnchor; // 아이템이 붙을 위치
     [SerializeField] private PlayerLook playerLook; // 플레이어 방향 참조 용
     [SerializeField] private SpriteRenderer playerRenderer; // 플레이어 sortingOrder 참조 용
+    [SerializeField] private EquipmentInventory equipmentInventory;
 
     [Header("# Current State")]
     [SerializeField] private SpriteRenderer handItemSprite; // 아이템 스프라이트
@@ -296,10 +298,22 @@ public class PlayerHandController : MonoBehaviour
         }
 
         Item itemData = ItemDatabase.Instance.GetItem(currentItemId);
+
         if (itemData != null)
         {
             // 프리팹 대신 아이템의 아이콘 스프라이트를 직접 적용
             handItemSprite.sprite = itemData.Icon;
+
+            EquipmentItem equipmentItemData = itemData as EquipmentItem;
+
+            if (equipmentItemData != null && equipmentItemData.slotType == EquipmentSlot.Weapon)
+            {
+                equipmentInventory.EquipWeapon(equipmentItemData);
+            }
+            else
+            {
+                equipmentInventory.UnEqiupWeapon();
+            }
 
             // 필요 시 아이템 종류에 따라 크기나 각도 조절 로직 추가 가능
             // AdjustHandTransform(itemData);

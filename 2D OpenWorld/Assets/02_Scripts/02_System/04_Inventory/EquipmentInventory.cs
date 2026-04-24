@@ -9,7 +9,7 @@ using UnityEngine;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.03.31 오후 18:14
- *  마지막 수정 일자 : 26.04.05 오후 19:04
+ *  마지막 수정 일자 : 26.04.24 오후 18:04
  *  
  *  [스크립트 목적 및 내용]
  *  1. 인벤토리 시스템 - 장착된 장비 전문 관리 인벤토리
@@ -79,6 +79,30 @@ public class EquipmentInventory : MonoBehaviour
             : new EquipmentInventorySlot(type, index); // 유효하지 않은 요청에 대해 빈 슬롯 반환d
     }
 
+    // 무기 장착 로직 (장착, 교체는 이 함수로 처리 가능)
+    public void EquipWeapon(EquipmentItem weapon)
+    {
+        // 1. 데이터 교체 (Swap)
+        InventorySlot incomingSlot = new(weapon, 1);
+        var target = equipDict[EquipmentSlot.Weapon][0];
+        (target.itemId, incomingSlot.itemId) = (incomingSlot.itemId, target.itemId);
+        (target.amount, incomingSlot.amount) = (incomingSlot.amount, target.amount);
+
+        NotifyChange(EquipmentSlot.Weapon, 0);
+    }
+
+    // 무기 해제 로직
+    public void UnEqiupWeapon()
+    {
+        if (equipDict[EquipmentSlot.Weapon][0].itemId != 0)
+        {
+            equipDict[EquipmentSlot.Weapon][0].itemId = 0;
+            equipDict[EquipmentSlot.Weapon][0].amount = 0;
+
+            NotifyChange(EquipmentSlot.Weapon, 0);
+        }   
+    }
+
     // 장비 교체 로직 (장착, 해제, 교체 모두 이 함수로 처리 가능)
     public void EquipItem(EquipmentSlot type, int index, InventorySlot incomingSlot)
     {
@@ -139,7 +163,7 @@ public class EquipmentInventory : MonoBehaviour
     // 장착된 모든 아이템의 모든 스탯 모디파이어를 수집하여 반환
     public List<StatModifier> GetAllEquipmentModifiers()
     {
-        List<StatModifier> allModifiers = new List<StatModifier>();
+        List<StatModifier> allModifiers = new();
 
         foreach (var pair in equipDict)
         {
