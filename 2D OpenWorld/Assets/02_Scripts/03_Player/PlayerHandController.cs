@@ -9,7 +9,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.15 오후 22:58
- *  마지막 수정 일자 : 26.04.25 오후 14:42
+ *  마지막 수정 일자 : 26.04.25 오후 15:57
  *  
  *  [스크립트 목적 및 내용]
  *  1. 손에 든 아이템 시스템 - 플레이어가 손에 든 아이템을 관리하는 스크립트
@@ -49,7 +49,8 @@ public class PlayerHandController : MonoBehaviour
 
     [Header("# Current State")]
     [SerializeField] private SpriteRenderer handItemSprite; // 아이템 스프라이트
-    // private Vector2 itemHandOffset; // 아이템 별 오프셋
+    private Vector2 lastItemOffest; // 아이템 오프셋 데이터
+    private float lastItemRotation; // 아이템 회전 데이터
     private int currentItemId = -1;
     private int currentSelectedIndex = 0;
     private int currentSortingOrder = 0;
@@ -84,12 +85,16 @@ public class PlayerHandController : MonoBehaviour
     }
     private void LateUpdate()
     {
-        HandSpritePosition();
+        HandSpriteSetting();
         HandSpriteSortingOrder();
     }
 
     private void HandSpriteSortingOrder()
     {
+        // Left, Right, Down일 때에는 플레이어 앞에 있는 판정이고 (아이템이 플레이어 앞),
+        // Up의 경우에는 플레이어 뒤에 있는 판정이 되어야 함 (플레이어가 아이템 앞)
+        // 그러므로, sortingOrder를 적절히 조절해야 함
+
         switch (lastLookDirection)
         {
             // 플레이어 앞에 표시해야 하는 경우이므로
@@ -113,7 +118,7 @@ public class PlayerHandController : MonoBehaviour
         }
     }
 
-    private void HandSpritePosition()
+    private void HandSpriteSetting()
     {
         if (lastLookDirection == playerLook.CurrentLookDirection)
             return;
@@ -127,50 +132,75 @@ public class PlayerHandController : MonoBehaviour
         // Up의 경우에는 플레이어 뒤에 있는 판정이 되어야 함 (플레이어가 아이템 앞)
         // 그러므로, sortingOrder를 적절히 조절해야 함
         
+        // 오프셋의 경우 X축은 왼쪽, 오른쪽에만 적용하고 Y축은 모든 방향에 적용하기
+
+        HandSpritePosition();
+        HandSpriteScale();
+        HandSpriteRotation();
+    }
+
+    private void HandSpritePosition()
+    {
+        // 스프라이트 오프셋: Item 스크립트에 Vector2 handOffset 같은 변수를 추가해두면,
+        // 칼은 손잡이 쪽이 손에 붙고, 방패는 중앙이 손에 붙도록 미세 조정이 가능
+
+        // 오프셋의 경우 X축은 왼쪽, 오른쪽에만 적용하고 Y축은 모든 방향에 적용하기
         switch (lastLookDirection)
         {
             case LookDirection.Left:
-                handAnchor.transform.localPosition =
-                    new Vector3(-0.25f, 0.35f, 0f);
-                handAnchor.transform.localScale =
-                    new Vector3(
-                        Mathf.Abs(handAnchor.transform.localScale.x),
-                        handAnchor.transform.localScale.y,
-                        handAnchor.transform.localScale.z);
-                break;
-
             case LookDirection.Right:
                 handAnchor.transform.localPosition =
-                    new Vector3(-0.25f, 0.35f, 0f);
-                handAnchor.transform.localScale =
-                    new Vector3(
-                        Mathf.Abs(handAnchor.transform.localScale.x),
-                        handAnchor.transform.localScale.y,
-                        handAnchor.transform.localScale.z);
+                    new Vector3(-0.25f + lastItemOffest.x, 0.35f + lastItemOffest.y, 0f);
                 break;
 
             case LookDirection.Up:
                 handAnchor.transform.localPosition =
-                    new Vector3(0.3f, 0.45f, 0f);
-                handAnchor.transform.localScale =
-                    new Vector3(
-                        -Mathf.Abs(handAnchor.transform.localScale.x),
-                        handAnchor.transform.localScale.y,
-                        handAnchor.transform.localScale.z);
+                    new Vector3(0.3f, 0.45f + lastItemOffest.y, 0f);
                 break;
 
             case LookDirection.Down:
                 handAnchor.transform.localPosition =
-                    new Vector3(-0.3f, 0.35f, 0f);
-                handAnchor.transform.localScale =
-                    new Vector3(
-                        Mathf.Abs(handAnchor.transform.localScale.x),
-                        handAnchor.transform.localScale.y,
-                        handAnchor.transform.localScale.z);
+                    new Vector3(-0.3f, 0.35f + lastItemOffest.y, 0f);
                 break;
         }
 
         originalPos = handAnchor.localPosition;
+    }
+
+    private void HandSpriteScale()
+    {
+        Log.Game("손에 있는 아이템 스케일 정리");
+
+        if (lastLookDirection == LookDirection.Up)
+        {
+            handAnchor.transform.localScale =
+                new Vector3(
+                    -Mathf.Abs(handAnchor.transform.localScale.x),
+                    handAnchor.transform.localScale.y,
+                    handAnchor.transform.localScale.z);
+        }
+        else
+        {
+            handAnchor.transform.localScale =
+                new Vector3(
+                    Mathf.Abs(handAnchor.transform.localScale.x),
+                    handAnchor.transform.localScale.y,
+                    handAnchor.transform.localScale.z);
+        }
+    }
+
+    private void HandSpriteRotation()
+    {
+        Log.Game("손에 있는 아이템 로테이션 정리");
+
+        if (lastLookDirection == LookDirection.Up)
+        {
+            handItemSprite.transform.localRotation = Quaternion.Euler(0, 0, lastItemRotation + 180f);
+        }
+        else
+        {
+            handItemSprite.transform.localRotation = Quaternion.Euler(0, 0, lastItemRotation);
+        }
     }
 
     private IEnumerator PerformAction()
@@ -293,6 +323,8 @@ public class PlayerHandController : MonoBehaviour
         if (currentItemId <= 0)
         {
             handItemSprite.sprite = null;
+            lastItemOffest = Vector2.zero;
+            lastItemRotation = 0f;
             return;
         }
 
@@ -315,41 +347,12 @@ public class PlayerHandController : MonoBehaviour
             }
 
             // 필요 시 아이템 종류에 따라 크기나 각도 조절 로직 추가 가능
-            // AdjustHandTransform(itemData);
-        }
-    }
+            lastItemOffest = itemData.handOffset;
+            lastItemRotation = itemData.handRotation;
 
-    public void RefreshHand(int selectedIndex)
-    {
-        // 1. 선택된 슬롯의 아이템 정보 가져오기
-        InventorySlot slot = quickSlotManager.GetSelectedSlot();
-
-        // 2. 같은 아이템을 이미 들고 있다면 교체하지 않음 (최적화)
-        if (currentItemId == slot.itemId) return;
-
-        // 3. 기존에 들고 있던 오브젝트 파괴
-        if (handItemSprite.sprite != null)
-        {
-            handItemSprite.sprite = null;
-        }
-
-        currentItemId = slot.itemId;
-
-        // 4. 빈 슬롯이면 종료
-        if (currentItemId <= 0) return;
-
-        // 5. 아이템 데이터로부터 프리팹(외형) 생성
-        Item itemData = ItemDatabase.Instance.GetItem(currentItemId);
-
-        Log.Game("퀵슬롯 아이템: " + itemData.itemName);
-
-        if (itemData != null && itemData.Icon != null)
-        {
-            handItemSprite.sprite = itemData.Icon;
-
-            // 픽셀 아트 게임이라면 로컬 좌표 초기화가 중요합니다.
-            handItemSprite.transform.localPosition = Vector3.zero;
-            handItemSprite.transform.localRotation = Quaternion.identity;
+            HandSpritePosition();
+            HandSpriteScale();
+            HandSpriteRotation();
         }
     }
 
