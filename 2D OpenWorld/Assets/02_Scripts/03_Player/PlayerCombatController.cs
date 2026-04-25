@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.02.20 오전 02:09
- *  마지막 수정 일자 : 26.04.23 오후 17:30
+ *  마지막 수정 일자 : 26.04.25 오후 14:46
  *  
  *  [스크립트 목적 및 내용]
  *  1. 플레이어 공격 스크립트
@@ -23,6 +23,7 @@ public class PlayerCombatController : MonoBehaviour
     [Header("# Combat Data")]
     public WeaponItem testWeapon;
     public WeaponController weaponController;
+    public PlayerHandController playerHandController;
     private PlayerController Player;
     public bool isAttack = false;
 
@@ -67,6 +68,7 @@ public class PlayerCombatController : MonoBehaviour
     public void OnAttackAnimationFinished()
     {
         isAttack = false;
+        playerHandController.HandActingReset();
 
         Log.Game("이벤트로 확인한 공격 애니메이션 종료");
     }

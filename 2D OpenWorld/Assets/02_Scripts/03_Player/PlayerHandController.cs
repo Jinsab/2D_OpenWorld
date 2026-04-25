@@ -9,7 +9,7 @@ using UnityEngine.InputSystem;
  *             
  *  [프로젝트 일자]
  *  파일 생성 일자 : 26.04.15 오후 22:58
- *  마지막 수정 일자 : 26.04.24 오후 18:04
+ *  마지막 수정 일자 : 26.04.25 오후 14:42
  *  
  *  [스크립트 목적 및 내용]
  *  1. 손에 든 아이템 시스템 - 플레이어가 손에 든 아이템을 관리하는 스크립트
@@ -177,10 +177,11 @@ public class PlayerHandController : MonoBehaviour
     {
         isActing = true;
 
-        Log.Game("Action 판정, 애니메이션 시작");
-        Log.Game("현재 아이템 코드: " + currentItemId);
         if (ItemDatabase.Instance.TryGetItem(currentItemId, out Item data))
         {
+            Log.Game("현재 아이템 보유 중이므로 Action 판정, 애니메이션 시작");
+            Log.Game("현재 아이템 코드: " + currentItemId);
+
             // 1. 시작 위치 설정 (원래 위치 + 아이템 고유의 시작 오프셋)
             Vector3 startPos = originalPos;
             switch (lastLookDirection)
@@ -221,8 +222,6 @@ public class PlayerHandController : MonoBehaviour
             handAnchor.localPosition = originalPos;
             handAnchor.localRotation = Quaternion.Euler(0f, 0f, data.handRotation);
         }
-
-        isActing = false;
     }
 
     private IEnumerator StabRoutine(Vector3 start, Vector3 dir, Item data)
@@ -352,5 +351,10 @@ public class PlayerHandController : MonoBehaviour
             handItemSprite.transform.localPosition = Vector3.zero;
             handItemSprite.transform.localRotation = Quaternion.identity;
         }
+    }
+
+    public void HandActingReset()
+    {
+        isActing = false;
     }
 }
