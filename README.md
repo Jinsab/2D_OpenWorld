@@ -1,8 +1,8 @@
 # 2D OpenWorld SurvivalCraft
 ## 2D 오픈월드 생존제작 게임 :
 
-![대체 텍스트](./Images/Shadow%20System.png)
-![대체 텍스트](./Images/Inventory%20UI.png)
+![대체 텍스트](./Images/Ingame%20Scene.png)
+![대체 텍스트](./Images/Inventory%20UI%20-%20II.png)
 
 ### 01. 게임 개요
  - 장르
